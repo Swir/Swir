@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="330" viewBox="0 0 1200 330" role="img" aria-label="SWIR developer banner">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#020617"/>
+      <stop offset="0.55" stop-color="#061a33"/>
+      <stop offset="1" stop-color="#00121f"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="76%" cy="42%" r="56%">
+      <stop offset="0" stop-color="#00a6ff" stop-opacity="0.34"/>
+      <stop offset="1" stop-color="#00a6ff" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M 28 0 L 0 0 0 28" fill="none" stroke="#0d6b9e" stroke-opacity="0.12" stroke-width="1"/>
+    </pattern>
+    <filter id="neon" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <linearGradient id="line" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#00a6ff" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#00c8ff"/>
+      <stop offset="1" stop-color="#00a6ff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="330" rx="26" fill="url(#bg)"/>
+  <rect width="1200" height="330" rx="26" fill="url(#grid)"/>
+  <rect width="1200" height="330" rx="26" fill="url(#glow)"/>
+
+  <g opacity="0.48" stroke="#00a6ff" fill="none">
+    <path d="M70 68H250L286 104H398"/>
+    <circle cx="70" cy="68" r="4" fill="#00a6ff"/>
+    <circle cx="398" cy="104" r="4" fill="#00a6ff"/>
+    <path d="M810 74H1038L1082 118"/>
+    <circle cx="810" cy="74" r="4" fill="#00a6ff"/>
+    <circle cx="1082" cy="118" r="4" fill="#00a6ff"/>
+    <path d="M912 254H1084"/>
+    <circle cx="912" cy="254" r="4" fill="#00a6ff"/>
+  </g>
+
+  <text x="600" y="135" text-anchor="middle" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="82" font-weight="800" letter-spacing="10">SWIR</text>
+  <text x="600" y="182" text-anchor="middle" fill="#00c8ff" font-family="Consolas, Menlo, monospace" font-size="24" font-weight="700" filter="url(#neon)">&gt; SYSTEM ONLINE</text>
+  <rect x="365" y="208" width="470" height="2" fill="url(#line)"/>
+  <text x="600" y="250" text-anchor="middle" fill="#a8c7db" font-family="Consolas, Menlo, monospace" font-size="20">PYTHON • AUTOMATION • DESKTOP TOOLS • AI</text>
+  <text x="600" y="286" text-anchor="middle" fill="#63839a" font-family="Consolas, Menlo, monospace" font-size="15">BUILD  •  TEST  •  IMPROVE</text>
+
+  <g transform="translate(1038 214)">
+    <circle cx="0" cy="0" r="42" fill="#001b2d" stroke="#00a6ff" stroke-opacity="0.5"/>
+    <path d="M-17 -4h34M-17 8h23M-17 -16h19" stroke="#00c8ff" stroke-width="4" stroke-linecap="round" filter="url(#neon)"/>
+    <circle cx="-23" cy="-4" r="4" fill="#00a6ff"/>
+  </g>
+
+  <rect x="1" y="1" width="1198" height="328" rx="25" fill="none" stroke="#00a6ff" stroke-opacity="0.25" stroke-width="2"/>
+</svg>
