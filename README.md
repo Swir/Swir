@@ -21,6 +21,29 @@
 
 ---
 
+# SWIR — Python desktop apps, Windows utilities & automation
+
+Practical tools for downloading files, converting images and audio, and packaging Python scripts.
+
+**Programy i narzędzia użytkowe:** menedżer pobierania dla Windows, konwerter PNG/JPG do ICO, konwerter WAV do MP3 i narzędzia do tworzenia aplikacji z Pythona.
+
+## Find a tool / Znajdź program
+
+| Chcę… / I want to… | Projekt / Project | Zastosowanie / What it does |
+|---|---|---|
+| Pobierać pliki / Download files | [ARIA2 Ultimate PRO](https://github.com/Swir/Aria2Gui#readme) | Menedżer pobierania dla Windows — aria2 GUI with resume, torrents and magnet links. |
+| Tworzyć ikony / Create Windows icons | [Image To ICO](https://github.com/Swir/Image-To-Ico#readme) | Konwerter PNG i JPG do ICO — image preview and desktop icon export. |
+| Konwertować dźwięk / Convert audio | [WAV to MP3 Converter](https://github.com/Swir/WAV-to-MP3-converter#readme) | Konwersja WAV/MP3 i przetwarzanie folderów — batch audio conversion with FFmpeg. |
+| Zamienić skrypt w aplikację / Package a Python script | [Py Converter To EXE / APP](https://github.com/Swir/Py-Converter-to-exe#readme) | Python do EXE na Windows lub APP na macOS — graphical frontend for PyInstaller and py2app. |
+
+**Jak zacząć:** wybierz program i przejdź do instrukcji instalacji w jego README. Wymagania zależą od projektu; część narzędzi wymaga Pythona lub dodatkowych składników.
+
+**Getting started:** open a project and follow its README installation instructions. Requirements vary by tool; Python or additional dependencies may be needed.
+
+[Wszystkie projekty / All repositories →](https://github.com/Swir?tab=repositories)
+
+---
+
 ## ⚡ `> whoami`
 
 ```python
@@ -186,7 +209,7 @@ Windows-oriented system utility and automation project.
 
 <br>
 
-**Found something useful? A ⭐ on the repository helps more people discover the project.**
+**Found something useful? Star the repository to find it again, or follow [@Swir](https://github.com/Swir) for future projects.**
 
 <br>
 
