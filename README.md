@@ -23,9 +23,9 @@
 
 # SWIR — Python desktop apps, Windows utilities & automation
 
-Practical tools for downloading files, converting images and audio, and packaging Python scripts.
+Practical tools for downloading files, converting images and audio, packaging Python scripts, managing browser scripts and recording work hours.
 
-**Programy i narzędzia użytkowe:** menedżer pobierania dla Windows, konwerter PNG/JPG do ICO, konwerter WAV do MP3 i narzędzia do tworzenia aplikacji z Pythona.
+**Programy i narzędzia użytkowe:** menedżer pobierania dla Windows, konwerter PNG/JPG do ICO, konwerter WAV do MP3 narzędzia do tworzenia aplikacji z Pythona, dodatki do przeglądarki, agregator RSS i generator ewidencji czasu pracy.
 
 ## Find a tool / Znajdź program
 
@@ -35,6 +35,10 @@ Practical tools for downloading files, converting images and audio, and packagin
 | Tworzyć ikony / Create Windows icons | [Image To ICO](https://github.com/Swir/Image-To-Ico#readme) | Konwerter PNG i JPG do ICO — image preview and desktop icon export. |
 | Konwertować dźwięk / Convert audio | [WAV to MP3 Converter](https://github.com/Swir/WAV-to-MP3-converter#readme) | Konwersja WAV/MP3 i przetwarzanie folderów — batch audio conversion with FFmpeg. |
 | Zamienić skrypt w aplikację / Package a Python script | [Py Converter To EXE / APP](https://github.com/Swir/Py-Converter-to-exe#readme) | Python do EXE na Windows lub APP na macOS — graphical frontend for PyInstaller and py2app. |
+| Zarządzać skryptami w Chrome / Manage browser scripts | [PowerBookmark](https://github.com/Swir/PowerBookmark#readme) | Rozszerzenie Chrome/Chromium — JavaScript snippets, domain targeting and JSON backup. |
+| Dostosować CZATerię / Customize CZATeria | [XBookmark](https://github.com/Swir/XBookmark#readme) | Bookmarklet SWIR — version launcher, themes and notifications. |
+| Czytać RSS i dane z API / Follow feeds and APIs | [InfoPulse PL](https://github.com/Swir/InfoPulse-PL#readme) | Polski dashboard dla Windows — RSS, Atom and JSON API information aggregator. |
+| Zapisywać godziny pracy / Record work hours | [TimeListe Generator](https://github.com/Swir/TimeListe-Generator#readme) | Generator ewidencji czasu pracy — browser-based HTML/JavaScript timesheets. |
 
 **Jak zacząć:** wybierz program i przejdź do instrukcji instalacji w jego README. Wymagania zależą od projektu; część narzędzi wymaga Pythona lub dodatkowych składników.
 
@@ -103,18 +107,18 @@ Desktop utility for converting common image formats into Windows `.ico` files.
 <tr>
 <td width="50%" valign="top">
 
-### 💻 [Koder](https://github.com/Swir/Koder)
-Coding playground, utilities and development experiments.
+### 🔖 [PowerBookmark](https://github.com/Swir/PowerBookmark)
+Chrome/Chromium extension for reusable JavaScript snippets, domain-specific scripts and JSON configuration backups. Polish interface.
 
-`Development` `Tools` `Experiments`
+`JavaScript` `Chrome Extension` `Manifest V3`
 
 </td>
 <td width="50%" valign="top">
 
-### 🔧 [Driver Tool](https://github.com/Swir/Driver-tool)
-Windows-oriented system utility and automation project.
+### 📡 [InfoPulse PL](https://github.com/Swir/InfoPulse-PL)
+Polish desktop dashboard combining RSS, Atom and JSON API sources for news, weather and other information.
 
-`Windows` `Python` `System Tools`
+`Python` `CustomTkinter` `RSS` `APIs`
 
 </td>
 </tr>
@@ -141,6 +145,9 @@ Windows-oriented system utility and automation project.
 </div>
 
 ---
+
+<details>
+<summary><strong>📊 GitHub statistics & activity / Statystyki i aktywność</strong></summary>
 
 ## 📊 `> github_dashboard`
 
@@ -178,6 +185,16 @@ Windows-oriented system utility and automation project.
 <img width="98%" src="https://github-readme-activity-graph.vercel.app/graph?username=Swir&bg_color=0D1117&color=00A6FF&line=0088FF&point=FFFFFF&area=true&area_color=003B5C&hide_border=true" alt="SWIR GitHub activity graph" />
 
 </div>
+
+---
+
+</details>
+
+## Help & feedback / Pomoc i uwagi
+
+**PL:** instrukcje instalacji i wymagania znajdziesz w README wybranego programu. Zgłaszając błąd w zakładce **Issues** danego projektu, podaj wersję systemu, wersję programu, kroki odtworzenia i treść komunikatu błędu.
+
+**EN:** check the selected project's README for setup and requirements. For bug reports, use that project's **Issues** tab and include your operating system, app version, reproduction steps and error message.
 
 ---
 
