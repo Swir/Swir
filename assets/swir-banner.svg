@@ -1,54 +1,61 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="330" viewBox="0 0 1200 330" role="img" aria-label="SWIR developer banner">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-label="SWIR software developer profile banner">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#020617"/>
-      <stop offset="0.55" stop-color="#061a33"/>
-      <stop offset="1" stop-color="#00121f"/>
+      <stop offset="0" stop-color="#05070c"/>
+      <stop offset="0.52" stop-color="#07111f"/>
+      <stop offset="1" stop-color="#020617"/>
     </linearGradient>
-    <radialGradient id="glow" cx="76%" cy="42%" r="56%">
-      <stop offset="0" stop-color="#00a6ff" stop-opacity="0.34"/>
-      <stop offset="1" stop-color="#00a6ff" stop-opacity="0"/>
+    <radialGradient id="glowA" cx="18%" cy="15%" r="70%">
+      <stop offset="0" stop-color="#00b8ff" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#00b8ff" stop-opacity="0"/>
     </radialGradient>
-    <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse">
-      <path d="M 28 0 L 0 0 0 28" fill="none" stroke="#0d6b9e" stroke-opacity="0.12" stroke-width="1"/>
-    </pattern>
-    <filter id="neon" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="6" result="blur"/>
-      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
-    <linearGradient id="line" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#00a6ff" stop-opacity="0"/>
-      <stop offset="0.5" stop-color="#00c8ff"/>
-      <stop offset="1" stop-color="#00a6ff" stop-opacity="0"/>
+    <radialGradient id="glowB" cx="88%" cy="88%" r="56%">
+      <stop offset="0" stop-color="#2563eb" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#2563eb" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#00c8ff"/>
+      <stop offset="1" stop-color="#3b82f6"/>
     </linearGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#7dd3fc" stroke-opacity="0.05"/>
+    </pattern>
+    <filter id="softGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="7" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
   </defs>
 
-  <rect width="1200" height="330" rx="26" fill="url(#bg)"/>
-  <rect width="1200" height="330" rx="26" fill="url(#grid)"/>
-  <rect width="1200" height="330" rx="26" fill="url(#glow)"/>
+  <rect width="1200" height="360" rx="30" fill="url(#bg)"/>
+  <rect width="1200" height="360" rx="30" fill="url(#grid)"/>
+  <rect width="1200" height="360" rx="30" fill="url(#glowA)"/>
+  <rect width="1200" height="360" rx="30" fill="url(#glowB)"/>
 
-  <g opacity="0.48" stroke="#00a6ff" fill="none">
-    <path d="M70 68H250L286 104H398"/>
-    <circle cx="70" cy="68" r="4" fill="#00a6ff"/>
-    <circle cx="398" cy="104" r="4" fill="#00a6ff"/>
-    <path d="M810 74H1038L1082 118"/>
-    <circle cx="810" cy="74" r="4" fill="#00a6ff"/>
-    <circle cx="1082" cy="118" r="4" fill="#00a6ff"/>
-    <path d="M912 254H1084"/>
-    <circle cx="912" cy="254" r="4" fill="#00a6ff"/>
+  <g opacity="0.38" stroke="#38bdf8" fill="none">
+    <path d="M70 76H232L270 114H350"/>
+    <circle cx="70" cy="76" r="4" fill="#38bdf8"/>
+    <circle cx="350" cy="114" r="4" fill="#38bdf8"/>
+    <path d="M868 78H1048L1100 130"/>
+    <circle cx="868" cy="78" r="4" fill="#38bdf8"/>
+    <circle cx="1100" cy="130" r="4" fill="#38bdf8"/>
   </g>
 
-  <text x="600" y="135" text-anchor="middle" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="82" font-weight="800" letter-spacing="10">SWIR</text>
-  <text x="600" y="182" text-anchor="middle" fill="#00c8ff" font-family="Consolas, Menlo, monospace" font-size="24" font-weight="700" filter="url(#neon)">&gt; SYSTEM ONLINE</text>
-  <rect x="365" y="208" width="470" height="2" fill="url(#line)"/>
-  <text x="600" y="250" text-anchor="middle" fill="#a8c7db" font-family="Consolas, Menlo, monospace" font-size="20">PYTHON • AUTOMATION • DESKTOP TOOLS • AI</text>
-  <text x="600" y="286" text-anchor="middle" fill="#63839a" font-family="Consolas, Menlo, monospace" font-size="15">BUILD  •  TEST  •  IMPROVE</text>
+  <text x="72" y="160" fill="#f8fafc" font-family="Arial, Helvetica, sans-serif" font-size="92" font-weight="800" letter-spacing="12">SWIR</text>
+  <rect x="74" y="188" width="420" height="4" rx="2" fill="url(#accent)" filter="url(#softGlow)"/>
+  <text x="76" y="233" fill="#7dd3fc" font-family="Consolas, Menlo, monospace" font-size="24" font-weight="700">SOFTWARE LAB / BUILD IN PUBLIC</text>
+  <text x="76" y="272" fill="#a8bfd0" font-family="Arial, Helvetica, sans-serif" font-size="20">Practical software • automation • games • AI experiments</text>
+  <text x="76" y="307" fill="#60758a" font-family="Consolas, Menlo, monospace" font-size="15">SHIP → TEST → IMPROVE → REPEAT</text>
 
-  <g transform="translate(1038 214)">
-    <circle cx="0" cy="0" r="42" fill="#001b2d" stroke="#00a6ff" stroke-opacity="0.5"/>
-    <path d="M-17 -4h34M-17 8h23M-17 -16h19" stroke="#00c8ff" stroke-width="4" stroke-linecap="round" filter="url(#neon)"/>
-    <circle cx="-23" cy="-4" r="4" fill="#00a6ff"/>
+  <g transform="translate(735 126)">
+    <rect x="0" y="0" width="390" height="152" rx="20" fill="#071624" fill-opacity="0.86" stroke="#1d4f70"/>
+    <text x="26" y="38" fill="#6ee7ff" font-family="Consolas, Menlo, monospace" font-size="15">CURRENT STACK</text>
+    <text x="26" y="72" fill="#eef8ff" font-family="Consolas, Menlo, monospace" font-size="19" font-weight="700">PYTHON   KOTLIN   UNITY</text>
+    <text x="26" y="103" fill="#bdd3e2" font-family="Consolas, Menlo, monospace" font-size="16">ANDROID  WINDOWS  WEB</text>
+    <text x="26" y="132" fill="#7193aa" font-family="Consolas, Menlo, monospace" font-size="14">GITHUB ACTIONS • RELEASES • CI</text>
   </g>
 
-  <rect x="1" y="1" width="1198" height="328" rx="25" fill="none" stroke="#00a6ff" stroke-opacity="0.25" stroke-width="2"/>
+  <circle cx="1110" cy="308" r="8" fill="#22d3ee" filter="url(#softGlow)"/>
+  <text x="1090" y="313" text-anchor="end" fill="#7dd3fc" font-family="Consolas, Menlo, monospace" font-size="14">SYSTEM ONLINE</text>
+
+  <rect x="1" y="1" width="1198" height="358" rx="29" fill="none" stroke="#1e5f85" stroke-opacity="0.52" stroke-width="2"/>
 </svg>
