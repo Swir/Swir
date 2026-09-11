@@ -4,10 +4,6 @@
 
 <br>
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=20&duration=2200&pause=700&color=38BDF8&center=true&vCenter=true&width=780&height=48&lines=%3E+shipping+useful+software;%3E+automation+%2B+desktop+tools;%3E+android+%2B+web+apps;%3E+game+development+%2B+AI;%3E+build+%E2%86%92+test+%E2%86%92+improve" alt="SWIR typing animation" />
-
-<br>
-
 <img src="https://komarev.com/ghpvc/?username=Swir&label=PROFILE+VIEWS&color=0ea5e9&style=for-the-badge" alt="Profile views" />
 <a href="https://github.com/Swir?tab=followers"><img src="https://img.shields.io/github/followers/Swir?style=for-the-badge&logo=github&label=FOLLOWERS&color=0ea5e9" alt="Followers" /></a>
 <img src="https://img.shields.io/badge/STATUS-ACTIVELY_BUILDING-0284c7?style=for-the-badge&logo=githubactions&logoColor=white" alt="Actively building" />
@@ -21,26 +17,31 @@
 
 ---
 
-## `> ABOUT_SWIR`
+## About me
 
-I build **practical software that people can actually run** — desktop utilities, Android and web apps, automation, game-development systems and AI-assisted experiments.
+I build **practical software that people can actually run** — desktop utilities, Android and web apps, automation tools, game-development systems and AI-assisted experiments.
 
-**PL:** Ten profil jest moim publicznym laboratorium. Zamiast wrzucać jednorazowe testy, rozwijam projekty wersja po wersji, dodaję dokumentację, CI, buildy i releasy tam, gdzie ma to sens.
+This profile is my public software lab. I prefer projects that evolve through real iterations, documentation, CI and releases instead of one-off demos.
 
-**EN:** This profile is my public software lab. I prefer iterative projects with real releases, documentation and repeatable builds over throwaway demos.
-
-<table>
-<tr>
-<td align="center" width="25%"><strong>SOFTWARE</strong><br><sub>Desktop utilities & tools</sub></td>
-<td align="center" width="25%"><strong>AUTOMATION</strong><br><sub>Workflows & productivity</sub></td>
-<td align="center" width="25%"><strong>GAME DEV</strong><br><sub>Unity & gameplay systems</sub></td>
-<td align="center" width="25%"><strong>AI / R&D</strong><br><sub>Experiments & prototypes</sub></td>
-</tr>
-</table>
+```text
+BUILD  →  TEST  →  FIX  →  RELEASE  →  IMPROVE
+```
 
 ---
 
-## 🚀 `> NOW_SHIPPING`
+## Project radar
+
+<div align="center">
+
+<img width="100%" src="assets/project-radar.svg" alt="SWIR project radar" />
+
+</div>
+
+The radar shows the areas I actively work in: **desktop software, automation, Android/web apps, game development and AI/R&D**.
+
+---
+
+## Now shipping
 
 <table>
 <tr>
@@ -48,9 +49,9 @@ I build **practical software that people can actually run** — desktop utilitie
 
 ### 🛡️ [Tank Revival Overdrive](https://github.com/Swir/Tank-Revival-Overdrive)
 
-**Current public release: v2.2.0** — playable Windows x64 build with an expanding campaign, tactical combat systems, progression and CI-driven releases.
+**Current public release: v2.2.0** — a playable Windows x64 build with campaign progression, tactical combat systems and CI-driven releases.
 
-<a href="https://github.com/Swir/Tank-Revival-Overdrive/releases/latest"><img src="https://img.shields.io/github/v/release/Swir/Tank-Revival-Overdrive?style=flat-square&label=release" alt="Tank Revival latest release" /></a>
+<a href="https://github.com/Swir/Tank-Revival-Overdrive/releases/latest"><img src="https://img.shields.io/github/v/release/Swir/Tank-Revival-Overdrive?style=flat-square&label=release" alt="Latest Tank Revival release" /></a>
 <img src="https://img.shields.io/badge/Windows-x64-0078D4?style=flat-square&logo=windows11" alt="Windows x64" />
 
 </td>
@@ -77,34 +78,16 @@ Retro-game modernization lab focused on **safe tooling, HD-remaster workflows, U
 </tr>
 </table>
 
-> **Build philosophy:** ship something real, test it, fix what breaks, document it, then make the next version better.
-
 ---
 
-## 🐍 `> LIVE_CONTRIBUTION_SNAKE`
-
-<div align="center">
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Swir/Swir/output/github-contribution-grid-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Swir/Swir/output/github-contribution-grid-snake.svg" />
-  <img width="100%" alt="SWIR contribution snake" src="https://raw.githubusercontent.com/Swir/Swir/output/github-contribution-grid-snake-dark.svg" />
-</picture>
-
-<sub>Generated automatically from real GitHub contributions.</sub>
-
-</div>
-
----
-
-## 🧩 `> FEATURED_PROJECTS`
+## Featured projects
 
 <table>
 <tr>
 <td width="50%" valign="top">
 
 ### ⚡ [ARIA2 Ultimate PRO](https://github.com/Swir/Aria2Gui)
-Windows GUI for **aria2c** with multi-connection downloads, torrents, magnet links and a cleaner desktop workflow.
+Windows desktop GUI for **aria2c** with multi-connection downloads, torrents, magnet links and a cleaner download workflow.
 
 `Python` `CustomTkinter` `aria2c` `Windows`
 
@@ -164,76 +147,50 @@ Terminal media workflow built around **yt-dlp**, FFmpeg, configuration and reada
 
 ---
 
-## 🧭 `> EXPLORE_BY_GOAL`
+## Explore by goal
 
-| I want to… / Chcę… | Project | What it gives you |
+| I want to… | Project | What it gives you |
 |---|---|---|
 | Download files faster | [ARIA2 Ultimate PRO](https://github.com/Swir/Aria2Gui#readme) | Desktop aria2 download manager |
 | Create Windows icons | [Image To ICO](https://github.com/Swir/Image-To-Ico#readme) | PNG/JPG → ICO workflow |
 | Convert audio | [WAV to MP3 Converter](https://github.com/Swir/WAV-to-MP3-converter#readme) | Batch audio conversion |
 | Package Python apps | [Py Converter To EXE](https://github.com/Swir/Py-Converter-to-exe#readme) | Python → desktop package |
-| Manage browser scripts | [PowerBookmark](https://github.com/Swir/PowerBookmark#readme) | Reusable JS snippets |
-| Track work hours | [WojThom](https://github.com/Swir/WojThom#readme) | Android/Web time reports |
+| Manage browser scripts | [PowerBookmark](https://github.com/Swir/PowerBookmark#readme) | Reusable JavaScript snippets |
+| Track work hours | [WojThom](https://github.com/Swir/WojThom#readme) | Android/Web timesheets and PDF reports |
 | Follow feeds and APIs | [InfoPulse PL](https://github.com/Swir/InfoPulse-PL#readme) | RSS/Atom/API dashboard |
-| Explore game-development work | [Tank Revival Overdrive](https://github.com/Swir/Tank-Revival-Overdrive#readme) | Playable game + systems |
+| Explore game-development experiments | [NES New Life](https://github.com/Swir/Nes_New_Life#readme) | Modernization and tooling lab |
 
 ---
 
-## 🛠️ `> STACK_AND_WORKFLOW`
+## Tech stack
 
 <div align="center">
 
-<img src="https://skillicons.dev/icons?i=python,kotlin,js,html,css,php,powershell,git,github,vscode,windows,linux,unity&perline=13" alt="Technology stack" />
+<img src="https://skillicons.dev/icons?i=python,kotlin,js,html,css,php,powershell,git,github,vscode,windows,linux&perline=12" alt="Tech stack" />
 
 <br><br>
 
-`PYTHON` • `KOTLIN` • `JAVASCRIPT` • `UNITY` • `AUTOMATION` • `ANDROID` • `WINDOWS` • `WEB` • `CI/CD`
+`PYTHON` • `KOTLIN` • `JAVASCRIPT` • `AUTOMATION` • `DESKTOP GUI` • `ANDROID` • `WEB` • `GAME DEV` • `AI` • `NETWORKING`
 
 </div>
 
+---
+
+## How I build
+
 <table>
 <tr>
-<td width="33%" valign="top">
-
-### Build
-Turn an idea into a working minimum version quickly, then improve the architecture only where it pays off.
-
-</td>
-<td width="33%" valign="top">
-
-### Validate
-Use reproducible scripts, CI, smoke tests and explicit limitations instead of pretending an untested build is finished.
-
-</td>
-<td width="33%" valign="top">
-
-### Release
-Keep changelogs, tagged versions, downloadable builds and documentation close to the code whenever possible.
-
-</td>
+<td width="25%" align="center"><strong>01 — BUILD</strong><br><sub>Turn the idea into working code</sub></td>
+<td width="25%" align="center"><strong>02 — VALIDATE</strong><br><sub>Test behavior, CI and packaging</sub></td>
+<td width="25%" align="center"><strong>03 — RELEASE</strong><br><sub>Ship a usable build when ready</sub></td>
+<td width="25%" align="center"><strong>04 — ITERATE</strong><br><sub>Improve from real feedback</sub></td>
 </tr>
 </table>
 
 ---
 
-## 🧠 `> WHOAMI`
-
-```python
-class Swir:
-    role = "Builder / Developer / Experimenter"
-    languages = ["Python", "Kotlin", "JavaScript", "HTML", "CSS", "PHP", "PowerShell"]
-    platforms = ["Windows", "Android", "Web", "Linux"]
-    focus = ["Desktop Apps", "Automation", "Game Dev", "AI", "Developer Tools"]
-
-    @staticmethod
-    def mission():
-        return "Turn useful or crazy ideas into working software."
-```
-
----
-
 <details>
-<summary><strong>📊 GitHub activity & language statistics</strong></summary>
+<summary><strong>GitHub statistics</strong></summary>
 
 <br>
 
@@ -248,7 +205,7 @@ class Swir:
 
 <br><br>
 
-<img width="98%" src="https://github-readme-activity-graph.vercel.app/graph?username=Swir&bg_color=0D1117&color=38BDF8&line=0EA5E9&point=FFFFFF&area=true&area_color=082F49&hide_border=true" alt="SWIR GitHub activity graph" />
+<img width="98%" src="https://github-readme-activity-graph.vercel.app/graph?username=Swir&bg_color=0D1117&color=38BDF8&line=0EA5E9&point=FFFFFF&area=true&area_color=082F49&hide_border=true" alt="GitHub activity graph" />
 
 </div>
 
@@ -256,22 +213,18 @@ class Swir:
 
 ---
 
-## 🤝 `> COLLABORATION`
+## Contributions and feedback
 
-Issues, reproducible bug reports, sensible feature ideas and Pull Requests are welcome on active projects.
-
-**Good bug reports include:** operating system, app version, reproduction steps, expected behavior and the exact error message or log fragment.
-
----
+Bug reports, useful feature ideas, testing feedback and pull requests are welcome. If you report a bug, please include your operating system, app version, reproduction steps and the full error message when possible.
 
 <div align="center">
 
-### `SWIR LAB // BUILD • TEST • IMPROVE • RELEASE`
+<br>
 
-**Found something useful? Give that repository a ⭐ or follow [@Swir](https://github.com/Swir) to see what ships next.**
+**If one of my projects is useful to you, consider starring that repository or following [@Swir](https://github.com/Swir).**
 
 <br>
 
-<a href="https://github.com/Swir?tab=repositories"><img src="https://img.shields.io/badge/ENTER_SWIR_LAB-0284c7?style=for-the-badge&logo=github&logoColor=white" alt="Enter SWIR Lab" /></a>
+<a href="https://github.com/Swir?tab=repositories"><img src="https://img.shields.io/badge/EXPLORE_SWIR_PROJECTS-0284c7?style=for-the-badge&logo=github&logoColor=white" alt="Explore SWIR projects" /></a>
 
 </div>
