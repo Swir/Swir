@@ -4,103 +4,106 @@
 
 <br>
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=19&duration=2400&pause=700&color=00A6FF&center=true&vCenter=true&width=650&height=42&lines=%3E+Building+useful+tools;%3E+Python+%2B+Automation;%3E+Windows+%2B+Desktop+Apps;%3E+Experiments+become+projects;%3E+Welcome+to+the+SWIR+LAB" alt="SWIR typing animation" />
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=20&duration=2200&pause=650&color=00C8FF&center=true&vCenter=true&width=760&height=48&lines=%3E+BUILDING+REAL+TOOLS;%3E+PYTHON+%2B+AUTOMATION;%3E+WINDOWS+%2B+ANDROID+%2B+WEB;%3E+GAMES+%2B+AI+EXPERIMENTS;%3E+WELCOME+TO+THE+SWIR+LAB" alt="SWIR typing animation" />
 
 <br>
 
-<img src="https://komarev.com/ghpvc/?username=Swir&label=VISITORS&color=0088ff&style=for-the-badge" alt="Profile visitors" />
+<img src="https://komarev.com/ghpvc/?username=Swir&label=PROFILE+VIEWS&color=0088ff&style=for-the-badge" alt="Profile views" />
 <a href="https://github.com/Swir?tab=followers"><img src="https://img.shields.io/github/followers/Swir?style=for-the-badge&logo=github&label=FOLLOWERS&color=0088ff" alt="Followers" /></a>
-<a href="https://github.com/Swir?tab=stars"><img src="https://img.shields.io/github/stars/Swir?style=for-the-badge&logo=github&label=STARS&color=0088ff" alt="Stars" /></a>
+<img src="https://img.shields.io/badge/STATUS-BUILDING-00A6FF?style=for-the-badge&logo=githubactions&logoColor=white" alt="Status building" />
 
 <br><br>
 
-<a href="https://github.com/Swir?tab=repositories"><img src="https://img.shields.io/badge/%3E_EXPLORE_PROJECTS-020617?style=for-the-badge&logo=github&logoColor=00A6FF" alt="Explore projects" /></a>
-<a href="https://swir.github.io/"><img src="https://img.shields.io/badge/%3E_WEBSITE-020617?style=for-the-badge&logo=googlechrome&logoColor=00A6FF" alt="Website" /></a>
+<a href="https://github.com/Swir?tab=repositories"><img src="https://img.shields.io/badge/EXPLORE_PROJECTS-020617?style=for-the-badge&logo=github&logoColor=00C8FF" alt="Explore projects" /></a>
+<a href="https://swir.github.io/"><img src="https://img.shields.io/badge/OPEN_WEBSITE-020617?style=for-the-badge&logo=googlechrome&logoColor=00C8FF" alt="Website" /></a>
 
 </div>
 
 ---
 
-# SWIR — Python desktop apps, Windows utilities & automation
+## ⚡ `> SWIR_COMMAND_CENTER`
 
-Practical tools for downloading files, converting images and audio, packaging Python scripts, managing browser scripts and recording work hours.
+**PL:** Buduję praktyczne programy, narzędzia automatyzujące, aplikacje desktopowe i webowe, eksperymenty AI oraz gry. Ten profil to mój aktywny warsztat — projekty rozwijam wersja po wersji zamiast zostawiać je jako jednorazowe testy.
 
-**Programy i narzędzia użytkowe:** menedżer pobierania dla Windows, konwerter PNG/JPG do ICO, konwerter WAV do MP3 narzędzia do tworzenia aplikacji z Pythona, dodatki do przeglądarki, agregator RSS i generator ewidencji czasu pracy.
+**EN:** I build practical software, automation tools, desktop and web apps, AI experiments and games. This profile is my active workshop — projects are improved version by version instead of being abandoned as one-off experiments.
 
-## Find a tool / Znajdź program
-
-| Chcę… / I want to… | Projekt / Project | Zastosowanie / What it does |
-|---|---|---|
-| Pobierać pliki / Download files | [ARIA2 Ultimate PRO](https://github.com/Swir/Aria2Gui#readme) | Menedżer pobierania dla Windows — aria2 GUI with resume, torrents and magnet links. |
-| Tworzyć ikony / Create Windows icons | [Image To ICO](https://github.com/Swir/Image-To-Ico#readme) | Konwerter PNG i JPG do ICO — image preview and desktop icon export. |
-| Konwertować dźwięk / Convert audio | [WAV to MP3 Converter](https://github.com/Swir/WAV-to-MP3-converter#readme) | Konwersja WAV/MP3 i przetwarzanie folderów — batch audio conversion with FFmpeg. |
-| Zamienić skrypt w aplikację / Package a Python script | [Py Converter To EXE / APP](https://github.com/Swir/Py-Converter-to-exe#readme) | Python do EXE na Windows lub APP na macOS — graphical frontend for PyInstaller and py2app. |
-| Zarządzać skryptami w Chrome / Manage browser scripts | [PowerBookmark](https://github.com/Swir/PowerBookmark#readme) | Rozszerzenie Chrome/Chromium — JavaScript snippets, domain targeting and JSON backup. |
-| Dostosować CZATerię / Customize CZATeria | [XBookmark](https://github.com/Swir/XBookmark#readme) | Bookmarklet SWIR — version launcher, themes and notifications. |
-| Czytać RSS i dane z API / Follow feeds and APIs | [InfoPulse PL](https://github.com/Swir/InfoPulse-PL#readme) | Polski dashboard dla Windows — RSS, Atom and JSON API information aggregator. |
-| Zapisywać godziny pracy / Record work hours | [TimeListe Generator](https://github.com/Swir/TimeListe-Generator#readme) | Generator ewidencji czasu pracy — browser-based HTML/JavaScript timesheets. |
-
-**Jak zacząć:** wybierz program i przejdź do instrukcji instalacji w jego README. Wymagania zależą od projektu; część narzędzi wymaga Pythona lub dodatkowych składników.
-
-**Getting started:** open a project and follow its README installation instructions. Requirements vary by tool; Python or additional dependencies may be needed.
-
-[Wszystkie projekty / All repositories →](https://github.com/Swir?tab=repositories)
-
----
-
-## ⚡ `> whoami`
-
-```python
-class Swir:
-    role = "Builder / Python Developer"
-    code = ["Python", "JavaScript", "HTML", "CSS", "PHP", "PowerShell"]
-    focus = ["Desktop Apps", "Automation", "AI", "Windows Tools", "Networking"]
-
-    @staticmethod
-    def mission():
-        return "Turn useful ideas into working software."
+```text
+SYSTEM      : ONLINE
+USER        : SWIR
+MODE        : BUILD / TEST / IMPROVE
+FOCUS       : SOFTWARE • AUTOMATION • GAMES • AI
+PLATFORMS   : WINDOWS • ANDROID • WEB • LINUX
 ```
 
-I build practical utilities, desktop apps and automation scripts. This profile is my **digital lab** — projects are tested, rebuilt and improved instead of being left as one-off experiments.
+---
+
+## 🐍 `> LIVE_CONTRIBUTION_SNAKE`
+
+<div align="center">
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Swir/Swir/output/github-contribution-grid-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Swir/Swir/output/github-contribution-grid-snake.svg" />
+  <img width="100%" alt="SWIR contribution snake" src="https://raw.githubusercontent.com/Swir/Swir/output/github-contribution-grid-snake-dark.svg" />
+</picture>
+
+<sub>Generated automatically from real GitHub contributions and refreshed twice every day.</sub>
+
+</div>
 
 ---
 
-## 🚀 `> featured_builds`
+## 🚧 `> ACTIVE_BUILD_QUEUE`
+
+<table>
+<tr>
+<td width="33%" valign="top">
+
+### 🛡️ [Tank Revival Overdrive](https://github.com/Swir/Tank-Revival-Overdrive)
+A modern tank-combat project developed through large gameplay milestones, tactical systems and continuous iteration.
+
+`GAME DEV` `COMBAT` `SYSTEMS`
+
+</td>
+<td width="33%" valign="top">
+
+### ⏱️ [WojThom](https://github.com/Swir/WojThom)
+Work-time application for Android and Web with persistent history, statistics, multilingual UI and professional PDF reports.
+
+`ANDROID` `WEB` `PDF` `PL/EN/NO`
+
+</td>
+<td width="33%" valign="top">
+
+### 🎮 [NES New Life](https://github.com/Swir/Nes_New_Life)
+A long-term project for rebuilding retro game concepts as modern, original projects with separate releases and no ROM dumps.
+
+`UNITY` `GAME DEV` `RETRO REIMAGINED`
+
+</td>
+</tr>
+</table>
+
+---
+
+## 🚀 `> FEATURED_BUILDS`
 
 <table>
 <tr>
 <td width="50%" valign="top">
 
 ### ⚡ [ARIA2 Ultimate PRO](https://github.com/Swir/Aria2Gui)
-Cyber-neon Windows GUI for the **aria2c** download engine with multi-connection downloads, torrents, magnets, Metalink and Archive.org workflow.
+Windows GUI for **aria2c** with multi-connection downloads, torrents, magnet links and a cleaner desktop workflow.
 
 `Python` `CustomTkinter` `aria2c` `Windows`
 
 </td>
 <td width="50%" valign="top">
 
-### 🎬 [SwirTube](https://github.com/Swir/SwirTube)
-Rich-powered terminal media downloader built around **yt-dlp**, with FFmpeg audio extraction, config and logs.
+### 🧹 [SwirPhotoClean](https://github.com/Swir/SwirPhotoClean)
+Photo-cleaning and image workflow project built around practical desktop usage and iterative improvements.
 
-`Python` `yt-dlp` `Rich` `FFmpeg`
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-### 📺 [IPTV Checker](https://github.com/Swir/IPTV-checker)
-PyQt5 utility for inspecting lawful M3U playlists, filtering channels and launching selected streams in VLC.
-
-`Python` `PyQt5` `aiohttp` `VLC`
-
-</td>
-<td width="50%" valign="top">
-
-### 🖼️ [Image To ICO](https://github.com/Swir/Image-To-Ico)
-Desktop utility for converting common image formats into Windows `.ico` files.
-
-`Python` `Images` `Windows` `GUI`
+`Python` `Images` `Desktop`
 
 </td>
 </tr>
@@ -108,7 +111,7 @@ Desktop utility for converting common image formats into Windows `.ico` files.
 <td width="50%" valign="top">
 
 ### 🔖 [PowerBookmark](https://github.com/Swir/PowerBookmark)
-Chrome/Chromium extension for reusable JavaScript snippets, domain-specific scripts and JSON configuration backups. Polish interface.
+Chrome/Chromium extension for reusable JavaScript snippets, domain targeting and portable JSON backups.
 
 `JavaScript` `Chrome Extension` `Manifest V3`
 
@@ -116,9 +119,27 @@ Chrome/Chromium extension for reusable JavaScript snippets, domain-specific scri
 <td width="50%" valign="top">
 
 ### 📡 [InfoPulse PL](https://github.com/Swir/InfoPulse-PL)
-Polish desktop dashboard combining RSS, Atom and JSON API sources for news, weather and other information.
+Desktop dashboard combining RSS, Atom and JSON API sources into one Polish information center.
 
 `Python` `CustomTkinter` `RSS` `APIs`
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### 🖼️ [Image To ICO](https://github.com/Swir/Image-To-Ico)
+Desktop converter for turning PNG/JPG and other common images into Windows `.ico` files.
+
+`Python` `Images` `Windows` `GUI`
+
+</td>
+<td width="50%" valign="top">
+
+### 🎬 [SwirTube](https://github.com/Swir/SwirTube)
+Terminal media downloader built around **yt-dlp** with FFmpeg audio extraction, configuration and logs.
+
+`Python` `yt-dlp` `FFmpeg` `Rich`
 
 </td>
 </tr>
@@ -132,24 +153,62 @@ Polish desktop dashboard combining RSS, Atom and JSON API sources for news, weat
 
 ---
 
-## 🛠️ `> tech_stack`
+## 🧭 `> FIND_A_TOOL`
+
+| I want to… / Chcę… | Project | Main use |
+|---|---|---|
+| Download files faster / Pobierać pliki | [ARIA2 Ultimate PRO](https://github.com/Swir/Aria2Gui#readme) | aria2 desktop download manager |
+| Create Windows icons / Tworzyć ikony | [Image To ICO](https://github.com/Swir/Image-To-Ico#readme) | PNG/JPG → ICO |
+| Convert audio / Konwertować audio | [WAV to MP3 Converter](https://github.com/Swir/WAV-to-MP3-converter#readme) | Batch audio conversion |
+| Package Python / Tworzyć EXE | [Py Converter To EXE](https://github.com/Swir/Py-Converter-to-exe#readme) | Python → desktop package |
+| Manage browser scripts | [PowerBookmark](https://github.com/Swir/PowerBookmark#readme) | Reusable JS snippets |
+| Track work hours | [WojThom](https://github.com/Swir/WojThom#readme) | Android/Web timesheets and PDF |
+| Follow feeds and APIs | [InfoPulse PL](https://github.com/Swir/InfoPulse-PL#readme) | RSS/Atom/API dashboard |
+| Explore rebuilt retro concepts | [NES New Life](https://github.com/Swir/Nes_New_Life#readme) | Modern game-remake lab |
+
+---
+
+## 🛠️ `> TECH_STACK`
 
 <div align="center">
 
-<img src="https://skillicons.dev/icons?i=python,js,html,css,php,powershell,git,github,vscode,windows,linux&perline=11" alt="Tech stack" />
+<img src="https://skillicons.dev/icons?i=python,kotlin,js,html,css,php,powershell,git,github,vscode,windows,linux&perline=12" alt="Tech stack" />
 
 <br><br>
 
-`PYTHON` • `AUTOMATION` • `DESKTOP GUI` • `WINDOWS` • `WEB` • `NETWORKING` • `AI`
+`PYTHON` • `KOTLIN` • `JAVASCRIPT` • `AUTOMATION` • `DESKTOP GUI` • `ANDROID` • `WEB` • `GAME DEV` • `AI` • `NETWORKING`
 
 </div>
 
 ---
 
-<details>
-<summary><strong>📊 GitHub statistics & activity / Statystyki i aktywność</strong></summary>
+## 🧠 `> WHOAMI`
 
-## 📊 `> github_dashboard`
+```python
+class Swir:
+    role = "Builder / Developer / Experimenter"
+    languages = ["Python", "Kotlin", "JavaScript", "HTML", "CSS", "PHP", "PowerShell"]
+    focus = [
+        "Desktop Apps",
+        "Android",
+        "Automation",
+        "Game Development",
+        "AI Experiments",
+        "Windows Tools",
+        "Networking",
+    ]
+
+    @staticmethod
+    def mission():
+        return "Turn useful or crazy ideas into working software."
+```
+
+---
+
+<details>
+<summary><strong>📊 Open GitHub statistics / Otwórz statystyki</strong></summary>
+
+<br>
 
 <div align="center">
 
@@ -160,76 +219,42 @@ Polish desktop dashboard combining RSS, Atom and JSON API sources for news, weat
 <img width="47%" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Swir&theme=github_dark" alt="Repositories per language" />
 <img width="47%" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Swir&theme=github_dark" alt="Most used commit language" />
 
-</div>
-
----
-
-## 🐍 `> contribution_snake`
-
-<div align="center">
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Swir/Swir/output/github-contribution-grid-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Swir/Swir/output/github-contribution-grid-snake.svg" />
-  <img width="100%" alt="SWIR contribution snake" src="https://raw.githubusercontent.com/Swir/Swir/output/github-contribution-grid-snake-dark.svg" />
-</picture>
-
-</div>
-
----
-
-## 📈 `> activity`
-
-<div align="center">
+<br><br>
 
 <img width="98%" src="https://github-readme-activity-graph.vercel.app/graph?username=Swir&bg_color=0D1117&color=00A6FF&line=0088FF&point=FFFFFF&area=true&area_color=003B5C&hide_border=true" alt="SWIR GitHub activity graph" />
 
 </div>
 
----
-
 </details>
 
-## Help & feedback / Pomoc i uwagi
-
-**PL:** instrukcje instalacji i wymagania znajdziesz w README wybranego programu. Zgłaszając błąd w zakładce **Issues** danego projektu, podaj wersję systemu, wersję programu, kroki odtworzenia i treść komunikatu błędu.
-
-**EN:** check the selected project's README for setup and requirements. For bug reports, use that project's **Issues** tab and include your operating system, app version, reproduction steps and error message.
-
 ---
 
-## 🧪 `> SWIR_LAB`
+## 🤝 `> HELP_AND_FEEDBACK`
 
-```text
-╔════════════════════════════════════════════╗
-║                 SWIR LAB                   ║
-╠════════════════════════════════════════════╣
-║  [01] Python desktop applications          ║
-║  [02] Modern GUI experiments               ║
-║  [03] Automation & productivity tools      ║
-║  [04] Windows utilities                    ║
-║  [05] Networking / IPTV projects           ║
-║  [06] AI experiments                       ║
-║  [07] Web utilities                        ║
-║  [08] Random ideas turned into code        ║
-╚════════════════════════════════════════════╝
-```
+**PL:** Jeżeli używasz któregoś projektu i znajdziesz błąd, utwórz **Issue** w odpowiednim repozytorium. Podaj system, wersję programu, kroki odtworzenia i komunikat błędu.
+
+**EN:** If you use one of the projects and find a bug, open an **Issue** in that repository and include your OS, app version, reproduction steps and the error message.
+
+Pull Requesty, sensowne sugestie i testy są mile widziane.
 
 ---
 
 <div align="center">
 
-### `> SYSTEM STATUS: ONLINE`
-### `> USER: SWIR`
-### `> ACCESS LEVEL: CREATOR`
-### `> CURRENT MODE: BUILD • TEST • IMPROVE`
+### `> SWIR LAB // ALWAYS EVOLVING`
+
+```text
+[01] BUILD SOMETHING USEFUL
+[02] BREAK IT IN TESTING
+[03] FIX IT PROPERLY
+[04] RELEASE A BETTER VERSION
+[05] REPEAT
+```
+
+**Found something useful? Give that repository a ⭐ or follow [@Swir](https://github.com/Swir) to see what gets built next.**
 
 <br>
 
-**Found something useful? Star the repository to find it again, or follow [@Swir](https://github.com/Swir) for future projects.**
-
-<br>
-
-<a href="https://github.com/Swir?tab=repositories"><img src="https://img.shields.io/badge/ENTER_SWIR_LAB-%3E-0088FF?style=for-the-badge&logo=github&logoColor=white" alt="Enter SWIR Lab" /></a>
+<a href="https://github.com/Swir?tab=repositories"><img src="https://img.shields.io/badge/ENTER_SWIR_LAB-0088FF?style=for-the-badge&logo=github&logoColor=white" alt="Enter SWIR Lab" /></a>
 
 </div>
