@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="30" viewBox="0 0 1280 30" role="img" aria-label="electric divider v4">
+  <defs>
+    <filter id="g" x="-40%" y="-250%" width="180%" height="600%"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <linearGradient id="l" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#1690FF" stop-opacity="0"/><stop offset="24%" stop-color="#48DBFF"/><stop offset="50%" stop-color="#F0FDFF"/><stop offset="76%" stop-color="#48DBFF"/><stop offset="100%" stop-color="#1690FF" stop-opacity="0"/></linearGradient>
+  </defs>
+  <path d="M0 15 H430 L457 7 L481 22 L508 9 L538 20 L567 8 L602 23 L636 9 L669 21 L702 10 L734 18 H1280" fill="none" stroke="url(#l)" stroke-width="2.5" filter="url(#g)" stroke-dasharray="16 10"><animate attributeName="stroke-dashoffset" values="0;-180" dur="2.2s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.45;1;0.55;0.92;0.45" dur="2.8s" repeatCount="indefinite"/></path>
+  <circle cx="602" cy="23" r="2.8" fill="#EAFDFF" filter="url(#g)"><animate attributeName="opacity" values="0.35;1;0.35" dur="1.2s" repeatCount="indefinite"/></circle>
+  <circle cx="669" cy="21" r="2.6" fill="#72ECFF" filter="url(#g)"><animate attributeName="opacity" values="1;0.22;1" dur="1.5s" repeatCount="indefinite"/></circle>
+</svg>
