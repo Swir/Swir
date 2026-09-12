@@ -1,89 +1,73 @@
 <div align="center">
 
-<img width="100%" src="assets/profile-hero-professional.svg" alt="SWIR — Independent Developer" />
+<img width="100%" src="assets/studio-hero-editorial.svg" alt="SWIR — Independent Software Builder" />
 
 <br><br>
 
-<a href="https://github.com/Swir?tab=repositories"><img src="https://img.shields.io/badge/Repositories-161B22?style=for-the-badge&logo=github&logoColor=F0F6FC" alt="Repositories" /></a>
-<a href="https://swir.github.io/"><img src="https://img.shields.io/badge/Portfolio-161B22?style=for-the-badge&logo=googlechrome&logoColor=58A6FF" alt="Portfolio" /></a>
-<a href="https://github.com/Swir/Tank-Revival-Overdrive/releases/latest"><img src="https://img.shields.io/badge/Latest_Release-161B22?style=for-the-badge&logo=windows11&logoColor=58A6FF" alt="Latest release" /></a>
-
-<br><br>
-
-**Independent developer focused on practical software, automation, applications and playable products.**
+<a href="https://github.com/Swir?tab=repositories"><strong>Repositories</strong></a>
+&nbsp;&nbsp;·&nbsp;&nbsp;
+<a href="https://swir.github.io/"><strong>Portfolio</strong></a>
+&nbsp;&nbsp;·&nbsp;&nbsp;
+<a href="https://github.com/Swir/Tank-Revival-Overdrive/releases/latest"><strong>Latest Release</strong></a>
 
 </div>
 
 ---
 
-## Profile
+## Independent software builder
 
-**SWIR** is my development workspace for software that is designed to be used, tested and improved in the real world.
+I design and build practical software across **desktop, automation, web, Android and game development**.
 
-My projects cover **Windows desktop utilities, workflow automation, Android and web applications, game development, image/audio tooling and AI-assisted workflows**. I prefer building working releases early, validating them in practice and iterating from there.
+The common thread is simple: projects should have a clear purpose, become usable early, and improve through real-world iteration. I work mostly with **Python and Windows tooling**, while also building browser utilities, web interfaces, Android-oriented projects, media workflows and playable experiments.
 
-> **Focus:** practical functionality, clear interfaces, repeatable workflows and continuous improvement.
+**What matters most:** useful output, understandable interfaces, repeatable workflows and working releases.
 
 ---
 
-## Selected Work
+## Selected work
 
 <div align="center">
 
-<a href="https://github.com/Swir/Tank-Revival-Overdrive"><img width="49%" src="assets/project-tank-professional.svg" alt="Tank Revival Overdrive" /></a>
-<a href="https://github.com/Swir/WojThom"><img width="49%" src="assets/project-wojthom-professional.svg" alt="WojThom" /></a>
+<a href="https://github.com/Swir/Tank-Revival-Overdrive"><img width="49%" src="assets/studio-card-tank.svg" alt="Tank Revival Overdrive" /></a>
+<a href="https://github.com/Swir/WojThom"><img width="49%" src="assets/studio-card-wojthom.svg" alt="WojThom" /></a>
 
-<a href="https://github.com/Swir/SwirEngine"><img width="49%" src="assets/project-swirengine-professional.svg" alt="SwirEngine" /></a>
-<a href="https://github.com/Swir/SwirPhotoClean"><img width="49%" src="assets/project-photoclean-professional.svg" alt="SwirPhotoClean" /></a>
+<a href="https://github.com/Swir/SwirEngine"><img width="49%" src="assets/studio-card-engine.svg" alt="SwirEngine" /></a>
+<a href="https://github.com/Swir/SwirPhotoClean"><img width="49%" src="assets/studio-card-photoclean.svg" alt="SwirPhotoClean" /></a>
 
 <br><br>
 
-<a href="https://github.com/Swir?tab=repositories"><strong>Browse all repositories →</strong></a>
+<a href="https://github.com/Swir?tab=repositories"><strong>View all projects →</strong></a>
 
 </div>
 
 ---
 
-## Core Capabilities
+## Areas of work
 
 <table>
 <tr>
-<td width="50%" valign="top">
+<td width="25%" valign="top">
 
-### Desktop & Windows
-
-Python desktop applications, GUI tooling, local utilities, PowerShell workflows, file processing and Windows-focused automation.
-
-**Primary tools:** `Python` `CustomTkinter` `PowerShell` `FFmpeg`
+### Desktop
+Windows utilities, GUI applications, file processing and local productivity software.
 
 </td>
-<td width="50%" valign="top">
+<td width="25%" valign="top">
 
-### Automation & Tooling
-
-Utilities that reduce repetitive work, browser tooling, batch processing, download workflows and task-oriented desktop software.
-
-**Primary tools:** `Python` `JavaScript` `aria2` `GitHub Actions`
+### Automation
+Task automation, browser tooling, batch workflows and repetitive-process reduction.
 
 </td>
-</tr>
-<tr>
-<td width="50%" valign="top">
+<td width="25%" valign="top">
 
-### Web & Android
-
-Responsive web interfaces, lightweight web applications, Android-oriented projects, reporting workflows and offline-first utilities.
-
-**Primary tools:** `HTML` `CSS` `JavaScript` `Kotlin`
+### Applications
+Web interfaces, Android-oriented projects, reporting tools and offline-first workflows.
 
 </td>
-<td width="50%" valign="top">
+<td width="25%" valign="top">
 
-### Games & Experimental Development
-
-Playable prototypes, Windows builds, internal tooling, reusable foundations and experiments around game-development workflows.
-
-**Primary tools:** `Unity` `Python` `Git` `Automation`
+### Experimental
+Game development, reusable tooling, internal systems and AI-assisted workflows.
 
 </td>
 </tr>
@@ -91,50 +75,20 @@ Playable prototypes, Windows builds, internal tooling, reusable foundations and 
 
 ---
 
-## Additional Projects
+## Selected utilities
 
-| Project | Area | Description |
-|---|---|---|
-| [ARIA2 Ultimate PRO](https://github.com/Swir/Aria2Gui) | Desktop / Networking | Multi-connection desktop download manager built around aria2. |
-| [InfoPulse PL](https://github.com/Swir/InfoPulse-PL) | Information / APIs | RSS, Atom and API-based information center. |
-| [NeonShift-X PowerBookmark](https://github.com/Swir/PowerBookmark) | Browser Tooling | Browser productivity, scripts and automation workflows. |
-| [NES New Life](https://github.com/Swir/Nes_New_Life) | Game Development | Retro-development, HD workflow and tooling experiments. |
-| [Image To ICO](https://github.com/Swir/Image-To-Ico) | Desktop Utility | Image-to-Windows-icon conversion tool. |
-| [WAV to MP3 Converter](https://github.com/Swir/WAV-to-MP3-converter) | Audio Utility | Batch WAV-to-MP3 conversion workflow. |
-
----
-
-## Engineering Approach
-
-<table>
-<tr>
-<td width="33%" valign="top">
-
-### Problem First
-
-Start with a concrete use case or workflow instead of adding features without a purpose.
-
-</td>
-<td width="33%" valign="top">
-
-### Working Releases
-
-A usable build creates better feedback than a prototype that never leaves development.
-
-</td>
-<td width="33%" valign="top">
-
-### Continuous Improvement
-
-Treat each release as a baseline for the next iteration rather than the final version.
-
-</td>
-</tr>
-</table>
+| Project | Focus |
+|---|---|
+| [ARIA2 Ultimate PRO](https://github.com/Swir/Aria2Gui) | Desktop download management with aria2 |
+| [InfoPulse PL](https://github.com/Swir/InfoPulse-PL) | RSS, Atom and API information aggregation |
+| [NeonShift-X PowerBookmark](https://github.com/Swir/PowerBookmark) | Browser productivity and automation |
+| [NES New Life](https://github.com/Swir/Nes_New_Life) | Retro-development and HD workflow experiments |
+| [Image To ICO](https://github.com/Swir/Image-To-Ico) | Windows icon conversion utility |
+| [WAV to MP3 Converter](https://github.com/Swir/WAV-to-MP3-converter) | Batch audio conversion workflow |
 
 ---
 
-## Technology
+## Stack
 
 <div align="center">
 
@@ -142,21 +96,27 @@ Treat each release as a baseline for the next iteration rather than the final ve
 
 <br><br>
 
-<img src="https://img.shields.io/badge/Python-161B22?style=flat-square&logo=python&logoColor=58A6FF" alt="Python" />
-<img src="https://img.shields.io/badge/Windows-161B22?style=flat-square&logo=windows11&logoColor=58A6FF" alt="Windows" />
-<img src="https://img.shields.io/badge/JavaScript-161B22?style=flat-square&logo=javascript&logoColor=F0F6FC" alt="JavaScript" />
-<img src="https://img.shields.io/badge/Android-161B22?style=flat-square&logo=android&logoColor=58A6FF" alt="Android" />
-<img src="https://img.shields.io/badge/Automation-161B22?style=flat-square&logo=githubactions&logoColor=58A6FF" alt="Automation" />
-<img src="https://img.shields.io/badge/Game_Development-161B22?style=flat-square&logo=unity&logoColor=F0F6FC" alt="Game development" />
+`Python` &nbsp; `Kotlin` &nbsp; `JavaScript` &nbsp; `HTML/CSS` &nbsp; `PHP` &nbsp; `PowerShell` &nbsp; `Git` &nbsp; `Windows` &nbsp; `Linux`
 
 </div>
 
 ---
 
-## GitHub Activity
+## Build philosophy
+
+**Start with the problem.**  
+Understand what should become easier, faster or more useful.
+
+**Ship a working version.**  
+A real build provides better feedback than a perfect concept.
+
+**Improve from evidence.**  
+Every release is a baseline for the next one.
+
+---
 
 <details>
-<summary><strong>View contribution and language statistics</strong></summary>
+<summary><strong>GitHub activity</strong></summary>
 
 <br>
 
@@ -164,14 +124,9 @@ Treat each release as a baseline for the next iteration rather than the final ve
 
 <img width="96%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Swir&theme=github_dark" alt="GitHub profile details" />
 
-<br>
-
-<img width="47%" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Swir&theme=github_dark" alt="Repositories per language" />
-<img width="47%" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Swir&theme=github_dark" alt="Most used commit language" />
-
 <br><br>
 
-<img width="98%" src="https://github-readme-activity-graph.vercel.app/graph?username=Swir&bg_color=0D1117&color=8B949E&line=58A6FF&point=F0F6FC&area=true&area_color=161B22&hide_border=true" alt="GitHub activity graph" />
+<img width="98%" src="https://github-readme-activity-graph.vercel.app/graph?username=Swir&bg_color=0B0D10&color=7D8794&line=5AA9FF&point=F7F9FC&area=true&area_color=111419&hide_border=true" alt="GitHub activity graph" />
 
 </div>
 
@@ -183,12 +138,8 @@ Treat each release as a baseline for the next iteration rather than the final ve
 
 ### SWIR
 
-**Build useful software. Ship working versions. Improve continuously.**
+**Useful software. Working releases. Continuous improvement.**
 
-<sub>Better than yesterday.</sub>
-
-<br><br>
-
-<a href="https://github.com/Swir?tab=repositories">Repositories</a> · <a href="https://swir.github.io/">Portfolio</a>
+<sub>Independent development across tools, apps, automation and games.</sub>
 
 </div>
