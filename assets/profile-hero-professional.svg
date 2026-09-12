@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="360" viewBox="0 0 1280 360" role="img" aria-label="SWIR professional developer profile banner">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0d1117"/>
+      <stop offset="1" stop-color="#111827"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#58a6ff"/>
+      <stop offset="1" stop-color="#7dd3fc"/>
+    </linearGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#ffffff" stroke-opacity="0.035"/>
+    </pattern>
+  </defs>
+
+  <rect width="1280" height="360" rx="24" fill="url(#bg)"/>
+  <rect width="1280" height="360" rx="24" fill="url(#grid)"/>
+  <rect x="1" y="1" width="1278" height="358" rx="23" fill="none" stroke="#30363d"/>
+
+  <g transform="translate(64,58)">
+    <rect width="154" height="154" rx="34" fill="#161b22" stroke="#30363d"/>
+    <path d="M34 44H120" stroke="url(#accent)" stroke-width="8" stroke-linecap="round"/>
+    <path d="M34 78H104" stroke="#f0f6fc" stroke-width="8" stroke-linecap="round"/>
+    <path d="M34 112H86" stroke="#8b949e" stroke-width="8" stroke-linecap="round"/>
+    <circle cx="122" cy="112" r="8" fill="#58a6ff"/>
+  </g>
+
+  <g transform="translate(260,66)">
+    <text x="0" y="38" fill="#8b949e" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="18" font-weight="600" letter-spacing="3">INDEPENDENT DEVELOPER</text>
+    <text x="0" y="116" fill="#f0f6fc" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="76" font-weight="800" letter-spacing="2">SWIR</text>
+    <rect x="0" y="136" width="520" height="4" rx="2" fill="url(#accent)"/>
+    <text x="0" y="184" fill="#c9d1d9" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="25" font-weight="500">Practical software. Automation. Apps. Games. AI tooling.</text>
+    <text x="0" y="222" fill="#8b949e" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="18">Build useful products • ship working versions • improve continuously</text>
+  </g>
+
+  <g transform="translate(918,72)" font-family="Inter,Segoe UI,Arial,sans-serif">
+    <rect width="298" height="202" rx="18" fill="#0d1117" stroke="#30363d"/>
+    <text x="26" y="38" fill="#8b949e" font-size="14" font-weight="700" letter-spacing="2">CORE FOCUS</text>
+    <g fill="#c9d1d9" font-size="17">
+      <text x="26" y="76">Python &amp; Windows tooling</text>
+      <text x="26" y="108">Automation &amp; productivity</text>
+      <text x="26" y="140">Web &amp; Android applications</text>
+      <text x="26" y="172">Game development &amp; AI tools</text>
+    </g>
+    <circle cx="272" cy="34" r="6" fill="#3fb950"/>
+  </g>
+
+  <g transform="translate(64,304)" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="13" font-weight="700" letter-spacing="1.4">
+    <text x="0" y="0" fill="#58a6ff">PYTHON</text>
+    <text x="96" y="0" fill="#8b949e">WINDOWS</text>
+    <text x="210" y="0" fill="#8b949e">AUTOMATION</text>
+    <text x="350" y="0" fill="#8b949e">WEB</text>
+    <text x="420" y="0" fill="#8b949e">ANDROID</text>
+    <text x="526" y="0" fill="#8b949e">GAME DEV</text>
+    <text x="646" y="0" fill="#8b949e">AI</text>
+  </g>
+</svg>
