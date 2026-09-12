@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="780" height="220" viewBox="0 0 780 220" role="img" aria-label="WojThom project card">
+  <defs><linearGradient id="a" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#58a6ff"/><stop offset="1" stop-color="#7dd3fc"/></linearGradient></defs>
+  <rect width="780" height="220" rx="20" fill="#0d1117"/>
+  <rect x="1" y="1" width="778" height="218" rx="19" fill="none" stroke="#30363d"/>
+  <rect width="6" height="220" rx="3" fill="url(#a)"/>
+  <g transform="translate(36,36)">
+    <rect width="120" height="120" rx="20" fill="#161b22" stroke="#30363d"/>
+    <rect x="24" y="26" width="72" height="68" rx="10" fill="#0d1117" stroke="#58a6ff" stroke-width="3"/>
+    <path d="M39 45H81M39 59H72M39 73H78" stroke="#8b949e" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="88" cy="88" r="20" fill="#161b22" stroke="#58a6ff" stroke-width="3"/>
+    <path d="M88 88V76M88 88L98 94" stroke="#c9d1d9" stroke-width="3" stroke-linecap="round"/>
+  </g>
+  <g transform="translate(188,38)" font-family="Inter,Segoe UI,Arial,sans-serif">
+    <text x="0" y="22" fill="#58a6ff" font-size="13" font-weight="700" letter-spacing="2">PRODUCTIVITY APPLICATION</text>
+    <text x="0" y="66" fill="#f0f6fc" font-size="32" font-weight="800">WojThom</text>
+    <text x="0" y="100" fill="#8b949e" font-size="17">Work-time tracking for Android and web with history, statistics</text>
+    <text x="0" y="125" fill="#8b949e" font-size="17">and professional PDF reporting.</text>
+    <g transform="translate(0,150)" font-size="13" font-weight="700">
+      <text x="0" y="0" fill="#c9d1d9">ANDROID</text><text x="88" y="0" fill="#c9d1d9">WEB</text><text x="140" y="0" fill="#c9d1d9">PDF</text><text x="182" y="0" fill="#c9d1d9">REPORTING</text>
+    </g>
+  </g>
+</svg>
