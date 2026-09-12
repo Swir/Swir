@@ -1,1 +1,0 @@
-SWIR profile direction: clean, dark, electric-blue accents, minimal visual noise.
