@@ -1,47 +1,64 @@
 <div align="center">
 
-<img width="100%" src="assets/swir-banner.svg" alt="SWIR software developer profile" />
+<img width="100%" src="assets/swir-banner.svg" alt="SWIR neon cyber developer profile" />
 
 <br>
 
-<img src="https://komarev.com/ghpvc/?username=Swir&label=PROFILE+VIEWS&color=0ea5e9&style=for-the-badge" alt="Profile views" />
-<a href="https://github.com/Swir?tab=followers"><img src="https://img.shields.io/github/followers/Swir?style=for-the-badge&logo=github&label=FOLLOWERS&color=0ea5e9" alt="Followers" /></a>
-<img src="https://img.shields.io/badge/STATUS-ACTIVELY_BUILDING-0284c7?style=for-the-badge&logo=githubactions&logoColor=white" alt="Actively building" />
+<img src="https://komarev.com/ghpvc/?username=Swir&label=PROFILE+VIEWS&color=168cff&style=for-the-badge" alt="Profile views" />
+<a href="https://github.com/Swir?tab=followers"><img src="https://img.shields.io/github/followers/Swir?style=for-the-badge&logo=github&label=FOLLOWERS&color=168cff" alt="Followers" /></a>
+<img src="https://img.shields.io/badge/STATUS-SYSTEM_ONLINE-07111f?style=for-the-badge&logo=githubactions&logoColor=35b9ff" alt="System online" />
 
 <br><br>
 
-<a href="https://github.com/Swir?tab=repositories"><img src="https://img.shields.io/badge/EXPLORE_PROJECTS-07111f?style=for-the-badge&logo=github&logoColor=38BDF8" alt="Explore projects" /></a>
-<a href="https://swir.github.io/"><img src="https://img.shields.io/badge/OPEN_PORTFOLIO-07111f?style=for-the-badge&logo=googlechrome&logoColor=38BDF8" alt="Open portfolio" /></a>
+<a href="https://github.com/Swir?tab=repositories"><img src="https://img.shields.io/badge/EXPLORE_PROJECTS-07111f?style=for-the-badge&logo=github&logoColor=35b9ff" alt="Explore projects" /></a>
+<a href="https://swir.github.io/"><img src="https://img.shields.io/badge/OPEN_PORTFOLIO-07111f?style=for-the-badge&logo=googlechrome&logoColor=35b9ff" alt="Open portfolio" /></a>
+
+<br><br>
+
+**`BETTER THAN YESTERDAY`**
+
+`IDEAS → CODE → REALITY`
 
 </div>
 
 ---
 
-## About me
+## `> IDENTITY`
 
-I build **practical software that people can actually run** — desktop utilities, Android and web apps, automation tools, game-development systems and AI-assisted experiments.
+I build things that move from **idea to something real** — desktop software, automation, Android/web apps, game-development systems, AI experiments and creative tech.
 
-This profile is my public software lab. I prefer projects that evolve through real iterations, documentation, CI and releases instead of one-off demos.
+This profile is my public build space. The goal is simple: **create, test, improve, repeat**.
+
+<table>
+<tr>
+<td width="16.6%" align="center"><strong>DEV</strong><br><sub>apps & software</sub></td>
+<td width="16.6%" align="center"><strong>MUSIC</strong><br><sub>audio & creative tech</sub></td>
+<td width="16.6%" align="center"><strong>GAMES</strong><br><sub>gameplay & releases</sub></td>
+<td width="16.6%" align="center"><strong>AI</strong><br><sub>experiments & agents</sub></td>
+<td width="16.6%" align="center"><strong>TOOLS</strong><br><sub>automation & utilities</sub></td>
+<td width="16.6%" align="center"><strong>LIFE</strong><br><sub>learn & improve</sub></td>
+</tr>
+</table>
 
 ```text
-BUILD  →  TEST  →  FIX  →  RELEASE  →  IMPROVE
+BUILD  →  CREATE  →  TEST  →  IMPROVE  →  RELEASE  →  REPEAT
 ```
 
 ---
 
-## Project radar
+## `> SWIR_SIGNAL_BOARD`
 
 <div align="center">
 
-<img width="100%" src="assets/project-radar.svg" alt="SWIR project radar" />
+<img width="100%" src="assets/project-radar.svg" alt="SWIR neon signal board" />
 
 </div>
 
-The radar shows the areas I actively work in: **desktop software, automation, Android/web apps, game development and AI/R&D**.
+One visual language across the whole profile: **black, electric blue, clean signal lines, no random accent colors**.
 
 ---
 
-## Now shipping
+## `> NOW_SHIPPING`
 
 <table>
 <tr>
@@ -49,10 +66,10 @@ The radar shows the areas I actively work in: **desktop software, automation, An
 
 ### 🛡️ [Tank Revival Overdrive](https://github.com/Swir/Tank-Revival-Overdrive)
 
-**Current public release: v2.2.0** — a playable Windows x64 build with campaign progression, tactical combat systems and CI-driven releases.
+**Current public release: v2.2.0** — playable Windows x64 build with campaign progression, tactical combat systems and CI-driven releases.
 
-<a href="https://github.com/Swir/Tank-Revival-Overdrive/releases/latest"><img src="https://img.shields.io/github/v/release/Swir/Tank-Revival-Overdrive?style=flat-square&label=release" alt="Latest Tank Revival release" /></a>
-<img src="https://img.shields.io/badge/Windows-x64-0078D4?style=flat-square&logo=windows11" alt="Windows x64" />
+<a href="https://github.com/Swir/Tank-Revival-Overdrive/releases/latest"><img src="https://img.shields.io/github/v/release/Swir/Tank-Revival-Overdrive?style=flat-square&label=release&color=168cff" alt="Latest Tank Revival release" /></a>
+<img src="https://img.shields.io/badge/Windows-x64-07111f?style=flat-square&logo=windows11&logoColor=35b9ff" alt="Windows x64" />
 
 </td>
 <td width="33%" valign="top">
@@ -61,8 +78,8 @@ The radar shows the areas I actively work in: **desktop software, automation, An
 
 Work-time application for **Android + Web** with persistent history, statistics, multilingual UI and professional PDF reporting.
 
-<img src="https://img.shields.io/badge/Android-active-3DDC84?style=flat-square&logo=android&logoColor=white" alt="Android active" />
-<img src="https://img.shields.io/badge/Web-active-0ea5e9?style=flat-square&logo=googlechrome&logoColor=white" alt="Web active" />
+<img src="https://img.shields.io/badge/Android-active-07111f?style=flat-square&logo=android&logoColor=35b9ff" alt="Android active" />
+<img src="https://img.shields.io/badge/Web-active-07111f?style=flat-square&logo=googlechrome&logoColor=35b9ff" alt="Web active" />
 
 </td>
 <td width="33%" valign="top">
@@ -71,8 +88,8 @@ Work-time application for **Android + Web** with persistent history, statistics,
 
 Retro-game modernization lab focused on **safe tooling, HD-remaster workflows, Unity experiments and reproducible release pipelines** without distributing ROMs.
 
-<img src="https://img.shields.io/badge/Game_Dev-active-7c3aed?style=flat-square&logo=unity&logoColor=white" alt="Game development" />
-<img src="https://img.shields.io/badge/Tooling-HD_pipeline-0284c7?style=flat-square" alt="HD pipeline" />
+<img src="https://img.shields.io/badge/Game_Dev-active-07111f?style=flat-square&logo=unity&logoColor=35b9ff" alt="Game development" />
+<img src="https://img.shields.io/badge/Tooling-HD_pipeline-07111f?style=flat-square&logoColor=35b9ff" alt="HD pipeline" />
 
 </td>
 </tr>
@@ -80,14 +97,14 @@ Retro-game modernization lab focused on **safe tooling, HD-remaster workflows, U
 
 ---
 
-## Featured projects
+## `> FEATURED_BUILDS`
 
 <table>
 <tr>
 <td width="50%" valign="top">
 
 ### ⚡ [ARIA2 Ultimate PRO](https://github.com/Swir/Aria2Gui)
-Windows desktop GUI for **aria2c** with multi-connection downloads, torrents, magnet links and a cleaner download workflow.
+Windows desktop GUI for **aria2c** with multi-connection downloads, torrents, magnet links and a practical download workflow.
 
 `Python` `CustomTkinter` `aria2c` `Windows`
 
@@ -147,9 +164,9 @@ Terminal media workflow built around **yt-dlp**, FFmpeg, configuration and reada
 
 ---
 
-## Explore by goal
+## `> FIND_A_TOOL`
 
-| I want to… | Project | What it gives you |
+| Goal | Project | What it does |
 |---|---|---|
 | Download files faster | [ARIA2 Ultimate PRO](https://github.com/Swir/Aria2Gui#readme) | Desktop aria2 download manager |
 | Create Windows icons | [Image To ICO](https://github.com/Swir/Image-To-Ico#readme) | PNG/JPG → ICO workflow |
@@ -162,7 +179,7 @@ Terminal media workflow built around **yt-dlp**, FFmpeg, configuration and reada
 
 ---
 
-## Tech stack
+## `> TECH_STACK`
 
 <div align="center">
 
@@ -170,27 +187,37 @@ Terminal media workflow built around **yt-dlp**, FFmpeg, configuration and reada
 
 <br><br>
 
-`PYTHON` • `KOTLIN` • `JAVASCRIPT` • `AUTOMATION` • `DESKTOP GUI` • `ANDROID` • `WEB` • `GAME DEV` • `AI` • `NETWORKING`
+`PYTHON` • `KOTLIN` • `JAVASCRIPT` • `AUTOMATION` • `DESKTOP GUI` • `ANDROID` • `WEB` • `GAME DEV` • `AI` • `AUDIO` • `NETWORKING`
 
 </div>
 
 ---
 
-## How I build
+## `> BUILD_PROTOCOL`
 
 <table>
 <tr>
-<td width="25%" align="center"><strong>01 — BUILD</strong><br><sub>Turn the idea into working code</sub></td>
-<td width="25%" align="center"><strong>02 — VALIDATE</strong><br><sub>Test behavior, CI and packaging</sub></td>
-<td width="25%" align="center"><strong>03 — RELEASE</strong><br><sub>Ship a usable build when ready</sub></td>
-<td width="25%" align="center"><strong>04 — ITERATE</strong><br><sub>Improve from real feedback</sub></td>
+<td width="25%" align="center"><strong>01 — IDEA</strong><br><sub>Define what should exist</sub></td>
+<td width="25%" align="center"><strong>02 — BUILD</strong><br><sub>Turn it into working code</sub></td>
+<td width="25%" align="center"><strong>03 — VALIDATE</strong><br><sub>Test behavior, CI and packaging</sub></td>
+<td width="25%" align="center"><strong>04 — IMPROVE</strong><br><sub>Release, learn and iterate</sub></td>
 </tr>
 </table>
+
+<div align="center">
+
+<br>
+
+`BETTER THAN YESTERDAY`
+
+**Build something real. Improve it tomorrow.**
+
+</div>
 
 ---
 
 <details>
-<summary><strong>GitHub statistics</strong></summary>
+<summary><strong>📊 Open GitHub statistics</strong></summary>
 
 <br>
 
@@ -205,7 +232,7 @@ Terminal media workflow built around **yt-dlp**, FFmpeg, configuration and reada
 
 <br><br>
 
-<img width="98%" src="https://github-readme-activity-graph.vercel.app/graph?username=Swir&bg_color=0D1117&color=38BDF8&line=0EA5E9&point=FFFFFF&area=true&area_color=082F49&hide_border=true" alt="GitHub activity graph" />
+<img width="98%" src="https://github-readme-activity-graph.vercel.app/graph?username=Swir&bg_color=02070D&color=7DD3FC&line=168CFF&point=E8F7FF&area=true&area_color=061E32&hide_border=true" alt="GitHub activity graph" />
 
 </div>
 
@@ -213,18 +240,22 @@ Terminal media workflow built around **yt-dlp**, FFmpeg, configuration and reada
 
 ---
 
-## Contributions and feedback
+## `> CONTRIBUTIONS`
 
-Bug reports, useful feature ideas, testing feedback and pull requests are welcome. If you report a bug, please include your operating system, app version, reproduction steps and the full error message when possible.
+Bug reports, useful feature ideas, testing feedback and pull requests are welcome. If you report a bug, include your operating system, app version, reproduction steps and the full error message when possible.
 
 <div align="center">
 
 <br>
 
-**If one of my projects is useful to you, consider starring that repository or following [@Swir](https://github.com/Swir).**
+**If one of my projects is useful to you, star that repository or follow [@Swir](https://github.com/Swir).**
 
 <br>
 
-<a href="https://github.com/Swir?tab=repositories"><img src="https://img.shields.io/badge/EXPLORE_SWIR_PROJECTS-0284c7?style=for-the-badge&logo=github&logoColor=white" alt="Explore SWIR projects" /></a>
+<a href="https://github.com/Swir?tab=repositories"><img src="https://img.shields.io/badge/ENTER_SWIR_LAB-07111f?style=for-the-badge&logo=github&logoColor=35b9ff" alt="Explore SWIR projects" /></a>
+
+<br><br>
+
+`SWIR // IDEAS → CODE → REALITY`
 
 </div>
