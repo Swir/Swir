@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" role="img" aria-label="SWIR independent software builder">
+  <rect width="1200" height="320" rx="24" fill="#0B0D10"/>
+  <rect x="0" y="0" width="1200" height="6" rx="3" fill="#5AA9FF"/>
+  <line x1="72" y1="72" x2="1128" y2="72" stroke="#242931"/>
+  <line x1="72" y1="248" x2="1128" y2="248" stroke="#242931"/>
+  <text x="72" y="52" fill="#7D8794" font-family="Inter,Arial,sans-serif" font-size="16" letter-spacing="3">INDEPENDENT SOFTWARE BUILDER</text>
+  <text x="72" y="190" fill="#F7F9FC" font-family="Arial Black,Inter,Arial,sans-serif" font-size="116" font-weight="900" letter-spacing="-5">SWIR</text>
+  <text x="760" y="128" fill="#F7F9FC" font-family="Inter,Arial,sans-serif" font-size="24" font-weight="700">Useful software.</text>
+  <text x="760" y="162" fill="#F7F9FC" font-family="Inter,Arial,sans-serif" font-size="24" font-weight="700">Working releases.</text>
+  <text x="760" y="196" fill="#F7F9FC" font-family="Inter,Arial,sans-serif" font-size="24" font-weight="700">Continuous improvement.</text>
+  <rect x="72" y="270" width="92" height="2" fill="#5AA9FF"/>
+  <text x="184" y="278" fill="#7D8794" font-family="Consolas,monospace" font-size="14">PYTHON / WINDOWS / WEB / ANDROID / AUTOMATION / GAME DEV</text>
+</svg>
