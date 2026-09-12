@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="780" height="220" viewBox="0 0 780 220" role="img" aria-label="SwirPhotoClean project card">
+  <defs><linearGradient id="a" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#58a6ff"/><stop offset="1" stop-color="#7dd3fc"/></linearGradient></defs>
+  <rect width="780" height="220" rx="20" fill="#0d1117"/>
+  <rect x="1" y="1" width="778" height="218" rx="19" fill="none" stroke="#30363d"/>
+  <rect width="6" height="220" rx="3" fill="url(#a)"/>
+  <g transform="translate(36,36)">
+    <rect width="120" height="120" rx="20" fill="#161b22" stroke="#30363d"/>
+    <rect x="22" y="26" width="76" height="68" rx="10" fill="#0d1117" stroke="#58a6ff" stroke-width="3"/>
+    <circle cx="46" cy="49" r="8" fill="#21262d" stroke="#8b949e" stroke-width="2"/>
+    <path d="M31 82L53 61L65 72L79 55L91 82Z" fill="#21262d" stroke="#8b949e" stroke-width="2"/>
+    <path d="M91 32L102 21M102 32L91 21" stroke="#7dd3fc" stroke-width="3" stroke-linecap="round"/>
+  </g>
+  <g transform="translate(188,38)" font-family="Inter,Segoe UI,Arial,sans-serif">
+    <text x="0" y="22" fill="#58a6ff" font-size="13" font-weight="700" letter-spacing="2">DESKTOP IMAGE TOOLING</text>
+    <text x="0" y="66" fill="#f0f6fc" font-size="32" font-weight="800">SwirPhotoClean</text>
+    <text x="0" y="100" fill="#8b949e" font-size="17">Desktop image-processing workflow focused on practical cleanup,</text>
+    <text x="0" y="125" fill="#8b949e" font-size="17">enhancement and repeatable utility workflows.</text>
+    <g transform="translate(0,150)" font-size="13" font-weight="700">
+      <text x="0" y="0" fill="#c9d1d9">PYTHON</text><text x="72" y="0" fill="#c9d1d9">DESKTOP</text><text x="152" y="0" fill="#c9d1d9">IMAGING</text>
+    </g>
+  </g>
+</svg>
