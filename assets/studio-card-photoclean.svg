@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="220" viewBox="0 0 760 220" role="img" aria-label="SwirPhotoClean">
+  <rect width="760" height="220" rx="20" fill="#111419"/>
+  <rect x="1" y="1" width="758" height="218" rx="19" fill="none" stroke="#2A3038"/>
+  <rect x="0" y="0" width="8" height="220" rx="4" fill="#8BC7FF"/>
+  <text x="40" y="46" fill="#7D8794" font-family="Consolas,monospace" font-size="14" letter-spacing="2">04 / IMAGE TOOLING</text>
+  <text x="40" y="94" fill="#F7F9FC" font-family="Arial Black,Arial,sans-serif" font-size="34" font-weight="900">SwirPhotoClean</text>
+  <text x="40" y="130" fill="#A7B0BC" font-family="Arial,sans-serif" font-size="17">Desktop image cleanup and enhancement workflow focused on practical use.</text>
+  <text x="40" y="180" fill="#8BC7FF" font-family="Consolas,monospace" font-size="14">PYTHON   DESKTOP   IMAGING</text>
+  <rect x="648" y="78" width="74" height="64" rx="8" fill="none" stroke="#8BC7FF" stroke-width="3"/>
+  <circle cx="671" cy="99" r="7" fill="none" stroke="#8BC7FF" stroke-width="3"/>
+  <path d="M658 132 l18-18 12 12 14-18 12 24" fill="none" stroke="#8BC7FF" stroke-width="3"/>
+</svg>
