@@ -1,6 +1,6 @@
 <div align="center">
 
-<img width="100%" src="assets/power-neon-hero-v4.svg" alt="SWIR — power neon electric profile" />
+<img width="100%" src="assets/power-neon-hero-v5.svg" alt="SWIR — power neon electric profile" />
 
 <a href="https://github.com/Swir?tab=repositories"><img src="https://img.shields.io/badge/REPOSITORIES-02050A?style=for-the-badge&logo=github&logoColor=62E5FF" alt="Repositories" /></a>
 <a href="https://swir.github.io/"><img src="https://img.shields.io/badge/PORTFOLIO-02050A?style=for-the-badge&logo=googlechrome&logoColor=62E5FF" alt="Portfolio" /></a>
