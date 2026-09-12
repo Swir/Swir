@@ -1,102 +1,89 @@
 <div align="center">
 
-<img width="100%" src="assets/swir-cyber-hero-animated.svg" alt="SWIR — ideas to code to reality" />
-
-<br>
-
-<a href="https://github.com/Swir?tab=repositories"><img src="https://img.shields.io/badge/PROJECTS-0B1220?style=for-the-badge&logo=github&logoColor=FFFFFF" alt="Projects" /></a>
-<a href="https://swir.github.io/"><img src="https://img.shields.io/badge/PORTFOLIO-0B1220?style=for-the-badge&logo=googlechrome&logoColor=58B9FF" alt="Portfolio" /></a>
-<a href="https://github.com/Swir/Tank-Revival-Overdrive/releases/latest"><img src="https://img.shields.io/badge/LATEST_RELEASE-0B1220?style=for-the-badge&logo=windows11&logoColor=58B9FF" alt="Latest release" /></a>
+<img width="100%" src="assets/profile-hero-professional.svg" alt="SWIR — Independent Developer" />
 
 <br><br>
 
-### `SWIR // BUILDER · TINKERER · SHIPPER`
+<a href="https://github.com/Swir?tab=repositories"><img src="https://img.shields.io/badge/Repositories-161B22?style=for-the-badge&logo=github&logoColor=F0F6FC" alt="Repositories" /></a>
+<a href="https://swir.github.io/"><img src="https://img.shields.io/badge/Portfolio-161B22?style=for-the-badge&logo=googlechrome&logoColor=58A6FF" alt="Portfolio" /></a>
+<a href="https://github.com/Swir/Tank-Revival-Overdrive/releases/latest"><img src="https://img.shields.io/badge/Latest_Release-161B22?style=for-the-badge&logo=windows11&logoColor=58A6FF" alt="Latest release" /></a>
 
-# I build things I wish already existed.
+<br><br>
 
-**Software · Games · Automation · AI · Web · Audio · Experiments**
+**Independent developer focused on practical software, automation, applications and playable products.**
 
 </div>
 
 ---
 
-## Hey — I'm SWIR 👋
+## Profile
 
-I like projects with a reason to exist.
+**SWIR** is my development workspace for software that is designed to be used, tested and improved in the real world.
 
-Sometimes that means a **Windows utility that saves clicks**. Sometimes it's an **Android/web app**, a **game**, an **AI experiment**, an image/audio tool or something that started with one sentence:
+My projects cover **Windows desktop utilities, workflow automation, Android and web applications, game development, image/audio tooling and AI-assisted workflows**. I prefer building working releases early, validating them in practice and iterating from there.
 
-> **“Someone should make this.”**
-
-So I make it.
-
-I don't care much about looking busy. I care about getting from **idea → working build → release → better version**.
-
-```text
-idea
-  ↓
-rough prototype
-  ↓
-make it actually work
-  ↓
-ship it
-  ↓
-break / learn / fix / improve
-  ↺
-```
+> **Focus:** practical functionality, clear interfaces, repeatable workflows and continuous improvement.
 
 ---
 
-## The stuff I'd show a friend first
+## Selected Work
 
 <div align="center">
 
-<a href="https://github.com/Swir/Tank-Revival-Overdrive"><img width="49%" src="assets/card-tank-cyber.svg" alt="Tank Revival Overdrive" /></a>
-<a href="https://github.com/Swir/WojThom"><img width="49%" src="assets/card-wojthom-cyber.svg" alt="WojThom" /></a>
+<a href="https://github.com/Swir/Tank-Revival-Overdrive"><img width="49%" src="assets/project-tank-professional.svg" alt="Tank Revival Overdrive" /></a>
+<a href="https://github.com/Swir/WojThom"><img width="49%" src="assets/project-wojthom-professional.svg" alt="WojThom" /></a>
 
-<a href="https://github.com/Swir/SwirEngine"><img width="49%" src="assets/card-swirengine-cyber.svg" alt="SwirEngine" /></a>
-<a href="https://github.com/Swir/SwirPhotoClean"><img width="49%" src="assets/card-photoclean-cyber.svg" alt="SwirPhotoClean" /></a>
+<a href="https://github.com/Swir/SwirEngine"><img width="49%" src="assets/project-swirengine-professional.svg" alt="SwirEngine" /></a>
+<a href="https://github.com/Swir/SwirPhotoClean"><img width="49%" src="assets/project-photoclean-professional.svg" alt="SwirPhotoClean" /></a>
 
 <br><br>
 
-<a href="https://github.com/Swir?tab=repositories"><strong>→ Open the full workshop</strong></a>
+<a href="https://github.com/Swir?tab=repositories"><strong>Browse all repositories →</strong></a>
 
 </div>
 
 ---
 
-## The workshop
-
-These aren't here to fill a profile. They're different pieces of the same habit: **see a problem, build a tool, make it better.**
+## Core Capabilities
 
 <table>
 <tr>
 <td width="50%" valign="top">
 
-### ⚡ Everyday tools
+### Desktop & Windows
 
-**[Aria2Gui](https://github.com/Swir/Aria2Gui)**  
-Multi-connection desktop downloader built around aria2.
+Python desktop applications, GUI tooling, local utilities, PowerShell workflows, file processing and Windows-focused automation.
 
-**[Image-To-Ico](https://github.com/Swir/Image-To-Ico)**  
-Straightforward image → Windows icon conversion.
-
-**[WAV-to-MP3-converter](https://github.com/Swir/WAV-to-MP3-converter)**  
-Batch audio conversion without unnecessary friction.
+**Primary tools:** `Python` `CustomTkinter` `PowerShell` `FFmpeg`
 
 </td>
 <td width="50%" valign="top">
 
-### 🧪 Labs & experiments
+### Automation & Tooling
 
-**[InfoPulse-PL](https://github.com/Swir/InfoPulse-PL)**  
-RSS, Atom and API information hub.
+Utilities that reduce repetitive work, browser tooling, batch processing, download workflows and task-oriented desktop software.
 
-**[PowerBookmark](https://github.com/Swir/PowerBookmark)**  
-Browser productivity, scripts and automation.
+**Primary tools:** `Python` `JavaScript` `aria2` `GitHub Actions`
 
-**[Nes_New_Life](https://github.com/Swir/Nes_New_Life)**  
-Retro-development and HD workflow experiments.
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### Web & Android
+
+Responsive web interfaces, lightweight web applications, Android-oriented projects, reporting workflows and offline-first utilities.
+
+**Primary tools:** `HTML` `CSS` `JavaScript` `Kotlin`
+
+</td>
+<td width="50%" valign="top">
+
+### Games & Experimental Development
+
+Playable prototypes, Windows builds, internal tooling, reusable foundations and experiments around game-development workflows.
+
+**Primary tools:** `Unity` `Python` `Git` `Automation`
 
 </td>
 </tr>
@@ -104,70 +91,78 @@ Retro-development and HD workflow experiments.
 
 ---
 
-## How I like to build
+## Additional Projects
+
+| Project | Area | Description |
+|---|---|---|
+| [ARIA2 Ultimate PRO](https://github.com/Swir/Aria2Gui) | Desktop / Networking | Multi-connection desktop download manager built around aria2. |
+| [InfoPulse PL](https://github.com/Swir/InfoPulse-PL) | Information / APIs | RSS, Atom and API-based information center. |
+| [NeonShift-X PowerBookmark](https://github.com/Swir/PowerBookmark) | Browser Tooling | Browser productivity, scripts and automation workflows. |
+| [NES New Life](https://github.com/Swir/Nes_New_Life) | Game Development | Retro-development, HD workflow and tooling experiments. |
+| [Image To ICO](https://github.com/Swir/Image-To-Ico) | Desktop Utility | Image-to-Windows-icon conversion tool. |
+| [WAV to MP3 Converter](https://github.com/Swir/WAV-to-MP3-converter) | Audio Utility | Batch WAV-to-MP3 conversion workflow. |
+
+---
+
+## Engineering Approach
 
 <table>
 <tr>
-<td width="33%" align="center">
+<td width="33%" valign="top">
 
-### 01 — USEFUL
-If it solves a real annoyance, it's worth building.
+### Problem First
 
-</td>
-<td width="33%" align="center">
-
-### 02 — SHIPPABLE
-A working release beats a perfect idea that never leaves the folder.
+Start with a concrete use case or workflow instead of adding features without a purpose.
 
 </td>
-<td width="33%" align="center">
+<td width="33%" valign="top">
 
-### 03 — ITERATIVE
-Version 1 is the starting line, not the finish.
+### Working Releases
+
+A usable build creates better feedback than a prototype that never leaves development.
+
+</td>
+<td width="33%" valign="top">
+
+### Continuous Improvement
+
+Treat each release as a baseline for the next iteration rather than the final version.
 
 </td>
 </tr>
 </table>
 
-<div align="center">
-
-**If it can be automated, I'll probably automate it.  
-If it can be built, I'll probably try.**
-
-</div>
-
 ---
 
-## My toolbox
+## Technology
 
 <div align="center">
 
-<img src="https://skillicons.dev/icons?i=python,kotlin,js,html,css,php,powershell,git,github,vscode,windows,linux&perline=12" alt="SWIR technology stack" />
+<img src="https://skillicons.dev/icons?i=python,kotlin,js,html,css,php,powershell,git,github,vscode,windows,linux&perline=12" alt="Technology stack" />
 
 <br><br>
 
-<img src="https://img.shields.io/badge/PYTHON-07111F?style=flat-square&logo=python&logoColor=58B9FF" alt="Python" />
-<img src="https://img.shields.io/badge/WINDOWS-07111F?style=flat-square&logo=windows11&logoColor=58B9FF" alt="Windows" />
-<img src="https://img.shields.io/badge/AUTOMATION-07111F?style=flat-square&logo=githubactions&logoColor=58B9FF" alt="Automation" />
-<img src="https://img.shields.io/badge/JAVASCRIPT-07111F?style=flat-square&logo=javascript&logoColor=FFFFFF" alt="JavaScript" />
-<img src="https://img.shields.io/badge/ANDROID-07111F?style=flat-square&logo=android&logoColor=58B9FF" alt="Android" />
-<img src="https://img.shields.io/badge/GAME_DEV-07111F?style=flat-square&logo=unity&logoColor=FFFFFF" alt="Game development" />
-<img src="https://img.shields.io/badge/AI_EXPERIMENTS-07111F?style=flat-square&logo=openai&logoColor=58B9FF" alt="AI experiments" />
+<img src="https://img.shields.io/badge/Python-161B22?style=flat-square&logo=python&logoColor=58A6FF" alt="Python" />
+<img src="https://img.shields.io/badge/Windows-161B22?style=flat-square&logo=windows11&logoColor=58A6FF" alt="Windows" />
+<img src="https://img.shields.io/badge/JavaScript-161B22?style=flat-square&logo=javascript&logoColor=F0F6FC" alt="JavaScript" />
+<img src="https://img.shields.io/badge/Android-161B22?style=flat-square&logo=android&logoColor=58A6FF" alt="Android" />
+<img src="https://img.shields.io/badge/Automation-161B22?style=flat-square&logo=githubactions&logoColor=58A6FF" alt="Automation" />
+<img src="https://img.shields.io/badge/Game_Development-161B22?style=flat-square&logo=unity&logoColor=F0F6FC" alt="Game development" />
 
 </div>
 
 ---
 
-## Proof of work
+## GitHub Activity
 
 <details>
-<summary><strong>Open GitHub activity, languages and contribution graph</strong></summary>
+<summary><strong>View contribution and language statistics</strong></summary>
 
 <br>
 
 <div align="center">
 
-<img width="96%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Swir&theme=github_dark" alt="SWIR GitHub profile details" />
+<img width="96%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Swir&theme=github_dark" alt="GitHub profile details" />
 
 <br>
 
@@ -176,7 +171,7 @@ If it can be built, I'll probably try.**
 
 <br><br>
 
-<img width="98%" src="https://github-readme-activity-graph.vercel.app/graph?username=Swir&bg_color=050A13&color=9CA3AF&line=3B82F6&point=FFFFFF&area=true&area_color=172554&hide_border=true" alt="SWIR GitHub activity graph" />
+<img width="98%" src="https://github-readme-activity-graph.vercel.app/graph?username=Swir&bg_color=0D1117&color=8B949E&line=58A6FF&point=F0F6FC&area=true&area_color=161B22&hide_border=true" alt="GitHub activity graph" />
 
 </div>
 
@@ -186,13 +181,11 @@ If it can be built, I'll probably try.**
 
 <div align="center">
 
-### `BETTER THAN YESTERDAY`
+### SWIR
 
-## Build something. Ship it. Learn. Come back stronger.
+**Build useful software. Ship working versions. Improve continuously.**
 
-**SWIR**
-
-<sub>Not a corporation. Not a course portfolio. Just things I wanted to exist.</sub>
+<sub>Better than yesterday.</sub>
 
 <br><br>
 
