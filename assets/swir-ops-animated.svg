@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="250" viewBox="0 0 1200 250" role="img" aria-label="SWIR animated mission board">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#030A12"/>
+      <stop offset="1" stop-color="#061321"/>
+    </linearGradient>
+    <linearGradient id="sweep" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#52C4FF" stop-opacity="0.20"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="250" rx="20" fill="url(#bg)"/>
+  <rect x="1" y="1" width="1198" height="248" rx="19" fill="none" stroke="#168CFF" stroke-opacity="0.22"/>
+  <text x="34" y="34" fill="#EAF8FF" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700">SWIR // MISSION BOARD</text>
+  <text x="34" y="57" fill="#77CFFF" font-family="Consolas, Menlo, monospace" font-size="13">ACTIVE SECTORS // LIVE BUILD LANES</text>
+
+  <g transform="translate(36,82)" font-family="Arial, Helvetica, sans-serif">
+    <g>
+      <rect width="176" height="132" rx="14" fill="#071624" stroke="#168CFF" stroke-opacity="0.45"/>
+      <text x="18" y="28" fill="#F5FBFF" font-size="20" font-weight="800">DEV</text>
+      <circle cx="152" cy="24" r="5" fill="#4EC6FF" filter="url(#glow)"><animate attributeName="opacity" values="1;.3;1" dur="2s" repeatCount="indefinite"/></circle>
+      <text x="18" y="52" fill="#7EB7D4" font-size="12">Desktop apps • utilities</text>
+      <rect x="18" y="72" width="138" height="8" rx="4" fill="#0B2438"/>
+      <rect x="18" y="72" width="118" height="8" rx="4" fill="#39B7FF"><animate attributeName="width" values="102;118;110;118" dur="4s" repeatCount="indefinite"/></rect>
+      <text x="18" y="102" fill="#CFEFFF" font-size="13">Focus // Python, Windows</text>
+      <text x="18" y="120" fill="#6FA9C8" font-size="12">Status: stable build lane</text>
+    </g>
+
+    <g transform="translate(190,0)">
+      <rect width="176" height="132" rx="14" fill="#071624" stroke="#168CFF" stroke-opacity="0.45"/>
+      <text x="18" y="28" fill="#F5FBFF" font-size="20" font-weight="800">GAMING</text>
+      <circle cx="152" cy="24" r="5" fill="#4EC6FF" filter="url(#glow)"><animate attributeName="opacity" values="1;.3;1" dur="2.3s" repeatCount="indefinite"/></circle>
+      <text x="18" y="52" fill="#7EB7D4" font-size="12">Combat systems • gameplay</text>
+      <rect x="18" y="72" width="138" height="8" rx="4" fill="#0B2438"/>
+      <rect x="18" y="72" width="124" height="8" rx="4" fill="#39B7FF"><animate attributeName="width" values="112;124;118;124" dur="4.2s" repeatCount="indefinite"/></rect>
+      <text x="18" y="102" fill="#CFEFFF" font-size="13">Active // Tank Revival</text>
+      <text x="18" y="120" fill="#6FA9C8" font-size="12">Status: public deployments</text>
+    </g>
+
+    <g transform="translate(380,0)">
+      <rect width="176" height="132" rx="14" fill="#071624" stroke="#168CFF" stroke-opacity="0.45"/>
+      <text x="18" y="28" fill="#F5FBFF" font-size="20" font-weight="800">WEB / MOBILE</text>
+      <circle cx="152" cy="24" r="5" fill="#4EC6FF" filter="url(#glow)"><animate attributeName="opacity" values="1;.3;1" dur="1.9s" repeatCount="indefinite"/></circle>
+      <text x="18" y="52" fill="#7EB7D4" font-size="12">Android + Web workflows</text>
+      <rect x="18" y="72" width="138" height="8" rx="4" fill="#0B2438"/>
+      <rect x="18" y="72" width="108" height="8" rx="4" fill="#39B7FF"><animate attributeName="width" values="98;108;103;108" dur="3.8s" repeatCount="indefinite"/></rect>
+      <text x="18" y="102" fill="#CFEFFF" font-size="13">Active // WojThom</text>
+      <text x="18" y="120" fill="#6FA9C8" font-size="12">Status: app refinement</text>
+    </g>
+
+    <g transform="translate(570,0)">
+      <rect width="176" height="132" rx="14" fill="#071624" stroke="#168CFF" stroke-opacity="0.45"/>
+      <text x="18" y="28" fill="#F5FBFF" font-size="20" font-weight="800">AI</text>
+      <circle cx="152" cy="24" r="5" fill="#4EC6FF" filter="url(#glow)"><animate attributeName="opacity" values="1;.3;1" dur="2.5s" repeatCount="indefinite"/></circle>
+      <text x="18" y="52" fill="#7EB7D4" font-size="12">Experiments • agents • tools</text>
+      <rect x="18" y="72" width="138" height="8" rx="4" fill="#0B2438"/>
+      <rect x="18" y="72" width="86" height="8" rx="4" fill="#39B7FF"><animate attributeName="width" values="78;86;82;86" dur="4.5s" repeatCount="indefinite"/></rect>
+      <text x="18" y="102" fill="#CFEFFF" font-size="13">Focus // practical automation</text>
+      <text x="18" y="120" fill="#6FA9C8" font-size="12">Status: active research</text>
+    </g>
+
+    <g transform="translate(760,0)">
+      <rect width="176" height="132" rx="14" fill="#071624" stroke="#168CFF" stroke-opacity="0.45"/>
+      <text x="18" y="28" fill="#F5FBFF" font-size="20" font-weight="800">AUDIO</text>
+      <circle cx="152" cy="24" r="5" fill="#4EC6FF" filter="url(#glow)"><animate attributeName="opacity" values="1;.3;1" dur="2.1s" repeatCount="indefinite"/></circle>
+      <text x="18" y="52" fill="#7EB7D4" font-size="12">Media tools • conversion</text>
+      <rect x="18" y="72" width="138" height="8" rx="4" fill="#0B2438"/>
+      <rect x="18" y="72" width="94" height="8" rx="4" fill="#39B7FF"><animate attributeName="width" values="86;94;90;94" dur="4s" repeatCount="indefinite"/></rect>
+      <text x="18" y="102" fill="#CFEFFF" font-size="13">Focus // WAV → MP3</text>
+      <text x="18" y="120" fill="#6FA9C8" font-size="12">Status: utility lane</text>
+    </g>
+
+    <g transform="translate(950,0)">
+      <rect width="176" height="132" rx="14" fill="#071624" stroke="#168CFF" stroke-opacity="0.45"/>
+      <text x="18" y="28" fill="#F5FBFF" font-size="20" font-weight="800">TOOLS</text>
+      <circle cx="152" cy="24" r="5" fill="#4EC6FF" filter="url(#glow)"><animate attributeName="opacity" values="1;.3;1" dur="2.7s" repeatCount="indefinite"/></circle>
+      <text x="18" y="52" fill="#7EB7D4" font-size="12">Automation • packaging • CI</text>
+      <rect x="18" y="72" width="138" height="8" rx="4" fill="#0B2438"/>
+      <rect x="18" y="72" width="116" height="8" rx="4" fill="#39B7FF"><animate attributeName="width" values="104;116;108;116" dur="4.4s" repeatCount="indefinite"/></rect>
+      <text x="18" y="102" fill="#CFEFFF" font-size="13">Focus // repeatable workflows</text>
+      <text x="18" y="120" fill="#6FA9C8" font-size="12">Status: online</text>
+    </g>
+  </g>
+
+  <rect x="-240" y="0" width="240" height="250" fill="url(#sweep)">
+    <animate attributeName="x" values="-240;1240" dur="6s" repeatCount="indefinite"/>
+  </rect>
+</svg>
