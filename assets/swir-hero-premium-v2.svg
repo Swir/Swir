@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="330" viewBox="0 0 1200 330" role="img" aria-label="SWIR developer profile banner">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#070B12"/>
+      <stop offset="0.55" stop-color="#0B1220"/>
+      <stop offset="1" stop-color="#060A11"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#60A5FA"/>
+      <stop offset="1" stop-color="#22D3EE"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="76%" cy="48%" r="58%">
+      <stop offset="0" stop-color="#2563EB" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#2563EB" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="330" rx="26" fill="url(#bg)"/>
+  <rect width="1200" height="330" rx="26" fill="url(#glow)"/>
+  <rect x="1" y="1" width="1198" height="328" rx="25" fill="none" stroke="#1E293B"/>
+
+  <g transform="translate(74 62)">
+    <rect x="0" y="0" width="52" height="8" rx="4" fill="url(#accent)"/>
+    <text x="0" y="96" fill="#F8FAFC" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="88" font-weight="800" letter-spacing="5">SWIR</text>
+    <text x="4" y="138" fill="#94A3B8" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="20" letter-spacing="2">SOFTWARE · TOOLS · GAMES · AUTOMATION</text>
+    <text x="4" y="188" fill="#CBD5E1" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="18">Independent developer building practical things and shipping working versions.</text>
+  </g>
+
+  <g transform="translate(865 70)">
+    <circle cx="112" cy="95" r="84" fill="#0B1322" stroke="#1E3A5F" stroke-width="2"/>
+    <circle cx="112" cy="95" r="66" fill="none" stroke="#2563EB" stroke-opacity="0.42" stroke-width="2"/>
+    <path d="M70 116 L93 73 L113 106 L135 70 L158 116" fill="none" stroke="url(#accent)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="112" cy="95" r="7" fill="#F8FAFC"/>
+  </g>
+
+  <g transform="translate(74 268)" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="14">
+    <text x="0" y="0" fill="#64748B">BUILD</text>
+    <text x="61" y="0" fill="#334155">/</text>
+    <text x="78" y="0" fill="#64748B">SHIP</text>
+    <text x="124" y="0" fill="#334155">/</text>
+    <text x="141" y="0" fill="#60A5FA">IMPROVE</text>
+  </g>
+</svg>
