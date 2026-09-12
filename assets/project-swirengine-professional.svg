@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="780" height="220" viewBox="0 0 780 220" role="img" aria-label="SwirEngine project card">
+  <defs><linearGradient id="a" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#58a6ff"/><stop offset="1" stop-color="#7dd3fc"/></linearGradient></defs>
+  <rect width="780" height="220" rx="20" fill="#0d1117"/>
+  <rect x="1" y="1" width="778" height="218" rx="19" fill="none" stroke="#30363d"/>
+  <rect width="6" height="220" rx="3" fill="url(#a)"/>
+  <g transform="translate(36,36)">
+    <rect width="120" height="120" rx="20" fill="#161b22" stroke="#30363d"/>
+    <path d="M60 24L92 42V78L60 96L28 78V42Z" fill="#0d1117" stroke="#58a6ff" stroke-width="3"/>
+    <path d="M60 24V60L92 78M60 60L28 78" fill="none" stroke="#8b949e" stroke-width="3"/>
+    <circle cx="28" cy="42" r="4" fill="#7dd3fc"/><circle cx="92" cy="42" r="4" fill="#7dd3fc"/>
+  </g>
+  <g transform="translate(188,38)" font-family="Inter,Segoe UI,Arial,sans-serif">
+    <text x="0" y="22" fill="#58a6ff" font-size="13" font-weight="700" letter-spacing="2">DEVELOPMENT PLATFORM</text>
+    <text x="0" y="66" fill="#f0f6fc" font-size="32" font-weight="800">SwirEngine</text>
+    <text x="0" y="100" fill="#8b949e" font-size="17">Experimental foundation for reusable systems, internal tooling</text>
+    <text x="0" y="125" fill="#8b949e" font-size="17">and development workflows.</text>
+    <g transform="translate(0,150)" font-size="13" font-weight="700">
+      <text x="0" y="0" fill="#c9d1d9">ENGINE</text><text x="72" y="0" fill="#c9d1d9">TOOLS</text><text x="130" y="0" fill="#c9d1d9">EXPERIMENTAL</text>
+    </g>
+  </g>
+</svg>
