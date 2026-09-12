@@ -1,13 +1,66 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="430" viewBox="0 0 1200 430" role="img" aria-label="SWIR project radar">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="470" viewBox="0 0 1200 470" role="img" aria-label="SWIR neon signal board">
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#050b14"/><stop offset="0.55" stop-color="#071827"/><stop offset="1" stop-color="#06111d"/></linearGradient>
-    <radialGradient id="glow" cx="50%" cy="48%" r="58%"><stop offset="0" stop-color="#38bdf8" stop-opacity="0.16"/><stop offset="1" stop-color="#38bdf8" stop-opacity="0"/></radialGradient>
-    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#38bdf8" stroke-opacity="0.05"/></pattern>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#010409"/>
+      <stop offset="0.5" stop-color="#04101c"/>
+      <stop offset="1" stop-color="#02070d"/>
+    </linearGradient>
+    <radialGradient id="coreGlow" cx="50%" cy="48%" r="48%">
+      <stop offset="0" stop-color="#139cff" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#139cff" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M28 0H0V28" fill="none" stroke="#149bff" stroke-opacity="0.045"/>
+    </pattern>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
   </defs>
-  <rect width="1200" height="430" rx="22" fill="url(#bg)"/><rect width="1200" height="430" rx="22" fill="url(#grid)"/><rect width="1200" height="430" rx="22" fill="url(#glow)"/><rect x="1" y="1" width="1198" height="428" rx="21" fill="none" stroke="#38bdf8" stroke-opacity="0.18"/>
-  <text x="54" y="60" fill="#e6f6ff" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700">SWIR PROJECT RADAR</text><text x="54" y="86" fill="#6e8da3" font-family="Consolas, Menlo, monospace" font-size="14">ACTIVE SYSTEMS • RELEASES • EXPERIMENTS</text><circle cx="1060" cy="61" r="5" fill="#22c55e"><animate attributeName="opacity" values="1;.25;1" dur="2.2s" repeatCount="indefinite"/></circle><text x="1075" y="66" fill="#9fd7b2" font-family="Consolas, Menlo, monospace" font-size="13">ONLINE</text>
-  <g transform="translate(590 234)"><circle r="132" fill="none" stroke="#38bdf8" stroke-opacity="0.08"/><circle r="94" fill="none" stroke="#38bdf8" stroke-opacity="0.10" stroke-dasharray="5 9"><animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="28s" repeatCount="indefinite"/></circle><circle r="53" fill="#071a2a" stroke="#38bdf8" stroke-opacity="0.65" stroke-width="2"/><circle r="43" fill="none" stroke="#38bdf8" stroke-opacity="0.18"/><text y="-4" text-anchor="middle" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="800">SWIR</text><text y="20" text-anchor="middle" fill="#38bdf8" font-family="Consolas, Menlo, monospace" font-size="12">BUILD CORE</text></g>
-  <g stroke="#38bdf8" stroke-opacity="0.24" fill="none"><path d="M537 195L340 145"/><path d="M643 195L846 145"/><path d="M529 266L320 323"/><path d="M651 268L866 323"/><path d="M590 181V122"/></g>
-  <g font-family="Arial, Helvetica, sans-serif"><g transform="translate(160 112)"><rect width="236" height="72" rx="14" fill="#081724" stroke="#38bdf8" stroke-opacity="0.22"/><circle cx="28" cy="27" r="7" fill="#38bdf8"/><text x="48" y="31" fill="#e8f7ff" font-size="16" font-weight="700">DESKTOP SOFTWARE</text><text x="48" y="53" fill="#7593a7" font-size="13">Python • GUI • Windows tools</text></g><g transform="translate(804 112)"><rect width="236" height="72" rx="14" fill="#081724" stroke="#38bdf8" stroke-opacity="0.22"/><circle cx="28" cy="27" r="7" fill="#22c55e"/><text x="48" y="31" fill="#e8f7ff" font-size="16" font-weight="700">AUTOMATION</text><text x="48" y="53" fill="#7593a7" font-size="13">CI • workflows • productivity</text></g><g transform="translate(140 292)"><rect width="260" height="72" rx="14" fill="#081724" stroke="#38bdf8" stroke-opacity="0.22"/><circle cx="28" cy="27" r="7" fill="#a78bfa"/><text x="48" y="31" fill="#e8f7ff" font-size="16" font-weight="700">GAME DEVELOPMENT</text><text x="48" y="53" fill="#7593a7" font-size="13">Unity • systems • release builds</text></g><g transform="translate(800 292)"><rect width="260" height="72" rx="14" fill="#081724" stroke="#38bdf8" stroke-opacity="0.22"/><circle cx="28" cy="27" r="7" fill="#f59e0b"/><text x="48" y="31" fill="#e8f7ff" font-size="16" font-weight="700">AI / R&amp;D</text><text x="48" y="53" fill="#7593a7" font-size="13">experiments • tooling • prototypes</text></g><g transform="translate(498 94)"><rect width="184" height="50" rx="12" fill="#092033" stroke="#38bdf8" stroke-opacity="0.30"/><text x="92" y="22" text-anchor="middle" fill="#dff6ff" font-size="13" font-weight="700">ANDROID + WEB</text><text x="92" y="39" text-anchor="middle" fill="#7193aa" font-size="11">apps • reports • UX</text></g></g>
-  <g font-family="Consolas, Menlo, monospace" font-size="12"><text x="478" y="394" fill="#607e91">TANK REVIVAL</text><text x="588" y="394" fill="#607e91">WOJTHOM</text><text x="666" y="394" fill="#607e91">NES NEW LIFE</text></g>
+
+  <rect width="1200" height="470" rx="24" fill="url(#bg)"/>
+  <rect width="1200" height="470" rx="24" fill="url(#grid)"/>
+  <rect width="1200" height="470" rx="24" fill="url(#coreGlow)"/>
+  <rect x="1" y="1" width="1198" height="468" rx="23" fill="none" stroke="#168cff" stroke-opacity="0.32"/>
+
+  <text x="50" y="54" fill="#e8f7ff" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="800">SWIR SIGNAL BOARD</text>
+  <text x="50" y="80" fill="#6ea8cb" font-family="Consolas, Menlo, monospace" font-size="13" letter-spacing="2">DEV • MUSIC • GAMES • AI • TOOLS • LIFE</text>
+  <circle cx="1090" cy="56" r="5" fill="#38bdf8" filter="url(#glow)"><animate attributeName="opacity" values="1;.2;1" dur="2.2s" repeatCount="indefinite"/></circle>
+  <text x="1104" y="61" fill="#82d7ff" font-family="Consolas, Menlo, monospace" font-size="12">ONLINE</text>
+
+  <!-- Core -->
+  <g transform="translate(600 246)">
+    <circle r="132" fill="none" stroke="#168cff" stroke-opacity="0.10"/>
+    <circle r="104" fill="none" stroke="#168cff" stroke-opacity="0.18" stroke-dasharray="5 10">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="34s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="72" fill="#03101a" stroke="#22aaff" stroke-width="2" stroke-opacity="0.78"/>
+    <g transform="translate(-36 -51)" fill="none" stroke="#6ed1ff" stroke-width="4" filter="url(#glow)">
+      <path d="M0 24 L16 2 L34 24 L52 8 L72 24 L66 42 H6Z"/>
+    </g>
+    <text y="18" text-anchor="middle" fill="#ffffff" font-family="Arial Black, Arial, sans-serif" font-size="26" font-weight="900">SWIR</text>
+    <text y="43" text-anchor="middle" fill="#3ab8ff" font-family="Consolas, Menlo, monospace" font-size="11" letter-spacing="2">BUILD CORE</text>
+  </g>
+
+  <!-- Connections -->
+  <g stroke="#159dff" stroke-opacity="0.27" fill="none">
+    <path d="M548 196 L333 138"/>
+    <path d="M652 196 L867 138"/>
+    <path d="M522 246 L310 246"/>
+    <path d="M678 246 L890 246"/>
+    <path d="M548 300 L337 363"/>
+    <path d="M652 300 L863 363"/>
+  </g>
+
+  <!-- Six avatar-inspired lanes -->
+  <g font-family="Arial, Helvetica, sans-serif">
+    <g transform="translate(115 100)"><rect width="230" height="74" rx="14" fill="#05131f" stroke="#178cff"/><circle cx="26" cy="25" r="6" fill="#35b9ff" filter="url(#glow)"/><text x="45" y="30" fill="#edf9ff" font-size="17" font-weight="800">DEV</text><text x="45" y="54" fill="#729db8" font-size="12">Python • apps • Windows</text></g>
+    <g transform="translate(855 100)"><rect width="230" height="74" rx="14" fill="#05131f" stroke="#178cff"/><circle cx="26" cy="25" r="6" fill="#35b9ff" filter="url(#glow)"/><text x="45" y="30" fill="#edf9ff" font-size="17" font-weight="800">MUSIC</text><text x="45" y="54" fill="#729db8" font-size="12">creative tech • audio workflows</text></g>
+    <g transform="translate(88 209)"><rect width="230" height="74" rx="14" fill="#05131f" stroke="#178cff"/><circle cx="26" cy="25" r="6" fill="#35b9ff" filter="url(#glow)"/><text x="45" y="30" fill="#edf9ff" font-size="17" font-weight="800">GAMES</text><text x="45" y="54" fill="#729db8" font-size="12">Unity • gameplay • releases</text></g>
+    <g transform="translate(882 209)"><rect width="230" height="74" rx="14" fill="#05131f" stroke="#178cff"/><circle cx="26" cy="25" r="6" fill="#35b9ff" filter="url(#glow)"/><text x="45" y="30" fill="#edf9ff" font-size="17" font-weight="800">AI</text><text x="45" y="54" fill="#729db8" font-size="12">experiments • agents • tooling</text></g>
+    <g transform="translate(115 326)"><rect width="230" height="74" rx="14" fill="#05131f" stroke="#178cff"/><circle cx="26" cy="25" r="6" fill="#35b9ff" filter="url(#glow)"/><text x="45" y="30" fill="#edf9ff" font-size="17" font-weight="800">TOOLS</text><text x="45" y="54" fill="#729db8" font-size="12">automation • utilities • CI</text></g>
+    <g transform="translate(855 326)"><rect width="230" height="74" rx="14" fill="#05131f" stroke="#178cff"/><circle cx="26" cy="25" r="6" fill="#35b9ff" filter="url(#glow)"/><text x="45" y="30" fill="#edf9ff" font-size="17" font-weight="800">LIFE</text><text x="45" y="54" fill="#729db8" font-size="12">build • learn • improve • repeat</text></g>
+  </g>
+
+  <text x="600" y="445" text-anchor="middle" fill="#7dcfff" font-family="Consolas, Menlo, monospace" font-size="13" letter-spacing="3">IDEAS → CODE → REALITY</text>
 </svg>
