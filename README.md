@@ -1,104 +1,55 @@
 <div align="center">
 
-<img width="100%" src="assets/swir-hero-premium.svg" alt="SWIR — software, tools, games and automation" />
+<img width="100%" src="assets/swir-hero-premium-v2.svg" alt="SWIR — software, tools, games and automation" />
 
 <br><br>
 
-<a href="https://github.com/Swir?tab=repositories"><img src="https://img.shields.io/badge/Repositories-111827?style=for-the-badge&logo=github&logoColor=ffffff" alt="Repositories" /></a>
-<a href="https://swir.github.io/"><img src="https://img.shields.io/badge/Portfolio-111827?style=for-the-badge&logo=googlechrome&logoColor=60a5fa" alt="Portfolio" /></a>
-<a href="https://github.com/Swir/Tank-Revival-Overdrive/releases/latest"><img src="https://img.shields.io/badge/Latest_Release-111827?style=for-the-badge&logo=windows11&logoColor=60a5fa" alt="Latest release" /></a>
-
-<br><br>
-
-**I turn ideas into practical software, tools and playable projects.**
-
-Python · Windows · Android · Web · Automation · Game Development · AI Experiments
+<a href="https://github.com/Swir?tab=repositories"><img src="https://img.shields.io/badge/EXPLORE_REPOSITORIES-111827?style=for-the-badge&logo=github&logoColor=ffffff" alt="Explore repositories" /></a>
+<a href="https://swir.github.io/"><img src="https://img.shields.io/badge/OPEN_PORTFOLIO-111827?style=for-the-badge&logo=googlechrome&logoColor=60a5fa" alt="Open portfolio" /></a>
+<a href="https://github.com/Swir/Tank-Revival-Overdrive/releases/latest"><img src="https://img.shields.io/badge/LATEST_BUILD-111827?style=for-the-badge&logo=windows11&logoColor=60a5fa" alt="Latest build" /></a>
 
 </div>
 
----
+## What I build
 
-## About
+I create **desktop software, automation tools, Android/web apps and playable experiments**. My projects usually start from a practical problem or an idea I want to test, then move quickly toward something that can actually be used, downloaded or played.
 
-I build projects that solve real problems, automate repetitive work, explore new ideas or simply make technology more fun to use.
-
-My work ranges from **desktop utilities and automation** to **Android/web apps, game development, image/audio tools and AI-assisted experiments**. I prefer shipping working versions, testing them in practice and improving them over time.
-
-> **Better than yesterday. Build → ship → improve.**
+**Main focus:** Python · Windows tooling · automation · game development · Android/web · image/audio utilities · AI-assisted workflows
 
 ---
 
-## Featured projects
-
-<table>
-<tr>
-<td width="50%" valign="top">
-
-### [Tank Revival Overdrive](https://github.com/Swir/Tank-Revival-Overdrive)
-Windows tank-combat project focused on playable builds, progression and tactical gameplay systems.
-
-`GAME DEV` `WINDOWS` `PLAYABLE BUILDS`
-
-[Latest release →](https://github.com/Swir/Tank-Revival-Overdrive/releases/latest)
-
-</td>
-<td width="50%" valign="top">
-
-### [WojThom](https://github.com/Swir/WojThom)
-Work-time application for Android and web with history, statistics and professional PDF reporting.
-
-`ANDROID` `WEB` `PDF`
-
-[View project →](https://github.com/Swir/WojThom)
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-### [SwirEngine](https://github.com/Swir/SwirEngine)
-My own development playground for experimenting with systems, tooling and reusable project foundations.
-
-`ENGINE` `TOOLS` `EXPERIMENTAL`
-
-[View project →](https://github.com/Swir/SwirEngine)
-
-</td>
-<td width="50%" valign="top">
-
-### [SwirPhotoClean](https://github.com/Swir/SwirPhotoClean)
-Desktop image-processing workflow focused on practical cleanup and enhancement tools.
-
-`PYTHON` `DESKTOP` `IMAGING`
-
-[View project →](https://github.com/Swir/SwirPhotoClean)
-
-</td>
-</tr>
-</table>
+## Selected work
 
 <div align="center">
 
-### [Browse all repositories →](https://github.com/Swir?tab=repositories)
+<a href="https://github.com/Swir/Tank-Revival-Overdrive"><img width="49%" src="assets/card-tank-revival.svg" alt="Tank Revival Overdrive" /></a>
+<a href="https://github.com/Swir/WojThom"><img width="49%" src="assets/card-wojthom.svg" alt="WojThom" /></a>
+
+<a href="https://github.com/Swir/SwirEngine"><img width="49%" src="assets/card-swirengine.svg" alt="SwirEngine" /></a>
+<a href="https://github.com/Swir/SwirPhotoClean"><img width="49%" src="assets/card-swirphotoclean.svg" alt="SwirPhotoClean" /></a>
+
+<br><br>
+
+<a href="https://github.com/Swir?tab=repositories"><strong>View the full project collection →</strong></a>
 
 </div>
 
 ---
 
-## More tools
+## More software
 
-| Project | What it does | Main stack |
+| Project | Purpose | Stack |
 |---|---|---|
 | [ARIA2 Ultimate PRO](https://github.com/Swir/Aria2Gui) | Multi-connection desktop download manager | `Python` `CustomTkinter` `aria2c` |
 | [InfoPulse PL](https://github.com/Swir/InfoPulse-PL) | RSS, Atom and API information center | `Python` `APIs` |
-| [PowerBookmark](https://github.com/Swir/PowerBookmark) | Browser automation and productivity tooling | `JavaScript` `Manifest V3` |
+| [NeonShift-X PowerBookmark](https://github.com/Swir/PowerBookmark) | Browser productivity and automation tools | `JavaScript` `Manifest V3` |
 | [NES New Life](https://github.com/Swir/Nes_New_Life) | Retro development and HD workflow experiments | `Game Dev` `Unity` `Tooling` |
-| [Image To ICO](https://github.com/Swir/Image-To-Ico) | Image to Windows icon converter | `Python` `Windows` |
+| [Image To ICO](https://github.com/Swir/Image-To-Ico) | Image → Windows icon converter | `Python` `Windows` |
 | [WAV to MP3 Converter](https://github.com/Swir/WAV-to-MP3-converter) | Batch audio conversion utility | `Python` `Audio` |
 
 ---
 
-## Tech stack
+## Toolbelt
 
 <div align="center">
 
@@ -106,16 +57,31 @@ Desktop image-processing workflow focused on practical cleanup and enhancement t
 
 <br><br>
 
-`PYTHON` · `KOTLIN` · `JAVASCRIPT` · `HTML/CSS` · `PHP` · `POWERSHELL` · `GIT` · `WINDOWS` · `LINUX`
+<img src="https://img.shields.io/badge/Python-0B1220?style=flat-square&logo=python&logoColor=60A5FA" alt="Python" />
+<img src="https://img.shields.io/badge/Windows-0B1220?style=flat-square&logo=windows11&logoColor=60A5FA" alt="Windows" />
+<img src="https://img.shields.io/badge/JavaScript-0B1220?style=flat-square&logo=javascript&logoColor=F8FAFC" alt="JavaScript" />
+<img src="https://img.shields.io/badge/Android-0B1220?style=flat-square&logo=android&logoColor=60A5FA" alt="Android" />
+<img src="https://img.shields.io/badge/Automation-0B1220?style=flat-square&logo=githubactions&logoColor=60A5FA" alt="Automation" />
+<img src="https://img.shields.io/badge/Game_Dev-0B1220?style=flat-square&logo=unity&logoColor=F8FAFC" alt="Game development" />
 
 </div>
 
 ---
 
-## GitHub activity
+## Development style
+
+```text
+IDEA  →  BUILD  →  TEST  →  RELEASE  →  IMPROVE
+                         ↑               │
+                         └───────────────┘
+```
+
+I prefer **working iterations over permanent prototypes**: release something useful, learn from it, and make the next version better.
+
+---
 
 <details>
-<summary><strong>Show statistics</strong></summary>
+<summary><strong>GitHub activity & language statistics</strong></summary>
 
 <br>
 
@@ -130,7 +96,7 @@ Desktop image-processing workflow focused on practical cleanup and enhancement t
 
 <br><br>
 
-<img width="98%" src="https://github-readme-activity-graph.vercel.app/graph?username=Swir&bg_color=0b0f17&color=94a3b8&line=3b82f6&point=ffffff&area=true&area_color=172554&hide_border=true" alt="GitHub activity graph" />
+<img width="98%" src="https://github-readme-activity-graph.vercel.app/graph?username=Swir&bg_color=0B1220&color=94A3B8&line=3B82F6&point=FFFFFF&area=true&area_color=172554&hide_border=true" alt="GitHub activity graph" />
 
 </div>
 
@@ -144,6 +110,6 @@ Desktop image-processing workflow focused on practical cleanup and enhancement t
 
 **Build useful things. Ship them. Make them better.**
 
-If something here helps you, a ⭐ on the project is always appreciated.
+<sub>If a project helps you, consider leaving it a ⭐.</sub>
 
 </div>
