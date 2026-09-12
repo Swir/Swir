@@ -1,72 +1,48 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420" role="img" aria-label="SWIR neon cyber developer banner">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img" aria-label="SWIR developer profile banner">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#010308"/>
-      <stop offset="0.48" stop-color="#04111f"/>
-      <stop offset="1" stop-color="#00040a"/>
+      <stop offset="0" stop-color="#02060c"/>
+      <stop offset="0.55" stop-color="#07111d"/>
+      <stop offset="1" stop-color="#02070d"/>
     </linearGradient>
-    <radialGradient id="halo" cx="24%" cy="48%" r="46%">
-      <stop offset="0" stop-color="#118cff" stop-opacity="0.22"/>
-      <stop offset="0.62" stop-color="#0875ff" stop-opacity="0.08"/>
-      <stop offset="1" stop-color="#0875ff" stop-opacity="0"/>
-    </radialGradient>
-    <linearGradient id="neon" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#7dd3fc"/>
-      <stop offset="0.5" stop-color="#1d9cff"/>
-      <stop offset="1" stop-color="#e8f7ff"/>
+    <linearGradient id="line" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#0b68b8" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#2aaeff"/>
+      <stop offset="1" stop-color="#0b68b8" stop-opacity="0"/>
     </linearGradient>
-    <pattern id="matrix" width="28" height="28" patternUnits="userSpaceOnUse">
-      <text x="3" y="18" fill="#0f8dff" fill-opacity="0.10" font-family="Consolas, monospace" font-size="13">01</text>
-    </pattern>
     <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
-      <feGaussianBlur stdDeviation="5" result="b"/>
+      <feGaussianBlur stdDeviation="3.5" result="b"/>
       <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
   </defs>
 
-  <rect width="1200" height="420" rx="28" fill="url(#bg)"/>
-  <rect width="1200" height="420" rx="28" fill="url(#matrix)"/>
-  <rect width="1200" height="420" rx="28" fill="url(#halo)"/>
-  <rect x="1" y="1" width="1198" height="418" rx="27" fill="none" stroke="#168cff" stroke-opacity="0.45" stroke-width="2"/>
+  <rect width="1200" height="300" rx="22" fill="url(#bg)"/>
+  <rect x="1" y="1" width="1198" height="298" rx="21" fill="none" stroke="#163955" stroke-width="2"/>
 
-  <!-- Avatar-inspired hooded neon mask -->
-  <g transform="translate(66 24)">
-    <circle cx="214" cy="184" r="168" fill="none" stroke="#19a7ff" stroke-width="4" stroke-opacity="0.82" filter="url(#glow)"/>
-    <path d="M92 283 C102 184 131 78 214 34 C297 78 326 184 336 283 C305 325 268 347 214 352 C160 347 123 325 92 283Z" fill="#020812" stroke="#147ed1" stroke-width="2"/>
-    <path d="M135 144 C146 94 173 68 214 56 C255 68 282 94 293 144 C285 134 275 127 263 123 C247 117 231 114 214 114 C197 114 181 117 165 123 C153 127 143 134 135 144Z" fill="#06111d" stroke="#1b8cff" stroke-opacity="0.75"/>
-    <rect x="146" y="128" width="136" height="116" rx="25" fill="#01050b" stroke="#1aa5ff" stroke-width="2"/>
-    <g stroke="#36b7ff" stroke-width="8" stroke-linecap="round" filter="url(#glow)">
-      <path d="M169 156 L194 185 M194 156 L169 185"/>
-      <path d="M235 156 L260 185 M260 156 L235 185"/>
+  <g transform="translate(70 53)">
+    <g fill="none" stroke="#36b8ff" stroke-width="3.5" stroke-linejoin="round" filter="url(#glow)">
+      <path d="M0 28 L18 4 L36 28 L54 10 L72 28 L66 46 H6 Z"/>
     </g>
-    <path d="M168 211 C183 229 245 229 260 211" fill="none" stroke="#39b8ff" stroke-width="5" stroke-linecap="round" filter="url(#glow)"/>
-    <g stroke="#39b8ff" stroke-width="2" opacity="0.9">
-      <path d="M180 214 v14 M195 218 v13 M214 220 v12 M233 218 v13 M248 214 v14"/>
-    </g>
-    <path d="M188 300 L214 276 L240 300 L232 319 L196 319Z" fill="none" stroke="#61c8ff" stroke-width="4" filter="url(#glow)"/>
+    <text x="0" y="120" fill="#f4f8fb" font-family="Arial Black, Arial, Helvetica, sans-serif" font-size="86" font-weight="900" letter-spacing="8">SWIR</text>
+    <text x="4" y="156" fill="#69c9ff" font-family="Consolas, Menlo, monospace" font-size="18" letter-spacing="4">DEVELOPER • CREATOR • BUILDER</text>
+    <text x="4" y="192" fill="#90a8b8" font-family="Consolas, Menlo, monospace" font-size="15" letter-spacing="2">IDEAS → CODE → REALITY</text>
   </g>
 
-  <!-- Brand block -->
-  <g transform="translate(468 60)">
-    <text x="0" y="44" fill="#8ddcff" font-family="Consolas, Menlo, monospace" font-size="17" letter-spacing="4">BETTER THAN YESTERDAY</text>
-    <g transform="translate(8 70)" fill="none" stroke="#67cbff" stroke-width="4" filter="url(#glow)">
-      <path d="M0 26 L18 2 L36 26 L54 7 L72 26 L66 44 H6Z"/>
+  <g transform="translate(875 150)">
+    <circle r="84" fill="none" stroke="#1b75b6" stroke-width="2"/>
+    <circle r="67" fill="#04101b" stroke="#2aaeff" stroke-width="2" opacity="0.95"/>
+    <g stroke="#45c0ff" stroke-width="6" stroke-linecap="round" filter="url(#glow)">
+      <path d="M-36 -24 L-16 -4 M-16 -24 L-36 -4"/>
+      <path d="M16 -24 L36 -4 M36 -24 L16 -4"/>
     </g>
-    <text x="96" y="139" fill="url(#neon)" font-family="Arial Black, Arial, Helvetica, sans-serif" font-size="112" font-weight="900" font-style="italic" letter-spacing="5" filter="url(#glow)">SWIR</text>
-    <text x="5" y="188" fill="#f1f8ff" font-family="Consolas, Menlo, monospace" font-size="25" font-weight="700" letter-spacing="5">IDEAS  →  CODE  →  REALITY</text>
-    <line x1="0" y1="212" x2="620" y2="212" stroke="#199dff" stroke-opacity="0.65"/>
-    <text x="2" y="248" fill="#7dcfff" font-family="Consolas, Menlo, monospace" font-size="18" letter-spacing="3">BUILD • CREATE • IMPROVE • REPEAT</text>
-
-    <g transform="translate(0 286)" font-family="Consolas, Menlo, monospace" font-size="15" font-weight="700">
-      <g><rect width="82" height="38" rx="9" fill="#061421" stroke="#178cff"/><text x="41" y="24" text-anchor="middle" fill="#cdefff">DEV</text></g>
-      <g transform="translate(94 0)"><rect width="90" height="38" rx="9" fill="#061421" stroke="#178cff"/><text x="45" y="24" text-anchor="middle" fill="#cdefff">MUSIC</text></g>
-      <g transform="translate(196 0)"><rect width="90" height="38" rx="9" fill="#061421" stroke="#178cff"/><text x="45" y="24" text-anchor="middle" fill="#cdefff">GAMES</text></g>
-      <g transform="translate(298 0)"><rect width="70" height="38" rx="9" fill="#061421" stroke="#178cff"/><text x="35" y="24" text-anchor="middle" fill="#cdefff">AI</text></g>
-      <g transform="translate(380 0)"><rect width="88" height="38" rx="9" fill="#061421" stroke="#178cff"/><text x="44" y="24" text-anchor="middle" fill="#cdefff">TOOLS</text></g>
-      <g transform="translate(480 0)"><rect width="80" height="38" rx="9" fill="#061421" stroke="#178cff"/><text x="40" y="24" text-anchor="middle" fill="#cdefff">LIFE</text></g>
-    </g>
+    <path d="M-31 25 C-16 39 16 39 31 25" fill="none" stroke="#45c0ff" stroke-width="4" stroke-linecap="round"/>
   </g>
 
-  <circle cx="1132" cy="42" r="5" fill="#28b8ff" filter="url(#glow)"><animate attributeName="opacity" values="1;.25;1" dur="2.1s" repeatCount="indefinite"/></circle>
-  <text x="1118" y="47" text-anchor="end" fill="#6fcfff" font-family="Consolas, Menlo, monospace" font-size="13">SYSTEM ONLINE</text>
+  <g transform="translate(1010 92)">
+    <text x="0" y="0" fill="#79d0ff" font-family="Consolas, Menlo, monospace" font-size="14" letter-spacing="2">BETTER</text>
+    <text x="0" y="25" fill="#cfefff" font-family="Consolas, Menlo, monospace" font-size="14" letter-spacing="2">THAN</text>
+    <text x="0" y="50" fill="#79d0ff" font-family="Consolas, Menlo, monospace" font-size="14" letter-spacing="2">YESTERDAY</text>
+  </g>
+
+  <rect x="70" y="258" width="1060" height="2" rx="1" fill="url(#line)"/>
 </svg>
