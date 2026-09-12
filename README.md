@@ -1,130 +1,121 @@
 <div align="center">
 
-<img width="100%" src="assets/swir-hero-animated.svg" alt="SWIR animated hacker gaming banner" />
-
-<br>
-
-<a href="https://github.com/Swir?tab=repositories"><img src="https://img.shields.io/badge/OPEN_REPOSITORIES-07111f?style=for-the-badge&logo=github&logoColor=39b7ff" alt="Repositories" /></a>
-<a href="https://swir.github.io/"><img src="https://img.shields.io/badge/ENTER_PORTFOLIO-07111f?style=for-the-badge&logo=googlechrome&logoColor=39b7ff" alt="Portfolio" /></a>
-<a href="https://github.com/Swir/Tank-Revival-Overdrive/releases/latest"><img src="https://img.shields.io/badge/LATEST_DEPLOYMENT-TANK_REVIVAL-07111f?style=for-the-badge&logo=windows11&logoColor=39b7ff" alt="Latest deployment" /></a>
+<img width="100%" src="assets/swir-hero-premium.svg" alt="SWIR — software, tools, games and automation" />
 
 <br><br>
 
-`BETTER THAN YESTERDAY // IDEAS → CODE → REALITY`
+<a href="https://github.com/Swir?tab=repositories"><img src="https://img.shields.io/badge/Repositories-111827?style=for-the-badge&logo=github&logoColor=ffffff" alt="Repositories" /></a>
+<a href="https://swir.github.io/"><img src="https://img.shields.io/badge/Portfolio-111827?style=for-the-badge&logo=googlechrome&logoColor=60a5fa" alt="Portfolio" /></a>
+<a href="https://github.com/Swir/Tank-Revival-Overdrive/releases/latest"><img src="https://img.shields.io/badge/Latest_Release-111827?style=for-the-badge&logo=windows11&logoColor=60a5fa" alt="Latest release" /></a>
+
+<br><br>
+
+**I turn ideas into practical software, tools and playable projects.**
+
+Python · Windows · Android · Web · Automation · Game Development · AI Experiments
 
 </div>
 
 ---
 
-## // OPERATOR PROFILE
+## About
 
-I build **software, tools and playable projects** with a focus on practical results: desktop apps, automation, Android/web solutions, game development, AI experiments and creative tech.
+I build projects that solve real problems, automate repetitive work, explore new ideas or simply make technology more fun to use.
 
-This profile is the public command center for the projects I actively improve, test and release.
+My work ranges from **desktop utilities and automation** to **Android/web apps, game development, image/audio tools and AI-assisted experiments**. I prefer shipping working versions, testing them in practice and improving them over time.
 
-```text
-STATUS      : ONLINE
-PRIMARY     : PYTHON / WINDOWS / AUTOMATION
-SECONDARY   : GAME DEV / ANDROID / WEB / AI / AUDIO
-LOOP        : IDEA → BUILD → TEST → SHIP → IMPROVE
-```
+> **Better than yesterday. Build → ship → improve.**
 
 ---
 
-<div align="center">
-<img width="100%" src="assets/swir-ops-animated.svg" alt="SWIR animated mission board" />
-</div>
-
----
-
-## // ACTIVE MISSIONS
+## Featured projects
 
 <table>
 <tr>
-<td width="33%" valign="top">
+<td width="50%" valign="top">
 
-### [TANK REVIVAL OVERDRIVE](https://github.com/Swir/Tank-Revival-Overdrive)
-Playable Windows tank-combat project with campaign progression, tactical systems and public builds.
+### [Tank Revival Overdrive](https://github.com/Swir/Tank-Revival-Overdrive)
+Windows tank-combat project focused on playable builds, progression and tactical gameplay systems.
 
-<a href="https://github.com/Swir/Tank-Revival-Overdrive/releases/latest"><img src="https://img.shields.io/github/v/release/Swir/Tank-Revival-Overdrive?style=flat-square&label=DEPLOY&color=168cff" alt="Tank Revival release" /></a>
+`GAME DEV` `WINDOWS` `PLAYABLE BUILDS`
+
+[Latest release →](https://github.com/Swir/Tank-Revival-Overdrive/releases/latest)
 
 </td>
-<td width="33%" valign="top">
+<td width="50%" valign="top">
 
-### [WOJTHOM](https://github.com/Swir/WojThom)
-Android + Web work-time app with history, statistics and PDF reporting.
+### [WojThom](https://github.com/Swir/WojThom)
+Work-time application for Android and web with history, statistics and professional PDF reporting.
 
 `ANDROID` `WEB` `PDF`
 
+[View project →](https://github.com/Swir/WojThom)
+
 </td>
-<td width="33%" valign="top">
+</tr>
+<tr>
+<td width="50%" valign="top">
 
-### [NES NEW LIFE](https://github.com/Swir/Nes_New_Life)
-Retro dev lab focused on tooling, HD workflows and reproducible game-development experiments.
+### [SwirEngine](https://github.com/Swir/SwirEngine)
+My own development playground for experimenting with systems, tooling and reusable project foundations.
 
-`GAME DEV` `UNITY` `TOOLING`
+`ENGINE` `TOOLS` `EXPERIMENTAL`
+
+[View project →](https://github.com/Swir/SwirEngine)
+
+</td>
+<td width="50%" valign="top">
+
+### [SwirPhotoClean](https://github.com/Swir/SwirPhotoClean)
+Desktop image-processing workflow focused on practical cleanup and enhancement tools.
+
+`PYTHON` `DESKTOP` `IMAGING`
+
+[View project →](https://github.com/Swir/SwirPhotoClean)
 
 </td>
 </tr>
 </table>
 
----
-
-## // LOADOUT
-
-| System | Function | Stack |
-|---|---|---|
-| [ARIA2 Ultimate PRO](https://github.com/Swir/Aria2Gui) | Multi-connection desktop download manager | `Python` `CustomTkinter` `aria2c` |
-| [SwirPhotoClean](https://github.com/Swir/SwirPhotoClean) | Desktop image-processing workflow | `Python` `Images` |
-| [PowerBookmark](https://github.com/Swir/PowerBookmark) | Browser scripts, domain targeting and automation | `JavaScript` `Manifest V3` |
-| [InfoPulse PL](https://github.com/Swir/InfoPulse-PL) | RSS, Atom and API information center | `Python` `APIs` |
-| [Image To ICO](https://github.com/Swir/Image-To-Ico) | Image → Windows icon converter | `Python` `Windows` |
-| [WAV to MP3 Converter](https://github.com/Swir/WAV-to-MP3-converter) | Batch audio conversion | `Python` `Audio` |
-
 <div align="center">
 
-**[ACCESS FULL ARSENAL →](https://github.com/Swir?tab=repositories)**
+### [Browse all repositories →](https://github.com/Swir?tab=repositories)
 
 </div>
 
 ---
 
-## // TECH ARSENAL
+## More tools
+
+| Project | What it does | Main stack |
+|---|---|---|
+| [ARIA2 Ultimate PRO](https://github.com/Swir/Aria2Gui) | Multi-connection desktop download manager | `Python` `CustomTkinter` `aria2c` |
+| [InfoPulse PL](https://github.com/Swir/InfoPulse-PL) | RSS, Atom and API information center | `Python` `APIs` |
+| [PowerBookmark](https://github.com/Swir/PowerBookmark) | Browser automation and productivity tooling | `JavaScript` `Manifest V3` |
+| [NES New Life](https://github.com/Swir/Nes_New_Life) | Retro development and HD workflow experiments | `Game Dev` `Unity` `Tooling` |
+| [Image To ICO](https://github.com/Swir/Image-To-Ico) | Image to Windows icon converter | `Python` `Windows` |
+| [WAV to MP3 Converter](https://github.com/Swir/WAV-to-MP3-converter) | Batch audio conversion utility | `Python` `Audio` |
+
+---
+
+## Tech stack
 
 <div align="center">
 
-<img src="https://skillicons.dev/icons?i=python,kotlin,js,html,css,php,powershell,git,github,vscode,windows,linux&perline=12" alt="Tech stack" />
+<img src="https://skillicons.dev/icons?i=python,kotlin,js,html,css,php,powershell,git,github,vscode,windows,linux&perline=12" alt="Technology stack" />
 
 <br><br>
 
-`PYTHON` · `KOTLIN` · `JAVASCRIPT` · `POWERSHELL` · `WINDOWS` · `LINUX` · `GIT` · `GITHUB`
+`PYTHON` · `KOTLIN` · `JAVASCRIPT` · `HTML/CSS` · `PHP` · `POWERSHELL` · `GIT` · `WINDOWS` · `LINUX`
 
 </div>
 
 ---
 
-## // DEPLOYMENT LOOP
-
-```text
-[ IDEA ]
-    ↓
-[ BUILD ]
-    ↓
-[ TEST ]
-    ↓
-[ RELEASE ]
-    ↓
-[ IMPROVE ] ───────────────┐
-    ↑                       │
-    └───────────────────────┘
-```
-
-No endless prototype graveyard. If a project matters, I keep iterating until it becomes something useful.
-
----
+## GitHub activity
 
 <details>
-<summary><strong>// TELEMETRY — GitHub activity & statistics</strong></summary>
+<summary><strong>Show statistics</strong></summary>
 
 <br>
 
@@ -139,7 +130,7 @@ No endless prototype graveyard. If a project matters, I keep iterating until it 
 
 <br><br>
 
-<img width="98%" src="https://github-readme-activity-graph.vercel.app/graph?username=Swir&bg_color=02070D&color=8ED6FF&line=168CFF&point=FFFFFF&area=true&area_color=071A2A&hide_border=true" alt="GitHub activity graph" />
+<img width="98%" src="https://github-readme-activity-graph.vercel.app/graph?username=Swir&bg_color=0b0f17&color=94a3b8&line=3b82f6&point=ffffff&area=true&area_color=172554&hide_border=true" alt="GitHub activity graph" />
 
 </div>
 
@@ -149,10 +140,10 @@ No endless prototype graveyard. If a project matters, I keep iterating until it 
 
 <div align="center">
 
-### `SWIR // BUILD. SHIP. IMPROVE.`
+### SWIR
 
-**Better than yesterday.**
+**Build useful things. Ship them. Make them better.**
 
-If one of my projects is useful to you, a ⭐ on that repository is appreciated.
+If something here helps you, a ⭐ on the project is always appreciated.
 
 </div>
