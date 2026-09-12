@@ -1,57 +1,91 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="360" viewBox="0 0 1280 360" role="img" aria-label="SWIR electric horror mask hero v2">
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="360" viewBox="0 0 1280 360" role="img" aria-label="SWIR electric horror mask hero refined">
 <defs>
-  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#010205"/><stop offset=".48" stop-color="#04111d"/><stop offset="1" stop-color="#010307"/></linearGradient>
-  <linearGradient id="txt" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#f4fdff"/><stop offset=".45" stop-color="#7eeaff"/><stop offset="1" stop-color="#1aa6ff"/></linearGradient>
-  <radialGradient id="fog" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#33d4ff" stop-opacity=".22"/><stop offset="1" stop-color="#33d4ff" stop-opacity="0"/></radialGradient>
-  <filter id="g" x="-80%" y="-80%" width="260%" height="260%"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
-  <filter id="gg" x="-80%" y="-80%" width="260%" height="260%"><feGaussianBlur stdDeviation="12" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
-  <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse"><path d="M30 0H0V30" fill="none" stroke="#2acbff" stroke-opacity=".045"/></pattern>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#000204"/><stop offset=".45" stop-color="#03111d"/><stop offset="1" stop-color="#010208"/></linearGradient>
+  <linearGradient id="txt" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ffffff"/><stop offset=".38" stop-color="#9ff3ff"/><stop offset=".7" stop-color="#51d8ff"/><stop offset="1" stop-color="#168cff"/></linearGradient>
+  <linearGradient id="hood" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#071726"/><stop offset=".5" stop-color="#02070d"/><stop offset="1" stop-color="#000205"/></linearGradient>
+  <radialGradient id="fog" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#34d6ff" stop-opacity=".24"/><stop offset="1" stop-color="#34d6ff" stop-opacity="0"/></radialGradient>
+  <filter id="g" x="-80%" y="-80%" width="260%" height="260%"><feGaussianBlur stdDeviation="4.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  <filter id="gg" x="-90%" y="-90%" width="280%" height="280%"><feGaussianBlur stdDeviation="10" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse"><path d="M28 0H0V28" fill="none" stroke="#2bcfff" stroke-opacity=".04"/></pattern>
+  <pattern id="scan" width="4" height="4" patternUnits="userSpaceOnUse"><rect width="4" height="1" fill="#8cefff" opacity=".025"/></pattern>
 </defs>
-<rect width="1280" height="360" rx="24" fill="url(#bg)"/><rect width="1280" height="360" rx="24" fill="url(#grid)"/><rect x="1.5" y="1.5" width="1277" height="357" rx="22" fill="none" stroke="#168fff" stroke-opacity=".42"/>
-<ellipse cx="285" cy="315" rx="320" ry="70" fill="url(#fog)"><animate attributeName="rx" values="290;340;290" dur="7s" repeatCount="indefinite"/></ellipse>
-<ellipse cx="880" cy="285" rx="430" ry="75" fill="url(#fog)"><animate attributeName="cx" values="830;930;830" dur="10s" repeatCount="indefinite"/></ellipse>
 
-<!-- figure silhouette -->
-<g transform="translate(44,-10)">
-  <path d="M34 338 C55 261 93 209 139 186 C112 91 168 23 259 20 C357 18 420 91 391 193 C441 218 477 268 498 338 Z" fill="#02050a"/>
-  <path d="M89 337 C107 280 135 236 174 214 C144 148 160 74 218 42 C278 10 353 37 378 93 C395 131 392 177 374 214 C412 235 446 281 463 337 Z" fill="#06101a" stroke="#15334d" stroke-width="2"/>
-  <path d="M154 135 C172 66 246 32 314 54 C365 71 395 119 397 180 C352 146 305 132 254 134 C211 135 178 146 146 167 C144 154 147 145 154 135 Z" fill="#081826" stroke="#72e4ff" stroke-width="3" stroke-opacity=".7" filter="url(#gg)"><animate attributeName="stroke-opacity" values=".35;.95;.35" dur="3.8s" repeatCount="indefinite"/></path>
-  <path d="M176 165 C209 141 315 140 355 173 C381 194 384 248 353 281 C316 319 212 318 174 280 C146 252 146 187 176 165 Z" fill="#010307" stroke="#1d3548" stroke-width="2"/>
-  <g stroke="#78ebff" stroke-width="8" stroke-linecap="round" filter="url(#g)">
-    <path d="M201 194 L236 229 M236 194 L201 229"><animate attributeName="opacity" values="1;.18;1;1;.42;1" dur="2.9s" repeatCount="indefinite"/></path>
-    <path d="M292 194 L327 229 M327 194 L292 229"><animate attributeName="opacity" values=".35;1;.45;1;.25;1" dur="2.5s" repeatCount="indefinite"/></path>
-    <path d="M197 262 C222 285 305 286 333 260"/>
-    <path d="M214 255v20M235 263v18M257 266v16M279 266v16M301 263v18M321 255v20"/>
+<rect width="1280" height="360" rx="24" fill="url(#bg)"/>
+<rect width="1280" height="360" rx="24" fill="url(#grid)"/>
+<rect width="1280" height="360" rx="24" fill="url(#scan)"/>
+<rect x="1.5" y="1.5" width="1277" height="357" rx="22" fill="none" stroke="#168fff" stroke-opacity=".38"/>
+
+<ellipse cx="260" cy="312" rx="330" ry="76" fill="url(#fog)"><animate attributeName="rx" values="300;350;300" dur="8s" repeatCount="indefinite"/></ellipse>
+<ellipse cx="890" cy="278" rx="420" ry="72" fill="url(#fog)"><animate attributeName="cx" values="840;935;840" dur="11s" repeatCount="indefinite"/></ellipse>
+
+<!-- darker angular silhouette -->
+<g transform="translate(18,-6)">
+  <path d="M35 340 C62 255 104 204 149 179 C126 109 148 51 202 23 C266 -10 349 11 389 66 C420 109 424 157 407 195 C455 223 490 274 506 340 Z" fill="#010308"/>
+  <path d="M84 338 C106 274 142 228 181 208 C159 159 158 111 181 76 C210 31 265 14 316 25 C373 38 411 84 413 139 C414 165 408 190 397 211 C438 237 469 280 485 338 Z" fill="url(#hood)" stroke="#173247" stroke-width="2"/>
+
+  <!-- hood rim -->
+  <path d="M148 140 C166 81 218 50 277 48 C341 45 389 87 401 147 C366 126 332 116 293 114 C241 112 196 123 151 151 Z" fill="#06111c" stroke="#74eaff" stroke-width="3.2" stroke-opacity=".72" filter="url(#gg)"><animate attributeName="stroke-opacity" values=".32;.9;.42;.78;.32" dur="4.1s" repeatCount="indefinite"/></path>
+
+  <!-- mask, more angular -->
+  <path d="M178 164 L214 143 L317 143 L356 167 L367 211 L351 267 L319 295 L218 295 L182 268 L164 214 Z" fill="#000205" stroke="#173247" stroke-width="2.3"/>
+  <path d="M183 169 L215 151 L315 151 L346 170" fill="none" stroke="#24445c" stroke-width="1.2" opacity=".8"/>
+
+  <!-- eye sockets -->
+  <g stroke="#7cecff" stroke-width="8" stroke-linecap="round" filter="url(#g)">
+    <path d="M199 190 L235 226 M235 190 L199 226"><animate attributeName="opacity" values="1;.22;1;.55;1" dur="2.5s" repeatCount="indefinite"/></path>
+    <path d="M292 190 L328 226 M328 190 L292 226"><animate attributeName="opacity" values=".38;1;.3;1;.52;1" dur="2.2s" repeatCount="indefinite"/></path>
   </g>
-  <path d="M266 257 C264 287 263 312 261 345" stroke="#e9fbff" stroke-width="8" stroke-linecap="round" filter="url(#g)"/>
-  <path d="M238 344 C250 358 275 358 288 344" fill="none" stroke="#61dcff" stroke-width="4" filter="url(#g)"/>
-  <g fill="none" stroke="#35d6ff" stroke-linecap="round" filter="url(#g)">
-    <path d="M125 112 L89 129 L107 148 L63 170 L84 191 L43 211" stroke-width="3" stroke-dasharray="12 9"><animate attributeName="stroke-dashoffset" values="0;-90" dur="1.3s" repeatCount="indefinite"/><animate attributeName="opacity" values=".15;1;.2;.8;.15" dur="2.2s" repeatCount="indefinite"/></path>
-    <path d="M396 115 L440 97 L421 128 L465 141 L444 169 L488 181" stroke-width="3" stroke-dasharray="13 8"><animate attributeName="stroke-dashoffset" values="0;95" dur="1.6s" repeatCount="indefinite"/><animate attributeName="opacity" values=".2;.95;.25;1;.2" dur="2.7s" repeatCount="indefinite"/></path>
+
+  <!-- sinister stitched mouth -->
+  <g stroke="#73e9ff" stroke-linecap="round" filter="url(#g)">
+    <path d="M194 256 C223 278 304 280 334 254" fill="none" stroke-width="6"/>
+    <path d="M210 250v18M231 258v16M253 262v14M276 262v14M299 258v16M319 250v18" stroke-width="4.3"/>
+  </g>
+
+  <!-- mask cracks -->
+  <g fill="none" stroke="#35d8ff" stroke-width="2" stroke-linecap="round" filter="url(#g)" opacity=".7">
+    <path d="M188 180 L171 168 L178 151 L160 139"><animate attributeName="opacity" values=".1;.8;.25;.7;.1" dur="3.4s" repeatCount="indefinite"/></path>
+    <path d="M339 181 L357 167 L351 151 L369 139"><animate attributeName="opacity" values=".7;.15;.8;.2;.7" dur="3.8s" repeatCount="indefinite"/></path>
+    <path d="M214 286 L205 300 L214 311"/><path d="M318 286 L329 300 L320 311"/>
+  </g>
+
+  <!-- center neon scar / finger motif -->
+  <path d="M265 252 C263 279 262 307 260 343" stroke="#effdff" stroke-width="7.5" stroke-linecap="round" filter="url(#g)"/>
+  <path d="M240 343 C251 355 273 356 286 343" fill="none" stroke="#63e2ff" stroke-width="4" filter="url(#g)"/>
+
+  <!-- aggressive side arcs -->
+  <g fill="none" stroke-linecap="round" filter="url(#g)">
+    <path d="M143 103 L104 121 L122 139 L78 157 L97 177 L54 196" stroke="#31d6ff" stroke-width="3" stroke-dasharray="11 8"><animate attributeName="stroke-dashoffset" values="0;-90" dur="1.2s" repeatCount="indefinite"/><animate attributeName="opacity" values=".1;1;.18;.8;.1" dur="2.1s" repeatCount="indefinite"/></path>
+    <path d="M398 103 L438 86 L420 114 L462 127 L443 151 L486 166" stroke="#50bfff" stroke-width="3" stroke-dasharray="12 8"><animate attributeName="stroke-dashoffset" values="0;94" dur="1.45s" repeatCount="indefinite"/><animate attributeName="opacity" values=".2;.95;.18;1;.2" dur="2.6s" repeatCount="indefinite"/></path>
   </g>
 </g>
 
-<!-- central lightning spine -->
+<!-- title-zone lightning -->
 <g fill="none" stroke-linecap="round" filter="url(#g)">
-  <path d="M470 48 L515 70 L497 96 L551 116 L526 143 L580 163 L552 192 L614 214" stroke="#34d6ff" stroke-width="3.5" stroke-dasharray="16 10"><animate attributeName="stroke-dashoffset" values="0;-130" dur="1.5s" repeatCount="indefinite"/><animate attributeName="opacity" values=".2;1;.18;.9;.2" dur="2.4s" repeatCount="indefinite"/></path>
-  <path d="M1167 58 L1124 82 L1147 105 L1092 130 L1118 154 L1062 178 L1090 202 L1038 230" stroke="#697cff" stroke-width="3" stroke-dasharray="15 10"><animate attributeName="stroke-dashoffset" values="0;125" dur="1.7s" repeatCount="indefinite"/><animate attributeName="opacity" values=".18;.9;.2;1;.18" dur="3s" repeatCount="indefinite"/></path>
+  <path d="M462 42 L514 63 L493 88 L548 105 L521 132 L579 151 L550 177 L613 198" stroke="#34dcff" stroke-width="3.4" stroke-dasharray="15 9"><animate attributeName="stroke-dashoffset" values="0;-132" dur="1.35s" repeatCount="indefinite"/><animate attributeName="opacity" values=".12;1;.18;.9;.12" dur="2.1s" repeatCount="indefinite"/></path>
+  <path d="M1184 54 L1138 75 L1161 99 L1104 120 L1132 145 L1072 168 L1100 193 L1045 217" stroke="#677dff" stroke-width="3" stroke-dasharray="14 9"><animate attributeName="stroke-dashoffset" values="0;120" dur="1.7s" repeatCount="indefinite"/><animate attributeName="opacity" values=".15;.88;.22;1;.15" dur="2.8s" repeatCount="indefinite"/></path>
+  <path d="M655 272 L688 258 L712 271 L744 250 L772 268 L807 247 L835 266 L872 244 L901 261" stroke="#35d6ff" stroke-width="2.1" stroke-dasharray="9 7"><animate attributeName="stroke-dashoffset" values="0;-105" dur="1.8s" repeatCount="indefinite"/><animate attributeName="opacity" values=".08;.65;.08" dur="2.4s" repeatCount="indefinite"/></path>
 </g>
 
 <!-- title block -->
-<g transform="translate(518,58)">
-  <text x="5" y="92" font-family="Arial Black,Segoe UI,Arial,sans-serif" font-size="118" font-style="italic" font-weight="900" letter-spacing="7" fill="#092d45" opacity=".65">SWIR</text>
-  <text x="0" y="87" font-family="Arial Black,Segoe UI,Arial,sans-serif" font-size="118" font-style="italic" font-weight="900" letter-spacing="7" fill="url(#txt)" filter="url(#gg)">SWIR</text>
-  <rect x="4" y="110" width="575" height="1.4" fill="#1ebfff" opacity=".45"/>
-  <text x="6" y="138" font-family="Consolas,Menlo,monospace" font-size="16" letter-spacing="4" fill="#77e6ff">SOFTWARE · AUTOMATION · GAMES · AI</text>
-  <text x="6" y="185" font-family="Segoe UI,Arial,sans-serif" font-size="29" font-weight="800" fill="#f6fbff">BUILD WHAT SHOULD EXIST.</text>
-  <text x="6" y="216" font-family="Consolas,Menlo,monospace" font-size="13" letter-spacing="2.1" fill="#7f9aab">CODE / RELEASE / EVOLVE / REPEAT</text>
-  <g transform="translate(6,257)" font-family="Consolas,Menlo,monospace" font-size="12" fill="#60dfff">
+<g transform="translate(520,54)">
+  <text x="7" y="96" font-family="Arial Black,Segoe UI,Arial,sans-serif" font-size="120" font-style="italic" font-weight="900" letter-spacing="7" fill="#072638" opacity=".75">SWIR</text>
+  <text x="0" y="89" font-family="Arial Black,Segoe UI,Arial,sans-serif" font-size="120" font-style="italic" font-weight="900" letter-spacing="7" fill="url(#txt)" filter="url(#gg)">SWIR</text>
+  <rect x="2" y="112" width="580" height="1.5" fill="#22c7ff" opacity=".5"/>
+  <text x="4" y="140" font-family="Consolas,Menlo,monospace" font-size="16" letter-spacing="4" fill="#7deaff">SOFTWARE · AUTOMATION · GAMES · AI</text>
+  <text x="4" y="187" font-family="Segoe UI,Arial,sans-serif" font-size="29" font-weight="800" fill="#f7fcff">BUILD WHAT SHOULD EXIST.</text>
+  <text x="4" y="217" font-family="Consolas,Menlo,monospace" font-size="13" letter-spacing="2.1" fill="#7794a6">CODE / RELEASE / EVOLVE / REPEAT</text>
+  <g transform="translate(4,257)" font-family="Consolas,Menlo,monospace" font-size="12" fill="#5ce0ff">
     <text x="0" y="0">PYTHON</text><text x="92" y="0">WINDOWS</text><text x="205" y="0">ANDROID</text><text x="316" y="0">WEB</text><text x="389" y="0">TOOLS</text>
   </g>
-  <path d="M2 279 H570" stroke="#1b9bd6" stroke-opacity=".22"/>
+  <path d="M0 278 H574" stroke="#1a94cc" stroke-opacity=".24"/>
 </g>
 
-<!-- glitch cuts -->
-<g fill="#8feaff" opacity=".24"><rect x="580" y="46" width="470" height="2"><animate attributeName="x" values="580;640;560;580" dur="5.4s" repeatCount="indefinite"/></rect><rect x="740" y="318" width="280" height="1.5"><animate attributeName="width" values="70;280;150;280" dur="4.2s" repeatCount="indefinite"/></rect></g>
-<text x="1185" y="333" text-anchor="end" font-family="Consolas,Menlo,monospace" font-size="11" letter-spacing="2" fill="#48cfff" opacity=".45">SIGNAL // UNSTABLE</text>
+<!-- horror glitch cuts -->
+<g opacity=".23" fill="#96efff">
+  <rect x="576" y="42" width="485" height="2"><animate attributeName="x" values="576;635;556;576" dur="4.8s" repeatCount="indefinite"/></rect>
+  <rect x="735" y="317" width="290" height="1.5"><animate attributeName="width" values="75;290;130;290" dur="3.9s" repeatCount="indefinite"/></rect>
+  <rect x="604" y="154" width="120" height="1"><animate attributeName="opacity" values="0;.8;0;0" dur="2.8s" repeatCount="indefinite"/></rect>
+</g>
+<text x="1188" y="332" text-anchor="end" font-family="Consolas,Menlo,monospace" font-size="11" letter-spacing="2" fill="#49d2ff" opacity=".5">SIGNAL // UNSTABLE</text>
 </svg>
