@@ -1,38 +1,28 @@
 <div align="center">
 
-<img width="100%" src="assets/power-neon-hero-v1.svg" alt="SWIR — electric masked developer profile" />
+<img width="100%" src="assets/power-neon-hero-v2.svg" alt="SWIR — electric masked developer profile" />
 
-<br>
-
-<a href="https://github.com/Swir?tab=repositories"><img src="https://img.shields.io/badge/REPOSITORIES-03070D?style=for-the-badge&logo=github&logoColor=64DFFF" alt="Repositories" /></a>
-<a href="https://swir.github.io/"><img src="https://img.shields.io/badge/PORTFOLIO-03070D?style=for-the-badge&logo=googlechrome&logoColor=64DFFF" alt="Portfolio" /></a>
-<a href="https://github.com/Swir/Tank-Revival-Overdrive/releases/latest"><img src="https://img.shields.io/badge/LATEST_BUILD-03070D?style=for-the-badge&logo=windows11&logoColor=64DFFF" alt="Latest build" /></a>
-
-<br><br>
-
-### `SIGNAL ACTIVE // BUILD SYSTEM ONLINE`
-
-**Independent developer building software, automation, games and experimental tools.**
+<a href="https://github.com/Swir?tab=repositories"><img src="https://img.shields.io/badge/REPOSITORIES-02050A?style=for-the-badge&logo=github&logoColor=62E5FF" alt="Repositories" /></a>
+<a href="https://swir.github.io/"><img src="https://img.shields.io/badge/PORTFOLIO-02050A?style=for-the-badge&logo=googlechrome&logoColor=62E5FF" alt="Portfolio" /></a>
+<a href="https://github.com/Swir/Tank-Revival-Overdrive/releases/latest"><img src="https://img.shields.io/badge/LATEST_BUILD-02050A?style=for-the-badge&logo=windows11&logoColor=62E5FF" alt="Latest build" /></a>
 
 </div>
 
-<img width="100%" src="assets/power-divider-v1.svg" alt="electric divider" />
+<img width="100%" src="assets/power-divider-v2.svg" alt="electric divider" />
 
 ## About
 
-I build projects that move from **idea to working release** as quickly as possible, then improve through real use.
+I build projects that move from **idea to working release** fast, then evolve through testing, real use and iteration.
 
 My main territory is **Python, Windows desktop software and automation**, with projects extending into **Android, web, browser tooling, image/audio workflows, AI-assisted systems and game development**.
 
-The visual identity is darker. The engineering approach is not:
-
 ```text
-PROBLEM → BUILD → TEST → RELEASE → IMPROVE → REPEAT
+PROBLEM  →  BUILD  →  TEST  →  RELEASE  →  EVOLVE
 ```
 
 > **Useful first. Working second. Better every version.**
 
-<img width="100%" src="assets/power-divider-v1.svg" alt="electric divider" />
+<img width="100%" src="assets/power-divider-v2.svg" alt="electric divider" />
 
 ## Main Projects
 
@@ -44,13 +34,11 @@ PROBLEM → BUILD → TEST → RELEASE → IMPROVE → REPEAT
 <a href="https://github.com/Swir/SwirEngine"><img width="49%" src="assets/power-card-engine-v1.svg" alt="SwirEngine" /></a>
 <a href="https://github.com/Swir/SwirPhotoClean"><img width="49%" src="assets/power-card-photoclean-v1.svg" alt="SwirPhotoClean" /></a>
 
-<br><br>
-
 <a href="https://github.com/Swir?tab=repositories"><strong>VIEW ALL PROJECTS →</strong></a>
 
 </div>
 
-<img width="100%" src="assets/power-divider-v1.svg" alt="electric divider" />
+<img width="100%" src="assets/power-divider-v2.svg" alt="electric divider" />
 
 ## Systems I Build
 
@@ -74,7 +62,7 @@ PROBLEM → BUILD → TEST → RELEASE → IMPROVE → REPEAT
 | [Image To ICO](https://github.com/Swir/Image-To-Ico) | Windows icon conversion utility |
 | [WAV to MP3 Converter](https://github.com/Swir/WAV-to-MP3-converter) | Batch WAV-to-MP3 conversion workflow |
 
-<img width="100%" src="assets/power-divider-v1.svg" alt="electric divider" />
+<img width="100%" src="assets/power-divider-v2.svg" alt="electric divider" />
 
 ## Stack
 
@@ -82,41 +70,22 @@ PROBLEM → BUILD → TEST → RELEASE → IMPROVE → REPEAT
 
 <img src="https://skillicons.dev/icons?i=python,kotlin,js,html,css,php,powershell,git,github,vscode,windows,linux&perline=12" alt="Technology stack" />
 
-<br><br>
+<br>
 
 `PYTHON` · `WINDOWS` · `JAVASCRIPT` · `KOTLIN` · `HTML/CSS` · `POWERSHELL` · `GIT` · `FFMPEG` · `ARIA2`
 
 </div>
 
-<img width="100%" src="assets/power-divider-v1.svg" alt="electric divider" />
+<img width="100%" src="assets/power-divider-v2.svg" alt="electric divider" />
 
 ## Operating Mode
 
-<table>
-<tr>
-<td width="33%" valign="top">
-
-### 01 // BUILD
-Start with a real problem and get to a working version fast.
-
-</td>
-<td width="33%" valign="top">
-
-### 02 // RELEASE
-A usable build beats a perfect idea that never ships.
-
-</td>
-<td width="33%" valign="top">
-
-### 03 // EVOLVE
-Every release becomes the starting point for the next one.
-
-</td>
-</tr>
-</table>
+| 01 // BUILD | 02 // RELEASE | 03 // EVOLVE |
+|---|---|---|
+| Start with a real problem and get to a working version fast. | A usable build beats a perfect idea that never ships. | Every release becomes the starting point for the next one. |
 
 <details>
-<summary><strong>⚡ Open GitHub activity</strong></summary>
+<summary><strong>⚡ GitHub activity</strong></summary>
 
 <br>
 
@@ -132,7 +101,7 @@ Every release becomes the starting point for the next one.
 
 </details>
 
-<img width="100%" src="assets/power-divider-v1.svg" alt="electric divider" />
+<img width="100%" src="assets/power-divider-v2.svg" alt="electric divider" />
 
 <div align="center">
 
