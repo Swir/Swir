@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-label="SWIR animated hacker gaming hero banner">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#01040A"/>
+      <stop offset="0.5" stop-color="#051321"/>
+      <stop offset="1" stop-color="#02060B"/>
+    </linearGradient>
+    <linearGradient id="neon" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#EAF8FF"/>
+      <stop offset="0.45" stop-color="#89D8FF"/>
+      <stop offset="1" stop-color="#2AA7FF"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0H0V24" fill="none" stroke="#1E9DFF" stroke-opacity="0.06"/>
+    </pattern>
+    <linearGradient id="scan" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#3CB8FF" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="360" rx="24" fill="url(#bg)"/>
+  <rect width="1200" height="360" rx="24" fill="url(#grid)"/>
+  <rect x="1" y="1" width="1198" height="358" rx="23" fill="none" stroke="#168CFF" stroke-opacity="0.34"/>
+
+  <g opacity="0.38" font-family="Consolas, Menlo, monospace" font-size="16" fill="#41B9FF">
+    <text x="64" y="64">010101</text>
+    <text x="64" y="104">110010</text>
+    <text x="64" y="144">011001</text>
+    <text x="64" y="184">101101</text>
+    <text x="64" y="224">001011</text>
+    <text x="64" y="264">111000</text>
+    <text x="64" y="304">010110</text>
+    <animateTransform attributeName="transform" type="translate" values="0 0;0 8;0 0" dur="6s" repeatCount="indefinite"/>
+  </g>
+  <g opacity="0.24" font-family="Consolas, Menlo, monospace" font-size="16" fill="#41B9FF">
+    <text x="1122" y="74" text-anchor="end">CODE // PLAY // BUILD</text>
+    <text x="1122" y="104" text-anchor="end">CREATE // TEST // SHIP</text>
+    <text x="1122" y="134" text-anchor="end">IMPROVE // REPEAT</text>
+  </g>
+
+  <g transform="translate(72,54)">
+    <circle cx="118" cy="118" r="102" fill="none" stroke="#1D9CFF" stroke-opacity="0.3" stroke-width="1.5"/>
+    <circle cx="118" cy="118" r="90" fill="none" stroke="#33B3FF" stroke-opacity="0.6" stroke-dasharray="8 10" filter="url(#glow)">
+      <animateTransform attributeName="transform" type="rotate" from="0 118 118" to="360 118 118" dur="18s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="118" cy="118" r="68" fill="#020914" stroke="#2AA7FF" stroke-opacity="0.75"/>
+    <path d="M88 98 L104 116 M104 98 L88 116" stroke="#78D8FF" stroke-width="6" stroke-linecap="round" filter="url(#glow)"/>
+    <path d="M132 98 L148 116 M148 98 L132 116" stroke="#78D8FF" stroke-width="6" stroke-linecap="round" filter="url(#glow)"/>
+    <path d="M87 146 C98 158 138 158 149 146" fill="none" stroke="#86DDFF" stroke-width="4" stroke-linecap="round" filter="url(#glow)"/>
+    <g stroke="#86DDFF" stroke-width="2">
+      <path d="M95 147 v10"/><path d="M107 151 v8"/><path d="M118 152 v9"/><path d="M129 151 v8"/><path d="M141 147 v10"/>
+    </g>
+    <path d="M98 196 L118 178 L138 196 L133 208 L103 208Z" fill="none" stroke="#91E0FF" stroke-width="3" filter="url(#glow)">
+      <animate attributeName="stroke-opacity" values="0.65;1;0.65" dur="2.4s" repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <g transform="translate(340,78)">
+    <circle cx="780" cy="12" r="5" fill="#54C6FF" filter="url(#glow)">
+      <animate attributeName="opacity" values="1;.25;1" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <text x="766" y="17" text-anchor="end" fill="#89D8FF" font-family="Consolas, Menlo, monospace" font-size="14">SYSTEM ONLINE</text>
+
+    <text x="0" y="28" fill="#8FD8FF" font-family="Consolas, Menlo, monospace" font-size="18" letter-spacing="3">BETTER THAN YESTERDAY</text>
+    <g transform="translate(0,44)">
+      <text x="0" y="90" fill="url(#neon)" font-family="Arial Black, Arial, Helvetica, sans-serif" font-size="106" font-weight="900" font-style="italic" letter-spacing="4" filter="url(#glow)">SWIR</text>
+      <rect x="0" y="102" width="742" height="1" fill="#168CFF" fill-opacity="0.4"/>
+      <text x="0" y="150" fill="#F2FBFF" font-family="Consolas, Menlo, monospace" font-size="28" letter-spacing="4">IDEAS  →  CODE  →  REALITY</text>
+      <text x="0" y="188" fill="#74CFFF" font-family="Consolas, Menlo, monospace" font-size="18" letter-spacing="3">DEV • GAMING • AUTOMATION • AI • AUDIO • TOOLS</text>
+    </g>
+
+    <g transform="translate(0,242)" font-family="Consolas, Menlo, monospace" font-size="15" fill="#DDF6FF">
+      <rect width="184" height="42" rx="10" fill="#061728" stroke="#168CFF" stroke-opacity="0.55"/>
+      <text x="18" y="26">PRIMARY // PYTHON</text>
+      <rect x="202" width="184" height="42" rx="10" fill="#061728" stroke="#168CFF" stroke-opacity="0.55"/>
+      <text x="220" y="26">BUILD // WINDOWS</text>
+      <rect x="404" width="184" height="42" rx="10" fill="#061728" stroke="#168CFF" stroke-opacity="0.55"/>
+      <text x="422" y="26">MODE // OPERATOR</text>
+    </g>
+  </g>
+
+  <rect x="-220" y="0" width="220" height="360" fill="url(#scan)">
+    <animate attributeName="x" values="-220;1220" dur="5.2s" repeatCount="indefinite"/>
+  </rect>
+</svg>
