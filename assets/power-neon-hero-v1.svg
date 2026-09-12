@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="420" viewBox="0 0 1280 420" role="img" aria-label="SWIR electric masked horror hero">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#010307"/><stop offset="0.55" stop-color="#06111f"/><stop offset="1" stop-color="#02040a"/></linearGradient>
+  <linearGradient id="neon" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ecfbff"/><stop offset="0.45" stop-color="#65d9ff"/><stop offset="1" stop-color="#1597ff"/></linearGradient>
+  <radialGradient id="fog" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#38cfff" stop-opacity=".18"/><stop offset="1" stop-color="#38cfff" stop-opacity="0"/></radialGradient>
+  <filter id="glow" x="-80%" y="-80%" width="260%" height="260%"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  <filter id="bigglow" x="-80%" y="-80%" width="260%" height="260%"><feGaussianBlur stdDeviation="11" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  <pattern id="grid" width="34" height="34" patternUnits="userSpaceOnUse"><path d="M34 0H0V34" fill="none" stroke="#2bbcff" stroke-opacity=".055"/></pattern>
+</defs>
+<rect width="1280" height="420" rx="26" fill="url(#bg)"/>
+<rect width="1280" height="420" rx="26" fill="url(#grid)"/>
+<rect x="1.5" y="1.5" width="1277" height="417" rx="24" fill="none" stroke="#158dff" stroke-opacity=".35"/>
+
+<!-- ambient fog -->
+<ellipse cx="322" cy="350" rx="280" ry="58" fill="url(#fog)"><animate attributeName="rx" values="250;315;250" dur="8s" repeatCount="indefinite"/></ellipse>
+<ellipse cx="890" cy="330" rx="420" ry="75" fill="url(#fog)"><animate attributeName="cx" values="860;930;860" dur="10s" repeatCount="indefinite"/></ellipse>
+
+<!-- masked figure -->
+<g transform="translate(70,25)">
+  <path d="M95 338 C45 270 50 148 106 77 C152 19 262 7 330 62 C396 116 412 253 352 336 C285 384 164 388 95 338Z" fill="#03070d" stroke="#12314d" stroke-width="2"/>
+  <path d="M116 115 C145 47 265 20 332 87 C369 125 382 176 384 231 C344 184 289 159 226 155 C175 151 136 162 102 184 C98 155 101 139 116 115Z" fill="#07111e" stroke="#55cfff" stroke-opacity=".5" stroke-width="3" filter="url(#bigglow)"><animate attributeName="stroke-opacity" values=".25;.75;.25" dur="4.2s" repeatCount="indefinite"/></path>
+  <ellipse cx="233" cy="210" rx="104" ry="88" fill="#010409" stroke="#10253a" stroke-width="2"/>
+  <g filter="url(#glow)" stroke="#67ddff" stroke-width="7" stroke-linecap="round">
+    <path d="M170 177 L202 207 M202 177 L170 207"><animate attributeName="opacity" values="1;.25;1;1;.55;1" dur="3.6s" repeatCount="indefinite"/></path>
+    <path d="M264 177 L296 207 M296 177 L264 207"><animate attributeName="opacity" values="1;1;.35;1;.6;1" dur="3.1s" repeatCount="indefinite"/></path>
+    <path d="M166 247 C190 270 276 270 301 246"/>
+    <path d="M183 241v17M201 248v15M220 251v14M239 251v14M258 249v15M278 242v17"/>
+  </g>
+  <path d="M238 245 C236 277 235 306 233 343" stroke="#dff8ff" stroke-width="7" stroke-linecap="round" filter="url(#glow)"/>
+  <path d="M216 344 C227 358 250 358 262 344" fill="none" stroke="#56ceff" stroke-width="4" filter="url(#glow)"/>
+  <g opacity=".42" stroke="#2bbcff" stroke-width="2"><path d="M80 190 L39 177 L65 213 L25 230"/><path d="M362 145 L409 123 L386 164 L431 171"/></g>
+</g>
+
+<!-- electricity behind title -->
+<g fill="none" stroke-linecap="round" filter="url(#glow)">
+  <path d="M454 80 L500 101 L478 128 L537 146 L510 176 L572 199" stroke="#35c7ff" stroke-width="3" stroke-dasharray="18 12"><animate attributeName="stroke-dashoffset" values="0;-120" dur="1.8s" repeatCount="indefinite"/><animate attributeName="opacity" values=".2;1;.35;.8;.2" dur="2.7s" repeatCount="indefinite"/></path>
+  <path d="M1168 80 L1128 105 L1152 129 L1091 153 L1118 176 L1062 208" stroke="#6c8cff" stroke-width="3" stroke-dasharray="16 11"><animate attributeName="stroke-dashoffset" values="0;110" dur="2.1s" repeatCount="indefinite"/><animate attributeName="opacity" values=".25;.9;.25;1;.25" dur="3.3s" repeatCount="indefinite"/></path>
+  <path d="M520 314 L570 300 L598 322 L648 296 L690 318 L748 288 L792 311 L850 285 L904 307 L955 278" stroke="#2ccfff" stroke-width="2.5" stroke-dasharray="12 9"><animate attributeName="stroke-dashoffset" values="0;-140" dur="2.4s" repeatCount="indefinite"/><animate attributeName="opacity" values=".18;.8;.18" dur="2.9s" repeatCount="indefinite"/></path>
+</g>
+
+<!-- title -->
+<g transform="translate(494,92)">
+  <text x="0" y="95" font-family="Arial Black,Segoe UI,Arial,sans-serif" font-size="128" font-style="italic" font-weight="900" letter-spacing="8" fill="url(#neon)" filter="url(#bigglow)">SWIR</text>
+  <text x="7" y="126" font-family="Consolas,Menlo,monospace" font-size="17" letter-spacing="4" fill="#7bdcff">SOFTWARE · AUTOMATION · GAMES · AI</text>
+  <path d="M5 151 H587" stroke="#1aa9ff" stroke-opacity=".35"/>
+  <text x="7" y="188" font-family="Segoe UI,Arial,sans-serif" font-size="26" font-weight="700" fill="#f3fbff">BUILD WHAT SHOULD EXIST.</text>
+  <text x="7" y="220" font-family="Consolas,Menlo,monospace" font-size="14" letter-spacing="2" fill="#7797ad">POWERED BY CODE / ITERATION / OBSESSION</text>
+  <g transform="translate(7,260)" font-family="Consolas,Menlo,monospace" font-size="13" fill="#65d9ff">
+    <text x="0" y="0">PYTHON</text><text x="103" y="0">WINDOWS</text><text x="220" y="0">ANDROID</text><text x="335" y="0">WEB</text><text x="410" y="0">TOOLS</text>
+  </g>
+</g>
+
+<!-- horror flicker strips -->
+<g opacity=".18" fill="#7ee7ff">
+  <rect x="488" y="50" width="510" height="2"><animate attributeName="width" values="40;510;130;510" dur="4.8s" repeatCount="indefinite"/></rect>
+  <rect x="720" y="365" width="350" height="1.5"><animate attributeName="x" values="720;650;780;720" dur="6s" repeatCount="indefinite"/></rect>
+</g>
+<text x="1160" y="388" text-anchor="end" font-family="Consolas,Menlo,monospace" font-size="12" letter-spacing="2" fill="#3fbaff" opacity=".45">SIGNAL // ONLINE</text>
+</svg>
