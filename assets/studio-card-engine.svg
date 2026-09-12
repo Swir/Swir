@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="220" viewBox="0 0 760 220" role="img" aria-label="SwirEngine">
+  <rect width="760" height="220" rx="20" fill="#111419"/>
+  <rect x="1" y="1" width="758" height="218" rx="19" fill="none" stroke="#2A3038"/>
+  <rect x="0" y="0" width="8" height="220" rx="4" fill="#5AA9FF"/>
+  <text x="40" y="46" fill="#7D8794" font-family="Consolas,monospace" font-size="14" letter-spacing="2">03 / INTERNAL R&amp;D</text>
+  <text x="40" y="94" fill="#F7F9FC" font-family="Arial Black,Arial,sans-serif" font-size="34" font-weight="900">SwirEngine</text>
+  <text x="40" y="130" fill="#A7B0BC" font-family="Arial,sans-serif" font-size="17">Reusable foundations, tooling experiments and development infrastructure.</text>
+  <text x="40" y="180" fill="#5AA9FF" font-family="Consolas,monospace" font-size="14">SYSTEMS   TOOLING   EXPERIMENTAL</text>
+  <rect x="652" y="78" width="64" height="64" rx="10" fill="none" stroke="#5AA9FF" stroke-width="3"/>
+  <line x1="684" y1="78" x2="684" y2="142" stroke="#5AA9FF" stroke-width="3"/>
+  <line x1="652" y1="110" x2="716" y2="110" stroke="#5AA9FF" stroke-width="3"/>
+</svg>
