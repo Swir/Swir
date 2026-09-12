@@ -1,6 +1,6 @@
 <div align="center">
 
-<img width="100%" src="assets/power-neon-hero-v2.svg" alt="SWIR — electric masked developer profile" />
+<img width="100%" src="assets/power-neon-hero-v4.svg" alt="SWIR — power neon electric profile" />
 
 <a href="https://github.com/Swir?tab=repositories"><img src="https://img.shields.io/badge/REPOSITORIES-02050A?style=for-the-badge&logo=github&logoColor=62E5FF" alt="Repositories" /></a>
 <a href="https://swir.github.io/"><img src="https://img.shields.io/badge/PORTFOLIO-02050A?style=for-the-badge&logo=googlechrome&logoColor=62E5FF" alt="Portfolio" /></a>
@@ -8,7 +8,7 @@
 
 </div>
 
-<img width="100%" src="assets/power-divider-v2.svg" alt="electric divider" />
+<img width="100%" src="assets/power-divider-v4.svg" alt="electric divider" />
 
 ## About
 
@@ -22,7 +22,7 @@ PROBLEM  →  BUILD  →  TEST  →  RELEASE  →  EVOLVE
 
 > **Useful first. Working second. Better every version.**
 
-<img width="100%" src="assets/power-divider-v2.svg" alt="electric divider" />
+<img width="100%" src="assets/power-divider-v4.svg" alt="electric divider" />
 
 ## Main Projects
 
@@ -38,7 +38,7 @@ PROBLEM  →  BUILD  →  TEST  →  RELEASE  →  EVOLVE
 
 </div>
 
-<img width="100%" src="assets/power-divider-v2.svg" alt="electric divider" />
+<img width="100%" src="assets/power-divider-v4.svg" alt="electric divider" />
 
 ## Systems I Build
 
@@ -62,7 +62,7 @@ PROBLEM  →  BUILD  →  TEST  →  RELEASE  →  EVOLVE
 | [Image To ICO](https://github.com/Swir/Image-To-Ico) | Windows icon conversion utility |
 | [WAV to MP3 Converter](https://github.com/Swir/WAV-to-MP3-converter) | Batch WAV-to-MP3 conversion workflow |
 
-<img width="100%" src="assets/power-divider-v2.svg" alt="electric divider" />
+<img width="100%" src="assets/power-divider-v4.svg" alt="electric divider" />
 
 ## Stack
 
@@ -76,16 +76,17 @@ PROBLEM  →  BUILD  →  TEST  →  RELEASE  →  EVOLVE
 
 </div>
 
-<img width="100%" src="assets/power-divider-v2.svg" alt="electric divider" />
+<img width="100%" src="assets/power-divider-v4.svg" alt="electric divider" />
 
 ## Operating Mode
 
-| 01 // BUILD | 02 // RELEASE | 03 // EVOLVE |
+| 01 | 02 | 03 |
 |---|---|---|
+| **BUILD** | **RELEASE** | **EVOLVE** |
 | Start with a real problem and get to a working version fast. | A usable build beats a perfect idea that never ships. | Every release becomes the starting point for the next one. |
 
 <details>
-<summary><strong>⚡ GitHub activity</strong></summary>
+<summary><strong>⚡ Open GitHub activity</strong></summary>
 
 <br>
 
@@ -101,11 +102,11 @@ PROBLEM  →  BUILD  →  TEST  →  RELEASE  →  EVOLVE
 
 </details>
 
-<img width="100%" src="assets/power-divider-v2.svg" alt="electric divider" />
+<img width="100%" src="assets/power-divider-v4.svg" alt="electric divider" />
 
 <div align="center">
 
-### `SWIR // SIGNAL NEVER STATIC`
+### `SWIR // FULL POWER MODE`
 
 ## BUILD WHAT SHOULD EXIST.
 
