@@ -1,16 +1,12 @@
 <div align="center">
 
-# SWIR // SYSTEM ONLINE
-
-### `DEV • GAMING • AUTOMATION • AI • AUDIO • TOOLS`
-
-**I build software, tools and playable projects — then keep improving them.**
+<img width="100%" src="assets/swir-hero-animated.svg" alt="SWIR animated hacker gaming banner" />
 
 <br>
 
-<a href="https://github.com/Swir?tab=repositories"><img src="https://img.shields.io/badge/OPEN_REPOSITORIES-07111f?style=for-the-badge&logo=github&logoColor=36b8ff" alt="Repositories" /></a>
-<a href="https://swir.github.io/"><img src="https://img.shields.io/badge/ENTER_PORTFOLIO-07111f?style=for-the-badge&logo=googlechrome&logoColor=36b8ff" alt="Portfolio" /></a>
-<a href="https://github.com/Swir/Tank-Revival-Overdrive/releases/latest"><img src="https://img.shields.io/badge/LATEST_DEPLOYMENT-TANK_REVIVAL-07111f?style=for-the-badge&logo=windows11&logoColor=36b8ff" alt="Latest deployment" /></a>
+<a href="https://github.com/Swir?tab=repositories"><img src="https://img.shields.io/badge/OPEN_REPOSITORIES-07111f?style=for-the-badge&logo=github&logoColor=39b7ff" alt="Repositories" /></a>
+<a href="https://swir.github.io/"><img src="https://img.shields.io/badge/ENTER_PORTFOLIO-07111f?style=for-the-badge&logo=googlechrome&logoColor=39b7ff" alt="Portfolio" /></a>
+<a href="https://github.com/Swir/Tank-Revival-Overdrive/releases/latest"><img src="https://img.shields.io/badge/LATEST_DEPLOYMENT-TANK_REVIVAL-07111f?style=for-the-badge&logo=windows11&logoColor=39b7ff" alt="Latest deployment" /></a>
 
 <br><br>
 
@@ -22,16 +18,22 @@
 
 ## // OPERATOR PROFILE
 
-Independent builder focused on **practical software, automation, desktop tools, Android/web apps, game development, AI experiments and creative tech**.
+I build **software, tools and playable projects** with a focus on practical results: desktop apps, automation, Android/web solutions, game development, AI experiments and creative tech.
 
-I prefer projects that become real builds instead of staying as concepts. Repositories here are developed through iterations, fixes, documentation, packaging and releases.
+This profile is the public command center for the projects I actively improve, test and release.
 
 ```text
 STATUS      : ONLINE
 PRIMARY     : PYTHON / WINDOWS / AUTOMATION
-SECONDARY   : ANDROID / WEB / GAME DEV / AI / AUDIO
-PROTOCOL    : BUILD → TEST → SHIP → IMPROVE
+SECONDARY   : GAME DEV / ANDROID / WEB / AI / AUDIO
+LOOP        : IDEA → BUILD → TEST → SHIP → IMPROVE
 ```
+
+---
+
+<div align="center">
+<img width="100%" src="assets/swir-ops-animated.svg" alt="SWIR animated mission board" />
+</div>
 
 ---
 
@@ -42,8 +44,7 @@ PROTOCOL    : BUILD → TEST → SHIP → IMPROVE
 <td width="33%" valign="top">
 
 ### [TANK REVIVAL OVERDRIVE](https://github.com/Swir/Tank-Revival-Overdrive)
-
-Windows tank-combat project with campaign progression, tactical systems and playable release builds.
+Playable Windows tank-combat project with campaign progression, tactical systems and public builds.
 
 <a href="https://github.com/Swir/Tank-Revival-Overdrive/releases/latest"><img src="https://img.shields.io/github/v/release/Swir/Tank-Revival-Overdrive?style=flat-square&label=DEPLOY&color=168cff" alt="Tank Revival release" /></a>
 
@@ -51,8 +52,7 @@ Windows tank-combat project with campaign progression, tactical systems and play
 <td width="33%" valign="top">
 
 ### [WOJTHOM](https://github.com/Swir/WojThom)
-
-Work-time application for Android and Web with persistent history, statistics, multilingual UI and PDF reporting.
+Android + Web work-time app with history, statistics and PDF reporting.
 
 `ANDROID` `WEB` `PDF`
 
@@ -60,8 +60,7 @@ Work-time application for Android and Web with persistent history, statistics, m
 <td width="33%" valign="top">
 
 ### [NES NEW LIFE](https://github.com/Swir/Nes_New_Life)
-
-Retro-development lab focused on modernization tooling, HD workflows and reproducible game-development experiments.
+Retro dev lab focused on tooling, HD workflows and reproducible game-development experiments.
 
 `GAME DEV` `UNITY` `TOOLING`
 
@@ -120,7 +119,7 @@ Retro-development lab focused on modernization tooling, HD workflows and reprodu
     └───────────────────────┘
 ```
 
-No endless prototype graveyard. If a project matters, it gets refined until it becomes something usable.
+No endless prototype graveyard. If a project matters, I keep iterating until it becomes something useful.
 
 ---
 
@@ -140,7 +139,7 @@ No endless prototype graveyard. If a project matters, it gets refined until it b
 
 <br><br>
 
-<img width="98%" src="https://github-readme-activity-graph.vercel.app/graph?username=Swir&bg_color=02070D&color=87C9F5&line=168CFF&point=FFFFFF&area=true&area_color=071A2A&hide_border=true" alt="GitHub activity graph" />
+<img width="98%" src="https://github-readme-activity-graph.vercel.app/graph?username=Swir&bg_color=02070D&color=8ED6FF&line=168CFF&point=FFFFFF&area=true&area_color=071A2A&hide_border=true" alt="GitHub activity graph" />
 
 </div>
 
