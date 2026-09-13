@@ -6,6 +6,10 @@
 <a href="https://swir.github.io/"><img src="https://img.shields.io/badge/PORTFOLIO-02050A?style=for-the-badge&logo=googlechrome&logoColor=62E5FF" alt="Portfolio" /></a>
 <a href="https://github.com/Swir/Tank-Revival-Overdrive/releases/latest"><img src="https://img.shields.io/badge/LATEST_BUILD-02050A?style=for-the-badge&logo=windows11&logoColor=62E5FF" alt="Latest build" /></a>
 
+<br><br>
+
+<a href="https://hits.sh/github.com/Swir/"><img src="https://hits.sh/github.com/Swir.svg?style=for-the-badge&amp;label=PROFILE%20VIEWS&amp;extraCount=10000&amp;color=168fff&amp;labelColor=02050a&amp;logo=github" alt="Profile view counter — starting value 10,000 plus recorded hits" title="Starting value: 10,000 + recorded hits" /></a>
+
 </div>
 
 <img width="100%" src="assets/power-divider-v4.svg" alt="electric divider" />
