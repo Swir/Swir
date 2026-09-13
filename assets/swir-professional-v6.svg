@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-labelledby="title desc">
+<title id="title">SWIR — Software, automation and games</title>
+<desc id="desc">Centered SWIR wordmark on a midnight blue background with gently animated electric circuits.</desc>
+<defs>
+<linearGradient id="bg" x2="1" y2="1"><stop stop-color="#080e1b"/><stop offset="1" stop-color="#101d32"/></linearGradient>
+<linearGradient id="ink"><stop stop-color="#ffffff"/><stop offset=".55" stop-color="#caf6ff"/><stop offset="1" stop-color="#59d9ff"/></linearGradient>
+<radialGradient id="halo"><stop stop-color="#087bab" stop-opacity=".25"/><stop offset="1" stop-color="#087bab" stop-opacity="0"/></radialGradient>
+<pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#92c8f0" stroke-opacity=".035"/></pattern>
+<style>@keyframes flow{to{stroke-dashoffset:-240}}.signal{animation:flow 12s linear infinite}@media(prefers-reduced-motion:reduce){.signal{animation:none}}</style>
+</defs>
+<rect width="1200" height="360" rx="20" fill="url(#bg)"/>
+<rect width="1200" height="360" rx="20" fill="url(#grid)"/>
+<ellipse cx="600" cy="165" rx="420" ry="180" fill="url(#halo)"/>
+<rect x="1" y="1" width="1198" height="358" rx="19" fill="none" stroke="#233e59"/>
+<g fill="none" stroke="#285675" stroke-width="1.5">
+<path d="M0 120H110L150 160H320M0 240H150L190 200H320M60 0V65L115 120M70 360V290L120 240"/>
+<path d="M1200 120H1090L1050 160H880M1200 240H1050L1010 200H880M1140 0V65L1085 120M1130 360V290L1080 240"/>
+</g>
+<g class="signal" fill="none" stroke="#56dcff" stroke-width="2" stroke-dasharray="28 212">
+<path d="M0 120H110L150 160H320M0 240H150L190 200H320"/>
+<path d="M1200 120H1090L1050 160H880M1200 240H1050L1010 200H880"/>
+</g>
+<g fill="#63dcff"><circle cx="320" cy="160" r="3"/><circle cx="320" cy="200" r="3"/><circle cx="880" cy="160" r="3"/><circle cx="880" cy="200" r="3"/></g>
+<g text-anchor="middle" font-family="Segoe UI,Arial,sans-serif">
+<text x="600" y="65" fill="#7ecfe9" font-size="14" letter-spacing="4">INDEPENDENT DEVELOPER</text>
+<text x="600" y="183" font-size="116" font-weight="800" fill="url(#ink)">SWIR</text>
+<text x="600" y="231" fill="#edf6ff" font-size="24">Practical software. Creative engineering.</text>
+<text x="600" y="274" fill="#a5b9ce" font-size="17">DESKTOP TOOLS · AUTOMATION · APPS · GAMES</text>
+</g>
+<path d="M420 313H780" stroke="#28465f"/><path d="M558 313H642" stroke="#56dcff" stroke-width="3"/>
+</svg>
