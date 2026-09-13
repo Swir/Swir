@@ -20,7 +20,7 @@ My main territory is **Python, Windows desktop software and automation**, with p
 PROBLEM  →  BUILD  →  TEST  →  RELEASE  →  EVOLVE
 ```
 
-> **Useful first. Working second. Better every version.**
+> **Useful first. Working fast. Better every version.**
 
 <img width="100%" src="assets/power-divider-v4.svg" alt="electric divider" />
 
