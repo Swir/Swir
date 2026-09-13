@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="360" viewBox="0 0 1280 360" role="img" aria-label="SWIR — animated electric blue banner">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#010307"/>
+      <stop offset="48%" stop-color="#051423"/>
+      <stop offset="100%" stop-color="#010208"/>
+    </linearGradient>
+    <linearGradient id="txt" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="35%" stop-color="#BDF7FF"/>
+      <stop offset="72%" stop-color="#56D8FF"/>
+      <stop offset="100%" stop-color="#198FFF"/>
+    </linearGradient>
+    <radialGradient id="glowCenter" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#39D7FF" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#39D7FF" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M30 0H0V30" fill="none" stroke="#2DCEFF" stroke-opacity="0.045"/>
+    </pattern>
+    <pattern id="scan" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect width="4" height="1" fill="#A9F3FF" opacity="0.028"/>
+    </pattern>
+    <filter id="glow" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="4.5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="bigglow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="6" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1280" height="360" rx="24" fill="url(#bg)"/>
+  <rect width="1280" height="360" rx="24" fill="url(#grid)"/>
+  <rect width="1280" height="360" rx="24" fill="url(#scan)"/>
+  <rect x="1.5" y="1.5" width="1277" height="357" rx="22" fill="none" stroke="#1794FF" stroke-opacity="0.38"/>
+
+  <ellipse cx="640" cy="200" rx="560" ry="130" fill="url(#glowCenter)">
+    <animate attributeName="rx" values="530;590;530" dur="8s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.85;1;0.85" dur="6s" repeatCount="indefinite"/>
+  </ellipse>
+
+  <g fill="none" stroke-linecap="round" filter="url(#glow)">
+    <path d="M86 98 L132 120 L108 146 L164 167 L138 196 L196 217" stroke="#31DBFF" stroke-width="3.5" stroke-dasharray="15 10">
+      <animate attributeName="stroke-dashoffset" values="0;-130" dur="1.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.18;1;0.2;0.9;0.18" dur="2.4s" repeatCount="indefinite"/>
+    </path>
+    <path d="M154 56 L184 77 L173 95 L210 110 L194 131" stroke="#6B84FF" stroke-width="2.8" stroke-dasharray="12 8">
+      <animate attributeName="stroke-dashoffset" values="0;90" dur="1.9s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.08;0.75;0.15;0.6;0.08" dur="2.9s" repeatCount="indefinite"/>
+    </path>
+    <path d="M196 248 L236 232 L262 247 L296 223 L328 245 L362 219" stroke="#35D8FF" stroke-width="2.2" stroke-dasharray="10 7">
+      <animate attributeName="stroke-dashoffset" values="0;-100" dur="2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.12;0.68;0.12" dur="2.6s" repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <g fill="none" stroke-linecap="round" filter="url(#glow)">
+    <path d="M1184 93 L1136 117 L1158 143 L1104 166 L1128 196 L1072 220" stroke="#31DBFF" stroke-width="3.5" stroke-dasharray="15 10">
+      <animate attributeName="stroke-dashoffset" values="0;130" dur="1.55s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.18;1;0.2;0.9;0.18" dur="2.3s" repeatCount="indefinite"/>
+    </path>
+    <path d="M1118 58 L1087 80 L1098 99 L1062 116 L1078 135" stroke="#6B84FF" stroke-width="2.8" stroke-dasharray="12 8">
+      <animate attributeName="stroke-dashoffset" values="0;-90" dur="2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.08;0.75;0.15;0.6;0.08" dur="3s" repeatCount="indefinite"/>
+    </path>
+    <path d="M917 248 L949 227 L980 246 L1014 221 L1048 241 L1086 216" stroke="#35D8FF" stroke-width="2.2" stroke-dasharray="10 7">
+      <animate attributeName="stroke-dashoffset" values="0;100" dur="2.1s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.12;0.68;0.12" dur="2.7s" repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <g fill="none" stroke-linecap="round" filter="url(#glow)">
+    <path d="M270 45 L322 72 L291 104 L351 131 L320 158 L360 181" stroke="#34D8FF" stroke-width="3.2" stroke-dasharray="15 9">
+      <animate attributeName="stroke-dashoffset" values="0;-120" dur="1.35s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.1;0.95;0.18;0.82;0.1" dur="2.2s" repeatCount="indefinite"/>
+    </path>
+    <path d="M1010 45 L958 72 L989 104 L929 131 L960 158 L920 181" stroke="#34D8FF" stroke-width="3.2" stroke-dasharray="15 9">
+      <animate attributeName="stroke-dashoffset" values="0;120" dur="1.4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.1;0.95;0.18;0.82;0.1" dur="2.15s" repeatCount="indefinite"/>
+    </path>
+    <path d="M395 311 L439 305 L466 315 L508 305 L547 313 L584 305 L624 313 L666 305 L709 313 L751 305 L792 313 L835 305 L885 311" stroke="#37D8FF" stroke-width="2.1" stroke-dasharray="9 7">
+      <animate attributeName="stroke-dashoffset" values="0;-95" dur="1.75s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.08;0.68;0.08" dur="2.4s" repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <g transform="translate(640,64)" text-anchor="middle">
+    <text x="8" y="100" font-family="Arial Black,Segoe UI,Arial,sans-serif" font-size="140" font-style="italic" font-weight="900" letter-spacing="8" fill="#072A3E" opacity="0.72">SWIR</text>
+    <text x="0" y="92" font-family="Arial Black,Segoe UI,Arial,sans-serif" font-size="140" font-style="italic" font-weight="900" letter-spacing="8" fill="url(#txt)" filter="url(#bigglow)">SWIR</text>
+
+    <text x="0" y="128" font-family="Consolas,Menlo,monospace" font-size="18" letter-spacing="2.5" fill="#A2EDFF">SOFTWARE · AUTOMATION · GAMES · AI</text>
+    <rect x="-380" y="144" width="760" height="1.5" fill="#25C9FF" opacity="0.5"/>
+
+    <text x="0" y="198" font-family="Segoe UI,Arial,sans-serif" font-size="30" font-weight="800" fill="#F6FCFF">BUILD WHAT SHOULD EXIST.</text>
+    <text x="0" y="230" font-family="Consolas,Menlo,monospace" font-size="13.5" letter-spacing="2.2" fill="#7A97A9">POWER / CODE / RELEASE / EVOLVE / REPEAT</text>
+
+    <text x="0" y="270" font-family="Consolas,Menlo,monospace" font-size="14" letter-spacing="2" fill="#8CDAF2">PYTHON · WINDOWS · ANDROID · WEB · AUTOMATION</text>
+  </g>
+
+  <g fill="none" stroke="#55DAFF" stroke-width="2" opacity=".7">
+    <path d="M28 75V28H165 M1115 28H1252V75 M28 285V332H165 M1115 332H1252V285"/>
+    <rect x="4" y="4" width="1272" height="352" rx="21" stroke-dasharray="90 1800" opacity=".65"><animate attributeName="stroke-dashoffset" values="0;-3780" dur="16s" repeatCount="indefinite"/></rect>
+  </g>
+
+
+</svg>
