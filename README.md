@@ -96,17 +96,13 @@ PROBLEM  →  BUILD  →  TEST  →  RELEASE  →  EVOLVE
 
 <div align="center">
 
-<img width="96%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Swir&theme=github_dark" alt="GitHub profile details" />
-
-<br><br>
-
-<img width="98%" src="https://github-readme-activity-graph.vercel.app/graph?username=Swir&bg_color=02050A&color=7895A8&line=27C9FF&point=E6FAFF&area=true&area_color=071522&hide_border=true" alt="GitHub activity graph" />
+<img width="98%" src="https://raw.githubusercontent.com/Swir/Swir/main/assets/github-activity-live.svg" alt="SWIR GitHub activity live dashboard" />
 
 <br><br>
 
 ### `CONTRIBUTION SNAKE // LIVE`
 
-<sub>NEON CONTRIBUTION STREAM · AUTO REFRESHED</sub>
+<sub>DIRECT GITHUB DATA · AUTO REFRESH ~5 MIN · SELF-HOSTED PROFILE ASSETS</sub>
 
 <br><br>
 
@@ -115,11 +111,6 @@ PROBLEM  →  BUILD  →  TEST  →  RELEASE  →  EVOLVE
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Swir/Swir/main/assets/github-contribution-grid-snake.svg" />
   <img width="98%" src="https://raw.githubusercontent.com/Swir/Swir/main/assets/github-contribution-grid-snake-dark.svg" alt="SWIR live GitHub contribution snake" />
 </picture>
-
-<br><br>
-
-<img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Swir&theme=github_dark" alt="SWIR GitHub stats" />
-<img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Swir&theme=github_dark" alt="SWIR productive time" />
 
 </div>
 
