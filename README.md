@@ -102,6 +102,25 @@ PROBLEM  →  BUILD  →  TEST  →  RELEASE  →  EVOLVE
 
 <img width="98%" src="https://github-readme-activity-graph.vercel.app/graph?username=Swir&bg_color=02050A&color=7895A8&line=27C9FF&point=E6FAFF&area=true&area_color=071522&hide_border=true" alt="GitHub activity graph" />
 
+<br><br>
+
+### `CONTRIBUTION SNAKE // LIVE`
+
+<sub>NEON CONTRIBUTION STREAM · AUTO REFRESHED</sub>
+
+<br><br>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Swir/Swir/main/assets/github-contribution-grid-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Swir/Swir/main/assets/github-contribution-grid-snake.svg" />
+  <img width="98%" src="https://raw.githubusercontent.com/Swir/Swir/main/assets/github-contribution-grid-snake-dark.svg" alt="SWIR live GitHub contribution snake" />
+</picture>
+
+<br><br>
+
+<img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Swir&theme=github_dark" alt="SWIR GitHub stats" />
+<img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Swir&theme=github_dark" alt="SWIR productive time" />
+
 </div>
 
 </details>
