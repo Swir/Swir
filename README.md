@@ -8,7 +8,7 @@
 
 <br><br>
 
-<a href="https://hits.sh/github.com/Swir/"><img src="https://hits.sh/github.com/Swir.svg?style=for-the-badge&amp;label=PROFILE%20VIEWS&amp;extraCount=10000&amp;color=168fff&amp;labelColor=02050a&amp;logo=github" alt="Profile view counter — starting value 000 plus recorded hits" title="Starting value: 000 + recorded hits" /></a>
+
 
 </div>
 
