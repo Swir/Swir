@@ -1,4 +1,4 @@
-name: Contribution Snake
+name: Profile Activity Live
 
 on:
   schedule:
@@ -9,12 +9,13 @@ on:
       - main
     paths:
       - ".github/workflows/contribution-snake.yml"
+      - "scripts/generate_profile_activity.py"
 
 permissions:
   contents: write
 
 concurrency:
-  group: contribution-snake
+  group: profile-activity-live
   cancel-in-progress: true
 
 jobs:
@@ -37,17 +38,27 @@ jobs:
             assets/github-contribution-grid-snake.svg?color_snake=#168FFF&color_dots=#F7FCFF,#D6F6FF,#95E9FF,#27C9FF,#168FFF
             assets/github-contribution-grid-snake-dark.svg?palette=github-dark&color_snake=#62E5FF&color_dots=#02050A,#071522,#0E5070,#168FFF,#62E5FF
 
-      - name: Publish refreshed snake
+      - name: Generate self-hosted GitHub activity dashboard
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PROFILE_USER: ${{ github.repository_owner }}
+        run: python scripts/generate_profile_activity.py
+
+      - name: Publish refreshed profile assets
         shell: bash
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add assets/github-contribution-grid-snake.svg assets/github-contribution-grid-snake-dark.svg
 
+          if [ -f assets/github-activity-live.svg ]; then
+            git add assets/github-activity-live.svg
+          fi
+
           if git diff --cached --quiet; then
-            echo "Contribution snake is already current."
+            echo "Profile activity assets are already current."
             exit 0
           fi
 
-          git commit -m "chore(profile): refresh contribution snake [skip ci]"
+          git commit -m "chore(profile): refresh live activity assets [skip ci]"
           git push
