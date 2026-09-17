@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="84" viewBox="0 0 1200 84" role="img" aria-labelledby="title desc">
+  <title id="title">SWIR project family strip</title>
+  <desc id="desc">Shared electric-cyan SWIR project mini-header strip for repository READMEs.</desc>
+  <defs>
+    <linearGradient id="line" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#0088FF" stop-opacity="0"/>
+      <stop offset="0.25" stop-color="#0088FF" stop-opacity="0.65"/>
+      <stop offset="0.5" stop-color="#62E5FF"/>
+      <stop offset="0.75" stop-color="#0088FF" stop-opacity="0.65"/>
+      <stop offset="1" stop-color="#0088FF" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="84" rx="18" fill="#02050A"/>
+  <path d="M0 42 H390 M810 42 H1200" stroke="url(#line)" stroke-width="2"/>
+  <circle cx="408" cy="42" r="3" fill="#62E5FF"/>
+  <circle cx="792" cy="42" r="3" fill="#62E5FF"/>
+  <text x="600" y="38" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="800" letter-spacing="4" fill="#62E5FF">SWIR PROJECT</text>
+  <text x="600" y="60" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="600" letter-spacing="2" fill="#8DA8B8">BUILD • TEST • RELEASE • EVOLVE</text>
+</svg>
