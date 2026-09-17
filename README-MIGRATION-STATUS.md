@@ -4,7 +4,7 @@ Documentation migration ledger for existing SWIR projects. This is **README migr
 
 Canonical standards: [SWIR README PRO v2](SWIR-README-STANDARD.md) · [SWIR Progress SVG PRO](SWIR-PROGRESS-STANDARD.md).
 
-<!-- MIGRATION-METRICS owner=66 verified=9 queued=41 blocked=1 delegated=12 excluded=3 priority_verified=9 priority_total=13 eligibility=INCOMPLETE -->
+<!-- MIGRATION-METRICS owner=66 verified=12 queued=38 blocked=1 delegated=12 excluded=3 priority_verified=12 priority_total=13 eligibility=INCOMPLETE -->
 
 <p align="center">
   <img width="100%" src="assets/readme/migration/progress-card.svg" alt="SWIR README PRO migration overall progress — N/A while eligibility review is incomplete" />
@@ -16,19 +16,19 @@ Canonical standards: [SWIR README PRO v2](SWIR-README-STANDARD.md) · [SWIR Prog
 |---|---|
 | Started | 2026-09-17 |
 | Owner repositories discovered | **66**; repository search page 2 was empty for the discovery snapshot |
-| Verified migrations | **9** — Image-To-Ico, IPTV-checker, Gist_manager, WojThom, PowerBookmark, InfoPulse-PL, WAV-to-MP3-converter, PolSilver_Bluetooth, FASTIPTVPlayer |
-| SVG rollout verified | **9** — same repositories |
-| Queued / qualification pending | **41** |
+| Verified migrations | **12** — Image-To-Ico, IPTV-checker, Gist_manager, WojThom, PowerBookmark, InfoPulse-PL, WAV-to-MP3-converter, PolSilver_Bluetooth, FASTIPTVPlayer, Matrix_Windows_Commander, BackgroundPXR, SwirPhotoClean |
+| SVG rollout verified | **12** — same repositories |
+| Queued / qualification pending | **38** |
 | Blocked | **1** — Aria2Gui; existing feature PR #1 edits README and application code |
 | Delegated to dedicated active tasks | **12** |
 | Structural exclusions recorded | **3** |
-| Initial priority subset | **9 / 13 = 69.2% verified** |
+| Initial priority subset | **12 / 13 = 92.3% verified** |
 | Overall migration percentage | **N/A** until every queued owner repository receives a final eligibility decision |
-| Next priority | **Matrix_Windows_Commander**, then BackgroundPXR and SwirPhotoClean |
+| Next priority | Initial priority subset is complete except blocked Aria2Gui; continue qualification with **Hex-kolor**, then Driver-tool and Youtube-VLC |
 | Completion policy | Final eligibility audit → every eligible repo verified or explicitly excepted → final audit/report → disable only this migration task |
 
 <p align="center">
-  <img width="100%" src="assets/readme/migration/progress-mini.svg" alt="Initial priority subset progress — 9 of 13 repositories verified" />
+  <img width="100%" src="assets/readme/migration/progress-mini.svg" alt="Initial priority subset progress — 12 of 13 repositories verified" />
 </p>
 
 The mini bar above is **only the initial 13-repository priority subset**. It is not the overall migration percentage. The overall card stays **N/A** while discovered repositories still need a final eligibility decision.
@@ -58,9 +58,9 @@ A v2 marker, uploaded banner, open PR or green source CI alone does not prove a 
 | 8 | [WAV-to-MP3-converter](https://github.com/Swir/WAV-to-MP3-converter) | `verified` | [PR #1](https://github.com/Swir/WAV-to-MP3-converter/pull/1) merged as `5283cc87`; README v2 + SVG PRO read back. Preserved v1.0.0/FFmpeg facts and replaced unsupported AI-watermark/evasion claims with factual DSP limits. No PR CI workflow exists for docs; no green-CI claim. |
 | 9 | [PolSilver_Bluetooth](https://github.com/Swir/PolSilver_Bluetooth) | `verified` | [PR #4](https://github.com/Swir/PolSilver_Bluetooth/pull/4) merged as `714e44bb`; PR CI run `35280673281` passed Python 3.10–3.14 plus Windows Qt smoke. README/card read back; authorized diagnostics boundary preserved. |
 | 10 | [FASTIPTVPlayer](https://github.com/Swir/FASTIPTVPlayer) | `verified` | [PR #4](https://github.com/Swir/FASTIPTVPlayer/pull/4) merged as `3d996ef9`; PR CI run `35280688386` passed Python 3.10–3.14 plus Windows GUI smoke. README/card read back; public-proxy harvesting remains excluded. |
-| 11 | [Matrix_Windows_Commander](https://github.com/Swir/Matrix_Windows_Commander) | `queued` | Inspect current source, releases and Windows behavior before migration. |
-| 12 | [BackgroundPXR](https://github.com/Swir/BackgroundPXR) | `queued` | Inspect current app state, README assets and releases. |
-| 13 | [SwirPhotoClean](https://github.com/Swir/SwirPhotoClean) | `queued` | Inspect current app state, README assets and releases. |
+| 11 | [Matrix_Windows_Commander](https://github.com/Swir/Matrix_Windows_Commander) | `verified` | [PR #4](https://github.com/Swir/Matrix_Windows_Commander/pull/4) merged as `5402a9d`; CI run `35285949024` passed Python 3.10–3.14 plus Windows GUI smoke; main README/card read back; destructive one-click exclusions preserved. |
+| 12 | [BackgroundPXR](https://github.com/Swir/BackgroundPXR) | `verified` | [PR #1](https://github.com/Swir/BackgroundPXR/pull/1) merged as `c640e8f`; Windows workflow run `35286106534` passed; main README read back; product progress remains N/A because roadmap directions have no reproducible denominator. |
+| 13 | [SwirPhotoClean](https://github.com/Swir/SwirPhotoClean) | `verified` | [PR #1](https://github.com/Swir/SwirPhotoClean/pull/1) merged as `50f2d2a`; Windows workflow run `35286267897` passed tests/build/packaged EXE smoke. README/card read back. Progress is **6/7 = 85.7%** from the existing `STATUS.md` 1.0 acceptance checklist, not a subjective product estimate. |
 
 ## Complete owner inventory snapshot
 
@@ -85,7 +85,7 @@ The list below is the finite owner-level discovery snapshot. `queued` entries st
 | [keygenerator](https://github.com/Swir/keygenerator) | `main` | `queued` | purpose/safety review required before any edit |
 | [Y6-gamestick](https://github.com/Swir/Y6-gamestick) | `main` | `excluded` | metadata reports size 0; do not invent a product |
 | [SwirTube](https://github.com/Swir/SwirTube) | `main` | `queued` | qualification/readme audit pending |
-| [Matrix_Windows_Commander](https://github.com/Swir/Matrix_Windows_Commander) | `main` | `queued` | qualification/readme audit pending |
+| [Matrix_Windows_Commander](https://github.com/Swir/Matrix_Windows_Commander) | `main` | `verified` | README v2 + SVG rollout verified on main; PR #4 CI passed |
 | [Swir](https://github.com/Swir/Swir) | `main` | `excluded` | profile repo; only migration standards/ledger/tooling are maintained here |
 | [File.io_Downloaderup](https://github.com/Swir/File.io_Downloaderup) | `main` | `queued` | qualification/readme audit pending |
 | [Nes_New_Life](https://github.com/Swir/Nes_New_Life) | `main` | `delegated` | dedicated active development task |
@@ -95,9 +95,9 @@ The list below is the finite owner-level discovery snapshot. `queued` entries st
 | [Ghos-DNS](https://github.com/Swir/Ghos-DNS) | `main` | `queued` | qualification/readme audit pending |
 | [Torrent_downloader](https://github.com/Swir/Torrent_downloader) | `main` | `queued` | qualification/readme audit pending |
 | [cda-pl](https://github.com/Swir/cda-pl) | `main` | `queued` | legal/content scope review required before any edit |
-| [SwirPhotoClean](https://github.com/Swir/SwirPhotoClean) | `main` | `queued` | qualification/readme audit pending |
+| [SwirPhotoClean](https://github.com/Swir/SwirPhotoClean) | `main` | `verified` | README v2 + SVG rollout verified on main; 1.0 acceptance SVG derived from STATUS.md 6/7 checklist |
 | [Koder](https://github.com/Swir/Koder) | `main` | `queued` | qualification/readme audit pending |
-| [BackgroundPXR](https://github.com/Swir/BackgroundPXR) | `main` | `queued` | qualification/readme audit pending |
+| [BackgroundPXR](https://github.com/Swir/BackgroundPXR) | `main` | `verified` | README v2 + SVG rollout verified on main; PR #1 Windows workflow passed |
 | [Gist_manager](https://github.com/Swir/Gist_manager) | `main` | `verified` | README v2 + SVG rollout verified on main |
 | [Github-README-Generator](https://github.com/Swir/Github-README-Generator) | `main` | `queued` | qualification/readme audit pending |
 | [watermark-remover](https://github.com/Swir/watermark-remover) | `main` | `queued` | qualification/readme audit pending |
@@ -135,7 +135,7 @@ The list below is the finite owner-level discovery snapshot. `queued` entries st
 | [SwirPhoneOS](https://github.com/Swir/SwirPhoneOS) | `main` | `delegated` | dedicated active development task |
 | [Multichain-Tracker](https://github.com/Swir/Multichain-Tracker) | `main` | `queued` | qualification/readme audit pending |
 
-State totals are machine-checkable from `MIGRATION-METRICS`: **9 verified + 41 queued + 1 blocked + 12 delegated + 3 excluded = 66 owner repositories**.
+State totals are machine-checkable from `MIGRATION-METRICS`: **12 verified + 38 queued + 1 blocked + 12 delegated + 3 excluded = 66 owner repositories**.
 
 ## Work owned by other active tasks
 
@@ -156,6 +156,9 @@ Their README/SVG compliance may be audited, but documentation edits must be left
 | WAV-to-MP3-converter | PR #1 → `5283cc87` | ✅ | ✅ | main README/card read back; no PR CI workflow; misleading AI-evasion claims removed from docs |
 | PolSilver_Bluetooth | PR #4 → `714e44bb` | ✅ | ✅ | CI run `35280673281` passed Python 3.10–3.14 and Windows smoke; main read-back |
 | FASTIPTVPlayer | PR #4 → `3d996ef9` | ✅ | ✅ | CI run `35280688386` passed Python 3.10–3.14 and Windows GUI smoke; main read-back |
+| Matrix_Windows_Commander | PR #4 → `5402a9d` | ✅ | ✅ | CI run `35285949024` passed Python 3.10–3.14 + Windows GUI smoke; main README/card read back |
+| BackgroundPXR | PR #1 → `c640e8f` | ✅ | ✅ | Windows workflow run `35286106534` passed; main README read back; no fabricated product percentage |
+| SwirPhotoClean | PR #1 → `50f2d2a` | ✅ | ✅ | Windows workflow run `35286267897` passed tests/build/packaged EXE smoke; main README/card read back; 1.0 gate 6/7 from STATUS.md |
 
 ## Blockers
 
@@ -173,5 +176,6 @@ Required action for this migration: allow the feature PR to be resolved by its o
 | 2026-09-17 | Migrated Image-To-Ico, IPTV-checker and Gist_manager; added SVG PRO rollout; completed owner inventory discovery of 66 repositories. | 3 verified; overall eligibility still incomplete. |
 | 2026-09-17 | Migrated WojThom, PowerBookmark and InfoPulse-PL through dedicated documentation PRs; read final main files back. Audited Aria2Gui and found a conflicting open feature PR. Updated migration metrics and progress tooling to track blocked repositories explicitly. | 6 verified; 1 blocked; 44 queued; priority subset 6/13 = 46.2%; overall progress remains N/A. Next: WAV-to-MP3-converter. |
 | 2026-09-18 | Migrated WAV-to-MP3-converter, PolSilver_Bluetooth and FASTIPTVPlayer through documentation-only PRs; added README PRO v2 heroes, truthful status/release documentation, Search Keywords, N/A product-progress SVGs and deterministic progress checks. Read final README/cards back from main. | 9 verified; 1 blocked; 41 queued; priority subset 9/13 = 69.2%; overall progress remains N/A. Next: Matrix_Windows_Commander. |
+| 2026-09-18 | Migrated Matrix_Windows_Commander, BackgroundPXR and SwirPhotoClean through documentation-only PRs. All three PR workflows passed. Matrix and BackgroundPXR use truthful N/A product-progress SVGs because no canonical denominator exists; SwirPhotoClean uses its existing STATUS.md 1.0 acceptance checklist for a deterministic 6/7 = 85.7% gate. Final main README/progress assets were read back after merge. | 12 verified; 1 blocked; 38 queued; initial priority subset 12/13 = 92.3%; overall progress remains N/A. Next: Hex-kolor. |
 
 Do not silently change the denominator. Any later `queued → excluded/delegated/verified/blocked` decision must update the inventory row, state totals, metrics marker and generated SVGs together. Disable only this migration task after every discovered repository has a final eligibility state and every eligible migration/SVG rollout is verified or explicitly excepted according to the completion policy.
