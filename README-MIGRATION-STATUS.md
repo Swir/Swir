@@ -4,7 +4,7 @@ Documentation migration ledger for existing SWIR projects. This is **README migr
 
 Canonical standards: [SWIR README PRO v2](SWIR-README-STANDARD.md) · [SWIR Progress SVG PRO](SWIR-PROGRESS-STANDARD.md).
 
-<!-- MIGRATION-METRICS owner=66 verified=3 queued=48 delegated=12 excluded=3 priority_verified=3 priority_total=13 eligibility=INCOMPLETE -->
+<!-- MIGRATION-METRICS owner=66 verified=6 queued=44 blocked=1 delegated=12 excluded=3 priority_verified=6 priority_total=13 eligibility=INCOMPLETE -->
 
 <p align="center">
   <img width="100%" src="assets/readme/migration/progress-card.svg" alt="SWIR README PRO migration overall progress — N/A while eligibility review is incomplete" />
@@ -15,29 +15,30 @@ Canonical standards: [SWIR README PRO v2](SWIR-README-STANDARD.md) · [SWIR Prog
 | Item | Current state |
 |---|---|
 | Started | 2026-09-17 |
-| Owner repositories discovered | **66**; repository search page 2 was empty, so the owner-level inventory is finite for this snapshot |
-| Verified migrations | **3** — Image-To-Ico, IPTV-checker, Gist_manager |
-| SVG rollout verified | **3** — the same three repositories |
-| Queued / qualification pending | **48** |
+| Owner repositories discovered | **66**; repository search page 2 was empty for the discovery snapshot |
+| Verified migrations | **6** — Image-To-Ico, IPTV-checker, Gist_manager, WojThom, PowerBookmark, InfoPulse-PL |
+| SVG rollout verified | **6** — same repositories |
+| Queued / qualification pending | **44** |
+| Blocked | **1** — Aria2Gui; existing feature PR #1 edits README and application code |
 | Delegated to dedicated active tasks | **12** |
 | Structural exclusions recorded | **3** |
-| Initial priority subset | **3 / 13 = 23.1% verified** |
+| Initial priority subset | **6 / 13 = 46.2% verified** |
 | Overall migration percentage | **N/A** until every queued owner repository receives a final eligibility decision |
-| Next priority | **WojThom**, then Aria2Gui and PowerBookmark |
-| Completion policy | Final eligibility audit → all eligible repos verified or explicitly excepted → final audit/report → disable only this migration task |
+| Next priority | **WAV-to-MP3-converter**, then PolSilver_Bluetooth and FASTIPTVPlayer |
+| Completion policy | Final eligibility audit → every eligible repo verified or explicitly excepted → final audit/report → disable only this migration task |
 
 <p align="center">
-  <img width="100%" src="assets/readme/migration/progress-mini.svg" alt="Initial priority subset progress — 3 of 13 repositories verified" />
+  <img width="100%" src="assets/readme/migration/progress-mini.svg" alt="Initial priority subset progress — 6 of 13 repositories verified" />
 </p>
 
-The mini bar above is **only the initial 13-repository priority subset**. It is not the overall migration percentage. The overall card stays **N/A** while 48 discovered repositories still need qualification/README review and may later move to `verified`, `excluded`, `delegated` or another justified state.
+The mini bar above is **only the initial 13-repository priority subset**. It is not the overall migration percentage. The overall card stays **N/A** while discovered repositories still need a final eligibility decision.
 
 ## Status contract
 
 - `queued`: repository is discovered but still needs qualification and/or migration work.
-- `in_progress`: actual migration branch/PR exists; record its link and exact head.
+- `in_progress`: an actual migration branch/PR exists; record its link and exact head.
 - `verified`: final README and required assets were read back on the default branch after the appropriate checks and merge.
-- `blocked`: a concrete unresolved obstacle; record evidence and required action.
+- `blocked`: a concrete unresolved obstacle prevents a safe migration; record evidence and required action.
 - `excluded`: outside migration scope with a specific reason; never counted as migrated.
 - `delegated`: another active project task owns documentation changes; never counted as this task's verified migration.
 
@@ -47,29 +48,29 @@ A v2 marker, uploaded banner, open PR or green source CI alone does not prove a 
 
 | Order | Repository | State | Current evidence / next step |
 |---|---|---|---|
-| 1 | [Image-To-Ico](https://github.com/Swir/Image-To-Ico) | `verified` | README v2 via PR #1; SVG rollout via [PR #2](https://github.com/Swir/Image-To-Ico/pull/2), merged as `dba8219`. Main README and progress card read back. |
-| 2 | [IPTV-checker](https://github.com/Swir/IPTV-checker) | `verified` | [PR #2](https://github.com/Swir/IPTV-checker/pull/2) merged as `c1b113e`; PR CI passed; main README/progress card read back. |
-| 3 | [Gist_manager](https://github.com/Swir/Gist_manager) | `verified` | [PR #3](https://github.com/Swir/Gist_manager/pull/3) merged as `c22fde0`; PR CI passed; main README/progress card read back. |
-| 4 | [WojThom](https://github.com/Swir/WojThom) | `queued` | Next full source/release/README qualification and migration candidate. |
-| 5 | [Aria2Gui](https://github.com/Swir/Aria2Gui) | `queued` | Inspect current README/assets first; preserve any superior existing presentation. |
-| 6 | [PowerBookmark](https://github.com/Swir/PowerBookmark) | `queued` | Inspect scope and current browser-extension/bookmarklet documentation before editing. |
-| 7 | [InfoPulse-PL](https://github.com/Swir/InfoPulse-PL) | `queued` | Preserve justified localization after source review. |
-| 8 | [WAV-to-MP3-converter](https://github.com/Swir/WAV-to-MP3-converter) | `queued` | Inspect before deciding changes. |
-| 9 | [PolSilver_Bluetooth](https://github.com/Swir/PolSilver_Bluetooth) | `queued` | Verify platform limits and authorized diagnostic scope. |
-| 10 | [FASTIPTVPlayer](https://github.com/Swir/FASTIPTVPlayer) | `queued` | Inspect before deciding changes. |
+| 1 | [Image-To-Ico](https://github.com/Swir/Image-To-Ico) | `verified` | README v2 via PR #1; SVG rollout via [PR #2](https://github.com/Swir/Image-To-Ico/pull/2), merged as `dba8219`. Main README/progress assets read back. |
+| 2 | [IPTV-checker](https://github.com/Swir/IPTV-checker) | `verified` | [PR #2](https://github.com/Swir/IPTV-checker/pull/2) merged as `c1b113e`; PR CI passed; main README/progress assets read back. |
+| 3 | [Gist_manager](https://github.com/Swir/Gist_manager) | `verified` | [PR #3](https://github.com/Swir/Gist_manager/pull/3) merged as `c22fde0`; PR CI passed; main README/progress assets read back. |
+| 4 | [WojThom](https://github.com/Swir/WojThom) | `verified` | [PR #8](https://github.com/Swir/WojThom/pull/8) merged as `ba38c17`; root README rebuilt from current Android/web evidence; progress is N/A because no canonical roadmap exists. Docs-only change did not match application workflow paths; no app-CI success claimed. |
+| 5 | [Aria2Gui](https://github.com/Swir/Aria2Gui) | `blocked` | Existing [feature PR #1](https://github.com/Swir/Aria2Gui/pull/1) changes README plus application/UI files. Migration deferred to avoid overwriting concurrent feature work. Required action: resolve that PR, then re-read fresh `main` and migrate. |
+| 6 | [PowerBookmark](https://github.com/Swir/PowerBookmark) | `verified` | [PR #1](https://github.com/Swir/PowerBookmark/pull/1) merged as `64be655`; v2 README + SVG PRO read back. Corrected unsupported JSON-backup claim and documented broad permissions/custom-script safety. |
+| 7 | [InfoPulse-PL](https://github.com/Swir/InfoPulse-PL) | `verified` | [PR #1](https://github.com/Swir/InfoPulse-PL/pull/1) merged as `1639025`; v2 README + SVG PRO read back. Preserved Polish app identity, v3.2.0 release facts and input-automation safety. |
+| 8 | [WAV-to-MP3-converter](https://github.com/Swir/WAV-to-MP3-converter) | `queued` | Next full source/release/README qualification and migration candidate. |
+| 9 | [PolSilver_Bluetooth](https://github.com/Swir/PolSilver_Bluetooth) | `queued` | Verify real platform limits and authorized diagnostic scope before editing. |
+| 10 | [FASTIPTVPlayer](https://github.com/Swir/FASTIPTVPlayer) | `queued` | Inspect source, current releases, playback limitations and README assets. |
 | 11 | [Matrix_Windows_Commander](https://github.com/Swir/Matrix_Windows_Commander) | `queued` | Inspect before deciding changes. |
 | 12 | [BackgroundPXR](https://github.com/Swir/BackgroundPXR) | `queued` | Inspect current app state, README assets and releases. |
 | 13 | [SwirPhotoClean](https://github.com/Swir/SwirPhotoClean) | `queued` | Inspect current app state, README assets and releases. |
 
 ## Complete owner inventory snapshot
 
-The list below was captured from the owner repository search with `per_page=100`; the second page returned no repositories. This is a **complete owner-level discovery snapshot**, but not yet a final eligible-migration denominator. `queued` entries still require content, fork, safety, legal and project-state qualification before they can be counted in final completion math.
+The list below is the finite owner-level discovery snapshot. `queued` entries still require content, fork, safety, legal and project-state qualification before they become part of the final eligible-migration denominator.
 
 | Repository | Default branch | State | Note |
 |---|---|---|---|
 | [Hex-kolor](https://github.com/Swir/Hex-kolor) | `main` | `queued` | qualification/readme audit pending |
 | [swir.github.io](https://github.com/Swir/swir.github.io) | `main` | `excluded` | portfolio/status site, not a README migration target |
-| [Aria2Gui](https://github.com/Swir/Aria2Gui) | `main` | `queued` | qualification/readme audit pending |
+| [Aria2Gui](https://github.com/Swir/Aria2Gui) | `main` | `blocked` | feature PR #1 currently changes README + application code; defer migration |
 | [Driver-tool](https://github.com/Swir/Driver-tool) | `main` | `queued` | qualification/readme audit pending |
 | [Youtube-VLC](https://github.com/Swir/Youtube-VLC) | `main` | `queued` | qualification/readme audit pending |
 | [Spamer](https://github.com/Swir/Spamer) | `main` | `queued` | eligibility/safety review required before any edit |
@@ -77,10 +78,10 @@ The list below was captured from the owner repository search with `per_page=100`
 | [Image-To-Ico](https://github.com/Swir/Image-To-Ico) | `main` | `verified` | README v2 + SVG rollout verified on main |
 | [Transformer-3-Pro-T303UA-i5-6200-hackintosh](https://github.com/Swir/Transformer-3-Pro-T303UA-i5-6200-hackintosh) | `main` | `queued` | qualification/readme audit pending |
 | [Tank-Revival-Overdrive](https://github.com/Swir/Tank-Revival-Overdrive) | `main` | `delegated` | dedicated active development task |
-| [InfoPulse-PL](https://github.com/Swir/InfoPulse-PL) | `main` | `queued` | qualification/readme audit pending |
+| [InfoPulse-PL](https://github.com/Swir/InfoPulse-PL) | `main` | `verified` | README v2 + SVG rollout verified on main |
 | [XBookmark](https://github.com/Swir/XBookmark) | `main` | `queued` | qualification/readme audit pending |
 | [Worker-Time-list-generator](https://github.com/Swir/Worker-Time-list-generator) | `main` | `queued` | qualification/readme audit pending |
-| [WojThom](https://github.com/Swir/WojThom) | `main` | `queued` | qualification/readme audit pending |
+| [WojThom](https://github.com/Swir/WojThom) | `main` | `verified` | README v2 + SVG rollout verified on main |
 | [keygenerator](https://github.com/Swir/keygenerator) | `main` | `queued` | purpose/safety review required before any edit |
 | [Y6-gamestick](https://github.com/Swir/Y6-gamestick) | `main` | `excluded` | metadata reports size 0; do not invent a product |
 | [SwirTube](https://github.com/Swir/SwirTube) | `main` | `queued` | qualification/readme audit pending |
@@ -113,7 +114,7 @@ The list below was captured from the owner repository search with `per_page=100`
 | [ASCITEXT](https://github.com/Swir/ASCITEXT) | `main` | `queued` | qualification/readme audit pending |
 | [Github_Webste](https://github.com/Swir/Github_Webste) | `main` | `queued` | qualification/readme audit pending |
 | [Dreambox-scaner](https://github.com/Swir/Dreambox-scaner) | `main` | `queued` | qualification/readme audit pending |
-| [PowerBookmark](https://github.com/Swir/PowerBookmark) | `main` | `queued` | qualification/readme audit pending |
+| [PowerBookmark](https://github.com/Swir/PowerBookmark) | `main` | `verified` | README v2 + SVG rollout verified on main |
 | [Torrent_downloaderv2](https://github.com/Swir/Torrent_downloaderv2) | `main` | `queued` | qualification/readme audit pending |
 | [MacTrix](https://github.com/Swir/MacTrix) | `main` | `queued` | qualification/readme audit pending |
 | [Dragon-DiskForge](https://github.com/Swir/Dragon-DiskForge) | `main` | `delegated` | dedicated active development task |
@@ -134,42 +135,39 @@ The list below was captured from the owner repository search with `per_page=100`
 | [SwirPhoneOS](https://github.com/Swir/SwirPhoneOS) | `main` | `delegated` | dedicated active development task |
 | [Multichain-Tracker](https://github.com/Swir/Multichain-Tracker) | `main` | `queued` | qualification/readme audit pending |
 
-State totals are deliberately machine-checkable from `MIGRATION-METRICS`: **3 verified + 48 queued + 12 delegated + 3 excluded = 66 owner repositories**.
+State totals are machine-checkable from `MIGRATION-METRICS`: **6 verified + 44 queued + 1 blocked + 12 delegated + 3 excluded = 66 owner repositories**.
 
 ## Work owned by other active tasks
 
-The following are delegated rather than edited by this migration task: `SWIR_OS`, `SwirEngine`, `Swirui`, `SwirPhoneOS`, `KaliPhoneStudio`, `Dragon-DiskForge`, `GTT`, `Tank-Revival-Overdrive`, `Nes_New_Life`, `check-out-of-hell`, `Konofix`, `xADKiller`.
+The following are delegated rather than edited by this migration task: `SWIR_OS`, `SwirEngine`, `Swirui`, `SwirPhoneOS`, `KaliPhoneStudio`, `Dragon-DiskForge`, `GTT`, `Tank-Revival-Overdrive`, `Nes_New_Life`, `check-out-of-hell`, `Konofix` and `xADKiller`.
 
-Audit them for missing standards only when useful; do not compete with their active branches. Their own tasks are responsible for README v2 and Progress SVG PRO rollout.
+Their README/SVG compliance may be audited, but documentation edits must be left to the dedicated task while it remains active to avoid competing branches and stale rewrites.
 
-## Completed migrations
+## Verified migrations
 
-| Repository | Date | PR / merged commit | README / SVG verification |
-|---|---|---|---|
-| [Image-To-Ico](https://github.com/Swir/Image-To-Ico) | 2026-09-17 | README: [PR #1](https://github.com/Swir/Image-To-Ico/pull/1), `f7e83af`; SVG: [PR #2](https://github.com/Swir/Image-To-Ico/pull/2), `dba8219` | Main README blob `4115c575...`; v2 marker, 12 keywords, original hero/icon and prior source-test evidence preserved; progress card blob `851f2558...` reports N/A because no roadmap. No PR CI trigger exists, so no new CI/Windows runtime pass is claimed. |
-| [IPTV-checker](https://github.com/Swir/IPTV-checker) | 2026-09-17 | [PR #2](https://github.com/Swir/IPTV-checker/pull/2), `c1b113e` | CI run `35269150780` passed on the final PR head. Main README blob `0763c42c...`; progress card blob `495f37fb...`. v2 hero, 12 keywords, current v2.0.0 Windows release, bounded health-check behavior and responsible-use limits verified from source/release evidence. |
-| [Gist_manager](https://github.com/Swir/Gist_manager) | 2026-09-17 | [PR #3](https://github.com/Swir/Gist_manager/pull/3), `c22fde0` | CI run `35269318152` passed on the final PR head. Main README blob `a61a6863...`; progress card blob `88a87259...`. v2 hero, 12 keywords, v2.0.0 release assets and token/QSettings caveats preserved. |
+| Repository | Merge / evidence | README v2 | SVG PRO | Verification note |
+|---|---|---:|---:|---|
+| Image-To-Ico | README PR #1; SVG PR #2 → `dba8219` | ✅ | ✅ | main read-back; docs path had no dedicated PR CI |
+| IPTV-checker | PR #2 → `c1b113e` | ✅ | ✅ | migration CI passed; main read-back |
+| Gist_manager | PR #3 → `c22fde0` | ✅ | ✅ | migration CI passed; main read-back |
+| WojThom | PR #8 → `ba38c17` | ✅ | ✅ | main README/card read back; app workflows path-filtered, no app-CI claim |
+| PowerBookmark | PR #1 → `64be655` | ✅ | ✅ | main README read back; release workflow does not run for docs paths |
+| InfoPulse-PL | PR #1 → `1639025` | ✅ | ✅ | main README read back; existing workflows do not run for docs paths |
 
-### Image-To-Ico application issues outside documentation scope
+## Blockers
 
-The invalid legacy `requirements.txt` content and existing multi-image ICO export failure remain application-maintenance issues. The README documents them and provides a direct dependency-install workaround; documentation completion does not mark those runtime issues fixed.
+### Aria2Gui
 
-## SVG rollout rules for this migration
+`Aria2Gui` has an existing open [feature PR #1](https://github.com/Swir/Aria2Gui/pull/1) that modifies `README.md`, both language launchers, a shared UI module and workflow/startup files. It is intentionally **not** merged or rewritten by this documentation-only task.
 
-- Each eligible migrated project receives `progress-card.svg`, `progress-mini.svg`, `progress-template.svg` and a deterministic generator/check.
-- Legacy utilities without a trustworthy product roadmap report **N/A** product completion rather than inventing 0%, 100% or a documentation score.
-- Release readiness, benchmark effectiveness and product completion remain separate measurements.
-- This migration ledger uses dedicated assets under `assets/readme/migration/`; the profile `README.md` remains untouched.
-- `tools/generate_migration_progress.py` reads the metrics marker above, checks that owner-state counts add up and validates the priority-subset fill math.
+Required action for this migration: allow the feature PR to be resolved by its owning work; afterward fetch fresh `main`, re-audit the resulting README/source/release state and perform the README v2 + SVG PRO migration from that state.
 
 ## Execution log
 
 | Date | Work actually performed | Result |
 |---|---|---|
-| 2026-09-17 | Initial standards read and three-README triage. | Image-To-Ico, IPTV-checker and Gist_manager deficiencies identified. |
-| 2026-09-17 | Image-To-Ico full README v2 migration, source/release review and bounded source smoke; PR #1 merged and read back. | First verified README migration. |
-| 2026-09-17 | Migrated IPTV-checker and Gist_manager to README v2 + Progress SVG PRO on isolated branches. Verified source/release claims, created N/A product-progress graphics and deterministic checks, waited for successful PR CI, squash-merged, then read back main. | Verified migrations increased to 3; both CI-backed PRs passed. |
-| 2026-09-17 | Retrofitted Image-To-Ico with Progress SVG PRO through PR #2 and read back main; no PR-triggered CI exists for that repo. | SVG rollout verified for all 3 currently migrated repos. |
-| 2026-09-17 | Completed owner-level repository discovery: 66 repositories on page 1 and none on page 2. Recorded all names/default branches and provisional states; added machine-readable migration metrics and dedicated ledger progress graphics. | Owner discovery is finite; eligibility audit is still incomplete, so overall migration progress remains N/A. Next: WojThom. |
+| 2026-09-17 | Read canonical README v2 standard and created the migration queue/ledger. | Initial three-repository audit recorded. |
+| 2026-09-17 | Migrated Image-To-Ico, IPTV-checker and Gist_manager; added SVG PRO rollout; completed owner inventory discovery of 66 repositories. | 3 verified; overall eligibility still incomplete. |
+| 2026-09-17 | Migrated WojThom, PowerBookmark and InfoPulse-PL through dedicated documentation PRs; read final main files back. Audited Aria2Gui and found a conflicting open feature PR. Updated migration metrics and progress tooling to track blocked repositories explicitly. | 6 verified; 1 blocked; 44 queued; priority subset 6/13 = 46.2%; overall progress remains N/A. Next: WAV-to-MP3-converter. |
 
-Do not silently change the denominator. Any later `queued → excluded/delegated/verified` decision must update the inventory row, state totals, metrics marker and generated SVGs together. Disable only this migration task after every discovered repository has a final eligibility state and every eligible migration/SVG rollout is verified or explicitly blocked with a required action.
+Do not silently change the denominator. Any later `queued → excluded/delegated/verified/blocked` decision must update the inventory row, state totals, metrics marker and generated SVGs together. Disable only this migration task after every discovered repository has a final eligibility state and every eligible migration/SVG rollout is verified or explicitly excepted according to the completion policy.
