@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="200" viewBox="0 0 1200 200" role="img" aria-labelledby="title desc">
 <title id="title">SWIR README PRO migration progress</title>
-<desc id="desc">Overall migration percentage is N/A while eligibility review is incomplete. 66 owner repositories discovered, 3 verified migrations, 48 queued for qualification, 12 delegated, and 3 structural exclusions.</desc>
+<desc id="desc">Overall migration percentage is N/A. 66 owner repositories discovered, 3 verified migrations, 48 queued for qualification, 12 delegated, and 3 structural exclusions.</desc>
 <defs>
   <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#02050A"/><stop offset="1" stop-color="#07111C"/></linearGradient>
   <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#0088FF"/><stop offset="1" stop-color="#62E5FF"/></linearGradient>
