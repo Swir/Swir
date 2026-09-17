@@ -10,22 +10,23 @@ Canonical standard: [SWIR README PRO v2](SWIR-README-STANDARD.md).
 |---|---|
 | Started | 2026-09-17 |
 | Automation | SWIR README PRO Migration — hourly |
-| Phase | Initial README triage; full eligible-repository inventory pending |
+| Phase | First documentation migration merged and read back; full eligible-repository inventory pending |
 | Initial READMEs inspected | 3 |
-| Migrations verified by this task | 0 |
-| Priority candidates below | 13; this is NOT the total migration scope |
+| Migrations verified in this queue | 1 — Image-To-Ico, completed interactively |
+| Priority candidates below | 13 total, 1 verified and 12 queued; this is NOT the total migration scope |
+| Next priority | IPTV-checker, then Gist_manager |
 | Overall migration percentage | Not calculated until the full eligible inventory is recorded |
 | Completion policy | Final audit, final report, then disable only the migration task |
 
-The scheduled task has been created. Its first completed scheduled run has not been verified in this initial entry. The initial audit below was performed interactively and made no changes to the three application repositories.
+The initial audit and first completed migration were performed interactively. This entry does not claim that a scheduled run has finished. Image-To-Ico is now migrated on its default branch; the original three-repository triage is retained below as historical evidence.
 
 ## Initial audit — 2026-09-17
 
-These observations come from full README reads on each repository's default branch. They do not assert that an unreferenced banner or icon is absent from the repository; asset trees, application sources and release metadata still need inspection before migration.
+These historical observations come from full README reads on each repository's default branch before migration. They do not assert that an unreferenced banner or icon was absent from a repository. Use the priority queue and completed-migrations table for current state.
 
-| Repository | Observed README blob SHA | Findings | State |
+| Repository | Observed README blob SHA | Findings at initial triage | Initial state |
 |---|---|---|---|
-| [Image-To-Ico](https://github.com/Swir/Image-To-Ico) | `d44f68d70d9c5dd11caec9227d52e9f01f0fa984` | No v2 marker or local hero reference in README; older mixed-color badges; eight keyword phrases under `Discoverability`, not the required `Search Keywords`; installation and feature claims need source review. | `queued` |
+| [Image-To-Ico](https://github.com/Swir/Image-To-Ico) | `d44f68d70d9c5dd11caec9227d52e9f01f0fa984` | No v2 marker or local hero reference in README; older mixed-color badges; eight keyword phrases under `Discoverability`, not the required `Search Keywords`; installation and feature claims needed source review. | `queued` |
 | [IPTV-checker](https://github.com/Swir/IPTV-checker) | `3cd7732b9a67cf955cada331b5fb63046c744a09` | Existing project icon and useful detailed instructions; no v2 marker, local hero reference or Search Keywords section. Preserve stream-checking limits, authorization notes and launch/build instructions. | `queued` |
 | [Gist_manager](https://github.com/Swir/Gist_manager) | `4474299926ce8326d19c04992c3467bfbe79fcac` | No v2 marker or local hero reference; seven phrases under `Discoverability`; project SVG listed in structure but not displayed in the header. Preserve token-handling caveats and verify the documented release against actual metadata. | `queued` |
 
@@ -37,7 +38,7 @@ This is the initial preferred order, not an exhaustive inventory. Inspect reposi
 
 | Order | Repository | State | Next step |
 |---|---|---|---|
-| 1 | [Image-To-Ico](https://github.com/Swir/Image-To-Ico) | `queued` | Inspect sources/assets/releases; prepare complete v2 documentation change. |
+| 1 | [Image-To-Ico](https://github.com/Swir/Image-To-Ico) | `verified` | [PR #1](https://github.com/Swir/Image-To-Ico/pull/1) merged; final README and both SVGs read back on main. Do not redo this migration. |
 | 2 | [IPTV-checker](https://github.com/Swir/IPTV-checker) | `queued` | Retain useful existing content; add project hero and accurate keywords. |
 | 3 | [Gist_manager](https://github.com/Swir/Gist_manager) | `queued` | Verify launch/release details; display its own icon and migrate layout. |
 | 4 | [WojThom](https://github.com/Swir/WojThom) | `queued` | Inspect before deciding changes. |
@@ -57,7 +58,7 @@ After these priorities, continue through **all remaining eligible owned reposito
 
 At setup, dedicated development tasks already cover `SWIR_OS`, `SwirEngine`, `Swirui`, `SwirPhoneOS`, `KaliPhoneStudio`, `Dragon-DiskForge`, `GTT`, `Tank-Revival-Overdrive`, `Nes_New_Life`, `check-out-of-hell`, `Konofix` and `xADKiller`.
 
-Check current ownership before each run. Audit these repositories without competing README rewrites. Record any actual deficiency as `delegated`, not `verified`. Their current README compliance was **not re-audited** during this initial three-repository triage.
+Check current ownership before each run. Audit these repositories without competing README rewrites. Record any actual deficiency as `delegated`, not `verified`. Their current README compliance was **not re-audited** during the initial three-repository triage or the Image-To-Ico migration.
 
 The profile README in `Swir/Swir` and the portfolio site `swir.github.io` are not redesign targets. This ledger may be maintained in the profile repository without changing the profile page.
 
@@ -80,12 +81,30 @@ Do not rebrand unrelated upstream forks, unarchive repositories, invent products
 
 ## Completed migrations
 
-None verified by this migration task yet.
+| Repository | Date | PR / merged commit | Verification |
+|---|---|---|---|
+| [Image-To-Ico](https://github.com/Swir/Image-To-Ico) | 2026-09-17 | [PR #1](https://github.com/Swir/Image-To-Ico/pull/1), [f7e83af](https://github.com/Swir/Image-To-Ico/commit/f7e83af1130757a0af6e30fb08f6aab26b0605df) | v2 marker, 12 keywords, local hero/icon, truthful status and usage, source-based installation workaround, anchors/paths, SVG parsing/render review and offline 1280/390 px layout checks. Main README and both SVG contents match the locally checked files. |
+
+Image-To-Ico verification evidence:
+
+- README blob: `752332fb549b22be381e8a2a1820d22be8c341c5`.
+- Hero blob: `bd77ed61504c3a2d27539b188085e1581c559684`.
+- Project icon blob: `ee2839caa91ba5d989b469e343a39d8677daf0ff`.
+- Original application source checked byte-for-byte: `dcd6943d6ff3b60b54942d3060a28c1aada2cb7d`.
+- The PR changed exactly four documentation/artwork files. No application, dependencies, release workflow, version, license or binary changes.
+- The existing workflow has no PR trigger. Final PR head had no check runs or commit statuses; GitHub reported clean mergeability. Local verification is not presented as a new Windows CI pass.
+- Bounded source smoke: PNG/JPG selection, Tk preview, actual single-image ICO export/reopening, empty selection, save cancellation and last-added removal passed under Linux/Xvfb. Existing two-input export failed with `KeyError: 'ICO'` and is documented, not claimed fixed. The published EXE was not tested.
+- Full evidence and reproduction: [README-VERIFICATION.md](https://github.com/Swir/Image-To-Ico/blob/main/docs/README-VERIFICATION.md).
+
+### Application issues found, outside documentation-migration scope
+
+Image-To-Ico still needs separate application maintenance for its invalid requirements file and multi-image export behavior. The new README provides a usable direct dependency-install command and clearly limits the verified workflow to one image. Do not mark these underlying application issues resolved because the README migration is complete.
 
 ## Execution log
 
 | Date | Work actually performed | Result |
 |---|---|---|
-| 2026-09-17 | Read canonical v2 standard; checked active task ownership; created the hourly migration task; read the complete READMEs of Image-To-Ico, IPTV-checker and Gist_manager. | Initial deficiencies recorded; application README writes not yet performed; full inventory and migrations remain pending. |
+| 2026-09-17 | Read canonical v2 standard; checked active task ownership; created the hourly migration task; read the complete READMEs of Image-To-Ico, IPTV-checker and Gist_manager. | Initial deficiencies recorded; no application README writes at that initial step. |
+| 2026-09-17 | Completed Image-To-Ico source/release review, original-source smoke tests, project-specific artwork and full v2 README. Opened and squash-merged PR #1, then read back main README and both SVGs and matched their blob hashes to locally checked contents. | 1 verified migration. Existing runtime/dependency limitations documented without changing code or Releases. Next: IPTV-checker; full inventory still pending. |
 
 On subsequent runs, update this ledger from fresh evidence rather than repeatedly appending planning-only entries. Report completed migrations, remaining work and exceptions separately. Disable only the migration task after its defined scope is actually finished and the final audit/report is complete.
