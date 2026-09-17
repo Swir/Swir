@@ -100,17 +100,17 @@ PROBLEM  →  BUILD  →  TEST  →  RELEASE  →  EVOLVE
 
 <br><br>
 
-### `CONTRIBUTION SNAKE // LIVE`
+### `MOON PATROL // LIVE`
 
-<sub>DIRECT GITHUB DATA · AUTO REFRESH ~5 MIN · SELF-HOSTED PROFILE ASSETS</sub>
+<sub>ANIMATED PIXEL ROVER · REAL GITHUB DATA · SELF-HOSTED SVG</sub>
 
 <br><br>
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Swir/Swir/main/assets/github-contribution-grid-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Swir/Swir/main/assets/github-contribution-grid-snake.svg" />
-  <img width="98%" src="https://raw.githubusercontent.com/Swir/Swir/main/assets/github-contribution-grid-snake-dark.svg" alt="SWIR live GitHub contribution snake" />
-</picture>
+<img width="98%" src="https://raw.githubusercontent.com/Swir/Swir/main/assets/github-moon-patrol.svg" alt="SWIR Moon Patrol — animated pixel rover with scrolling lunar terrain and GitHub contribution data" />
+
+<br>
+
+<sub>Continuous animation · Data sync scheduled every 5 min (GitHub delays possible).</sub>
 
 </div>
 
