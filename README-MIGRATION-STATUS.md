@@ -4,7 +4,7 @@ Documentation migration ledger for existing SWIR projects. This is **README migr
 
 Canonical standards: [SWIR README PRO v2](SWIR-README-STANDARD.md) · [SWIR Progress SVG PRO](SWIR-PROGRESS-STANDARD.md).
 
-<!-- MIGRATION-METRICS owner=66 verified=6 queued=44 blocked=1 delegated=12 excluded=3 priority_verified=6 priority_total=13 eligibility=INCOMPLETE -->
+<!-- MIGRATION-METRICS owner=66 verified=9 queued=41 blocked=1 delegated=12 excluded=3 priority_verified=9 priority_total=13 eligibility=INCOMPLETE -->
 
 <p align="center">
   <img width="100%" src="assets/readme/migration/progress-card.svg" alt="SWIR README PRO migration overall progress — N/A while eligibility review is incomplete" />
@@ -16,19 +16,19 @@ Canonical standards: [SWIR README PRO v2](SWIR-README-STANDARD.md) · [SWIR Prog
 |---|---|
 | Started | 2026-09-17 |
 | Owner repositories discovered | **66**; repository search page 2 was empty for the discovery snapshot |
-| Verified migrations | **6** — Image-To-Ico, IPTV-checker, Gist_manager, WojThom, PowerBookmark, InfoPulse-PL |
-| SVG rollout verified | **6** — same repositories |
-| Queued / qualification pending | **44** |
+| Verified migrations | **9** — Image-To-Ico, IPTV-checker, Gist_manager, WojThom, PowerBookmark, InfoPulse-PL, WAV-to-MP3-converter, PolSilver_Bluetooth, FASTIPTVPlayer |
+| SVG rollout verified | **9** — same repositories |
+| Queued / qualification pending | **41** |
 | Blocked | **1** — Aria2Gui; existing feature PR #1 edits README and application code |
 | Delegated to dedicated active tasks | **12** |
 | Structural exclusions recorded | **3** |
-| Initial priority subset | **6 / 13 = 46.2% verified** |
+| Initial priority subset | **9 / 13 = 69.2% verified** |
 | Overall migration percentage | **N/A** until every queued owner repository receives a final eligibility decision |
-| Next priority | **WAV-to-MP3-converter**, then PolSilver_Bluetooth and FASTIPTVPlayer |
+| Next priority | **Matrix_Windows_Commander**, then BackgroundPXR and SwirPhotoClean |
 | Completion policy | Final eligibility audit → every eligible repo verified or explicitly excepted → final audit/report → disable only this migration task |
 
 <p align="center">
-  <img width="100%" src="assets/readme/migration/progress-mini.svg" alt="Initial priority subset progress — 6 of 13 repositories verified" />
+  <img width="100%" src="assets/readme/migration/progress-mini.svg" alt="Initial priority subset progress — 9 of 13 repositories verified" />
 </p>
 
 The mini bar above is **only the initial 13-repository priority subset**. It is not the overall migration percentage. The overall card stays **N/A** while discovered repositories still need a final eligibility decision.
@@ -55,10 +55,10 @@ A v2 marker, uploaded banner, open PR or green source CI alone does not prove a 
 | 5 | [Aria2Gui](https://github.com/Swir/Aria2Gui) | `blocked` | Existing [feature PR #1](https://github.com/Swir/Aria2Gui/pull/1) changes README plus application/UI files. Migration deferred to avoid overwriting concurrent feature work. Required action: resolve that PR, then re-read fresh `main` and migrate. |
 | 6 | [PowerBookmark](https://github.com/Swir/PowerBookmark) | `verified` | [PR #1](https://github.com/Swir/PowerBookmark/pull/1) merged as `64be655`; v2 README + SVG PRO read back. Corrected unsupported JSON-backup claim and documented broad permissions/custom-script safety. |
 | 7 | [InfoPulse-PL](https://github.com/Swir/InfoPulse-PL) | `verified` | [PR #1](https://github.com/Swir/InfoPulse-PL/pull/1) merged as `1639025`; v2 README + SVG PRO read back. Preserved Polish app identity, v3.2.0 release facts and input-automation safety. |
-| 8 | [WAV-to-MP3-converter](https://github.com/Swir/WAV-to-MP3-converter) | `queued` | Next full source/release/README qualification and migration candidate. |
-| 9 | [PolSilver_Bluetooth](https://github.com/Swir/PolSilver_Bluetooth) | `queued` | Verify real platform limits and authorized diagnostic scope before editing. |
-| 10 | [FASTIPTVPlayer](https://github.com/Swir/FASTIPTVPlayer) | `queued` | Inspect source, current releases, playback limitations and README assets. |
-| 11 | [Matrix_Windows_Commander](https://github.com/Swir/Matrix_Windows_Commander) | `queued` | Inspect before deciding changes. |
+| 8 | [WAV-to-MP3-converter](https://github.com/Swir/WAV-to-MP3-converter) | `verified` | [PR #1](https://github.com/Swir/WAV-to-MP3-converter/pull/1) merged as `5283cc87`; README v2 + SVG PRO read back. Preserved v1.0.0/FFmpeg facts and replaced unsupported AI-watermark/evasion claims with factual DSP limits. No PR CI workflow exists for docs; no green-CI claim. |
+| 9 | [PolSilver_Bluetooth](https://github.com/Swir/PolSilver_Bluetooth) | `verified` | [PR #4](https://github.com/Swir/PolSilver_Bluetooth/pull/4) merged as `714e44bb`; PR CI run `35280673281` passed Python 3.10–3.14 plus Windows Qt smoke. README/card read back; authorized diagnostics boundary preserved. |
+| 10 | [FASTIPTVPlayer](https://github.com/Swir/FASTIPTVPlayer) | `verified` | [PR #4](https://github.com/Swir/FASTIPTVPlayer/pull/4) merged as `3d996ef9`; PR CI run `35280688386` passed Python 3.10–3.14 plus Windows GUI smoke. README/card read back; public-proxy harvesting remains excluded. |
+| 11 | [Matrix_Windows_Commander](https://github.com/Swir/Matrix_Windows_Commander) | `queued` | Inspect current source, releases and Windows behavior before migration. |
 | 12 | [BackgroundPXR](https://github.com/Swir/BackgroundPXR) | `queued` | Inspect current app state, README assets and releases. |
 | 13 | [SwirPhotoClean](https://github.com/Swir/SwirPhotoClean) | `queued` | Inspect current app state, README assets and releases. |
 
@@ -101,13 +101,13 @@ The list below is the finite owner-level discovery snapshot. `queued` entries st
 | [Gist_manager](https://github.com/Swir/Gist_manager) | `main` | `verified` | README v2 + SVG rollout verified on main |
 | [Github-README-Generator](https://github.com/Swir/Github-README-Generator) | `main` | `queued` | qualification/readme audit pending |
 | [watermark-remover](https://github.com/Swir/watermark-remover) | `main` | `queued` | qualification/readme audit pending |
-| [FASTIPTVPlayer](https://github.com/Swir/FASTIPTVPlayer) | `main` | `queued` | qualification/readme audit pending |
+| [FASTIPTVPlayer](https://github.com/Swir/FASTIPTVPlayer) | `main` | `verified` | README v2 + SVG rollout verified on main; PR #4 CI passed |
 | [Grosz](https://github.com/Swir/Grosz) | `main` | `queued` | qualification/readme audit pending |
 | [Py-Converter-to-exe](https://github.com/Swir/Py-Converter-to-exe) | `main` | `queued` | qualification/readme audit pending |
-| [WAV-to-MP3-converter](https://github.com/Swir/WAV-to-MP3-converter) | `main` | `queued` | qualification/readme audit pending |
+| [WAV-to-MP3-converter](https://github.com/Swir/WAV-to-MP3-converter) | `main` | `verified` | README v2 + SVG rollout verified on main; real v1.0.0 preserved |
 | [Image-to-txt](https://github.com/Swir/Image-to-txt) | `main` | `queued` | qualification/readme audit pending |
 | [Titanium-APK-Bulider](https://github.com/Swir/Titanium-APK-Bulider) | `main` | `queued` | qualification/readme audit pending |
-| [PolSilver_Bluetooth](https://github.com/Swir/PolSilver_Bluetooth) | `main` | `queued` | qualification/readme audit pending |
+| [PolSilver_Bluetooth](https://github.com/Swir/PolSilver_Bluetooth) | `main` | `verified` | README v2 + SVG rollout verified on main; PR #4 CI passed |
 | [czatpythom](https://github.com/Swir/czatpythom) | `main` | `queued` | qualification/readme audit pending |
 | [NeonShift-X](https://github.com/Swir/NeonShift-X) | `main` | `queued` | qualification/readme audit pending |
 | [IPTV-checker](https://github.com/Swir/IPTV-checker) | `main` | `verified` | README v2 + SVG rollout verified on main |
@@ -135,7 +135,7 @@ The list below is the finite owner-level discovery snapshot. `queued` entries st
 | [SwirPhoneOS](https://github.com/Swir/SwirPhoneOS) | `main` | `delegated` | dedicated active development task |
 | [Multichain-Tracker](https://github.com/Swir/Multichain-Tracker) | `main` | `queued` | qualification/readme audit pending |
 
-State totals are machine-checkable from `MIGRATION-METRICS`: **6 verified + 44 queued + 1 blocked + 12 delegated + 3 excluded = 66 owner repositories**.
+State totals are machine-checkable from `MIGRATION-METRICS`: **9 verified + 41 queued + 1 blocked + 12 delegated + 3 excluded = 66 owner repositories**.
 
 ## Work owned by other active tasks
 
@@ -153,6 +153,9 @@ Their README/SVG compliance may be audited, but documentation edits must be left
 | WojThom | PR #8 → `ba38c17` | ✅ | ✅ | main README/card read back; app workflows path-filtered, no app-CI claim |
 | PowerBookmark | PR #1 → `64be655` | ✅ | ✅ | main README read back; release workflow does not run for docs paths |
 | InfoPulse-PL | PR #1 → `1639025` | ✅ | ✅ | main README read back; existing workflows do not run for docs paths |
+| WAV-to-MP3-converter | PR #1 → `5283cc87` | ✅ | ✅ | main README/card read back; no PR CI workflow; misleading AI-evasion claims removed from docs |
+| PolSilver_Bluetooth | PR #4 → `714e44bb` | ✅ | ✅ | CI run `35280673281` passed Python 3.10–3.14 and Windows smoke; main read-back |
+| FASTIPTVPlayer | PR #4 → `3d996ef9` | ✅ | ✅ | CI run `35280688386` passed Python 3.10–3.14 and Windows GUI smoke; main read-back |
 
 ## Blockers
 
@@ -169,5 +172,6 @@ Required action for this migration: allow the feature PR to be resolved by its o
 | 2026-09-17 | Read canonical README v2 standard and created the migration queue/ledger. | Initial three-repository audit recorded. |
 | 2026-09-17 | Migrated Image-To-Ico, IPTV-checker and Gist_manager; added SVG PRO rollout; completed owner inventory discovery of 66 repositories. | 3 verified; overall eligibility still incomplete. |
 | 2026-09-17 | Migrated WojThom, PowerBookmark and InfoPulse-PL through dedicated documentation PRs; read final main files back. Audited Aria2Gui and found a conflicting open feature PR. Updated migration metrics and progress tooling to track blocked repositories explicitly. | 6 verified; 1 blocked; 44 queued; priority subset 6/13 = 46.2%; overall progress remains N/A. Next: WAV-to-MP3-converter. |
+| 2026-09-18 | Migrated WAV-to-MP3-converter, PolSilver_Bluetooth and FASTIPTVPlayer through documentation-only PRs; added README PRO v2 heroes, truthful status/release documentation, Search Keywords, N/A product-progress SVGs and deterministic progress checks. Read final README/cards back from main. | 9 verified; 1 blocked; 41 queued; priority subset 9/13 = 69.2%; overall progress remains N/A. Next: Matrix_Windows_Commander. |
 
 Do not silently change the denominator. Any later `queued → excluded/delegated/verified/blocked` decision must update the inventory row, state totals, metrics marker and generated SVGs together. Disable only this migration task after every discovered repository has a final eligibility state and every eligible migration/SVG rollout is verified or explicitly excepted according to the completion policy.
