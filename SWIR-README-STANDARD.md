@@ -229,7 +229,13 @@ Avoid turning README into an internal design dump. Link to deeper architecture d
 - Keep README status synchronized with verified project state.
 - Never inflate completion because a skeleton, placeholder or CI job exists.
 - Never describe a release as available until it actually exists.
-- Preserve project-specific roadmap standards and release gates.
+- Preserve project-specific roadmap data, structural markers and release gates.
+
+### SVG-only progress — user correction 2026-09-18
+
+Follow [SWIR Progress SVG PRO](SWIR-PROGRESS-STANDARD.md) for progress cards, compact roadmap graphics, deterministic regeneration and visible task-report previews. The user rejected the leftover ASCII/Unicode progress meters: remove them from maintained README and active roadmap/status dashboards rather than displaying them below SVG. This explicitly supersedes the text-bar portion of historical v1 style locks; it does not authorize removing checklist data, numeric tables or safety/release checks.
+
+Use one suitable SVG for a given scope in each section, plus a short plain-text percentage/counter or the existing numeric table as accessible fallback. Do not add another text-art meter, duplicate card/mini for the same scope in the same section or print SVG source code as a replacement for an image. Unknown progress remains N/A. Preserve useful command examples and directory trees; do not remove arbitrary code fences or unrelated artwork. Update documentation generators and presentation tests so old meters are not reintroduced. Verify cleanup from committed files rather than assuming a v2 marker means a repository is clean.
 
 ## 14. Search Keywords — mandatory
 
@@ -301,6 +307,8 @@ A SWIR README must be:
 - [ ] compatibility is explicit
 - [ ] real preview media is used only when available
 - [ ] roadmap/release links are current
+- [ ] progress follows SWIR Progress SVG PRO with plain numeric fallback and no duplicated ASCII/Unicode meter
+- [ ] documentation regeneration does not restore retired text progress bars
 - [ ] `## 🔎 Search Keywords` contains 8–20 relevant phrases
 - [ ] SWIR footer is present
 - [ ] no fake metrics/features/releases/platforms
@@ -318,6 +326,7 @@ Any automated task that actively develops a `Swir/*` repository should:
 7. preserve project-specific legal, safety, compatibility, roadmap and release information;
 8. never blindly copy another repository's feature list, commands, badges, screenshots or claims;
 9. keep README synchronized with verified project state after meaningful milestones;
-10. never replace a unique, already-superior project hero with a generic banner merely for conformity.
+10. never replace a unique, already-superior project hero with a generic banner merely for conformity;
+11. apply the SVG-only progress correction, remove duplicated legacy meters from maintained documentation and newly produced reports, and prevent their regeneration without altering verified progress.
 
 This v2 document is the canonical source of truth for the SWIR repository presentation system.
