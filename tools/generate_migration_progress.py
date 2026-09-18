@@ -13,7 +13,7 @@ LEDGER = ROOT / "README-MIGRATION-STATUS.md"
 OUT = ROOT / "assets" / "readme" / "migration"
 
 METRICS_RE = re.compile(
-    r"<!-- MIGRATION-METRICS owner=(\d+) verified=(\d+) queued=(\d+) blocked=(\d+) delegated=(\d+) "
+    r"<!-- MIGRATION-METRICS owner=(\d+) verified=(\d+) queued=(\d+) in_progress=(\d+) blocked=(\d+) delegated=(\d+) "
     r"excluded=(\d+) priority_verified=(\d+) priority_total=(\d+) eligibility=(INCOMPLETE|COMPLETE) -->"
 )
 CLEANUP_RE = re.compile(
@@ -44,18 +44,20 @@ def parse_metrics(text: str) -> dict[str, int | str]:
     match = METRICS_RE.search(text)
     if not match:
         raise SystemExit("MIGRATION-METRICS marker missing or malformed")
-    owner, verified, queued, blocked, delegated, excluded, p_verified, p_total, eligibility = match.groups()
+    owner, verified, queued, in_progress, blocked, delegated, excluded, p_verified, p_total, eligibility = match.groups()
     m: dict[str, int | str] = {
         "owner": int(owner), "verified": int(verified), "queued": int(queued),
-        "blocked": int(blocked), "delegated": int(delegated), "excluded": int(excluded),
-        "priority_verified": int(p_verified), "priority_total": int(p_total), "eligibility": eligibility,
+        "in_progress": int(in_progress), "blocked": int(blocked), "delegated": int(delegated),
+        "excluded": int(excluded), "priority_verified": int(p_verified), "priority_total": int(p_total),
+        "eligibility": eligibility,
     }
-    if int(m["verified"]) + int(m["queued"]) + int(m["blocked"]) + int(m["delegated"]) + int(m["excluded"]) != int(m["owner"]):
+    total = sum(int(m[k]) for k in ("verified", "queued", "in_progress", "blocked", "delegated", "excluded"))
+    if total != int(m["owner"]):
         raise SystemExit("migration state counts do not add up to owner inventory")
     if int(m["priority_total"]) <= 0 or int(m["priority_verified"]) > int(m["priority_total"]):
         raise SystemExit("invalid priority subset counts")
-    if m["eligibility"] == "COMPLETE" and int(m["queued"]) != 0:
-        raise SystemExit("eligibility cannot be COMPLETE while queued repositories remain")
+    if m["eligibility"] == "COMPLETE" and (int(m["queued"]) != 0 or int(m["in_progress"]) != 0):
+        raise SystemExit("eligibility cannot be COMPLETE while queued/in-progress repositories remain")
     return m
 
 
@@ -71,7 +73,7 @@ def parse_cleanup(text: str, owner: int) -> dict[str, int]:
 
 def render_card(m: dict[str, int | str], c: dict[str, int]) -> str:
     complete = m["eligibility"] == "COMPLETE"
-    verified, queued, blocked = int(m["verified"]), int(m["queued"]), int(m["blocked"])
+    verified, queued, in_progress, blocked = (int(m[k]) for k in ("verified", "queued", "in_progress", "blocked"))
     measurable = verified + blocked
     overall = f"{100.0 * verified / measurable:.1f}%" if complete and measurable else "N/A"
     status = "ELIGIBILITY COMPLETE" if complete else "ELIGIBILITY AUDIT"
@@ -79,7 +81,7 @@ def render_card(m: dict[str, int | str], c: dict[str, int]) -> str:
     footer = f"Eligible migration completion: {verified} verified · {blocked} blocked" if complete else "Overall percentage stays N/A until every owner repository has a final eligibility state."
     return f'''<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="220" viewBox="0 0 1200 220" role="img" aria-labelledby="title desc">
 <title id="title">SWIR README PRO migration progress</title>
-<desc id="desc">Overall migration percentage is {overall}. {m["owner"]} owner repositories discovered, {verified} verified migrations, {queued} queued, {blocked} blocked, {m["delegated"]} delegated and {m["excluded"]} excluded. Legacy meter cleanup has {c["verified"]} verified and {c["pending"]} pending.</desc>
+<desc id="desc">Overall migration percentage is {overall}. {m["owner"]} owner repositories discovered, {verified} verified migrations, {queued} queued, {in_progress} in progress, {blocked} blocked, {m["delegated"]} delegated and {m["excluded"]} excluded. Legacy meter cleanup has {c["verified"]} verified and {c["pending"]} pending.</desc>
 <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#02050A"/><stop offset="1" stop-color="#07111C"/></linearGradient><linearGradient id="accent" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#0088FF"/><stop offset="1" stop-color="#62E5FF"/></linearGradient><pattern id="grid" width="26" height="26" patternUnits="userSpaceOnUse"><path d="M26 0H0V26" fill="none" stroke="#62E5FF" stroke-opacity=".05"/></pattern></defs>
 <rect x="1" y="1" width="1198" height="218" rx="24" fill="url(#bg)" stroke="#62E5FF" stroke-opacity=".24"/><rect x="1" y="1" width="1198" height="218" rx="24" fill="url(#grid)"/>
 <text x="50" y="42" fill="#62E5FF" font-family="Segoe UI,Arial,sans-serif" font-size="17" font-weight="700" letter-spacing="4">SWIR PROGRESS</text>
@@ -88,7 +90,7 @@ def render_card(m: dict[str, int | str], c: dict[str, int]) -> str:
 <text x="1090" y="77" text-anchor="end" fill="#F4FAFF" font-family="Segoe UI,Arial,sans-serif" font-size="34" font-weight="800">{overall}</text>
 <text x="1090" y="103" text-anchor="end" fill="#62E5FF" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="700">{status}</text>
 <rect x="50" y="122" width="1100" height="22" rx="11" fill="#08131F" stroke="#62E5FF" stroke-opacity=".16"/><path d="M70 133H1130" stroke="url(#accent)" stroke-width="2" stroke-dasharray="8 12" opacity=".35"/>
-<text x="50" y="169" fill="#8DA8B8" font-family="Segoe UI,Arial,sans-serif" font-size="12">Owner inventory: {m["owner"]} · verified: {verified} · queued: {queued} · blocked: {blocked}</text>
+<text x="50" y="169" fill="#8DA8B8" font-family="Segoe UI,Arial,sans-serif" font-size="12">Owner inventory: {m["owner"]} · verified: {verified} · queued: {queued} · in progress: {in_progress} · blocked: {blocked}</text>
 <text x="1150" y="169" text-anchor="end" fill="#8DA8B8" font-family="Segoe UI,Arial,sans-serif" font-size="12">delegated: {m["delegated"]} · exclusions: {m["excluded"]}</text>
 <text x="50" y="190" fill="#62E5FF" font-family="Segoe UI,Arial,sans-serif" font-size="12">Legacy meter cleanup: {c["verified"]} verified · {c["pending"]} pending · {c["blocked"]} blocked · {c["delegated"]} delegated · {c["excluded"]} excluded</text>
 <text x="50" y="209" fill="#8DA8B8" font-family="Segoe UI,Arial,sans-serif" font-size="12">{footer}</text>
