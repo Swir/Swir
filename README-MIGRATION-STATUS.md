@@ -4,7 +4,7 @@ Documentation migration ledger for existing SWIR projects. This is **README migr
 
 Canonical standards: [SWIR README PRO v2](SWIR-README-STANDARD.md) · [SWIR Progress SVG PRO](SWIR-PROGRESS-STANDARD.md).
 
-<!-- MIGRATION-METRICS owner=66 verified=20 queued=29 blocked=1 delegated=12 excluded=4 priority_verified=12 priority_total=13 eligibility=INCOMPLETE -->
+<!-- MIGRATION-METRICS owner=66 verified=21 queued=28 blocked=1 delegated=12 excluded=4 priority_verified=12 priority_total=13 eligibility=INCOMPLETE -->
 
 <p align="center">
   <img width="100%" src="assets/readme/migration/progress-card.svg" alt="SWIR README PRO migration overall progress — N/A while eligibility review is incomplete" />
@@ -16,15 +16,15 @@ Canonical standards: [SWIR README PRO v2](SWIR-README-STANDARD.md) · [SWIR Prog
 |---|---|
 | Started | 2026-09-17 |
 | Owner repositories discovered | **66**; repository search page 2 was empty for the discovery snapshot |
-| Verified migrations | **20** |
-| SVG rollout verified | **20** — same repositories |
-| Queued / qualification pending | **29** |
+| Verified migrations | **21** |
+| SVG rollout verified | **21** — same repositories |
+| Queued / qualification pending | **28** |
 | Blocked | **1** — Aria2Gui; feature PR #1 remains open and edits README plus application/UI code |
 | Delegated to dedicated active tasks | **12** |
 | Structural exclusions recorded | **4** |
 | Initial priority subset | **12 / 13 = 92.3% verified** |
 | Overall migration percentage | **N/A** until every queued owner repository receives a final eligibility decision |
-| Next qualification batch | `SwirTube` → `File.io_Downloaderup` → `TimeListe-Generator` |
+| Next qualification batch | `File.io_Downloaderup` → `TimeListe-Generator` → `CyptoPriceWidget` |
 | Completion policy | Final eligibility audit → every eligible repo verified or explicitly excepted → final audit/report → disable only this migration task |
 
 <p align="center">
@@ -84,7 +84,7 @@ This is the finite 66-repository owner discovery snapshot. `queued` entries stil
 | [keygenerator](https://github.com/Swir/keygenerator) | `main` | `verified` | main `3671502`; safety-reviewed source is a local template-shaped synthetic string generator, not a license/credential validator; README v2 + SVG PRO/check read back; v1.0.0 release assets verified |
 | [WojThom](https://github.com/Swir/WojThom) | `main` | `verified` | PR #8 → `ba38c17` |
 | [Y6-gamestick](https://github.com/Swir/Y6-gamestick) | `main` | `excluded` | metadata reports size 0; do not invent a product |
-| [SwirTube](https://github.com/Swir/SwirTube) | `main` | `queued` | qualification/readme audit pending |
+| [SwirTube](https://github.com/Swir/SwirTube) | `main` | `verified` | PR #1 → `ab1a668`; README v2 + custom hero/icon + SVG PRO/check read back; current source/release facts audited; no repository CI workflow |
 | [Matrix_Windows_Commander](https://github.com/Swir/Matrix_Windows_Commander) | `main` | `verified` | PR #4 → `5402a9d` |
 | [Swir](https://github.com/Swir/Swir) | `main` | `excluded` | profile repo; only migration standards/ledger/tooling are maintained here |
 | [File.io_Downloaderup](https://github.com/Swir/File.io_Downloaderup) | `main` | `queued` | qualification/readme audit pending |
@@ -135,7 +135,7 @@ This is the finite 66-repository owner discovery snapshot. `queued` entries stil
 | [SwirPhoneOS](https://github.com/Swir/SwirPhoneOS) | `main` | `delegated` | dedicated active development task |
 | [Multichain-Tracker](https://github.com/Swir/Multichain-Tracker) | `main` | `queued` | qualification/readme audit pending |
 
-State totals: **20 verified + 29 queued + 1 blocked + 12 delegated + 4 excluded = 66 owner repositories**.
+State totals: **21 verified + 28 queued + 1 blocked + 12 delegated + 4 excluded = 66 owner repositories**.
 
 ## Work owned by other active tasks
 
@@ -167,6 +167,7 @@ Their README/SVG compliance may be audited, but documentation edits remain with 
 | XBookmark | main `7fd4019` | ✅ | ✅ | README/card/generator read back; channel manifests verified; no GitHub Release and no workflow run for docs commit |
 | Worker-Time-list-generator | main `c685c1a` | ✅ | ✅ | README/card/generator read back; CI `35299242427` passed Python 3.10–3.14 + Windows GUI smoke; v3.1.0 assets verified |
 | keygenerator | main `3671502` | ✅ | ✅ | source safety-reviewed as local synthetic template generator; README/card/generator read back; v1.0.0 assets verified |
+| SwirTube | PR #1 → `ab1a668` | ✅ | ✅ | source/releases audited; README/card read back on main; no repository CI workflow |
 
 ## Exclusions added by qualification
 
@@ -192,5 +193,6 @@ Required action: let the owning feature work resolve that PR; then fetch fresh `
 | 2026-09-18 | Migrated Hex-kolor, Driver-tool and Youtube-VLC. | 15 verified; 35 queued; overall progress N/A. |
 | 2026-09-18 | Safety-qualified and migrated Spamer as controlled keyboard automation; excluded empty placeholder `plugin.swir`; migrated the T303UA OpenCore EFI reference while preserving the real release/checksum and explicit hardware/legal limitations. | **17 verified; 32 queued; 1 blocked; 12 delegated; 4 excluded.** Priority remains 12/13 because Aria2Gui is blocked; overall progress remains N/A. |
 | 2026-09-18 | Verified already-landed README PRO v2 + SVG PRO migrations for XBookmark, Worker-Time-list-generator and keygenerator, including channel/release/source truthfulness checks and final default-branch read-back. | **20 verified; 29 queued; 1 blocked; 12 delegated; 4 excluded.** Worker-Time-list-generator CI `35299242427` passed; XBookmark/keygenerator retain truthful N/A product progress. |
+| 2026-09-18 | Audited current SwirTube source, dependencies and both historical releases; migrated README/branding/SVG progress via documentation-only PR #1 and read back final `main`. | **21 verified; 28 queued; 1 blocked; 12 delegated; 4 excluded.** SwirTube progress stays N/A because no canonical measurable roadmap exists. |
 
 Do not silently change the denominator. Every later `queued → excluded/delegated/verified/blocked` decision must update the inventory row, state totals, metrics marker and generated migration SVGs together. Disable only this migration task after every discovered repository has a final eligibility state and every eligible migration/SVG rollout is verified or explicitly excepted according to the completion policy.
