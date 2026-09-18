@@ -10,6 +10,7 @@ on:
       - ".github/workflows/profile-activity.yml"
       - "scripts/generate_pixel_tank_patrol.py"
       - "scripts/generate_profile_activity.py"
+      - "scripts/check_pixel_tank_motion.py"
       - "tests/test_pixel_tank_patrol.py"
 
 permissions:
@@ -22,7 +23,7 @@ concurrency:
 jobs:
   generate:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 8
     steps:
       - name: Checkout profile repository
         uses: actions/checkout@v4
@@ -38,13 +39,36 @@ jobs:
           PROFILE_USER: ${{ github.repository_owner }}
         run: python3 scripts/generate_pixel_tank_patrol.py
 
+      - name: Install browser regression dependencies
+        if: github.event_name != 'schedule'
+        run: |
+          python3 -m pip install playwright==1.57.0 Pillow==12.3.0
+          python3 -m playwright install --with-deps chromium
+
+      - name: Verify visible driving, projectiles, impacts and second loop
+        if: github.event_name != 'schedule'
+        run: python3 scripts/check_pixel_tank_motion.py
+
+      - name: Upload real animation and browser evidence
+        if: always() && github.event_name != 'schedule'
+        uses: actions/upload-artifact@v4
+        with:
+          name: pixel-tank-motion-evidence
+          retention-days: 7
+          if-no-files-found: error
+          path: |
+            motion-evidence/
+            assets/github-pixel-tank-patrol-live-v2.svg
+            assets/github-pixel-tank-patrol-still.svg
+            assets/pixel-tank-state.json
+
       - name: Publish validated profile assets
         shell: bash
         run: |
           set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -- assets/github-pixel-tank-patrol.svg assets/github-activity-live.svg assets/pixel-tank-state.json
+          git add -- assets/github-pixel-tank-patrol-live-v2.svg assets/github-pixel-tank-patrol-still.svg assets/github-activity-live.svg assets/pixel-tank-state.json
           if git diff --cached --quiet; then
             echo "Contribution data and renderer unchanged; no commit needed."
             exit 0

@@ -143,5 +143,40 @@ class PixelTankTests(unittest.TestCase):
             self.assertFalse(list(root.glob('.tank-stage-*')))
 
 
+class ContinuousLiveRegressionTests(unittest.TestCase):
+    def test_live_has_no_global_reduced_motion_stop(self):
+        svg, state = tank.build_svg(calendar([1, 2, 3]), 'Swir', 'TEST')
+        self.assertNotIn('.anim{animation:none', svg)
+        self.assertNotIn('.transient,.muzzle{display:none}', svg)
+        self.assertEqual(state['motion'], 'continuous')
+        self.assertEqual(state['renderer_version'], '2.0')
+
+    def test_projectiles_are_visible_long_enough(self):
+        self.assertGreaterEqual(tank.FLIGHT, .45)
+        self.assertLess(tank.MOVE_TIME, tank.LEAD)
+        self.assertLess(tank.LEAD+tank.FLIGHT+.30, tank.SLOT)
+
+    def test_same_week_active_days_change_firing_position(self):
+        days, _ = tank.read_calendar(calendar([0]*210+[3]*5))
+        shots = tank.plan_shots(days)
+        for a, b in zip(shots, shots[1:]):
+            self.assertNotEqual(a.tank_x, b.tank_x)
+
+    def test_fresh_url_for_fixed_animation(self):
+        self.assertEqual(tank.SVG_PATH.name, 'github-pixel-tank-patrol-live-v2.svg')
+        self.assertNotEqual(tank.SVG_PATH, tank.STATIC_PATH)
+
+    def test_static_view_has_no_keyframes_and_keeps_targets(self):
+        svg, state = tank.build_svg(calendar([0, 5, 4, 0, 1]), 'Swir', 'TEST')
+        static = tank.build_static_svg(svg)
+        self.assertNotIn('@keyframes', static)
+        self.assertIn('STATIC / NO MOTION', static)
+        self.assertIn('.cell{opacity:1}', static)
+        self.assertEqual(len([e for e in ET.fromstring(static).iter() if e.get('data-date')]), 3)
+
+    def test_animation_boundaries_keep_submillisecond_precision(self):
+        self.assertNotEqual(tank.f(100*.0001/660), tank.f(0))
+
+
 if __name__ == '__main__':
     unittest.main()

@@ -22,18 +22,20 @@ import tempfile
 import xml.etree.ElementTree as ET
 
 ROOT = Path(__file__).resolve().parents[1]
-SVG_PATH = Path('assets/github-pixel-tank-patrol.svg')
+SVG_PATH = Path('assets/github-pixel-tank-patrol-live-v2.svg')
+STATIC_PATH = Path('assets/github-pixel-tank-patrol-still.svg')
 STATE_PATH = Path('assets/pixel-tank-state.json')
 DASHBOARD_PATH = Path('assets/github-activity-live.svg')
 NS = '{http://www.w3.org/2000/svg}'
 WIDTH, HEIGHT = 1120, 462
 GX, GY, DX, DY, CELL = 62, 155, 14, 17, 11
-TANK_Y, SLOT, LEAD, FLIGHT = 323, 1.1, .4, .30
-COLORS = ('#1C527E', '#1A82CE', '#168FFF', '#36C7F4', '#89EEFF')
+TANK_Y, SLOT, LEAD, FLIGHT = 323, 1.8, .75, .50
+MOVE_TIME = .60
+COLORS = ('#2585BF', '#239DDD', '#168FFF', '#36C7F4', '#89EEFF')
 
 
 def f(n: float) -> str:
-    return f'{n:.4f}'.rstrip('0').rstrip('.') or '0'
+    return f'{n:.6f}'.rstrip('0').rstrip('.') or '0'
 
 
 def rect(x, y, w, h, fill, extra=''):
@@ -136,7 +138,8 @@ def read_calendar(calendar: dict) -> tuple[list[Day], dict]:
 def plan_shots(days: list[Day]) -> list[Shot]:
     shots = []
     for i, day in enumerate(d for d in days if d.count > 0):
-        tx = max(100, min(762, day.x - 62))
+        # Alternate firing positions so multiple days in one week still show movement.
+        tx = max(100, min(762, day.x - 62 + (i % 3 - 1) * 18))
         angle = math.atan2(day.y-TANK_Y, day.x-tx)
         shots.append(Shot(day, i, tx, math.degrees(angle),
                           tx+46*math.cos(angle), TANK_Y+46*math.sin(angle)))
@@ -187,7 +190,7 @@ def build_svg(calendar: dict, username: str, stamp: str) -> tuple[str, dict]:
     duration = max(6.0, len(shots)*SLOT+2.0)
     reload_start = duration-.55
     css = [f'.cycle{{animation-duration:{f(duration)}s;animation-timing-function:linear;animation-iteration-count:infinite}}']
-    tank_x = shots[0].tank_x if shots else 145
+    tank_x = min(762, shots[0].tank_x + 80) if shots else 145
     angle = shots[0].angle if shots else -36
     pos_frames, aim_frames = [(0, f'transform:translateX({f(tank_x)}px)')], [(0, f'transform:rotate({f(angle)}deg)')]
     flash_frames, recoil_frames = [(0, 'opacity:0')], [(0, 'transform:translateX(0)')]
@@ -211,8 +214,8 @@ def build_svg(calendar: dict, username: str, stamp: str) -> tuple[str, dict]:
         i, day = s.index, s.day
         move_start = i*SLOT
         hold_end = (i+1)*SLOT
-        pos_frames += [(move_start+.30, f'transform:translateX({f(s.tank_x)}px)'), (hold_end, f'transform:translateX({f(s.tank_x)}px)')]
-        aim_frames += [(move_start+.30, f'transform:rotate({f(s.angle)}deg)'), (hold_end, f'transform:rotate({f(s.angle)}deg)')]
+        pos_frames += [(move_start+MOVE_TIME, f'transform:translateX({f(s.tank_x)}px)'), (hold_end, f'transform:translateX({f(s.tank_x)}px)')]
+        aim_frames += [(move_start+MOVE_TIME, f'transform:rotate({f(s.angle)}deg)'), (hold_end, f'transform:rotate({f(s.angle)}deg)')]
         flash_frames += [(s.fire-.001, 'opacity:0'), (s.fire, 'opacity:1'), (s.fire+.085, 'opacity:1'), (s.fire+.086, 'opacity:0')]
         recoil_frames += [(s.fire, 'transform:translateX(0)'), (s.fire+.045, 'transform:translateX(-4px)'), (s.fire+.17, 'transform:translateX(0)')]
         css.append(keyframes(f'shell{i}', duration, [(0, f'opacity:0;transform:translate({f(s.muzzle_x)}px,{f(s.muzzle_y)}px)'),
@@ -220,11 +223,11 @@ def build_svg(calendar: dict, username: str, stamp: str) -> tuple[str, dict]:
             (s.fire, f'opacity:1;transform:translate({f(s.muzzle_x)}px,{f(s.muzzle_y)}px)'),
             (s.hit, f'opacity:1;transform:translate({f(day.x)}px,{f(day.y)}px)'),
             (s.hit+.0001, f'opacity:0;transform:translate({f(day.x)}px,{f(day.y)}px)'), (duration, 'opacity:0')]))
-        effects.append(f'<g id="shell-{i}" class="cycle anim transient" opacity="0" style="animation-name:shell{i}"><g transform="rotate({f(s.angle)})"><path d="M-14 0H1" stroke="#168FFF" stroke-width="6" stroke-opacity=".4"/><path d="M-8 0H2" stroke="#A8F6FF" stroke-width="3"/></g></g>')
+        effects.append(f'<g id="shell-{i}" class="cycle anim transient" opacity="0" style="animation-name:shell{i}"><g transform="rotate({f(s.angle)})"><path d="M-22 0H2" stroke="#168FFF" stroke-width="9" stroke-opacity=".5"/><path d="M-16 0H3" stroke="#A8F6FF" stroke-width="5"/><rect x="0" y="-3" width="6" height="6" fill="#E3FCFF"/></g></g>')
         css.append(keyframes(f'hit{i}', duration, [(0, 'opacity:0;transform:scale(.2)'), (s.hit-.0001, 'opacity:0;transform:scale(.2)'),
             (s.hit, 'opacity:1;transform:scale(.3)'), (s.hit+.08, 'opacity:.95;transform:scale(1)'),
             (s.hit+.30, 'opacity:0;transform:scale(1.65)'), (duration, 'opacity:0;transform:scale(1.65)')]))
-        effects.append(f'<g transform="translate({f(day.x)} {f(day.y)})"><g id="hit-{i}" class="cycle anim transient" opacity="0" style="animation-name:hit{i}" shape-rendering="crispEdges"><path d="M-3 -11H3V-3H11V3H3V11H-3V3H-11V-3H-3Z" fill="#D1FAFF"/><path d="M-16 -13H-11V-8H-16ZM12 -14H16V-10H12ZM-14 12H-10V16H-14ZM12 11H17V16H12Z" fill="#36C7F4"/></g></g>')
+        effects.append(f'<g transform="translate({f(day.x)} {f(day.y)})"><g id="hit-{i}" class="cycle anim transient impact" opacity="0" style="animation-name:hit{i}" shape-rendering="crispEdges"><path d="M-3 -11H3V-3H11V3H3V11H-3V3H-11V-3H-3Z" fill="#D1FAFF"/><path d="M-16 -13H-11V-8H-16ZM12 -14H16V-10H12ZM-14 12H-10V16H-14ZM12 11H17V16H12Z" fill="#36C7F4"/></g></g>')
         css.append(window(f'lock{i}', duration, move_start+.01, hold_end))
         targets.append(f'<g class="cycle anim transient" opacity="0" style="animation-name:lock{i}"><path d="M{f(day.x-9)} {f(day.y-4)}v-5h5M{f(day.x+4)} {f(day.y-9)}h5v5M{f(day.x+9)} {f(day.y+4)}v5h-5M{f(day.x-4)} {f(day.y+9)}h-5v-5" fill="none" stroke="#C9F7FF" stroke-width="1.5"/></g>')
         labels.append(f'<g class="cycle anim transient" opacity="0" style="animation-name:lock{i}">'+text(40, 402, f'TARGET {day.date}  //  {day.count:,} CONTRIBUTIONS', 13, '#A2EBFF')+'</g>')
@@ -256,7 +259,9 @@ def build_svg(calendar: dict, username: str, stamp: str) -> tuple[str, dict]:
             '@keyframes tracks{to{stroke-dashoffset:-20}}.tracks{animation:tracks .75s linear infinite}',
             '@keyframes wheels{to{transform:rotate(360deg)}}.wheels{animation:wheels .75s linear infinite}',
             '@keyframes radar{50%{opacity:.4}}.radar{animation:radar 2s linear infinite}',
-            '.still{display:none}@media(prefers-reduced-motion:reduce){.anim{animation:none!important}.transient,.muzzle{display:none}.still{display:inline}.cell{opacity:1}}']
+            # LIVE is an explicit continuous visualization. Only decorative flashes
+            # obey reduced motion here; a separate static SVG is linked in README.
+            '.still{display:none}@media(prefers-reduced-motion:reduce){.radar{animation:none}.muzzle,.impact{visibility:hidden}}']
     months, last_month, last_x = [], None, -100
     for d in days:
         mon = d.date[:7]
@@ -274,7 +279,7 @@ def build_svg(calendar: dict, username: str, stamp: str) -> tuple[str, dict]:
             f'Hit cells vanish, the score credits their actual contributions, and the grid returns. '
             f'{metrics["period_start"]} to {metrics["period_end"]}; {metrics["total"]} contributions in {len(shots)} active days. '
             f'Continuous {f(duration)} second animation; snapshot {stamp}. This is a visualization, not a playable game. '
-            'Reduced-motion preferences display the intact grid without animation.')
+            'The LIVE view keeps its core motion; reduced-motion preferences hide decorative flashes. A separate static view is available.')
     svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="{WIDTH}" height="{HEIGHT}" viewBox="0 0 {WIDTH} {HEIGHT}" role="img" aria-labelledby="title desc">
 <title id="title">{html.escape(username)} // Pixel Tank Patrol LIVE</title><desc id="desc">{html.escape(desc)}</desc>
 <defs><linearGradient id="panel" x2="1" y2="1"><stop stop-color="#030B14"/><stop offset="1" stop-color="#061828"/></linearGradient><clipPath id="scene"><rect x="22" y="89" width="829" height="280" rx="7"/></clipPath></defs>
@@ -283,7 +288,7 @@ def build_svg(calendar: dict, username: str, stamp: str) -> tuple[str, dict]:
 <path d="M18 40V18H62M1058 18H1102V40M18 422V444H62M1058 444H1102V422" fill="none" stroke="#168FFF" stroke-width="3"/>
 {text(32, 28, 'SWIR // ORIGINAL ARCADE', 11, '#62E5FF', 'letter-spacing="2"')}
 {text(32, 61, 'PIXEL TANK PATROL', 29, '#C4F5FF', 'font-weight="700" letter-spacing="2"')}
-<circle class="radar anim" cx="954" cy="43" r="4" fill="#62E5FF"/>{text(969, 48, 'LIVE / AUTO LOOP', 12, '#62E5FF')}
+<circle class="radar anim" cx="954" cy="43" r="4" fill="#62E5FF"/>{text(969, 48, 'LIVE / V2 AUTO LOOP', 12, '#62E5FF')}
 <path d="M22 77H1097" stroke="#174967"/>
 <rect x="22" y="89" width="829" height="280" rx="7" fill="#050F1B" stroke="#1B4661"/>
 <g clip-path="url(#scene)">{scene_art()}
@@ -296,7 +301,7 @@ def build_svg(calendar: dict, username: str, stamp: str) -> tuple[str, dict]:
 {''.join(effects)}
 </g>{rhs}
 {''.join(labels)}{''.join(scores)}
-<g class="still">{text(40, 402, 'CONTRIBUTION TARGETS // REDUCED MOTION', 12)}{text(40, 424, f'{len(shots)} ACTIVE DAYS / {metrics["total"]:,} CONTRIBUTIONS', 13, '#62E5FF')}</g>
+<g class="still">{text(40, 402, 'CONTRIBUTION TARGETS // STATIC VIEW', 12)}{text(40, 424, f'{len(shots)} ACTIVE DAYS / {metrics["total"]:,} CONTRIBUTIONS', 13, '#62E5FF')}</g>
 <rect x="638" y="418" width="194" height="5" fill="#10334B"/><g transform="translate(638 418)"><rect class="progress anim" width="194" height="5" fill="#36C7F4"/></g>
 {text(638, 401, 'SECTOR PROGRESS', 10, '#79A8C3')}
 {text(40, 449, 'DATA '+stamp+'  /  '+metrics['period_start']+' — '+metrics['period_end'], 10, '#658EA9')}
@@ -304,11 +309,29 @@ def build_svg(calendar: dict, username: str, stamp: str) -> tuple[str, dict]:
 {text(1094, 448, 'SELF-HOSTED / by Swir', 11, '#62E5FF', 'text-anchor="end"')}
 </svg>'''
     validate_svg(svg)
-    state = {'schema': 1, 'user': username, 'source': 'GitHub GraphQL contributionCalendar',
+    state = {'schema': 2, 'renderer_version': '2.0', 'motion': 'continuous', 'user': username, 'source': 'GitHub GraphQL contributionCalendar',
              'generated_at': stamp, 'metrics': metrics, 'loop_seconds': duration,
              'target_count': len(shots), 'shot_interval_seconds': SLOT,
              'calendar': calendar}
     return svg, state
+
+
+def build_static_svg(svg: str) -> str:
+    """Explicit opt-out: a readable intact calendar with no animation timeline."""
+    root = ET.fromstring(svg)
+    for element in root.iter(NS+'style'):
+        element.text = ('text{font-family:ui-monospace,Consolas,monospace}'
+                        '.transient,.muzzle{display:none}.cell{opacity:1}'
+                        '.still{display:inline}.progress{transform:scaleX(0)}')
+    for element in root.iter(NS+'text'):
+        if element.text == 'LIVE / V2 AUTO LOOP':
+            element.text = 'STATIC / NO MOTION'
+    for desc in root.iter(NS+'desc'):
+        desc.text = 'Static, nonanimated view of the same GitHub contribution data.'
+    ET.register_namespace('', NS[1:-1])
+    result = ET.tostring(root, encoding='unicode')
+    validate_svg(result)
+    return result
 
 
 def validate_svg(svg: str) -> None:
@@ -363,9 +386,10 @@ def main() -> int:
             previous = json.loads((ROOT/STATE_PATH).read_text(encoding='utf-8'))
         except (OSError, ValueError):
             previous = {}
-        if previous.get('fingerprint') == digest and (ROOT/SVG_PATH).exists() and (ROOT/DASHBOARD_PATH).exists():
+        if previous.get('fingerprint') == digest and (ROOT/SVG_PATH).exists() and (ROOT/DASHBOARD_PATH).exists() and (ROOT/STATIC_PATH).exists():
             validate_svg((ROOT/SVG_PATH).read_text(encoding='utf-8'))
             validate_svg((ROOT/DASHBOARD_PATH).read_text(encoding='utf-8'))
+            validate_svg((ROOT/STATIC_PATH).read_text(encoding='utf-8'))
             print('Contribution data and renderer unchanged; no commit needed.')
             return 0
         stamp = dt.datetime.now(dt.timezone.utc).strftime('%Y-%m-%d %H:%M UTC')
@@ -375,7 +399,7 @@ def main() -> int:
         dashboard = dashboard_svg(username, weekly, legacy_metrics)
         validate_svg(dashboard)
         state['fingerprint'] = digest
-        publish_outputs(ROOT, {SVG_PATH: svg, DASHBOARD_PATH: dashboard,
+        publish_outputs(ROOT, {SVG_PATH: svg, STATIC_PATH: build_static_svg(svg), DASHBOARD_PATH: dashboard,
                                STATE_PATH: json.dumps(state, indent=2)+'\n'})
         print(f'Published {state["target_count"]} actual daily targets; looping every {state["loop_seconds"]:.1f}s.')
         return 0

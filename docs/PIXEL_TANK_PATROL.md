@@ -1,50 +1,57 @@
-# SWIR Pixel Tank Patrol LIVE
+# SWIR Pixel Tank Patrol LIVE — motion fix v2
 
-A repository-hosted, continuously animated SVG that replaces Moon Patrol in the profile's GitHub activity section. The activity dashboard above it is preserved. This is working vector animation, not one of the earlier generated concept images.
+The live profile panel is `assets/github-pixel-tank-patrol-live-v2.svg`. It keeps the existing real contribution calendar, tank artwork and the separate activity dashboard above it.
 
-## Contributions are the targets
+## Fixed: a visually static LIVE panel
 
-The board retains the actual contribution-calendar layout: columns are weeks, rows are Sunday through Saturday, and each square is one returned calendar day. Only days with a nonzero contribution count become targets. Brighter blue cells represent more contributions, using square-root intensity scaling for readability.
+The previous renderer applied `.anim { animation: none !important }` and hid every `.transient` element when `prefers-reduced-motion: reduce` matched. That stopped the vehicle and removed every projectile, hit and score transition. Unit tests passed because they checked declarations and geometry, not actual display under the browser's platform motion preference.
 
-The tank moves beneath the board, rotates its turret toward a particular active cell and fires a projectile along that exact aiming ray. On impact the cell produces a small pixel burst and disappears. The target display identifies its date and contribution count. The score credits that count, while the cleared counter counts days. Every active day is targeted exactly once per loop; the complete grid then reloads and the patrol repeats indefinitely.
+This was reproduced with the exact previously deployed SVG embedded in an HTML `img`: a Chromium process started with `--force-prefers-reduced-motion` produced identical image frames. Merely calling Playwright's page-level `emulate_media` did not reproduce the image-context behavior; the platform flag is included in the regression test.
 
-No contributions are created, removed or modified on GitHub. All clearing and scoring are visual effects. This is an automatically played visualization, not a clickable game or emulator. The tank and scenery are original SVG shapes.
+The explicitly selected LIVE version now retains driving, aiming, bullets, clearing and scoring under either motion preference. Reduced motion still hides decorative muzzle/impact flashes and stops the status-light pulse. Readers who prefer no movement have a separate, genuinely nonanimated SVG linked as **Static view**. No global browser or GitHub preference is changed.
 
-## Continuous motion is separate from data refresh
+## What the viewer sees
 
-- SVG/CSS animation starts automatically when the image is displayed, without clicking Play or hovering.
-- All movement, projectile, impact, targeting and score timelines repeat indefinitely. The tank's tracks and wheels also keep moving between shots.
-- The existing GitHub Actions schedule requests a fresh API snapshot every five minutes. Scheduling, contribution processing and image caches can delay visible data updates; this is not second-by-second streaming.
-- Opening the profile does not make API requests from the animation. It displays the last generated snapshot; the timestamp identifies that snapshot.
-- A user who explicitly requests reduced motion in their operating system/browser sees the intact calendar without animation. Browsers may suspend offscreen/background tabs.
+Each illuminated square represents one actual active calendar day. The tank approaches a firing position, aims at that square and launches a visible projectile. Impact clears that cell until the next loop, credits its real contribution count and advances the cleared-day counter. Zero-activity days are never targeted. All active days are visited exactly once per loop before the full board returns.
 
-## Implementation
+Version 2 gives projectiles half a second of visible travel, brighter trails and more readable low-activity targets. Firing positions vary for consecutive days in the same week so the vehicle is visibly moving rather than remaining under one column for a long sequence. The firing cycle is 1.8 seconds per active day, followed by a two-second board reset; the entire animation repeats indefinitely.
 
-`python3 scripts/generate_pixel_tank_patrol.py` reuses the existing authenticated GitHub GraphQL calendar reader and generates:
+The artwork is original. This is an automatically played data visualization, not an emulator or clickable game. Visual clearing does not delete or change contributions on GitHub.
 
-- `assets/github-pixel-tank-patrol.svg`
-- `assets/pixel-tank-state.json` with the source calendar and generation metadata
-- `assets/github-activity-live.svg`, preserving the dashboard above the animation
+## Data refresh is not animation playback
 
-The renderer and data fingerprint prevents commits when the displayed information has not changed. API/validation errors fail the job and keep previously published assets available, rather than creating an error graphic or inventing statistics. Generation requires only the Python standard library and the existing helper; the displayed SVG contains no JavaScript, raster background, remote fonts or third-party widgets.
+The SVG moves locally in the viewer, without scripts, external images, fonts or API calls at display time. GitHub Actions requests fresh contribution data every five minutes; GitHub processing, scheduling and image caches can delay visible data updates. A renderer/data fingerprint prevents unnecessary commits when the snapshot is unchanged. Failure to fetch or validate data fails the job and leaves the previous published files intact.
 
-Legacy Moon Patrol/Snake files are retained for compatibility but are no longer generated by the activity workflow.
+Generated files:
 
-## Verification
+- `assets/github-pixel-tank-patrol-live-v2.svg`: continuously animated panel.
+- `assets/github-pixel-tank-patrol-still.svg`: explicit static alternative.
+- `assets/pixel-tank-state.json`: source calendar and snapshot metadata.
+- `assets/github-activity-live.svg`: the preserved summary dashboard.
+
+The v2 filename also prevents the README from reusing an already cached copy of the old animation. Legacy v1, Moon Patrol and Snake images are retained for compatibility; they are no longer generated by the activity workflow.
+
+## Regression checks
 
 ```sh
 python3 -m unittest discover -s tests -p 'test_pixel_tank_patrol.py' -v
+python3 -m pip install playwright==1.57.0 Pillow==12.3.0
+python3 -m playwright install --with-deps chromium
+python3 scripts/check_pixel_tank_motion.py
 ```
 
-Nineteen offline tests cover calendar integrity, partial weeks, exact target coverage, shot geometry, score inputs, streak edge cases, zero-activity behavior, XML safety, deterministic output, infinite animation declarations and output staging. Fixtures are synthetic and are never published as profile data.
+The 25 offline tests validate calendar mapping, exact targets, aiming geometry, counters, streak edge cases, safety, zero-activity behavior, timing precision and the explicit live/static contract. Fixtures are synthetic and are never published as activity data.
 
-During implementation, Chromium additionally verified actual animation in an HTML image element, impact/clear/score timing, restoration and firing in the second loop, and the reduced-motion view. Those browser checks are separate from the unit-test job and do not claim validation of every GitHub client.
+On code pushes and manual runs, browser regression additionally checks the actual generated SVG in an HTML image revealed from a collapsed `details` element. It compares vehicle-region pixels in normal and platform-reduced-motion browser processes, then checks exact shell coordinates, hit/clear/score timing, restoration and the second loop in the same SVG. The static alternative must have no animation timelines. `motion-evidence/report.json` and screenshots are uploaded as `pixel-tank-motion-evidence` before publication. Ordinary scheduled data refreshes remain lightweight and run the offline tests without installing a browser.
+
+Browser checks cover Chromium, not every GitHub client, extension or viewer setting. A browser can still suspend a background tab; an explicitly paused image viewer is outside the SVG's control.
 
 ## References
 
-- [GitHub Actions schedules and possible delays](https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows#schedule)
 - [SVG image restrictions](https://developer.mozilla.org/en-US/docs/Web/SVG/Guides/SVG_as_an_image)
+- [Reduced-motion media preference](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion)
+- [GitHub Actions scheduling](https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows#schedule)
 
 ## Search Keywords
 
-SWIR Pixel Tank Patrol, animated GitHub contribution graph, contribution tank, GitHub snake alternative, infinite SVG animation, pixel art tank, GitHub Actions profile, self-hosted README animation, blue neon GitHub profile, data-driven arcade visualization.
+SWIR Pixel Tank Patrol LIVE, animated GitHub contributions, snake alternative, contribution targets, pixel tank, infinite SVG animation, reduced motion regression, Python SVG generator, self-hosted GitHub profile, blue neon README.
