@@ -106,11 +106,11 @@ PROBLEM  →  BUILD  →  TEST  →  RELEASE  →  EVOLVE
 
 <br><br>
 
-<img width="98%" src="https://raw.githubusercontent.com/Swir/Swir/main/assets/github-pixel-tank-patrol.svg" alt="SWIR Pixel Tank Patrol LIVE — continuously animated tank shoots actual contribution cells; hits clear the cells and the grid reloads every loop" />
+<img width="98%" src="https://raw.githubusercontent.com/Swir/Swir/main/assets/github-pixel-tank-patrol-live-v2.svg" alt="SWIR Pixel Tank Patrol LIVE v2 — continuously moving tank targets actual contribution cells, fires visible projectiles and clears hit cells before repeating" />
 
 <br>
 
-<sub>Animation plays continuously · Data sync scheduled every 5 min (GitHub delays possible).</sub>
+<sub>Continuous playback · Data sync scheduled every 5 min (GitHub delays possible) · <a href="https://raw.githubusercontent.com/Swir/Swir/main/assets/github-pixel-tank-patrol-still.svg">Static view</a></sub>
 
 </div>
 
