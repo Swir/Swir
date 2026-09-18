@@ -5,7 +5,7 @@ Documentation migration ledger for existing SWIR projects. This tracks **README 
 Canonical standards: [SWIR README PRO v2](SWIR-README-STANDARD.md) · [SWIR Progress SVG PRO](SWIR-PROGRESS-STANDARD.md).
 
 <!-- MIGRATION-METRICS owner=68 verified=49 queued=0 in_progress=0 blocked=1 delegated=13 excluded=5 priority_verified=12 priority_total=13 eligibility=COMPLETE -->
-<!-- LEGACY-METER-CLEANUP verified=32 pending=17 blocked=1 delegated=13 excluded=5 -->
+<!-- LEGACY-METER-CLEANUP verified=35 pending=14 blocked=1 delegated=13 excluded=5 -->
 
 <p align="center">
   <img width="100%" src="assets/readme/migration/progress-card.svg" alt="SWIR README PRO eligible migration progress — 98.0%, 49 verified and 1 blocked" />
@@ -19,7 +19,7 @@ Canonical standards: [SWIR README PRO v2](SWIR-README-STANDARD.md) · [SWIR Prog
 | Owner repositories discovered | **68** — original 66-repository snapshot plus `BrokeDJ` and later-discovered `SilentCryptoMiner`, both appended explicitly on 2026-09-18 |
 | Verified migrations | **49** |
 | SVG rollout verified | **49** — same repositories |
-| Legacy meter cleanup | **32 verified / 17 pending / 1 blocked / 13 delegated / 5 excluded** |
+| Legacy meter cleanup | **35 verified / 14 pending / 1 blocked / 13 delegated / 5 excluded** |
 | Queued / qualification pending | **0** |
 | In progress | **0** |
 | Blocked | **1** — `Aria2Gui`; feature PR #1 changes README plus application/UI code |
@@ -27,7 +27,7 @@ Canonical standards: [SWIR README PRO v2](SWIR-README-STANDARD.md) · [SWIR Prog
 | Structural / safety exclusions recorded | **5** |
 | Initial priority subset | **12 / 13 = 92.3% verified** |
 | Eligible migration completion | **49 / 50 = 98.0%** — blocked repositories remain incomplete; delegated/excluded repositories are not counted as completed migrations |
-| Next cleanup batch | `Spamer` → `Transformer-3-Pro-T303UA-i5-6200-hackintosh` → `XBookmark` |
+| Next cleanup batch | `Worker-Time-list-generator` → `InfoPulse-PL` → `keygenerator` |
 
 <p align="center">
   <img width="100%" src="assets/readme/migration/progress-mini.svg" alt="Initial priority subset progress — 12 of 13 repositories verified" />
@@ -54,7 +54,7 @@ Approved SVG progress graphics replace retired character/ASCII/Unicode documenta
 - `pending`: cleanup not yet re-audited after the SVG-only correction.
 - `blocked`, `delegated`, `excluded`: follow the same ownership/scope rules as migration state.
 
-Current cleanup-verified repositories: `Image-To-Ico`, `IPTV-checker`, `Gist_manager`, `CyptoPriceWidget`, `Matrix-Ajax-Chat`, `Ghos-DNS`, `Torrent_downloader`, `cda-pl`, `Koder`, `Github-README-Generator`, `Grosz`, `watermark-remover`, `Py-Converter-to-exe`, `Image-to-txt`, `Titanium-APK-Bulider`, `czatpythom`, `NeonShift-X`, `ASCITEXT`, `Github_Webste`, `Dreambox-scaner`, `Torrent_downloaderv2`, `MacTrix`, `Czateria_PLUS_Android`, `Matrix-czat-pythom`, `Ryzen-5-5600G-A320M-`, `Procent-calkulator`, `Ghost-APK-Builder`, `CrossAim_power`, `Multichain-Tracker`, `Hex-kolor`, `Driver-tool`, `Youtube-VLC`.
+Current cleanup-verified repositories: `Image-To-Ico`, `IPTV-checker`, `Gist_manager`, `CyptoPriceWidget`, `Matrix-Ajax-Chat`, `Ghos-DNS`, `Torrent_downloader`, `cda-pl`, `Koder`, `Github-README-Generator`, `Grosz`, `watermark-remover`, `Py-Converter-to-exe`, `Image-to-txt`, `Titanium-APK-Bulider`, `czatpythom`, `NeonShift-X`, `ASCITEXT`, `Github_Webste`, `Dreambox-scaner`, `Torrent_downloaderv2`, `MacTrix`, `Czateria_PLUS_Android`, `Matrix-czat-pythom`, `Ryzen-5-5600G-A320M-`, `Procent-calkulator`, `Ghost-APK-Builder`, `CrossAim_power`, `Multichain-Tracker`, `Hex-kolor`, `Driver-tool`, `Youtube-VLC`, `Spamer`, `Transformer-3-Pro-T303UA-i5-6200-hackintosh`, `XBookmark`.
 
 ## Initial priority queue
 
@@ -85,12 +85,12 @@ The original 66-repository discovery snapshot is preserved. `BrokeDJ` and later-
 | [Aria2Gui](https://github.com/Swir/Aria2Gui) | `main` | `blocked` | Feature PR #1 changes README + application/UI; avoid competing writes |
 | [Driver-tool](https://github.com/Swir/Driver-tool) | `main` | `verified` | PR #1 → `977c05ec`; cleanup verified |
 | [Youtube-VLC](https://github.com/Swir/Youtube-VLC) | `main` | `verified` | PR #3 → `6bc578f1`; CI passed; cleanup verified |
-| [Spamer](https://github.com/Swir/Spamer) | `main` | `verified` | PR #1 → `4e5773a`; controlled-use framing |
+| [Spamer](https://github.com/Swir/Spamer) | `main` | `verified` | PR #1 → `4e5773a`; controlled-use framing; cleanup verified |
 | [plugin.swir](https://github.com/Swir/plugin.swir) | `master` | `excluded` | Placeholder only; no product invented |
 | [Image-To-Ico](https://github.com/Swir/Image-To-Ico) | `main` | `verified` | README/SVG verified; cleanup re-audited |
-| [Transformer-3-Pro-T303UA-i5-6200-hackintosh](https://github.com/Swir/Transformer-3-Pro-T303UA-i5-6200-hackintosh) | `main` | `verified` | PR #3 → `20a65a5` |
+| [Transformer-3-Pro-T303UA-i5-6200-hackintosh](https://github.com/Swir/Transformer-3-Pro-T303UA-i5-6200-hackintosh) | `main` | `verified` | PR #3 → `20a65a5`; cleanup verified |
 | [Tank-Revival-Overdrive](https://github.com/Swir/Tank-Revival-Overdrive) | `main` | `delegated` | Dedicated active development task owns documentation |
-| [XBookmark](https://github.com/Swir/XBookmark) | `main` | `verified` | main `7fd4019`; README v2 + SVG PRO |
+| [XBookmark](https://github.com/Swir/XBookmark) | `main` | `verified` | main `7fd4019`; README v2 + SVG PRO; cleanup verified |
 | [Worker-Time-list-generator](https://github.com/Swir/Worker-Time-list-generator) | `main` | `verified` | main `c685c1a`; CI passed |
 | [InfoPulse-PL](https://github.com/Swir/InfoPulse-PL) | `main` | `verified` | PR #1 → `1639025` |
 | [keygenerator](https://github.com/Swir/keygenerator) | `main` | `verified` | main `3671502`; safety-reviewed generator |
@@ -191,5 +191,6 @@ Delegated: `Tank-Revival-Overdrive`, `Nes_New_Life`, `Dragon-DiskForge`, `Konofi
 | 2026-09-18 | Verified Ryzen-5-5600G-A320M-, Procent-calkulator and Ghost-APK-Builder on final main after merged docs PRs and exact-head checks. | 47 verified; cleanup 27; 2 queued remain. |
 | 2026-09-18 | Migrated CrossAim_power and Multichain-Tracker; completed all remaining queued qualification. Full inventory re-audit discovered SilentCryptoMiner and recorded it as excluded without modification. | 49 verified; 0 queued; cleanup 29; owner denominator 68. |
 | 2026-09-18 | Re-audited Hex-kolor, Driver-tool and Youtube-VLC on current main; README v2, SVG card/mini/template and deterministic generator contain no retired character meter, and no conflicting open PR exists. | Migration count unchanged at 49; cleanup 32; 17 pending. |
+| 2026-09-18 | Re-audited Spamer, Transformer-3-Pro-T303UA-i5-6200-hackintosh and XBookmark on current main; README v2, SVG card/mini/template and progress generators contain no retired character meter, and no conflicting open PR exists. | Migration count unchanged at 49; cleanup 35; 14 pending. |
 
 Do not silently change the denominator. Every later state decision must update inventory, metrics marker and generated migration SVGs together. Legacy-meter cleanup is independent. Disable only this migration task after every discovered repository has a final eligibility state and every eligible migration/SVG rollout/cleanup is verified or explicitly excepted.
