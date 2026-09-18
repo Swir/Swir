@@ -100,17 +100,17 @@ PROBLEM  →  BUILD  →  TEST  →  RELEASE  →  EVOLVE
 
 <br><br>
 
-### `MOON PATROL // LIVE`
+### `PIXEL TANK PATROL // LIVE`
 
-<sub>ANIMATED PIXEL ROVER · REAL GITHUB DATA · SELF-HOSTED SVG</sub>
+<sub>REAL CONTRIBUTIONS AS TARGETS · AIM → FIRE → CLEAR · INFINITE ANIMATION</sub>
 
 <br><br>
 
-<img width="98%" src="https://raw.githubusercontent.com/Swir/Swir/main/assets/github-moon-patrol.svg" alt="SWIR Moon Patrol — animated pixel rover with scrolling lunar terrain and GitHub contribution data" />
+<img width="98%" src="https://raw.githubusercontent.com/Swir/Swir/main/assets/github-pixel-tank-patrol.svg" alt="SWIR Pixel Tank Patrol LIVE — continuously animated tank shoots actual contribution cells; hits clear the cells and the grid reloads every loop" />
 
 <br>
 
-<sub>Continuous animation · Data sync scheduled every 5 min (GitHub delays possible).</sub>
+<sub>Animation plays continuously · Data sync scheduled every 5 min (GitHub delays possible).</sub>
 
 </div>
 
