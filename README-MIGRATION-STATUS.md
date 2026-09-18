@@ -4,8 +4,8 @@ Documentation migration ledger for existing SWIR projects. This tracks **README 
 
 Canonical standards: [SWIR README PRO v2](SWIR-README-STANDARD.md) · [SWIR Progress SVG PRO](SWIR-PROGRESS-STANDARD.md).
 
-<!-- MIGRATION-METRICS owner=67 verified=44 queued=5 in_progress=0 blocked=1 delegated=13 excluded=4 priority_verified=12 priority_total=13 eligibility=INCOMPLETE -->
-<!-- LEGACY-METER-CLEANUP verified=24 pending=25 blocked=1 delegated=13 excluded=4 -->
+<!-- MIGRATION-METRICS owner=67 verified=47 queued=2 in_progress=0 blocked=1 delegated=13 excluded=4 priority_verified=12 priority_total=13 eligibility=INCOMPLETE -->
+<!-- LEGACY-METER-CLEANUP verified=27 pending=22 blocked=1 delegated=13 excluded=4 -->
 
 <p align="center">
   <img width="100%" src="assets/readme/migration/progress-card.svg" alt="SWIR README PRO migration overall progress — N/A while eligibility review is incomplete" />
@@ -17,17 +17,17 @@ Canonical standards: [SWIR README PRO v2](SWIR-README-STANDARD.md) · [SWIR Prog
 |---|---|
 | Started | 2026-09-17 |
 | Owner repositories discovered | **67** — original 66-repository snapshot plus `BrokeDJ`, appended explicitly on 2026-09-18 |
-| Verified migrations | **44** |
-| SVG rollout verified | **44** — same repositories |
-| Legacy meter cleanup | **24 verified / 25 pending / 1 blocked / 13 delegated / 4 excluded** |
-| Queued / qualification pending | **5** |
+| Verified migrations | **47** |
+| SVG rollout verified | **47** — same repositories |
+| Legacy meter cleanup | **27 verified / 22 pending / 1 blocked / 13 delegated / 4 excluded** |
+| Queued / qualification pending | **2** |
 | In progress | **0** |
 | Blocked | **1** — `Aria2Gui`; feature PR #1 changes README plus application/UI code |
 | Delegated to dedicated active tasks | **13** |
 | Structural exclusions recorded | **4** |
 | Initial priority subset | **12 / 13 = 92.3% verified** |
 | Overall migration percentage | **N/A** until every owner repository receives a final eligibility decision |
-| Next qualification batch | `Ryzen-5-5600G-A320M-` → `Procent-calkulator` → `Ghost-APK-Builder` |
+| Next qualification batch | `CrossAim_power` → `Multichain-Tracker` |
 
 <p align="center">
   <img width="100%" src="assets/readme/migration/progress-mini.svg" alt="Initial priority subset progress — 12 of 13 repositories verified" />
@@ -54,7 +54,7 @@ Approved SVG progress graphics replace retired character/ASCII/Unicode documenta
 - `pending`: cleanup not yet re-audited after the SVG-only correction.
 - `blocked`, `delegated`, `excluded`: follow the same ownership/scope rules as migration state.
 
-Current cleanup-verified repositories: `Image-To-Ico`, `IPTV-checker`, `Gist_manager`, `CyptoPriceWidget`, `Matrix-Ajax-Chat`, `Ghos-DNS`, `Torrent_downloader`, `cda-pl`, `Koder`, `Github-README-Generator`, `Grosz`, `watermark-remover`, `Py-Converter-to-exe`, `Image-to-txt`, `Titanium-APK-Bulider`, `czatpythom`, `NeonShift-X`, `ASCITEXT`, `Github_Webste`, `Dreambox-scaner`, `Torrent_downloaderv2`, `MacTrix`, `Czateria_PLUS_Android`, `Matrix-czat-pythom`.
+Current cleanup-verified repositories: `Image-To-Ico`, `IPTV-checker`, `Gist_manager`, `CyptoPriceWidget`, `Matrix-Ajax-Chat`, `Ghos-DNS`, `Torrent_downloader`, `cda-pl`, `Koder`, `Github-README-Generator`, `Grosz`, `watermark-remover`, `Py-Converter-to-exe`, `Image-to-txt`, `Titanium-APK-Bulider`, `czatpythom`, `NeonShift-X`, `ASCITEXT`, `Github_Webste`, `Dreambox-scaner`, `Torrent_downloaderv2`, `MacTrix`, `Czateria_PLUS_Android`, `Matrix-czat-pythom`, `Ryzen-5-5600G-A320M-`, `Procent-calkulator`, `Ghost-APK-Builder`.
 
 ## Initial priority queue
 
@@ -139,16 +139,16 @@ The original 66-repository discovery snapshot is preserved. `BrokeDJ` was create
 | [KaliPhoneStudio](https://github.com/Swir/KaliPhoneStudio) | `main` | `delegated` | Dedicated active development task owns documentation |
 | [SwirEngine](https://github.com/Swir/SwirEngine) | `main` | `delegated` | Dedicated active development task owns documentation |
 | [GTT](https://github.com/Swir/GTT) | `main` | `delegated` | Dedicated active development task owns documentation |
-| [Ryzen-5-5600G-A320M-](https://github.com/Swir/Ryzen-5-5600G-A320M-) | `main` | `queued` | Qualification / README audit pending |
-| [Procent-calkulator](https://github.com/Swir/Procent-calkulator) | `main` | `queued` | Qualification / README audit pending |
+| [Ryzen-5-5600G-A320M-](https://github.com/Swir/Ryzen-5-5600G-A320M-) | `main` | `verified` | PR #1 → `ad653615`; README Docs CI passed; product progress N/A; cleanup verified |
+| [Procent-calkulator](https://github.com/Swir/Procent-calkulator) | `main` | `verified` | PR #1 → `be42f1f`; v1.0.0 preserved; README Docs CI passed; cleanup verified |
 | [Swirui](https://github.com/Swir/Swirui) | `main` | `delegated` | Dedicated active development task owns documentation |
-| [Ghost-APK-Builder](https://github.com/Swir/Ghost-APK-Builder) | `main` | `queued` | Qualification / README audit pending |
+| [Ghost-APK-Builder](https://github.com/Swir/Ghost-APK-Builder) | `main` | `verified` | PR #9 → `64a74d08`; v17 94% model and beta.2 preserved; README Docs + Ghost v17 CI passed; cleanup verified |
 | [CrossAim_power](https://github.com/Swir/CrossAim_power) | `main` | `queued` | Qualification / README audit pending |
 | [SwirPhoneOS](https://github.com/Swir/SwirPhoneOS) | `main` | `delegated` | Dedicated active development task owns documentation |
 | [Multichain-Tracker](https://github.com/Swir/Multichain-Tracker) | `main` | `queued` | Qualification / README audit pending |
 | [BrokeDJ](https://github.com/Swir/BrokeDJ) | `main` | `delegated` | Dedicated active development task owns documentation |
 
-State totals: **44 verified + 5 queued + 0 in progress + 1 blocked + 13 delegated + 4 excluded = 67**.
+State totals: **47 verified + 2 queued + 0 in progress + 1 blocked + 13 delegated + 4 excluded = 67**.
 
 ## Work owned by active project tasks
 
@@ -156,9 +156,9 @@ Delegated: `Tank-Revival-Overdrive`, `Nes_New_Life`, `Dragon-DiskForge`, `Konofi
 
 ## Verification highlights
 
-- `MacTrix`: PR #3 → `aac3840`; exact final-head CI passed; README/card/generator read back on `main`; v2.1.0 release preserved.
-- `Czateria_PLUS_Android`: PR #1 → `499e173`; README/card/generator read back on `main`; public v0.6.3 APK + SHA-256 preserved; repository has no CI and current default branch has no app source tree.
-- `Matrix-czat-pythom`: PR #1 → `83e9ffe`; README/card/generator read back on `main`; no repo CI; current Flask root/template mismatch is documented rather than hidden.
+- `Ryzen-5-5600G-A320M-`: PR #1 → `ad653615`; final README/STATUS/card/mini/template/generator read back on `main`; README Docs CI passed on exact PR head; progress correctly N/A for the hardware-reference scope.
+- `Procent-calkulator`: PR #1 → `be42f1f`; final README/STATUS/card/mini/template/generator read back on `main`; README Docs CI passed; real v1.0.0 release preserved and product progress remains N/A.
+- `Ghost-APK-Builder`: PR #9 → `64a74d08`; final README/ROADMAP/card/mini/template/generator read back on `main`; README Docs and Ghost v17 CI passed; documented 94% v17 model and v17.0.0-beta.2 preserved; stable gate still requires real physical-device evidence.
 
 ## Exclusions
 
@@ -184,5 +184,6 @@ Delegated: `Tank-Revival-Overdrive`, `Nes_New_Life`, `Dragon-DiskForge`, `Konofi
 | 2026-09-18 | Migrated czatpythom, NeonShift-X and ASCITEXT. | 38 verified; cleanup 18. |
 | 2026-09-18 | Migrated Github_Webste, Dreambox-scaner and Torrent_downloaderv2; appended BrokeDJ as delegated. | 41 verified; cleanup 21; owner denominator 67. |
 | 2026-09-18 | Migrated MacTrix, Czateria_PLUS_Android and Matrix-czat-pythom. | 44 verified; cleanup 24; 5 queued remain. |
+| 2026-09-18 | Verified Ryzen-5-5600G-A320M-, Procent-calkulator and Ghost-APK-Builder on final main after merged docs PRs and exact-head checks. | 47 verified; cleanup 27; 2 queued remain. |
 
 Do not silently change the denominator. Every later state decision must update inventory, metrics marker and generated migration SVGs together. Legacy-meter cleanup is independent. Disable only this migration task after every discovered repository has a final eligibility state and every eligible migration/SVG rollout/cleanup is verified or explicitly excepted.
