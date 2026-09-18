@@ -1,0 +1,28 @@
+name: README Migration Docs
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - README-MIGRATION-STATUS.md
+      - assets/readme/migration/**
+      - tools/generate_migration_progress.py
+      - .github/workflows/readme-migration-docs.yml
+  push:
+    branches: [main]
+    paths:
+      - README-MIGRATION-STATUS.md
+      - assets/readme/migration/**
+      - tools/generate_migration_progress.py
+      - .github/workflows/readme-migration-docs.yml
+
+jobs:
+  presentation:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Verify migration progress assets
+        run: python tools/generate_migration_progress.py --check
