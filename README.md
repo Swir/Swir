@@ -89,10 +89,7 @@ PROBLEM  →  BUILD  →  TEST  →  RELEASE  →  EVOLVE
 | **BUILD** | **RELEASE** | **EVOLVE** |
 | Start with a real problem and get to a working version fast. | A usable build beats a perfect idea that never ships. | Every release becomes the starting point for the next one. |
 
-<details>
-<summary><strong>⚡ Open GitHub activity</strong></summary>
-
-<br>
+## ⚡ GitHub Activity
 
 <div align="center">
 
@@ -113,8 +110,6 @@ PROBLEM  →  BUILD  →  TEST  →  RELEASE  →  EVOLVE
 <sub>Continuous playback · Data sync scheduled every 5 min (GitHub delays possible) · <a href="https://raw.githubusercontent.com/Swir/Swir/main/assets/github-pixel-tank-patrol-still.svg">Static view</a></sub>
 
 </div>
-
-</details>
 
 <img width="100%" src="assets/power-divider-v4.svg" alt="electric divider" />
 
