@@ -5,7 +5,7 @@ Documentation migration ledger for existing SWIR projects. This tracks **README 
 Canonical standards: [SWIR README PRO v2](SWIR-README-STANDARD.md) · [SWIR Progress SVG PRO](SWIR-PROGRESS-STANDARD.md).
 
 <!-- MIGRATION-METRICS owner=68 verified=49 queued=0 in_progress=0 blocked=1 delegated=13 excluded=5 priority_verified=12 priority_total=13 eligibility=COMPLETE -->
-<!-- LEGACY-METER-CLEANUP verified=38 pending=11 blocked=1 delegated=13 excluded=5 -->
+<!-- LEGACY-METER-CLEANUP verified=41 pending=8 blocked=1 delegated=13 excluded=5 -->
 
 <p align="center">
   <img width="100%" src="assets/readme/migration/progress-card.svg" alt="SWIR README PRO eligible migration progress — 98.0%, 49 verified and 1 blocked" />
@@ -19,7 +19,7 @@ Canonical standards: [SWIR README PRO v2](SWIR-README-STANDARD.md) · [SWIR Prog
 | Owner repositories discovered | **68** — original 66-repository snapshot plus `BrokeDJ` and later-discovered `SilentCryptoMiner`, both appended explicitly on 2026-09-18 |
 | Verified migrations | **49** |
 | SVG rollout verified | **49** — same repositories |
-| Legacy meter cleanup | **38 verified / 11 pending / 1 blocked / 13 delegated / 5 excluded** |
+| Legacy meter cleanup | **41 verified / 8 pending / 1 blocked / 13 delegated / 5 excluded** |
 | Queued / qualification pending | **0** |
 | In progress | **0** |
 | Blocked | **1** — `Aria2Gui`; feature PR #1 changes README plus application/UI code |
@@ -27,7 +27,7 @@ Canonical standards: [SWIR README PRO v2](SWIR-README-STANDARD.md) · [SWIR Prog
 | Structural / safety exclusions recorded | **5** |
 | Initial priority subset | **12 / 13 = 92.3% verified** |
 | Eligible migration completion | **49 / 50 = 98.0%** — blocked repositories remain incomplete; delegated/excluded repositories are not counted as completed migrations |
-| Next cleanup batch | `WojThom` → `SwirTube` → `Matrix_Windows_Commander` |
+| Next cleanup batch | `File.io_Downloaderup` → `TimeListe-Generator` → `SwirPhotoClean` |
 
 <p align="center">
   <img width="100%" src="assets/readme/migration/progress-mini.svg" alt="Initial priority subset progress — 12 of 13 repositories verified" />
@@ -54,7 +54,7 @@ Approved SVG progress graphics replace retired character/ASCII/Unicode documenta
 - `pending`: cleanup not yet re-audited after the SVG-only correction.
 - `blocked`, `delegated`, `excluded`: follow the same ownership/scope rules as migration state.
 
-Current cleanup-verified repositories: `Image-To-Ico`, `IPTV-checker`, `Gist_manager`, `CyptoPriceWidget`, `Matrix-Ajax-Chat`, `Ghos-DNS`, `Torrent_downloader`, `cda-pl`, `Koder`, `Github-README-Generator`, `Grosz`, `watermark-remover`, `Py-Converter-to-exe`, `Image-to-txt`, `Titanium-APK-Bulider`, `czatpythom`, `NeonShift-X`, `ASCITEXT`, `Github_Webste`, `Dreambox-scaner`, `Torrent_downloaderv2`, `MacTrix`, `Czateria_PLUS_Android`, `Matrix-czat-pythom`, `Ryzen-5-5600G-A320M-`, `Procent-calkulator`, `Ghost-APK-Builder`, `CrossAim_power`, `Multichain-Tracker`, `Hex-kolor`, `Driver-tool`, `Youtube-VLC`, `Spamer`, `Transformer-3-Pro-T303UA-i5-6200-hackintosh`, `XBookmark`, `Worker-Time-list-generator`, `InfoPulse-PL`, `keygenerator`.
+Current cleanup-verified repositories: `Image-To-Ico`, `IPTV-checker`, `Gist_manager`, `CyptoPriceWidget`, `Matrix-Ajax-Chat`, `Ghos-DNS`, `Torrent_downloader`, `cda-pl`, `Koder`, `Github-README-Generator`, `Grosz`, `watermark-remover`, `Py-Converter-to-exe`, `Image-to-txt`, `Titanium-APK-Bulider`, `czatpythom`, `NeonShift-X`, `ASCITEXT`, `Github_Webste`, `Dreambox-scaner`, `Torrent_downloaderv2`, `MacTrix`, `Czateria_PLUS_Android`, `Matrix-czat-pythom`, `Ryzen-5-5600G-A320M-`, `Procent-calkulator`, `Ghost-APK-Builder`, `CrossAim_power`, `Multichain-Tracker`, `Hex-kolor`, `Driver-tool`, `Youtube-VLC`, `Spamer`, `Transformer-3-Pro-T303UA-i5-6200-hackintosh`, `XBookmark`, `Worker-Time-list-generator`, `InfoPulse-PL`, `keygenerator`, `WojThom`, `SwirTube`, `Matrix_Windows_Commander`.
 
 ## Initial priority queue
 
@@ -63,14 +63,14 @@ Current cleanup-verified repositories: `Image-To-Ico`, `IPTV-checker`, `Gist_man
 | 1 | [Image-To-Ico](https://github.com/Swir/Image-To-Ico) | `verified` | README/SVG verified; cleanup re-audited |
 | 2 | [IPTV-checker](https://github.com/Swir/IPTV-checker) | `verified` | PR #2 → `c1b113e`; cleanup verified |
 | 3 | [Gist_manager](https://github.com/Swir/Gist_manager) | `verified` | PR #3 → `c22fde0`; cleanup verified |
-| 4 | [WojThom](https://github.com/Swir/WojThom) | `verified` | PR #8 → `ba38c17` |
+| 4 | [WojThom](https://github.com/Swir/WojThom) | `verified` | PR #8 → `ba38c17`; cleanup verified |
 | 5 | [Aria2Gui](https://github.com/Swir/Aria2Gui) | `blocked` | Feature PR #1 remains open; re-audit after owner task resolves it |
 | 6 | [PowerBookmark](https://github.com/Swir/PowerBookmark) | `verified` | PR #1 → `64be655` |
 | 7 | [InfoPulse-PL](https://github.com/Swir/InfoPulse-PL) | `verified` | PR #1 → `1639025`; cleanup verified |
 | 8 | [WAV-to-MP3-converter](https://github.com/Swir/WAV-to-MP3-converter) | `verified` | PR #1 → `5283cc87` |
 | 9 | [PolSilver_Bluetooth](https://github.com/Swir/PolSilver_Bluetooth) | `verified` | PR #4 → `714e44bb` |
 | 10 | [FASTIPTVPlayer](https://github.com/Swir/FASTIPTVPlayer) | `verified` | PR #4 → `3d996ef9` |
-| 11 | [Matrix_Windows_Commander](https://github.com/Swir/Matrix_Windows_Commander) | `verified` | PR #4 → `5402a9d`; CI passed |
+| 11 | [Matrix_Windows_Commander](https://github.com/Swir/Matrix_Windows_Commander) | `verified` | PR #4 → `5402a9d`; CI passed; cleanup verified |
 | 12 | [BackgroundPXR](https://github.com/Swir/BackgroundPXR) | `verified` | PR #1 → `c640e8f` |
 | 13 | [SwirPhotoClean](https://github.com/Swir/SwirPhotoClean) | `verified` | PR #1 → `50f2d2a`; STATUS.md 6/7 gate |
 
@@ -94,10 +94,10 @@ The original 66-repository discovery snapshot is preserved. `BrokeDJ` and later-
 | [Worker-Time-list-generator](https://github.com/Swir/Worker-Time-list-generator) | `main` | `verified` | main `c685c1a`; CI passed; cleanup verified |
 | [InfoPulse-PL](https://github.com/Swir/InfoPulse-PL) | `main` | `verified` | PR #1 → `1639025`; cleanup verified |
 | [keygenerator](https://github.com/Swir/keygenerator) | `main` | `verified` | main `3671502`; safety-reviewed generator; cleanup verified |
-| [WojThom](https://github.com/Swir/WojThom) | `main` | `verified` | PR #8 → `ba38c17` |
+| [WojThom](https://github.com/Swir/WojThom) | `main` | `verified` | PR #8 → `ba38c17`; cleanup verified |
 | [Y6-gamestick](https://github.com/Swir/Y6-gamestick) | `main` | `excluded` | Empty repository; no product invented |
-| [SwirTube](https://github.com/Swir/SwirTube) | `main` | `verified` | PR #1 → `ab1a668` |
-| [Matrix_Windows_Commander](https://github.com/Swir/Matrix_Windows_Commander) | `main` | `verified` | PR #4 → `5402a9d`; CI passed |
+| [SwirTube](https://github.com/Swir/SwirTube) | `main` | `verified` | PR #1 → `ab1a668`; cleanup verified |
+| [Matrix_Windows_Commander](https://github.com/Swir/Matrix_Windows_Commander) | `main` | `verified` | PR #4 → `5402a9d`; CI passed; cleanup verified |
 | [Swir](https://github.com/Swir/Swir) | `main` | `excluded` | Profile repo; standards/ledger/tooling only |
 | [File.io_Downloaderup](https://github.com/Swir/File.io_Downloaderup) | `main` | `verified` | PR #1 → `bc40f89` |
 | [Nes_New_Life](https://github.com/Swir/Nes_New_Life) | `main` | `delegated` | Dedicated active development task owns documentation |
@@ -193,5 +193,6 @@ Delegated: `Tank-Revival-Overdrive`, `Nes_New_Life`, `Dragon-DiskForge`, `Konofi
 | 2026-09-18 | Re-audited Hex-kolor, Driver-tool and Youtube-VLC on current main; README v2, SVG card/mini/template and deterministic generator contain no retired character meter, and no conflicting open PR exists. | Migration count unchanged at 49; cleanup 32; 17 pending. |
 | 2026-09-18 | Re-audited Spamer, Transformer-3-Pro-T303UA-i5-6200-hackintosh and XBookmark on current main; README v2, SVG card/mini/template and progress generators contain no retired character meter, and no conflicting open PR exists. | Migration count unchanged at 49; cleanup 35; 14 pending. |
 | 2026-09-18 | Re-audited Worker-Time-list-generator, InfoPulse-PL and keygenerator on current main; README v2, SVG card/mini/template and deterministic progress generators contain no retired character meter, and no conflicting open PR exists. | Migration count unchanged at 49; cleanup 38; 11 pending. |
+| 2026-09-18 | Re-audited WojThom, SwirTube and Matrix_Windows_Commander on current main; README v2, SVG card/mini/template and deterministic progress generators contain no retired character meter, and no conflicting open PR exists. | Migration count unchanged at 49; cleanup 41; 8 pending. |
 
 Do not silently change the denominator. Every later state decision must update inventory, metrics marker and generated migration SVGs together. Legacy-meter cleanup is independent. Disable only this migration task after every discovered repository has a final eligibility state and every eligible migration/SVG rollout/cleanup is verified or explicitly excepted.
