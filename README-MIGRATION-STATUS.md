@@ -4,8 +4,8 @@ Documentation migration ledger for existing SWIR projects. This is **README migr
 
 Canonical standards: [SWIR README PRO v2](SWIR-README-STANDARD.md) · [SWIR Progress SVG PRO](SWIR-PROGRESS-STANDARD.md).
 
-<!-- MIGRATION-METRICS owner=66 verified=35 queued=14 in_progress=0 blocked=1 delegated=12 excluded=4 priority_verified=12 priority_total=13 eligibility=INCOMPLETE -->
-<!-- LEGACY-METER-CLEANUP verified=15 pending=34 blocked=1 delegated=12 excluded=4 -->
+<!-- MIGRATION-METRICS owner=66 verified=38 queued=11 in_progress=0 blocked=1 delegated=12 excluded=4 priority_verified=12 priority_total=13 eligibility=INCOMPLETE -->
+<!-- LEGACY-METER-CLEANUP verified=18 pending=31 blocked=1 delegated=12 excluded=4 -->
 
 <p align="center">
   <img width="100%" src="assets/readme/migration/progress-card.svg" alt="SWIR README PRO migration overall progress — N/A while eligibility review is incomplete" />
@@ -17,17 +17,17 @@ Canonical standards: [SWIR README PRO v2](SWIR-README-STANDARD.md) · [SWIR Prog
 |---|---|
 | Started | 2026-09-17 |
 | Owner repositories discovered | **66**; fixed owner inventory below |
-| Verified migrations | **35** |
-| SVG rollout verified | **35** — same repositories |
-| Legacy meter cleanup | **15 verified / 34 pending / 1 blocked / 12 delegated / 4 excluded** |
-| Queued / qualification pending | **14** |
+| Verified migrations | **38** |
+| SVG rollout verified | **38** — same repositories |
+| Legacy meter cleanup | **18 verified / 31 pending / 1 blocked / 12 delegated / 4 excluded** |
+| Queued / qualification pending | **11** |
 | In progress | **0** |
 | Blocked | **1** — Aria2Gui; feature PR #1 remains open and edits README plus application/UI code |
 | Delegated to dedicated active tasks | **12** |
 | Structural exclusions recorded | **4** |
 | Initial priority subset | **12 / 13 = 92.3% verified** |
 | Overall migration percentage | **N/A** until every owner repository receives a final eligibility decision |
-| Next qualification batch | `czatpythom` → `NeonShift-X` → `ASCITEXT` |
+| Next qualification batch | `Github_Webste` → `Dreambox-scaner` → `Torrent_downloaderv2` |
 | Completion policy | Final eligibility audit → every eligible repo verified or explicitly excepted → SVG + legacy-meter cleanup verified/excepted → final audit/report → disable only this migration task |
 
 <p align="center">
@@ -57,7 +57,7 @@ Approved SVG progress graphics replace old character/ASCII/Unicode progress mete
 - `delegated`: the dedicated active project task owns cleanup to avoid competing writes.
 - `excluded`: outside this migration scope.
 
-Current cleanup-verified repositories: `Image-To-Ico`, `IPTV-checker`, `Gist_manager`, `CyptoPriceWidget`, `Matrix-Ajax-Chat`, `Ghos-DNS`, `Torrent_downloader`, `cda-pl`, `Koder`, `Github-README-Generator`, `Grosz`, `watermark-remover`, `Py-Converter-to-exe`, `Image-to-txt`, `Titanium-APK-Bulider`.
+Current cleanup-verified repositories: `Image-To-Ico`, `IPTV-checker`, `Gist_manager`, `CyptoPriceWidget`, `Matrix-Ajax-Chat`, `Ghos-DNS`, `Torrent_downloader`, `cda-pl`, `Koder`, `Github-README-Generator`, `Grosz`, `watermark-remover`, `Py-Converter-to-exe`, `Image-to-txt`, `Titanium-APK-Bulider`, `czatpythom`, `NeonShift-X`, `ASCITEXT`.
 
 ## Initial priority queue
 
@@ -122,11 +122,11 @@ This is the fixed 66-repository owner discovery snapshot. No repository is added
 | [WAV-to-MP3-converter](https://github.com/Swir/WAV-to-MP3-converter) | `main` | `verified` | PR #1 → `5283cc87` |
 | [Image-to-txt](https://github.com/Swir/Image-to-txt) | `main` | `verified` | PR #1 → `d0305a2`; source limitations/no releases documented; cleanup verified |
 | [Titanium-APK-Bulider](https://github.com/Swir/Titanium-APK-Bulider) | `main` | `verified` | PR #11 → `dd71a04`; v10.0 release criteria 10/10 scope + SVG; cleanup verified |
-| [czatpythom](https://github.com/Swir/czatpythom) | `main` | `queued` | qualification/readme audit pending |
+| [czatpythom](https://github.com/Swir/czatpythom) | `main` | `verified` | PR #3 → `5a0c462`; exact-head CI passed Python 3.10–3.14 + README progress check; cleanup verified |
 | [PolSilver_Bluetooth](https://github.com/Swir/PolSilver_Bluetooth) | `main` | `verified` | PR #4 → `714e44bb` |
-| [NeonShift-X](https://github.com/Swir/NeonShift-X) | `main` | `queued` | qualification/readme audit pending |
+| [NeonShift-X](https://github.com/Swir/NeonShift-X) | `main` | `verified` | PR #1 → `c19d4e3`; README Docs CI passed; existing cyberpanther artwork preserved; cleanup verified |
 | [IPTV-checker](https://github.com/Swir/IPTV-checker) | `main` | `verified` | PR #2 → `c1b113e`; cleanup verified |
-| [ASCITEXT](https://github.com/Swir/ASCITEXT) | `main` | `queued` | qualification/readme audit pending |
+| [ASCITEXT](https://github.com/Swir/ASCITEXT) | `main` | `verified` | PR #1 → `822893c`; README Docs CI passed; ASCII-art product feature preserved while progress meters retired; cleanup verified |
 | [Github_Webste](https://github.com/Swir/Github_Webste) | `main` | `queued` | qualification/readme audit pending |
 | [Dreambox-scaner](https://github.com/Swir/Dreambox-scaner) | `main` | `queued` | qualification/readme audit pending |
 | [Torrent_downloaderv2](https://github.com/Swir/Torrent_downloaderv2) | `main` | `queued` | qualification/readme audit pending |
@@ -150,7 +150,7 @@ This is the fixed 66-repository owner discovery snapshot. No repository is added
 | [SwirPhoneOS](https://github.com/Swir/SwirPhoneOS) | `main` | `delegated` | dedicated active development task |
 | [Multichain-Tracker](https://github.com/Swir/Multichain-Tracker) | `main` | `queued` | qualification/readme audit pending |
 
-State totals: **35 verified + 14 queued + 0 in progress + 1 blocked + 12 delegated + 4 excluded = 66 owner repositories**.
+State totals: **38 verified + 11 queued + 0 in progress + 1 blocked + 12 delegated + 4 excluded = 66 owner repositories**.
 
 ## Work owned by other active tasks
 
@@ -197,6 +197,9 @@ Their README/SVG/legacy-meter compliance may be audited, but documentation edits
 | Py-Converter-to-exe | PR #1 → `69de7b4` | ✅ | ✅ | ✅ | source/release audited; no PR docs CI; final main README/card read back |
 | Image-to-txt | PR #1 → `d0305a2` | ✅ | ✅ | ✅ | source limitations and absence of releases documented; no PR CI; final main README read back |
 | Titanium-APK-Bulider | PR #11 → `dd71a04` | ✅ | ✅ | ✅ | v10.0 criteria 10/10; docs-only paths do not trigger v10 source CI; final main README/card read back |
+| czatpythom | PR #3 → `5a0c462` | ✅ | ✅ | ✅ | exact-head CI passed Python 3.10–3.14, pytest/CLI smoke and README progress check; final main README/card/generator read back |
+| NeonShift-X | PR #1 → `c19d4e3` | ✅ | ✅ | ✅ | README Docs CI passed; final main README/card/generator read back; existing cyberpanther artwork preserved |
+| ASCITEXT | PR #1 → `822893c` | ✅ | ✅ | ✅ | README Docs CI passed; final main README/card/generator read back; ASCII-art product output intentionally preserved |
 
 ## Exclusions
 
@@ -222,6 +225,7 @@ Required action: let the owning feature work resolve that PR; then fetch fresh `
 | 2026-09-18 | Expanded migration through legacy utilities and added explicit SVG-only legacy-meter cleanup tracking. | 26 verified; cleanup tracking active. |
 | 2026-09-18 | Migrated Torrent_downloader, cda-pl and Koder. | 29 verified; cleanup 9 verified. |
 | 2026-09-18 | Migrated Github-README-Generator, Grosz and watermark-remover; watermark-remover merged only after exact final-head CI passed. | 32 verified; cleanup 12 verified. |
-| 2026-09-18 | Migrated Py-Converter-to-exe, Image-to-txt and Titanium-APK-Bulider through documentation-only PRs; corrected historical capability claims, preserved real releases, and applied SVG-only progress. | **35 verified; 14 queued; 0 in progress; 1 blocked; 12 delegated; 4 excluded. Cleanup: 15 verified / 34 pending / 1 blocked / 12 delegated / 4 excluded.** |
+| 2026-09-18 | Migrated Py-Converter-to-exe, Image-to-txt and Titanium-APK-Bulider through documentation-only PRs; corrected historical capability claims, preserved real releases, and applied SVG-only progress. | 35 verified; cleanup 15 verified. |
+| 2026-09-18 | Migrated czatpythom, NeonShift-X and ASCITEXT; fixed a first CzatPythom docs-check mismatch, reran exact-head CI to success, preserved NeonShift-X existing artwork and distinguished ASCITEXT product ASCII output from retired documentation progress meters. | **38 verified; 11 queued; 0 in progress; 1 blocked; 12 delegated; 4 excluded. Cleanup: 18 verified / 31 pending / 1 blocked / 12 delegated / 4 excluded.** |
 
 Do not silently change the denominator. Every later state decision must update the inventory row, state totals, metrics marker and generated migration SVGs together. Legacy-meter cleanup state is independent and must also be updated after each re-audit. Disable only this migration task after every discovered repository has a final eligibility state and every eligible migration/SVG rollout/legacy-meter cleanup is verified or explicitly excepted according to the completion policy.
