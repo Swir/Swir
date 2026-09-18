@@ -71,7 +71,21 @@ The migration task's own graphics belong under `Swir/Swir/assets/readme/migratio
 6. Follow existing branch/PR/CI policies; no force push, bypassed checks, version bump or release for this documentation change. No-op when inputs and outputs are unchanged.
 7. Read back committed assets and embeddings. Only then report SVG rollout as implemented, with commit/PR and links; otherwise report pending or blocked plus the concrete reason.
 
-In automated reports, link the committed SVG and include the exact textual progress. Inline rendering may be used where supported, but do not promise custom styling of the built-in ChatGPT task panel or live time-based progress. Static committed SVGs update when regenerated from verified source changes.
+In automated reports, deliver the visible progress preview required below, link the exact committed SVG and include the exact textual progress. Saving or linking an SVG in GitHub is not equivalent to showing the progress card in the task's result message. Static committed SVGs update when regenerated from verified source changes.
+
+## Visible remote-task reports — correction 2026-09-18
+
+This reporting requirement supersedes the previous optional-inline-rendering sentence. It applies to each project task and to the README migration task that reads this standard, without changing its development scope, schedule, release gate or repository ownership.
+
+- Begin each substantive final task report with a visible preview of the actual progress card, followed by its measured scope, exact counter/percentage and source commit/branch. Preserve the approved SVG artwork as the source; do not replace it with an AI mockup or manually invented numbers.
+- When direct SVG display is not supported or has not been verified for the output channel, rasterize that exact validated SVG to PNG with an available renderer, inspect the result and embed the PNG as an image in the report. Also provide the original SVG as an attachment or a verified committed-file link. PNG is only the display copy; SVG remains the canonical design.
+- Use a real output attachment or a verified accessible image URL supported by the execution environment. Never invent a sandbox path, reuse an inaccessible file from a previous run, emit raw SVG code as though it were an image, or claim an image is visible merely because a link was sent. Do not expose credentials or private repository content through public image hosting.
+- Keep image and text tied to the same verified source snapshot. If the graphic exists only on a development branch, label that branch and report default-branch rollout as pending. Never merge unrelated application changes to make a progress image visible. If a new percentage has not passed its verification gate, show the last verified state and describe pending work separately.
+- For the migration report, use its own ledger card, not an arbitrary application's progress. Overall N/A and any separately named priority subset must remain honest. Unknown product progress is still displayed as N/A, never silently converted into 0%.
+- If rendering or delivery is unavailable, state `Report preview: blocked` with the concrete limitation, then provide verified text and the SVG link. Do not repeatedly report full visual completion while this delivery step is missing. If the preview is attached but client-side display was not observable, say it was attached; do not claim to have verified the user's screen.
+- Distinguish `Repository SVG: main / development branch / missing` from `Report preview: attached / blocked`. Record the actual file/ref. Keep the report compact and retain all required project-specific test, blocker and release information.
+
+This changes the contents of task-result messages only. It does not customize the built-in ChatGPT task-list cards, edit already delivered historical reports, or provide a live execution-time meter. Do not promise those capabilities.
 
 ## Rollout priority and preservation
 
