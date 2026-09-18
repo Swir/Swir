@@ -4,11 +4,11 @@ Documentation migration ledger for existing SWIR projects. This tracks **README 
 
 Canonical standards: [SWIR README PRO v2](SWIR-README-STANDARD.md) · [SWIR Progress SVG PRO](SWIR-PROGRESS-STANDARD.md).
 
-<!-- MIGRATION-METRICS owner=67 verified=47 queued=2 in_progress=0 blocked=1 delegated=13 excluded=4 priority_verified=12 priority_total=13 eligibility=INCOMPLETE -->
-<!-- LEGACY-METER-CLEANUP verified=27 pending=22 blocked=1 delegated=13 excluded=4 -->
+<!-- MIGRATION-METRICS owner=68 verified=49 queued=0 in_progress=0 blocked=1 delegated=13 excluded=5 priority_verified=12 priority_total=13 eligibility=COMPLETE -->
+<!-- LEGACY-METER-CLEANUP verified=29 pending=20 blocked=1 delegated=13 excluded=5 -->
 
 <p align="center">
-  <img width="100%" src="assets/readme/migration/progress-card.svg" alt="SWIR README PRO migration overall progress — N/A while eligibility review is incomplete" />
+  <img width="100%" src="assets/readme/migration/progress-card.svg" alt="SWIR README PRO eligible migration progress — 98.0%, 49 verified and 1 blocked" />
 </p>
 
 ## Run status
@@ -16,24 +16,24 @@ Canonical standards: [SWIR README PRO v2](SWIR-README-STANDARD.md) · [SWIR Prog
 | Item | Current state |
 |---|---|
 | Started | 2026-09-17 |
-| Owner repositories discovered | **67** — original 66-repository snapshot plus `BrokeDJ`, appended explicitly on 2026-09-18 |
-| Verified migrations | **47** |
-| SVG rollout verified | **47** — same repositories |
-| Legacy meter cleanup | **27 verified / 22 pending / 1 blocked / 13 delegated / 4 excluded** |
-| Queued / qualification pending | **2** |
+| Owner repositories discovered | **68** — original 66-repository snapshot plus `BrokeDJ` and later-discovered `SilentCryptoMiner`, both appended explicitly on 2026-09-18 |
+| Verified migrations | **49** |
+| SVG rollout verified | **49** — same repositories |
+| Legacy meter cleanup | **29 verified / 20 pending / 1 blocked / 13 delegated / 5 excluded** |
+| Queued / qualification pending | **0** |
 | In progress | **0** |
 | Blocked | **1** — `Aria2Gui`; feature PR #1 changes README plus application/UI code |
 | Delegated to dedicated active tasks | **13** |
-| Structural exclusions recorded | **4** |
+| Structural / safety exclusions recorded | **5** |
 | Initial priority subset | **12 / 13 = 92.3% verified** |
-| Overall migration percentage | **N/A** until every owner repository receives a final eligibility decision |
-| Next qualification batch | `CrossAim_power` → `Multichain-Tracker` |
+| Eligible migration completion | **49 / 50 = 98.0%** — blocked repositories remain incomplete; delegated/excluded repositories are not counted as completed migrations |
+| Next cleanup batch | `Hex-kolor` → `Driver-tool` → `Youtube-VLC` |
 
 <p align="center">
   <img width="100%" src="assets/readme/migration/progress-mini.svg" alt="Initial priority subset progress — 12 of 13 repositories verified" />
 </p>
 
-The mini graphic measures **only the initial 13-repository priority subset**. It is not the overall migration percentage. Overall remains **N/A** while qualification is incomplete.
+The mini graphic measures **only the initial 13-repository priority subset**. It is not the overall eligible migration percentage.
 
 ## Status contract
 
@@ -54,7 +54,7 @@ Approved SVG progress graphics replace retired character/ASCII/Unicode documenta
 - `pending`: cleanup not yet re-audited after the SVG-only correction.
 - `blocked`, `delegated`, `excluded`: follow the same ownership/scope rules as migration state.
 
-Current cleanup-verified repositories: `Image-To-Ico`, `IPTV-checker`, `Gist_manager`, `CyptoPriceWidget`, `Matrix-Ajax-Chat`, `Ghos-DNS`, `Torrent_downloader`, `cda-pl`, `Koder`, `Github-README-Generator`, `Grosz`, `watermark-remover`, `Py-Converter-to-exe`, `Image-to-txt`, `Titanium-APK-Bulider`, `czatpythom`, `NeonShift-X`, `ASCITEXT`, `Github_Webste`, `Dreambox-scaner`, `Torrent_downloaderv2`, `MacTrix`, `Czateria_PLUS_Android`, `Matrix-czat-pythom`, `Ryzen-5-5600G-A320M-`, `Procent-calkulator`, `Ghost-APK-Builder`.
+Current cleanup-verified repositories: `Image-To-Ico`, `IPTV-checker`, `Gist_manager`, `CyptoPriceWidget`, `Matrix-Ajax-Chat`, `Ghos-DNS`, `Torrent_downloader`, `cda-pl`, `Koder`, `Github-README-Generator`, `Grosz`, `watermark-remover`, `Py-Converter-to-exe`, `Image-to-txt`, `Titanium-APK-Bulider`, `czatpythom`, `NeonShift-X`, `ASCITEXT`, `Github_Webste`, `Dreambox-scaner`, `Torrent_downloaderv2`, `MacTrix`, `Czateria_PLUS_Android`, `Matrix-czat-pythom`, `Ryzen-5-5600G-A320M-`, `Procent-calkulator`, `Ghost-APK-Builder`, `CrossAim_power`, `Multichain-Tracker`.
 
 ## Initial priority queue
 
@@ -76,7 +76,7 @@ Current cleanup-verified repositories: `Image-To-Ico`, `IPTV-checker`, `Gist_man
 
 ## Complete owner inventory
 
-The original 66-repository discovery snapshot is preserved. `BrokeDJ` was created/discovered later and appended explicitly on 2026-09-18; the owner denominator is now **67**.
+The original 66-repository discovery snapshot is preserved. `BrokeDJ` and later-discovered `SilentCryptoMiner` were appended explicitly on 2026-09-18; the owner denominator is now **68**. `SilentCryptoMiner` is recorded without modification because GitHub blocks repository access and the hidden-miner category is outside the safe migration scope.
 
 | Repository | Default | State | Evidence / note |
 |---|---|---|---|
@@ -143,12 +143,13 @@ The original 66-repository discovery snapshot is preserved. `BrokeDJ` was create
 | [Procent-calkulator](https://github.com/Swir/Procent-calkulator) | `main` | `verified` | PR #1 → `be42f1f`; v1.0.0 preserved; README Docs CI passed; cleanup verified |
 | [Swirui](https://github.com/Swir/Swirui) | `main` | `delegated` | Dedicated active development task owns documentation |
 | [Ghost-APK-Builder](https://github.com/Swir/Ghost-APK-Builder) | `main` | `verified` | PR #9 → `64a74d08`; v17 94% model and beta.2 preserved; README Docs + Ghost v17 CI passed; cleanup verified |
-| [CrossAim_power](https://github.com/Swir/CrossAim_power) | `main` | `queued` | Qualification / README audit pending |
+| [CrossAim_power](https://github.com/Swir/CrossAim_power) | `main` | `verified` | PR #2 → `51a0853`; README Docs CI passed; v1.2.0 + MIT preserved; cleanup verified |
 | [SwirPhoneOS](https://github.com/Swir/SwirPhoneOS) | `main` | `delegated` | Dedicated active development task owns documentation |
-| [Multichain-Tracker](https://github.com/Swir/Multichain-Tracker) | `main` | `queued` | Qualification / README audit pending |
+| [Multichain-Tracker](https://github.com/Swir/Multichain-Tracker) | `main` | `verified` | PR #1 → `26c8f59`; README Docs CI passed; v1.0.0 preserved; cleanup verified |
 | [BrokeDJ](https://github.com/Swir/BrokeDJ) | `main` | `delegated` | Dedicated active development task owns documentation |
+| [SilentCryptoMiner](https://github.com/Swir/SilentCryptoMiner) | `master` | `excluded` | GitHub access is blocked (TOS); hidden-miner category is outside safe migration scope; no modification |
 
-State totals: **47 verified + 2 queued + 0 in progress + 1 blocked + 13 delegated + 4 excluded = 67**.
+State totals: **49 verified + 0 queued + 0 in progress + 1 blocked + 13 delegated + 5 excluded = 68**.
 
 ## Work owned by active project tasks
 
@@ -156,6 +157,8 @@ Delegated: `Tank-Revival-Overdrive`, `Nes_New_Life`, `Dragon-DiskForge`, `Konofi
 
 ## Verification highlights
 
+- `CrossAim_power`: PR #2 → `51a0853`; README v2, hero, preserved project icon, N/A product-progress SVG pair/template and deterministic docs check were verified on `main`; README Docs passed on exact PR head; real v1.2.0 release and MIT license preserved.
+- `Multichain-Tracker`: PR #1 → `26c8f59`; README v2, project icon/hero, N/A product-progress SVG pair/template and deterministic docs check were verified on `main`; README Docs passed on exact PR head; v1.0.0 preserved and transaction-history scope corrected to Ethereum/Etherscan.
 - `Ryzen-5-5600G-A320M-`: PR #1 → `ad653615`; final README/STATUS/card/mini/template/generator read back on `main`; README Docs CI passed on exact PR head; progress correctly N/A for the hardware-reference scope.
 - `Procent-calkulator`: PR #1 → `be42f1f`; final README/STATUS/card/mini/template/generator read back on `main`; README Docs CI passed; real v1.0.0 release preserved and product progress remains N/A.
 - `Ghost-APK-Builder`: PR #9 → `64a74d08`; final README/ROADMAP/card/mini/template/generator read back on `main`; README Docs and Ghost v17 CI passed; documented 94% v17 model and v17.0.0-beta.2 preserved; stable gate still requires real physical-device evidence.
@@ -166,6 +169,7 @@ Delegated: `Tank-Revival-Overdrive`, `Nes_New_Life`, `Dragon-DiskForge`, `Konofi
 - `plugin.swir`: placeholder only.
 - `Y6-gamestick`: empty repository.
 - `Swir`: profile repository; standards/ledger/tooling only.
+- `SilentCryptoMiner`: GitHub access is blocked under TOS; hidden-miner tooling is outside the safe migration scope, so no README promotion or usage improvements were made.
 
 ## Blocker
 
@@ -185,5 +189,6 @@ Delegated: `Tank-Revival-Overdrive`, `Nes_New_Life`, `Dragon-DiskForge`, `Konofi
 | 2026-09-18 | Migrated Github_Webste, Dreambox-scaner and Torrent_downloaderv2; appended BrokeDJ as delegated. | 41 verified; cleanup 21; owner denominator 67. |
 | 2026-09-18 | Migrated MacTrix, Czateria_PLUS_Android and Matrix-czat-pythom. | 44 verified; cleanup 24; 5 queued remain. |
 | 2026-09-18 | Verified Ryzen-5-5600G-A320M-, Procent-calkulator and Ghost-APK-Builder on final main after merged docs PRs and exact-head checks. | 47 verified; cleanup 27; 2 queued remain. |
+| 2026-09-18 | Migrated CrossAim_power and Multichain-Tracker; completed all remaining queued qualification. Full inventory re-audit discovered SilentCryptoMiner and recorded it as excluded without modification. | 49 verified; 0 queued; cleanup 29; owner denominator 68. |
 
 Do not silently change the denominator. Every later state decision must update inventory, metrics marker and generated migration SVGs together. Legacy-meter cleanup is independent. Disable only this migration task after every discovered repository has a final eligibility state and every eligible migration/SVG rollout/cleanup is verified or explicitly excepted.
