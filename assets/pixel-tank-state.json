@@ -1,21 +1,23 @@
 {
-  "schema": 1,
+  "schema": 2,
+  "renderer_version": "2.0",
+  "motion": "continuous",
   "user": "Swir",
   "source": "GitHub GraphQL contributionCalendar",
-  "generated_at": "2026-09-18 03:49 UTC",
+  "generated_at": "2026-09-18 04:13 UTC",
   "metrics": {
-    "total": 6628,
+    "total": 6663,
     "active_days": 25,
     "current_streak": 12,
     "best_day": 1452,
     "period_start": "2025-09-19",
     "period_end": "2026-09-18"
   },
-  "loop_seconds": 29.500000000000004,
+  "loop_seconds": 47.0,
   "target_count": 25,
-  "shot_interval_seconds": 1.1,
+  "shot_interval_seconds": 1.8,
   "calendar": {
-    "totalContributions": 6628,
+    "totalContributions": 6663,
     "weeks": [
       {
         "contributionDays": [
@@ -2049,12 +2051,12 @@
           },
           {
             "date": "2026-09-18",
-            "contributionCount": 338,
+            "contributionCount": 373,
             "weekday": 5
           }
         ]
       }
     ]
   },
-  "fingerprint": "aed72763240a5cb0b0a9f2f2b04ed9b6004e1a9ccdfd14f7a14d01d79cd5d4b4"
+  "fingerprint": "a58aae2aa2480b4c8f0abd743b0436c85d07541ad22e15cee92c6b527731b3a5"
 }
