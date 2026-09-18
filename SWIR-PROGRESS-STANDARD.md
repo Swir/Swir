@@ -87,23 +87,24 @@ The migration task's own graphics belong under `Swir/Swir/assets/readme/migratio
 In automated reports, deliver the visible progress preview required below, link the exact committed SVG and include the exact textual progress as ordinary numbers, not a character-art bar. Saving or linking an SVG in GitHub is not equivalent to showing the progress card in the task's result message. Static committed SVGs update when regenerated from verified source changes.
 
 
-## Concise remote notifications — user preference 2026-09-18
+## Concise remote notifications — HARD OUTPUT CAP 2026-09-18
 
-Remote task notifications should be short and decision-useful. Keep the visible progress preview, but do not turn every hourly result into a long changelog.
+This is the user's latest reporting preference and it OVERRIDES every older task-specific instruction that asks for a longer hourly/final report. It changes reporting verbosity only; all implementation, testing, CI, safety, roadmap, release and verification work remains unchanged.
 
-Default report after the preview:
-- **Done:** one short sentence with the 1–3 most important completed changes.
-- **Commit/PR:** compact reference.
-- **Tests/CI:** PASS / BLOCKED / not run, with only the important reason.
-- **Progress:** exact verified percentage/counter or N/A.
-- **Next:** one short sentence with the next biggest step.
+For every normal remote-task run:
+- Show the required verified SVG/PNG progress preview first when that task uses the SWIR progress system.
+- After the preview output **no more than 5 short lines total**.
+- Use only these fields when applicable: **Done**, **Commit/PR**, **Tests/CI**, **Progress/Blocker**, **Next**.
+- Each line should normally be one sentence. Combine related facts instead of expanding them.
+- Do NOT add tables, file inventories, repeated architecture/background explanations, repeated policy text, full test matrices, historical recap, long release-gate explanations, or a second summary.
+- Do NOT repeat SVG status boilerplate unless it is abnormal; fold it into Progress/Blocker when needed.
+- Do NOT list every changed file unless a specific file is the blocker.
+- A normal successful hourly report should stay roughly within **60–120 words after the image**.
+- If nothing meaningful changed, one or two lines are enough.
 
-Target roughly 4–7 short lines after the image. Omit repeated architecture/background explanations, full file inventories, repeated policy text, long test matrices and historical context unless they are directly relevant to a new blocker or decision.
+A longer report is allowed only for a real exception: failed CI needing diagnosis, destructive/safety risk, release publication, major compatibility break, important scope change, or explicit user action required. Even then, lead with the five-line summary and add only the minimum explanation necessary.
 
-Use a longer report only when something materially important happened: a release, failed CI that needs explanation, safety/compatibility issue, destructive-risk blocker, major scope change, user action required, or a result that would otherwise be misleading without context. Even then, lead with the concise summary.
-
-This preference changes reporting verbosity only. It does not reduce the amount of development work, testing, verification, README/SVG maintenance, CI gates, safety checks or repository evidence performed by the task.
-
+This HARD OUTPUT CAP supersedes any older sentence in an individual task prompt such as “report all changed areas/files/tests/statuses” when those details can be compressed into the five lines above. It does not permit hiding a blocker, inventing success, skipping required work, weakening verification, or changing schedules.
 ## Visible remote-task reports — correction 2026-09-18
 
 This reporting requirement supersedes the previous optional-inline-rendering sentence. It applies to each project task and to the README migration task that reads this standard, without changing its development scope, schedule, release gate or repository ownership.
