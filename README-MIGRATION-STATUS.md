@@ -4,8 +4,8 @@ Documentation migration ledger for existing SWIR projects. This is **README migr
 
 Canonical standards: [SWIR README PRO v2](SWIR-README-STANDARD.md) · [SWIR Progress SVG PRO](SWIR-PROGRESS-STANDARD.md).
 
-<!-- MIGRATION-METRICS owner=66 verified=29 queued=20 blocked=1 delegated=12 excluded=4 priority_verified=12 priority_total=13 eligibility=INCOMPLETE -->
-<!-- LEGACY-METER-CLEANUP verified=9 pending=40 blocked=1 delegated=12 excluded=4 -->
+<!-- MIGRATION-METRICS owner=66 verified=31 queued=17 in_progress=1 blocked=1 delegated=12 excluded=4 priority_verified=12 priority_total=13 eligibility=INCOMPLETE -->
+<!-- LEGACY-METER-CLEANUP verified=11 pending=38 blocked=1 delegated=12 excluded=4 -->
 
 <p align="center">
   <img width="100%" src="assets/readme/migration/progress-card.svg" alt="SWIR README PRO migration overall progress — N/A while eligibility review is incomplete" />
@@ -17,16 +17,17 @@ Canonical standards: [SWIR README PRO v2](SWIR-README-STANDARD.md) · [SWIR Prog
 |---|---|
 | Started | 2026-09-17 |
 | Owner repositories discovered | **66**; the first complete owner inventory is fixed below |
-| Verified migrations | **29** |
-| SVG rollout verified | **29** — same repositories |
-| Legacy meter cleanup | **9 verified / 40 pending / 1 blocked / 12 delegated / 4 excluded** |
-| Queued / qualification pending | **20** |
+| Verified migrations | **31** |
+| SVG rollout verified | **31** — same repositories |
+| Legacy meter cleanup | **11 verified / 38 pending / 1 blocked / 12 delegated / 4 excluded** |
+| Queued / qualification pending | **17** |
+| In progress | **1** — `watermark-remover` PR #3, final-head CI still running |
 | Blocked | **1** — Aria2Gui; feature PR #1 remains open and edits README plus application/UI code |
 | Delegated to dedicated active tasks | **12** |
 | Structural exclusions recorded | **4** |
 | Initial priority subset | **12 / 13 = 92.3% verified** |
-| Overall migration percentage | **N/A** until every queued owner repository receives a final eligibility decision |
-| Next qualification batch | `Github-README-Generator` → `watermark-remover` → `Grosz` |
+| Overall migration percentage | **N/A** until every owner repository receives a final eligibility decision |
+| Next qualification batch | finish `watermark-remover` PR #3 → `Py-Converter-to-exe` → `Image-to-txt` |
 | Completion policy | Final eligibility audit → every eligible repo verified or explicitly excepted → SVG + legacy-meter cleanup verified/excepted → final audit/report → disable only this migration task |
 
 <p align="center">
@@ -38,7 +39,7 @@ The mini graphic measures **only the initial 13-repository priority subset**. It
 ## Status contract
 
 - `queued`: discovered, but qualification and/or migration work remains.
-- `in_progress`: an actual migration branch/PR exists.
+- `in_progress`: an actual migration branch/PR exists and is not yet verified on the default branch.
 - `verified`: final README and required assets were read back on the default branch after appropriate checks and merge.
 - `blocked`: a concrete unresolved obstacle prevents a safe migration.
 - `excluded`: outside migration scope with a specific reason; never counted as migrated.
@@ -56,7 +57,7 @@ Approved SVG progress graphics replace old character/ASCII/Unicode progress mete
 - `delegated`: the dedicated active project task owns cleanup to avoid competing writes.
 - `excluded`: outside this migration scope.
 
-Current cleanup-verified repositories: `Image-To-Ico`, `IPTV-checker`, `Gist_manager`, `CyptoPriceWidget`, `Matrix-Ajax-Chat`, `Ghos-DNS`, `Torrent_downloader`, `cda-pl`, `Koder`.
+Current cleanup-verified repositories: `Image-To-Ico`, `IPTV-checker`, `Gist_manager`, `CyptoPriceWidget`, `Matrix-Ajax-Chat`, `Ghos-DNS`, `Torrent_downloader`, `cda-pl`, `Koder`, `Github-README-Generator`, `Grosz`.
 
 ## Initial priority queue
 
@@ -78,7 +79,7 @@ Current cleanup-verified repositories: `Image-To-Ico`, `IPTV-checker`, `Gist_man
 
 ## Complete owner inventory snapshot
 
-This is the fixed 66-repository owner discovery snapshot. `queued` entries still require content, fork, safety, legal and project-state qualification before the final eligible-migration denominator can be closed.
+This is the fixed 66-repository owner discovery snapshot. No repository is added or removed from the denominator silently.
 
 | Repository | Default branch | State | Note |
 |---|---|---|---|
@@ -100,23 +101,23 @@ This is the fixed 66-repository owner discovery snapshot. `queued` entries still
 | [Y6-gamestick](https://github.com/Swir/Y6-gamestick) | `main` | `excluded` | empty repository; do not invent a product |
 | [SwirTube](https://github.com/Swir/SwirTube) | `main` | `verified` | PR #1 → `ab1a668` |
 | [Matrix_Windows_Commander](https://github.com/Swir/Matrix_Windows_Commander) | `main` | `verified` | PR #4 → `5402a9d` |
-| [Swir](https://github.com/Swir/Swir) | `main` | `excluded` | profile repo; only migration standards/ledger/tooling maintained here |
+| [Swir](https://github.com/Swir/Swir) | `main` | `excluded` | profile repo; only standards, migration ledger and migration tooling maintained here |
 | [File.io_Downloaderup](https://github.com/Swir/File.io_Downloaderup) | `main` | `verified` | PR #1 → `bc40f89` |
 | [Nes_New_Life](https://github.com/Swir/Nes_New_Life) | `main` | `delegated` | dedicated active development task |
 | [TimeListe-Generator](https://github.com/Swir/TimeListe-Generator) | `main` | `verified` | PR #1 → `ee6839a` |
 | [CyptoPriceWidget](https://github.com/Swir/CyptoPriceWidget) | `main` | `verified` | PR #4 → `489f88d`; cleanup verified |
 | [Matrix-Ajax-Chat](https://github.com/Swir/Matrix-Ajax-Chat) | `main` | `verified` | PR #3 → `51f7ced`; cleanup verified |
 | [Ghos-DNS](https://github.com/Swir/Ghos-DNS) | `main` | `verified` | PR #1 → `5ba3e21`; cleanup verified |
-| [Torrent_downloader](https://github.com/Swir/Torrent_downloader) | `main` | `verified` | PR #1 → `efca9a1`; README v2 + SVG-only N/A progress + deterministic check read back; cleanup verified |
-| [cda-pl](https://github.com/Swir/cda-pl) | `main` | `verified` | PR #1 → `2c8f0a3`; lawful-use scope verified; README v2 + SVG-only N/A progress read back; cleanup verified |
-| [Koder](https://github.com/Swir/Koder) | `main` | `verified` | PR #1 → `310c9d7`; XOR security limits and v1.0.0 release documented; cleanup verified |
+| [Torrent_downloader](https://github.com/Swir/Torrent_downloader) | `main` | `verified` | PR #1 → `efca9a1`; SVG-only N/A progress + generator; cleanup verified |
+| [cda-pl](https://github.com/Swir/cda-pl) | `main` | `verified` | PR #1 → `2c8f0a3`; lawful-use scope; cleanup verified |
+| [Koder](https://github.com/Swir/Koder) | `main` | `verified` | PR #1 → `310c9d7`; XOR security limits; cleanup verified |
 | [SwirPhotoClean](https://github.com/Swir/SwirPhotoClean) | `main` | `verified` | PR #1 → `50f2d2a`; 1.0 gate SVG from STATUS.md 6/7 |
 | [Gist_manager](https://github.com/Swir/Gist_manager) | `main` | `verified` | PR #3 → `c22fde0`; cleanup verified |
 | [BackgroundPXR](https://github.com/Swir/BackgroundPXR) | `main` | `verified` | PR #1 → `c640e8f` |
-| [Github-README-Generator](https://github.com/Swir/Github-README-Generator) | `main` | `queued` | qualification/readme audit pending |
-| [watermark-remover](https://github.com/Swir/watermark-remover) | `main` | `queued` | qualification/readme audit pending |
+| [Github-README-Generator](https://github.com/Swir/Github-README-Generator) | `main` | `verified` | PR #1 → `04344ee`; source/release audited; SVG-only N/A progress; cleanup verified |
+| [watermark-remover](https://github.com/Swir/watermark-remover) | `main` | `in_progress` | PR #3 head `ae299c5`; Python 3.10–3.13 PR CI running; do not merge before success |
 | [FASTIPTVPlayer](https://github.com/Swir/FASTIPTVPlayer) | `main` | `verified` | PR #4 → `3d996ef9` |
-| [Grosz](https://github.com/Swir/Grosz) | `main` | `queued` | qualification/readme audit pending |
+| [Grosz](https://github.com/Swir/Grosz) | `main` | `verified` | PR #1 → `7322749`; asset-only scope; no releases; SVG-only N/A progress; cleanup verified |
 | [Py-Converter-to-exe](https://github.com/Swir/Py-Converter-to-exe) | `main` | `queued` | qualification/readme audit pending |
 | [WAV-to-MP3-converter](https://github.com/Swir/WAV-to-MP3-converter) | `main` | `verified` | PR #1 → `5283cc87` |
 | [Image-to-txt](https://github.com/Swir/Image-to-txt) | `main` | `queued` | qualification/readme audit pending |
@@ -149,7 +150,7 @@ This is the fixed 66-repository owner discovery snapshot. `queued` entries still
 | [SwirPhoneOS](https://github.com/Swir/SwirPhoneOS) | `main` | `delegated` | dedicated active development task |
 | [Multichain-Tracker](https://github.com/Swir/Multichain-Tracker) | `main` | `queued` | qualification/readme audit pending |
 
-State totals: **29 verified + 20 queued + 1 blocked + 12 delegated + 4 excluded = 66 owner repositories**.
+State totals: **31 verified + 17 queued + 1 in progress + 1 blocked + 12 delegated + 4 excluded = 66 owner repositories**.
 
 ## Work owned by other active tasks
 
@@ -162,8 +163,8 @@ Their README/SVG/legacy-meter compliance may be audited, but documentation edits
 | Repository | Merge / evidence | README v2 | SVG PRO | Legacy meter cleanup | Verification note |
 |---|---|---:|---:|---:|---|
 | Image-To-Ico | README PR #1; SVG PR #2 → `dba8219` | ✅ | ✅ | ✅ | main README + generator re-audited 2026-09-18 |
-| IPTV-checker | PR #2 → `c1b113e` | ✅ | ✅ | ✅ | migration CI passed; main README + generator re-audited 2026-09-18 |
-| Gist_manager | PR #3 → `c22fde0` | ✅ | ✅ | ✅ | migration CI passed; main README + generator re-audited 2026-09-18 |
+| IPTV-checker | PR #2 → `c1b113e` | ✅ | ✅ | ✅ | migration CI passed; main README + generator re-audited |
+| Gist_manager | PR #3 → `c22fde0` | ✅ | ✅ | ✅ | migration CI passed; main README + generator re-audited |
 | WojThom | PR #8 → `ba38c17` | ✅ | ✅ | ⏳ | cleanup re-audit pending |
 | PowerBookmark | PR #1 → `64be655` | ✅ | ✅ | ⏳ | cleanup re-audit pending |
 | InfoPulse-PL | PR #1 → `1639025` | ✅ | ✅ | ⏳ | cleanup re-audit pending |
@@ -187,9 +188,11 @@ Their README/SVG/legacy-meter compliance may be audited, but documentation edits
 | CyptoPriceWidget | PR #4 → `489f88d` | ✅ | ✅ | ✅ | CI passed; final README/card/generator read back |
 | Matrix-Ajax-Chat | PR #3 → `51f7ced` | ✅ | ✅ | ✅ | CI passed; final README/card read back |
 | Ghos-DNS | PR #1 → `5ba3e21` | ✅ | ✅ | ✅ | no CI workflow; docs/XML/read-back validation |
-| Torrent_downloader | PR #1 → `efca9a1` | ✅ | ✅ | ✅ | source/release audited; no PR CI run; local docs/SVG/generator check passed; final main read back |
-| cda-pl | PR #1 → `2c8f0a3` | ✅ | ✅ | ✅ | lawful-use/source audit; no PR CI workflow; local docs/SVG/generator check passed; final main read back |
-| Koder | PR #1 → `310c9d7` | ✅ | ✅ | ✅ | source/release/workflow audited; no PR CI run; local docs/SVG/generator check passed; final main read back |
+| Torrent_downloader | PR #1 → `efca9a1` | ✅ | ✅ | ✅ | source/release audited; final main read back |
+| cda-pl | PR #1 → `2c8f0a3` | ✅ | ✅ | ✅ | lawful-use/source audit; final main read back |
+| Koder | PR #1 → `310c9d7` | ✅ | ✅ | ✅ | source/release/workflow audited; final main read back |
+| Github-README-Generator | PR #1 → `04344ee` | ✅ | ✅ | ✅ | source + v1.0.0 release audited; no PR docs CI; final main README/card read back |
+| Grosz | PR #1 → `7322749` | ✅ | ✅ | ✅ | asset-only scope and existing artwork preserved; no releases; final main README/generator read back |
 
 ## Exclusions added by qualification
 
@@ -221,6 +224,7 @@ Required action: let the owning feature work resolve that PR; then fetch fresh `
 | 2026-09-18 | Audited and migrated SwirTube. | 21 verified; 28 queued. |
 | 2026-09-18 | Migrated File.io_Downloaderup and TimeListe-Generator. | 23 verified; 26 queued. |
 | 2026-09-18 | Migrated CyptoPriceWidget, Matrix-Ajax-Chat and Ghos-DNS; began explicit SVG-only legacy-meter cleanup. | 26 verified; 23 queued; cleanup 6 verified. |
-| 2026-09-18 | Migrated Torrent_downloader, cda-pl and Koder through docs-only PRs; audited source/release/legal/security facts, verified SVG-only N/A progress, deterministic generators and final default-branch files. | **29 verified; 20 queued; 1 blocked; 12 delegated; 4 excluded. Legacy meter cleanup: 9 verified / 40 pending / 1 blocked / 12 delegated / 4 excluded.** |
+| 2026-09-18 | Migrated Torrent_downloader, cda-pl and Koder through docs-only PRs. | 29 verified; 20 queued; cleanup 9 verified. |
+| 2026-09-18 | Migrated Github-README-Generator and Grosz; opened watermark-remover PR #3 and left it unmerged while final-head CI runs. | **31 verified; 17 queued; 1 in progress; 1 blocked; 12 delegated; 4 excluded. Cleanup: 11 verified / 38 pending / 1 blocked / 12 delegated / 4 excluded.** |
 
-Do not silently change the denominator. Every later `queued → excluded/delegated/verified/blocked` decision must update the inventory row, state totals, metrics marker and generated migration SVGs together. Legacy-meter cleanup state is independent and must also be updated after each re-audit. Disable only this migration task after every discovered repository has a final eligibility state and every eligible migration/SVG rollout/legacy-meter cleanup is verified or explicitly excepted according to the completion policy.
+Do not silently change the denominator. Every later state decision must update the inventory row, state totals, metrics marker and generated migration SVGs together. Legacy-meter cleanup state is independent and must also be updated after each re-audit. Disable only this migration task after every discovered repository has a final eligibility state and every eligible migration/SVG rollout/legacy-meter cleanup is verified or explicitly excepted according to the completion policy.
