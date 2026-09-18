@@ -1,4 +1,4 @@
-name: Profile Activity - Moon Patrol
+name: Profile Activity - Pixel Tank Patrol
 
 on:
   schedule:
@@ -8,9 +8,9 @@ on:
     branches: [main]
     paths:
       - ".github/workflows/profile-activity.yml"
-      - "scripts/generate_moon_patrol.py"
+      - "scripts/generate_pixel_tank_patrol.py"
       - "scripts/generate_profile_activity.py"
-      - "tests/test_moon_patrol.py"
+      - "tests/test_pixel_tank_patrol.py"
 
 permissions:
   contents: write
@@ -29,14 +29,14 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Validate Moon Patrol renderer and contribution metrics
-        run: python3 -m unittest discover -s tests -p 'test_moon_patrol.py' -v
+      - name: Test tank targeting, calendar data and infinite animation
+        run: python3 -m unittest discover -s tests -p 'test_pixel_tank_patrol.py' -v
 
-      - name: Generate animated patrol and existing activity dashboard
+      - name: Generate continuously animated tank and activity dashboard
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PROFILE_USER: ${{ github.repository_owner }}
-        run: python3 scripts/generate_moon_patrol.py
+        run: python3 scripts/generate_pixel_tank_patrol.py
 
       - name: Publish validated profile assets
         shell: bash
@@ -44,12 +44,12 @@ jobs:
           set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -- assets/github-moon-patrol.svg assets/github-activity-live.svg assets/moon-patrol-state.json
+          git add -- assets/github-pixel-tank-patrol.svg assets/github-activity-live.svg assets/pixel-tank-state.json
           if git diff --cached --quiet; then
-            echo "Contribution snapshot unchanged; no commit needed."
+            echo "Contribution data and renderer unchanged; no commit needed."
             exit 0
           fi
-          git commit -m "chore(profile): sync Moon Patrol contribution snapshot [skip ci]"
+          git commit -m "chore(profile): sync Pixel Tank Patrol contribution snapshot [skip ci]"
           for attempt in 1 2 3; do
             git pull --rebase origin main
             if git push origin HEAD:main; then
