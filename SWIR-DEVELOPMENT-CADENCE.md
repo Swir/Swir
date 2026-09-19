@@ -59,39 +59,56 @@ Hourly reports should distinguish:
 Do not describe a checkpoint branch as shipped/default-branch work. When no integration occurs because the package is still being accumulated or CI is running, that is normal and should be reported briefly rather than forcing a commit.
 
 
-## Remote-write throttle — user correction 2026-09-19
+## Remote development persistence — user correction 2026-09-19
 
-The user explicitly does **not** want routine GitHub writes every hourly run. Hourly execution remains enabled, but normal remote repository writes must be throttled.
+The user wants **maximum real engineering progress on every hourly run** while still avoiding noisy default-branch churn. Remote tasks cannot rely on an unpushed local workspace surviving into the next run, so meaningful implementation must be allowed to persist on a development branch.
 
-- **Do not create a GitHub commit, push, PR update, or default-branch merge merely to preserve hourly work.**
-- Between publication windows, use the run for repository/CI review, diagnosis, test/result inspection, planning the next coherent package, review of an existing PR, or fixing only when a remote write is immediately justified by an actual blocker.
-- The preferred cadence table above now applies to **all routine remote writes**, not only merges to the default branch.
-- During a normal publication window, bundle the coherent change into the **fewest practical commits**. Prefer one meaningful commit/package when the connector/workflow allows it. Do not split code/docs/tests into many minute-apart commits just because separate API calls are convenient.
-- Do not push a new checkpoint every hour. A development branch is for a real coherent package, not an hourly heartbeat.
-- Exception: a verified urgent regression/security/safety fix, a CI repair required to unblock an already-open package, or recovery from a failed/incomplete remote operation may be pushed immediately.
-- If the environment cannot preserve unpushed local edits between hourly runs, do **not** fake persistence. Use non-writing work on intermediate runs and perform implementation during the next allowed publication window.
-- The user prefers fewer, higher-confidence GitHub updates over continuous visible activity. Quality and truthful verification matter more than commit frequency.
+### Hourly development branch rule
 
+- Every hourly run should make the **largest safe, coherent, high-impact implementation step** it can actually complete and verify. Do not downgrade a run into analysis-only work merely because the default-branch merge window has not arrived.
+- When a real code/test/UX/gameplay package is implemented and verified enough to preserve, **push it to the existing development/feature branch and update the same PR**. This is allowed even when less than the default-branch integration interval has elapsed.
+- Prefer **one coherent remote checkpoint per run at most**. Bundle code, tests and necessary docs together where practical instead of producing many minute-apart commits.
+- A development-branch checkpoint must contain meaningful implementation, a regression fix, a measurable test/benchmark improvement, or a concrete blocker-removal step. Never create heartbeat, timestamp, report-only or cosmetic-only commits just to prove activity.
+- Continue the same active branch/PR across runs. Do not create a fresh branch every hour for the same milestone.
+- If a run can safely finish more than one tightly related roadmap deliverable in one package, do so. **MAX WORK takes precedence over artificial small-scope commits.**
+- A green checkpoint on a development branch is not shipped/default-branch work and must be reported as such.
 
-## Hard minimum between routine GitHub writes
+### Default-branch integration throttle
 
-For normal development, count from the most recent routine remote write in that repository/track. Do not make another routine GitHub write before the minimum below. Emergency exceptions are only the ones defined in the Remote-write throttle section.
+The project-specific cadence table applies to **merges/integration into the default branch**, not to meaningful development-branch persistence.
 
-- BrokeDJ: **4 h**
-- SWIR OS: **4 h**
-- SwirPhoneOS: **4 h**
-- KaliPhoneStudio: **4 h**
-- SwirEngine: **2 h**
-- SwirUI: **2 h**
-- Dragon DiskForge: **2 h**
-- Konofix: **2 h**
-- GTT: **2 h**
-- Tank Revival: **2 h**
-- Checkout of Hell: **2 h**
-- Tiny Toon Project #002 when enabled: **2 h**
-- xADKiller Android: **2 h**
-- xADKiller Chrome: **2 h**
-- BackgroundPXR: **2 h**
-- SwirPhotoClean: **2 h**
+- BrokeDJ, SWIR OS, SwirPhoneOS, KaliPhoneStudio: target default-branch integration about **4–6 h**.
+- SwirEngine, SwirUI, Dragon DiskForge, Konofix: about **2–4 h**.
+- GTT, Tank Revival, Checkout of Hell, Tiny Toon when enabled: usually **2–4 h**, milestone-driven.
+- xADKiller, BackgroundPXR, SwirPhotoClean: about **2–3 h**.
+- Merge earlier only when a substantial milestone is fully coherent and exact-head required CI is green, or for a verified urgent hotfix/safety/security blocker.
+- Never delay useful development-branch implementation simply to satisfy the merge clock.
+- Never merge red or still-running required CI.
 
-Within an allowed write window, prefer one coherent remote package. Multiple minute-apart commits are allowed only when technically required to complete or repair the same package, and they must not become the normal pattern.
+### Progress-first / big-step behavior
+
+- Start each run from the authoritative roadmap/status and identify the highest-value open deliverables.
+- Prefer implementation that **closes or materially advances real roadmap scope** over repeated auditing, presentation work, documentation-only hardening or extra framework layers.
+- When several related open checklist items can safely be completed in one run, intentionally pursue the larger package.
+- Do not game percentages. A gate/checklist item changes only when its acceptance evidence is real.
+- If a gate is physically blocked by hardware/manual/user evidence, do not burn every hourly run re-auditing the same blocker. Move to the next safe high-impact implementation that prepares or advances another real deliverable, while keeping the blocker truthful.
+- The goal is visible engineering movement: larger gameplay/features/runtime systems, stronger integration and closed roadmap items — not a high commit count.
+
+### Commit shape
+
+A normal productive run should usually end in one of these states:
+
+1. **Large coherent branch checkpoint + green/pending CI** — normal and preferred.
+2. **Merge of an accumulated green package to default branch** — only when the integration cadence and quality gate justify it.
+3. **No remote write** — only when genuinely blocked, waiting for CI/evidence, or when no safe meaningful change exists.
+
+Multiple minute-apart commits in one run are discouraged. They are acceptable only when needed to repair the same exact-head package after CI failure or because the connector requires staged writes; squash/clean history when appropriate before integration.
+
+## Reporting
+
+Keep the existing concise-report rule. Distinguish:
+- **development branch progress**,
+- **default-branch integration**,
+- **release readiness**.
+
+Do not describe a branch checkpoint as shipped. A run that makes a substantial branch package is real progress even when the main percentage cannot truthfully change yet.
