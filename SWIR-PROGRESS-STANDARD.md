@@ -188,3 +188,22 @@ A stationary percentage is acceptable only when the remaining authoritative scop
 ### Reporting
 
 Normal reports remain short. Include the current authoritative percentage/count and, when unchanged, one short reason: `blocked`, `in-progress deliverable`, or `verification pending`. The goal is measurable forward product progress, not visible activity or commit volume.
+
+
+## Continuous forward-motion rule — user override 2026-09-19
+
+Every active development task must keep advancing the project instead of repeatedly circling the same area.
+
+Each eligible run must accomplish at least one of the following:
+1. close a verified roadmap/acceptance item;
+2. materially reduce the concrete evidence or implementation gap required to close an open item;
+3. remove a blocker that prevents one or more roadmap items from advancing;
+4. if the current item remains externally blocked, move immediately to the next highest-value unblocked roadmap item.
+
+Repeated generic hardening, extra diagnostics, documentation churn, cosmetic refinement, speculative refactors, or CI-only activity must not consume multiple consecutive windows while closable roadmap scope exists.
+
+If the same percentage and same blocker persist across two consecutive eligible windows, the task must change approach on the next run. It may return to the blocked item only when new evidence, capability, hardware access, CI result, or user action makes further progress possible.
+
+For projects near completion, focus on closing the exact remaining acceptance/release evidence rather than adding new unrelated features. For early projects, focus on completing end-to-end usable slices rather than broad scaffolding.
+
+This rule does not require a percentage increase on every hour and must never be used to fabricate progress. The required outcome is **continuous real forward motion toward the authoritative plan**.
