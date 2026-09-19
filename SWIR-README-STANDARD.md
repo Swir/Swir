@@ -231,6 +231,10 @@ Avoid turning README into an internal design dump. Link to deeper architecture d
 - Never describe a release as available until it actually exists.
 - Preserve project-specific roadmap data, structural markers and release gates.
 
+### PyPI package-description exception — SwirEngine + SwirUI (2026-09-19)
+
+For `Swir/SwirEngine` and `Swir/Swirui` only, keep one deterministic plain-ASCII progress bar in the README because the same Markdown is used as the PyPI long description and repository-local SVG assets may not render there. This exception overrides the generic SVG-only cleanup for those two repositories only. The ASCII block must be generated/verified from the same authoritative progress source and wrapped by `SWIR-PYPI-PROGRESS` markers. SVG may remain as an optional GitHub visual.
+
 ### SVG-only progress — user correction 2026-09-18
 
 Follow [SWIR Progress SVG PRO](SWIR-PROGRESS-STANDARD.md) for progress cards, compact roadmap graphics, deterministic regeneration and visible task-report previews. The user rejected the leftover ASCII/Unicode progress meters: remove them from maintained README and active roadmap/status dashboards rather than displaying them below SVG. This explicitly supersedes the text-bar portion of historical v1 style locks; it does not authorize removing checklist data, numeric tables or safety/release checks.
