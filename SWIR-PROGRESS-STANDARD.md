@@ -74,6 +74,18 @@ For a legacy utility with no trustworthy product roadmap, use a clearly labelled
 
 The migration task's own graphics belong under `Swir/Swir/assets/readme/migration/` and are embedded in `README-MIGRATION-STATUS.md`, not the profile README. Until a complete eligible inventory exists, its overall percentage is N/A; a priority subset can be shown separately and explicitly labelled as that subset. Excluded, blocked and delegated entries are not completed migrations.
 
+## Progress-first execution priority — user correction 2026-09-19
+
+Active project tasks should optimize for **closing real canonical roadmap deliverables**, not for producing activity that leaves the authoritative percentage unchanged indefinitely.
+
+- At the start of each run, identify the current authoritative roadmap/status source and its still-open deliverables/gates.
+- When a safe, meaningful open deliverable can be implemented or materially advanced, prioritize it over unrelated polish, extra framework work or documentation-only hardening.
+- This is **not** permission to game the percentage: a checkbox/gate may change only after its real acceptance evidence exists and the relevant tests/CI/manual/hardware requirements are satisfied.
+- If the next open gate is blocked by physical hardware, user action or external/manual evidence, keep the percentage unchanged and spend work on the best concrete blocker-removal tooling, diagnostics, witness package or prerequisite implementation.
+- Do not keep working on a completed historical milestone when a newer active milestone exists, unless a real regression requires it.
+- When the roadmap scope expands, add the new unfinished scope to the denominator before claiming progress on it.
+- Quality, safety and release gates remain higher priority than increasing the displayed percentage.
+
 ## Update, verification and reporting
 
 1. Re-read current source/branch and ongoing work; do not overwrite concurrent edits.
