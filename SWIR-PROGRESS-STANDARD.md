@@ -151,3 +151,40 @@ User-approved exception dated 2026-09-19. For `Swir/SwirEngine` and `Swir/Swirui
 - The deterministic progress generator must update and verify the README ASCII block from the same authoritative source as the project progress graphic so PyPI and GitHub cannot drift.
 - SVG progress cards may remain as optional GitHub visuals, but they are not the sole progress representation for these two PyPI packages.
 - Do not extend this exception to other repositories unless the user explicitly requests it.
+
+
+## ROADMAP-FIRST execution policy — user override 2026-09-19
+
+This is a mandatory work-selection rule for every active SWIR development task.
+
+**Primary objective:** move the authoritative project/milestone roadmap forward through real verified deliverables. Progress percentage must rise only when the underlying acceptance criteria are truly satisfied; never inflate, relabel, split, or shrink scope merely to make the number move.
+
+At the start of every run:
+1. Read the current authoritative roadmap/status/progress source and identify the first/highest-value open deliverables.
+2. Prefer work that can directly complete or materially unblock one of those open deliverables.
+3. Real product/game/runtime functionality and the tests/evidence needed to close a roadmap item take priority over unrelated hardening, documentation, presentation, refactors, extra diagnostics, or speculative future features.
+4. If an open deliverable is blocked by physical hardware, manual evidence, external credentials, unavailable runner capability, or explicit user action, mark that blocker truthfully and immediately work on the next highest-value **unblocked** roadmap deliverable. Do not spend repeated runs polishing only the blocked gate.
+5. Documentation/CI/tooling work is justified when it is required to close or protect an active deliverable, but it must not become the default substitute for product progress.
+
+### Anti-stall rule
+
+If the authoritative percentage/checklist does not advance across **two consecutive eligible development/integration windows**, the next run must explicitly reassess work selection before doing more of the same:
+- identify why the last work did not close a roadmap item;
+- switch to another closable/unblocked deliverable when one exists;
+- merge related sub-work into a milestone-sized package;
+- avoid repeating generic hardening that leaves the same checklist unchanged.
+
+A stationary percentage is acceptable only when the remaining authoritative scope is genuinely blocked or requires long-running implementation that cannot yet satisfy its acceptance criteria. In that case, the report must name the exact blocking checklist item and the concrete evidence still missing.
+
+### Scope integrity
+
+- Never create easier checklist items after the fact merely to raise the percentage.
+- Never mark partial implementation as complete.
+- Never lower the denominator, remove difficult scope, or redefine a gate without a genuine product decision justified by the project.
+- When a new major required scope is discovered, add it honestly before counting completion.
+- Keep development progress separate from beta/release readiness.
+- When a milestone reaches verified 100%, move immediately to the next planned milestone or release gate instead of continuing cosmetic work on the completed scope.
+
+### Reporting
+
+Normal reports remain short. Include the current authoritative percentage/count and, when unchanged, one short reason: `blocked`, `in-progress deliverable`, or `verification pending`. The goal is measurable forward product progress, not visible activity or commit volume.
