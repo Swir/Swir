@@ -119,6 +119,12 @@ This reporting requirement supersedes the previous optional-inline-rendering sen
 
 This changes the contents of task-result messages only. It does not customize the built-in ChatGPT task-list cards, edit already delivered historical reports, or provide a live execution-time meter. Do not promise those capabilities.
 
+## Development / default-branch publication cadence — user correction 2026-09-19
+
+Before repository work, read and follow [SWIR-DEVELOPMENT-CADENCE.md](SWIR-DEVELOPMENT-CADENCE.md). That file defines the current user-approved split between hourly development and less-frequent default-branch integration, including a project-specific preferred cadence table.
+
+This cadence rule OVERRIDES older task-specific instructions that require committing, pushing or merging directly to `main` on every hourly run. Hourly development continues unchanged; when cross-run persistence is needed, use the existing feature/development branch and PR. Merge to the default branch only when a coherent package is complete and the required exact-head checks are green. Quality/safety/release gates always override the clock.
+
 ## Rollout priority and preservation
 
 Initial SVG adoption and removal of duplicated legacy meters are required at the next safe run, not indefinitely postponed until another milestone. Finish any in-flight conflicting work first, then integrate the documentation package without changing application behavior. Preserve README PRO v2 and Search Keywords, unique branding, all safety/compatibility requirements, release freezes and roadmap structural markers, checklist data and numeric tables. The old text-meter portion of roadmap style locks is explicitly superseded by the user's SVG-only correction above. Historical README v1 references must not downgrade an existing v2 README. Task schedules and enabled states remain unchanged by this standard.
