@@ -71,3 +71,27 @@ The user explicitly does **not** want routine GitHub writes every hourly run. Ho
 - Exception: a verified urgent regression/security/safety fix, a CI repair required to unblock an already-open package, or recovery from a failed/incomplete remote operation may be pushed immediately.
 - If the environment cannot preserve unpushed local edits between hourly runs, do **not** fake persistence. Use non-writing work on intermediate runs and perform implementation during the next allowed publication window.
 - The user prefers fewer, higher-confidence GitHub updates over continuous visible activity. Quality and truthful verification matter more than commit frequency.
+
+
+## Hard minimum between routine GitHub writes
+
+For normal development, count from the most recent routine remote write in that repository/track. Do not make another routine GitHub write before the minimum below. Emergency exceptions are only the ones defined in the Remote-write throttle section.
+
+- BrokeDJ: **4 h**
+- SWIR OS: **4 h**
+- SwirPhoneOS: **4 h**
+- KaliPhoneStudio: **4 h**
+- SwirEngine: **2 h**
+- SwirUI: **2 h**
+- Dragon DiskForge: **2 h**
+- Konofix: **2 h**
+- GTT: **2 h**
+- Tank Revival: **2 h**
+- Checkout of Hell: **2 h**
+- Tiny Toon Project #002 when enabled: **2 h**
+- xADKiller Android: **2 h**
+- xADKiller Chrome: **2 h**
+- BackgroundPXR: **2 h**
+- SwirPhotoClean: **2 h**
+
+Within an allowed write window, prefer one coherent remote package. Multiple minute-apart commits are allowed only when technically required to complete or repair the same package, and they must not become the normal pattern.
