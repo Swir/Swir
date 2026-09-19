@@ -140,3 +140,14 @@ This cadence rule OVERRIDES older task-specific instructions that require commit
 ## Rollout priority and preservation
 
 Initial SVG adoption and removal of duplicated legacy meters are required at the next safe run, not indefinitely postponed until another milestone. Finish any in-flight conflicting work first, then integrate the documentation package without changing application behavior. Preserve README PRO v2 and Search Keywords, unique branding, all safety/compatibility requirements, release freezes and roadmap structural markers, checklist data and numeric tables. The old text-meter portion of roadmap style locks is explicitly superseded by the user's SVG-only correction above. Historical README v1 references must not downgrade an existing v2 README. Task schedules and enabled states remain unchanged by this standard.
+
+## PyPI ASCII progress exception — SwirEngine + SwirUI
+
+User-approved exception dated 2026-09-19. For `Swir/SwirEngine` and `Swir/Swirui`, the README is also the PyPI long description, so a deterministic plain-text progress bar is required in addition to any SVG.
+
+- Maintain exactly one marked README block between `<!-- SWIR-PYPI-PROGRESS:START -->` and `<!-- SWIR-PYPI-PROGRESS:END -->`.
+- The bar must use plain ASCII only inside a fenced `text` block, e.g. `[###############---------------] 50.0%`, with the exact numeric percentage and counter immediately beside/below it.
+- The ASCII bar is **not** a legacy meter and MUST NOT be removed by the SVG-only cleanup rules. This exception overrides older owner-task wording that says to remove all ASCII/Unicode progress meters for these two repositories.
+- The deterministic progress generator must update and verify the README ASCII block from the same authoritative source as the project progress graphic so PyPI and GitHub cannot drift.
+- SVG progress cards may remain as optional GitHub visuals, but they are not the sole progress representation for these two PyPI packages.
+- Do not extend this exception to other repositories unless the user explicitly requests it.
