@@ -57,3 +57,17 @@ Hourly reports should distinguish:
 - **integrated to default branch**.
 
 Do not describe a checkpoint branch as shipped/default-branch work. When no integration occurs because the package is still being accumulated or CI is running, that is normal and should be reported briefly rather than forcing a commit.
+
+
+## Remote-write throttle — user correction 2026-09-19
+
+The user explicitly does **not** want routine GitHub writes every hourly run. Hourly execution remains enabled, but normal remote repository writes must be throttled.
+
+- **Do not create a GitHub commit, push, PR update, or default-branch merge merely to preserve hourly work.**
+- Between publication windows, use the run for repository/CI review, diagnosis, test/result inspection, planning the next coherent package, review of an existing PR, or fixing only when a remote write is immediately justified by an actual blocker.
+- The preferred cadence table above now applies to **all routine remote writes**, not only merges to the default branch.
+- During a normal publication window, bundle the coherent change into the **fewest practical commits**. Prefer one meaningful commit/package when the connector/workflow allows it. Do not split code/docs/tests into many minute-apart commits just because separate API calls are convenient.
+- Do not push a new checkpoint every hour. A development branch is for a real coherent package, not an hourly heartbeat.
+- Exception: a verified urgent regression/security/safety fix, a CI repair required to unblock an already-open package, or recovery from a failed/incomplete remote operation may be pushed immediately.
+- If the environment cannot preserve unpushed local edits between hourly runs, do **not** fake persistence. Use non-writing work on intermediate runs and perform implementation during the next allowed publication window.
+- The user prefers fewer, higher-confidence GitHub updates over continuous visible activity. Quality and truthful verification matter more than commit frequency.
