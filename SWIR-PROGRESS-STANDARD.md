@@ -207,3 +207,16 @@ If the same percentage and same blocker persist across two consecutive eligible 
 For projects near completion, focus on closing the exact remaining acceptance/release evidence rather than adding new unrelated features. For early projects, focus on completing end-to-end usable slices rather than broad scaffolding.
 
 This rule does not require a percentage increase on every hour and must never be used to fabricate progress. The required outcome is **continuous real forward motion toward the authoritative plan**.
+
+
+## PyPI exception — SwirUI and SwirEngine
+
+User-approved project-specific override effective 2026-09-20:
+
+- `Swir/Swirui` and `Swir/SwirEngine` MUST use **ASCII/text progress bars only** in README and PyPI-facing documentation.
+- Do **not** embed or require `progress-card.svg`, `progress-mini.svg`, rendered PNG progress cards, or other graphical progress meters in README/PyPI-facing content for these two repositories.
+- Keep the progress source authoritative and deterministic. ASCII text must be generated from the same verified roadmap/status data and must include the exact percentage/count.
+- Example style: `Progress: [############--------] 60.0% (6/10)`.
+- Preserve separate release-readiness status; the ASCII bar represents only the named roadmap/audit scope.
+- Existing SVG assets may remain in repository history or non-PyPI internal tooling if needed, but they must not be the canonical README progress presentation.
+- This exception overrides the general SVG-only presentation rule for these two repositories only. All other SWIR projects keep the normal SVG progress standard unless the user explicitly changes them later.
