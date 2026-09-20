@@ -112,3 +112,52 @@ Keep the existing concise-report rule. Distinguish:
 - **release readiness**.
 
 Do not describe a branch checkpoint as shipped. A run that makes a substantial branch package is real progress even when the main percentage cannot truthfully change yet.
+
+
+## FINISH FIRST / SCOPE FREEZE — user override 2026-09-20
+
+This is a mandatory product-delivery rule for every active SWIR development task and has priority over older broad instructions to keep adding features indefinitely.
+
+**Primary objective:** finish a complete, usable, testable current target first — then improve it in the next version.
+
+For every project, identify one explicit current delivery target:
+- desktop app: current Beta / 1.0 functional-complete release;
+- game: current playable demo / complete vertical slice / named milestone;
+- framework/engine/library: current finite roadmap/release milestone;
+- OS/mobile OS: current bootable/installable/testable Beta baseline;
+- multi-track project: each active track gets its own finite target.
+
+### Scope freeze
+
+Until the current delivery target is functionally complete:
+1. Do not add unrelated new features, speculative future systems, extra themes, new maps, new devices, new platforms, new editors, new AI ideas, or broad architecture expansion merely because they are desirable.
+2. New ideas go to a clearly labelled NEXT / later-version backlog and do **not** expand the denominator or acceptance scope of the current target unless they are truly required for that target to be usable, safe, or releasable.
+3. Prefer end-to-end completion over breadth. Close the existing workflow from start to finish before widening it.
+4. Fix regressions, blockers, broken CI, missing runtime/build/package evidence, critical UX gaps and release-critical safety issues before optional improvements.
+5. Documentation, polish, optimization and hardening are current-target work only when they directly support usability, correctness, release qualification or a named acceptance item.
+
+### Functional-complete gate
+
+A current target is considered functionally complete only when its promised core user workflow works end-to-end and is backed by the appropriate tests/build/runtime evidence for that project. Do not call scaffolding, placeholders, source-only wiring or compile-only success "complete" when the target requires runnable behavior.
+
+Once the current target reaches functional completeness:
+1. run the required regression/build/runtime/package/manual gates;
+2. publish Beta/demo/Release only if that project's existing release policy allows it;
+3. freeze that completed target except for real regressions;
+4. move deferred ideas from NEXT into the next explicit version/milestone and continue there.
+
+### Anti-never-ending rule
+
+If a task is spending work on optional expansion while a closable current-target acceptance item remains open, that is a direction error. Stop the optional expansion and return to the nearest releasable/usable gate.
+
+If a current-target item is externally blocked by hardware/manual/user evidence, finish all other unblocked items in the same target first. Do not widen scope just to stay busy. After all internally closable current-target work is complete, report the exact external blocker instead of inventing more same-version features.
+
+The desired development loop is:
+
+**FUNCTIONAL COMPLETE → TEST/QUALIFY → BETA/RELEASE/DEMO → NEXT VERSION → IMPROVE**
+
+not:
+
+**NEW FEATURE → MORE FEATURES → MORE HARDENING → MORE IDEAS → NEVER FINISH**
+
+This rule does not lower quality or safety gates and must never be used to fabricate completion percentages.
