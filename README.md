@@ -26,11 +26,19 @@ IDEA  →  BUILD  →  VERIFY  →  RELEASE  →  IMPROVE
 
 <div align="center">
 
-<a href="https://github.com/Swir/Tank-Revival-Overdrive"><img width="49%" src="assets/power-card-tank-v1.svg" alt="Tank Revival Overdrive" /></a>
-<a href="https://github.com/Swir/WojThom"><img width="49%" src="assets/power-card-wojthom-v1.svg" alt="WojThom" /></a>
+<a href="https://github.com/Swir/Tank-Revival-Overdrive"><img width="98%" src="assets/project-tank-professional.svg" alt="Tank Revival Overdrive — game development project" /></a>
 
-<a href="https://github.com/Swir/SwirEngine"><img width="49%" src="assets/power-card-engine-v1.svg" alt="SwirEngine" /></a>
-<a href="https://github.com/Swir/SwirPhotoClean"><img width="49%" src="assets/power-card-photoclean-v1.svg" alt="SwirPhotoClean" /></a>
+<br>
+
+<a href="https://github.com/Swir/WojThom"><img width="98%" src="assets/project-wojthom-professional.svg" alt="WojThom — productivity application" /></a>
+
+<br>
+
+<a href="https://github.com/Swir/SwirEngine"><img width="98%" src="assets/project-swirengine-professional.svg" alt="SwirEngine — development platform" /></a>
+
+<br>
+
+<a href="https://github.com/Swir/SwirPhotoClean"><img width="98%" src="assets/project-photoclean-professional.svg" alt="SwirPhotoClean — desktop image tooling" /></a>
 
 <a href="https://github.com/Swir?tab=repositories"><strong>View all repositories →</strong></a>
 
@@ -88,13 +96,9 @@ IDEA  →  BUILD  →  VERIFY  →  RELEASE  →  IMPROVE
 
 <img width="98%" src="https://raw.githubusercontent.com/Swir/Swir/main/assets/github-activity-live.svg" alt="SWIR GitHub activity dashboard" />
 
-<br><br>
-
-<img width="98%" src="https://raw.githubusercontent.com/Swir/Swir/main/assets/github-robot-arm-factory-live.svg" alt="Animated self-hosted GitHub contribution visualization" />
-
 <br>
 
-<sub>Self-hosted contribution visualization · refreshed automatically from GitHub activity · <a href="https://raw.githubusercontent.com/Swir/Swir/main/assets/github-robot-arm-factory-still.svg">static view</a></sub>
+<sub>Automatically refreshed from GitHub contribution data.</sub>
 
 </div>
 
