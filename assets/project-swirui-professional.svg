@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="780" height="220" viewBox="0 0 780 220" role="img" aria-label="SwirUI project card">
+  <defs><linearGradient id="a" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#58a6ff"/><stop offset="1" stop-color="#7dd3fc"/></linearGradient></defs>
+  <rect width="780" height="220" rx="20" fill="#0d1117"/>
+  <rect x="1" y="1" width="778" height="218" rx="19" fill="none" stroke="#30363d"/>
+  <rect width="6" height="220" rx="3" fill="url(#a)"/>
+  <g transform="translate(36,36)">
+    <rect width="120" height="120" rx="20" fill="#161b22" stroke="#30363d"/>
+    <rect x="22" y="26" width="76" height="68" rx="10" fill="#0d1117" stroke="#58a6ff" stroke-width="3"/>
+    <rect x="31" y="35" width="58" height="10" rx="5" fill="#21262d"/>
+    <rect x="31" y="53" width="24" height="26" rx="5" fill="#21262d" stroke="#7dd3fc"/>
+    <rect x="63" y="53" width="26" height="11" rx="4" fill="#21262d" stroke="#8b949e"/>
+    <rect x="63" y="68" width="26" height="11" rx="4" fill="#21262d" stroke="#8b949e"/>
+    <path d="M33 104H87" stroke="#58a6ff" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="60" cy="104" r="7" fill="#0d1117" stroke="#7dd3fc" stroke-width="3"/>
+  </g>
+  <g transform="translate(188,38)" font-family="Inter,Segoe UI,Arial,sans-serif">
+    <text x="0" y="22" fill="#58a6ff" font-size="13" font-weight="700" letter-spacing="2">NATIVE PYTHON UI FRAMEWORK</text>
+    <text x="0" y="66" fill="#f0f6fc" font-size="32" font-weight="800">SwirUI</text>
+    <text x="0" y="100" fill="#8b949e" font-size="17">Reactive GPU-first desktop UI framework with a Python API</text>
+    <text x="0" y="125" fill="#8b949e" font-size="17">and a Rust + wgpu native rendering core.</text>
+    <g transform="translate(0,150)" font-size="13" font-weight="700">
+      <text x="0" y="0" fill="#c9d1d9">PYTHON</text><text x="72" y="0" fill="#c9d1d9">RUST</text><text x="126" y="0" fill="#c9d1d9">WGPU</text><text x="186" y="0" fill="#c9d1d9">DESKTOP UI</text>
+    </g>
+  </g>
+</svg>
