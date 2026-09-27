@@ -1,34 +1,28 @@
 <div align="center">
 
-<img width="100%" src="assets/power-neon-hero-v7.svg" alt="SWIR — power neon electric profile" />
+<img width="100%" src="assets/power-neon-hero-v7.svg" alt="SWIR — software developer profile" />
 
-<a href="https://github.com/Swir?tab=repositories"><img src="https://img.shields.io/badge/REPOSITORIES-02050A?style=for-the-badge&logo=github&logoColor=62E5FF" alt="Repositories" /></a>
-<a href="https://swir.github.io/"><img src="https://img.shields.io/badge/PORTFOLIO-02050A?style=for-the-badge&logo=googlechrome&logoColor=62E5FF" alt="Portfolio" /></a>
-<a href="https://github.com/Swir/Tank-Revival-Overdrive/releases/latest"><img src="https://img.shields.io/badge/LATEST_BUILD-02050A?style=for-the-badge&logo=windows11&logoColor=62E5FF" alt="Latest build" /></a>
-
-<br><br>
-
-
+<a href="https://github.com/Swir?tab=repositories"><img src="https://img.shields.io/badge/Repositories-02050A?style=for-the-badge&logo=github&logoColor=62E5FF" alt="Repositories" /></a>
+<a href="https://swir.github.io/"><img src="https://img.shields.io/badge/Portfolio-02050A?style=for-the-badge&logo=googlechrome&logoColor=62E5FF" alt="Portfolio" /></a>
+<a href="https://github.com/Swir/Tank-Revival-Overdrive/releases/latest"><img src="https://img.shields.io/badge/Latest%20Build-02050A?style=for-the-badge&logo=windows11&logoColor=62E5FF" alt="Latest build" /></a>
 
 </div>
 
-<img width="100%" src="assets/power-divider-v4.svg" alt="electric divider" />
+<img width="100%" src="assets/power-divider-v4.svg" alt="" />
 
 ## About
 
-I build projects that move from **idea to working release** fast, then evolve through testing, real use and iteration.
+I design and ship practical software with a focus on **Windows desktop applications, Python tooling and automation**.
 
-My main territory is **Python, Windows desktop software and automation**, with projects extending into **Android, web, browser tooling, image/audio workflows, AI-assisted systems and game development**.
+My projects also extend into **Android, web applications, media workflows, developer tooling, AI-assisted systems and game development**. I prefer small, testable releases that can be validated in real use and improved iteratively.
 
 ```text
-PROBLEM  →  BUILD  →  TEST  →  RELEASE  →  EVOLVE
+IDEA  →  BUILD  →  VERIFY  →  RELEASE  →  IMPROVE
 ```
 
-> **Useful first. Working fast. Better every version.**
+<img width="100%" src="assets/power-divider-v4.svg" alt="" />
 
-<img width="100%" src="assets/power-divider-v4.svg" alt="electric divider" />
-
-## Main Projects
+## Selected Projects
 
 <div align="center">
 
@@ -38,37 +32,37 @@ PROBLEM  →  BUILD  →  TEST  →  RELEASE  →  EVOLVE
 <a href="https://github.com/Swir/SwirEngine"><img width="49%" src="assets/power-card-engine-v1.svg" alt="SwirEngine" /></a>
 <a href="https://github.com/Swir/SwirPhotoClean"><img width="49%" src="assets/power-card-photoclean-v1.svg" alt="SwirPhotoClean" /></a>
 
-<a href="https://github.com/Swir?tab=repositories"><strong>VIEW ALL PROJECTS →</strong></a>
+<a href="https://github.com/Swir?tab=repositories"><strong>View all repositories →</strong></a>
 
 </div>
 
-<img width="100%" src="assets/power-divider-v4.svg" alt="electric divider" />
+<img width="100%" src="assets/power-divider-v4.svg" alt="" />
 
-## Systems I Build
+## Areas of Work
 
-| Area | What I work on |
+| Area | Focus |
 |---|---|
-| **Desktop / Windows** | Python GUI software, utilities, file processing, local tools and Windows workflows |
-| **Automation** | Batch processing, repetitive-task reduction, browser tooling and scripted workflows |
-| **Applications** | Web interfaces, Android-oriented projects, reports and offline-first utilities |
-| **Games** | Playable Windows builds, progression systems, tools and experiments |
-| **Media** | Image cleanup, conversion, audio processing and FFmpeg-based workflows |
-| **AI / R&D** | AI-assisted development, internal systems and experimental tooling |
+| **Desktop / Windows** | GUI applications, utilities, local tools and file-processing workflows |
+| **Automation** | Batch processing, repetitive-task reduction and scripted workflows |
+| **Applications** | Web interfaces, Android-oriented projects and offline-first utilities |
+| **Developer Tools** | Build tooling, diagnostics, conversion utilities and productivity software |
+| **Media** | Image, audio and FFmpeg-based processing workflows |
+| **R&D** | AI-assisted development, systems experiments and prototyping |
 
-## More Software
+## Additional Projects
 
 | Project | Purpose |
 |---|---|
-| [ARIA2 Ultimate PRO](https://github.com/Swir/Aria2Gui) | Multi-connection desktop download manager built around aria2 |
+| [ARIA2 Ultimate PRO](https://github.com/Swir/Aria2Gui) | Desktop download manager built around aria2 |
 | [InfoPulse PL](https://github.com/Swir/InfoPulse-PL) | RSS, Atom and API-based information center |
 | [NeonShift-X PowerBookmark](https://github.com/Swir/PowerBookmark) | Browser productivity and automation tooling |
 | [NES New Life](https://github.com/Swir/Nes_New_Life) | Retro-development and HD workflow experiments |
 | [Image To ICO](https://github.com/Swir/Image-To-Ico) | Windows icon conversion utility |
 | [WAV to MP3 Converter](https://github.com/Swir/WAV-to-MP3-converter) | Batch WAV-to-MP3 conversion workflow |
 
-<img width="100%" src="assets/power-divider-v4.svg" alt="electric divider" />
+<img width="100%" src="assets/power-divider-v4.svg" alt="" />
 
-## Stack
+## Technology
 
 <div align="center">
 
@@ -76,51 +70,42 @@ PROBLEM  →  BUILD  →  TEST  →  RELEASE  →  EVOLVE
 
 <br>
 
-`PYTHON` · `WINDOWS` · `JAVASCRIPT` · `KOTLIN` · `HTML/CSS` · `POWERSHELL` · `GIT` · `FFMPEG` · `ARIA2`
+`Python` · `JavaScript` · `Kotlin` · `HTML/CSS` · `PHP` · `PowerShell` · `Git` · `FFmpeg` · `Windows` · `Linux`
 
 </div>
 
-<img width="100%" src="assets/power-divider-v4.svg" alt="electric divider" />
+<img width="100%" src="assets/power-divider-v4.svg" alt="" />
 
-## Operating Mode
+## Development Approach
 
-| 01 | 02 | 03 |
-|---|---|---|
-| **BUILD** | **RELEASE** | **EVOLVE** |
-| Start with a real problem and get to a working version fast. | A usable build beats a perfect idea that never ships. | Every release becomes the starting point for the next one. |
+| Build | Verify | Release | Improve |
+|---|---|---|---|
+| Turn a concrete problem into a working implementation. | Test behavior, edge cases and real usage. | Publish a usable version with clear scope. | Iterate from feedback, evidence and regression testing. |
 
-## ⚡ GitHub Activity
+## GitHub Activity
 
 <div align="center">
 
-<img width="98%" src="https://raw.githubusercontent.com/Swir/Swir/main/assets/github-activity-live.svg" alt="SWIR GitHub activity live dashboard" />
+<img width="98%" src="https://raw.githubusercontent.com/Swir/Swir/main/assets/github-activity-live.svg" alt="SWIR GitHub activity dashboard" />
 
 <br><br>
 
-### `ROBOT ARM FACTORY // LIVE`
-
-<sub>REAL CONTRIBUTIONS → PICK → PROCESS → DEPLOY → REPEAT</sub>
-
-<br><br>
-
-<img width="98%" src="https://raw.githubusercontent.com/Swir/Swir/main/assets/github-robot-arm-factory-live.svg" alt="SWIR Robot Arm Factory LIVE — animated industrial arm picks real contribution modules, carries them to DEPLOY, credits their counts and repeats continuously" />
+<img width="98%" src="https://raw.githubusercontent.com/Swir/Swir/main/assets/github-robot-arm-factory-live.svg" alt="Animated self-hosted GitHub contribution visualization" />
 
 <br>
 
-<sub>Continuous production loop · Data sync scheduled every 5 min (GitHub delays possible) · <a href="https://raw.githubusercontent.com/Swir/Swir/main/assets/github-robot-arm-factory-still.svg">Static view</a></sub>
+<sub>Self-hosted contribution visualization · refreshed automatically from GitHub activity · <a href="https://raw.githubusercontent.com/Swir/Swir/main/assets/github-robot-arm-factory-still.svg">static view</a></sub>
 
 </div>
 
-<img width="100%" src="assets/power-divider-v4.svg" alt="electric divider" />
+<img width="100%" src="assets/power-divider-v4.svg" alt="" />
 
 <div align="center">
 
-### `SWIR // FULL POWER MODE`
+**SWIR**
 
-## BUILD WHAT SHOULD EXIST.
+Software · Automation · Developer Tools · Experiments
 
-**Software · Automation · Applications · Games · Experiments**
-
-<sub>Better than yesterday.</sub>
+<sub>Build useful things. Verify them. Improve them.</sub>
 
 </div>
