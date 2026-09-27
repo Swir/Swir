@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="780" height="220" viewBox="0 0 780 220" role="img" aria-label="Konofix project card">
+  <defs><linearGradient id="a" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#58a6ff"/><stop offset="1" stop-color="#7dd3fc"/></linearGradient></defs>
+  <rect width="780" height="220" rx="20" fill="#0d1117"/>
+  <rect x="1" y="1" width="778" height="218" rx="19" fill="none" stroke="#30363d"/>
+  <rect width="6" height="220" rx="3" fill="url(#a)"/>
+  <g transform="translate(36,36)">
+    <rect width="120" height="120" rx="20" fill="#161b22" stroke="#30363d"/>
+    <path d="M28 34H92C99 34 104 39 104 46V75C104 82 99 87 92 87H64L48 101V87H28C21 87 16 82 16 75V46C16 39 21 34 28 34Z" fill="#0d1117" stroke="#58a6ff" stroke-width="3"/>
+    <circle cx="40" cy="60" r="4" fill="#7dd3fc"/><circle cx="60" cy="60" r="4" fill="#7dd3fc"/><circle cx="80" cy="60" r="4" fill="#7dd3fc"/>
+    <path d="M38 106C52 94 69 94 83 106M31 98C47 82 75 82 91 98" fill="none" stroke="#8b949e" stroke-width="3" stroke-linecap="round"/>
+  </g>
+  <g transform="translate(188,38)" font-family="Inter,Segoe UI,Arial,sans-serif">
+    <text x="0" y="22" fill="#58a6ff" font-size="13" font-weight="700" letter-spacing="2">P2P DESKTOP COMMUNICATION</text>
+    <text x="0" y="66" fill="#f0f6fc" font-size="32" font-weight="800">Konofix</text>
+    <text x="0" y="100" fill="#8b949e" font-size="17">Ephemeral peer-to-peer messaging and direct file transfer</text>
+    <text x="0" y="125" fill="#8b949e" font-size="17">with a native desktop client and optional headless node.</text>
+    <g transform="translate(0,150)" font-size="13" font-weight="700">
+      <text x="0" y="0" fill="#c9d1d9">RUST</text><text x="58" y="0" fill="#c9d1d9">TAURI</text><text x="122" y="0" fill="#c9d1d9">P2P</text><text x="166" y="0" fill="#c9d1d9">WINDOWS</text>
+    </g>
+  </g>
+</svg>
