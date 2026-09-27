@@ -26,11 +26,11 @@ IDEA  →  BUILD  →  VERIFY  →  RELEASE  →  IMPROVE
 
 <div align="center">
 
-<a href="https://github.com/Swir/Tank-Revival-Overdrive"><img width="98%" src="assets/project-tank-professional.svg" alt="Tank Revival Overdrive — game development project" /></a>
+<a href="https://github.com/Swir/Konofix"><img width="98%" src="assets/project-konofix-professional.svg" alt="Konofix — peer-to-peer desktop communication" /></a>
 
 <br>
 
-<a href="https://github.com/Swir/WojThom"><img width="98%" src="assets/project-wojthom-professional.svg" alt="WojThom — productivity application" /></a>
+<a href="https://github.com/Swir/Swirui"><img width="98%" src="assets/project-swirui-professional.svg" alt="SwirUI — native Python desktop UI framework" /></a>
 
 <br>
 
