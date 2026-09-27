@@ -4,7 +4,7 @@
 
 <a href="https://github.com/Swir?tab=repositories"><img src="https://img.shields.io/badge/Repositories-02050A?style=for-the-badge&logo=github&logoColor=62E5FF" alt="Repositories" /></a>
 <a href="https://swir.github.io/"><img src="https://img.shields.io/badge/Portfolio-02050A?style=for-the-badge&logo=googlechrome&logoColor=62E5FF" alt="Portfolio" /></a>
-<a href="https://github.com/Swir/Tank-Revival-Overdrive/releases/latest"><img src="https://img.shields.io/badge/Latest%20Build-02050A?style=for-the-badge&logo=windows11&logoColor=62E5FF" alt="Latest build" /></a>
+<a href="https://github.com/Swir/Konofix/releases"><img src="https://img.shields.io/badge/Konofix%20Releases-02050A?style=for-the-badge&logo=windows11&logoColor=62E5FF" alt="Konofix releases" /></a>
 
 </div>
 
