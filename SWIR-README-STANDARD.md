@@ -191,6 +191,8 @@ Describe **what the user gains**, not only internal implementation names.
 
 ## 10. Screenshots and media
 
+- Screenshots must contain no mouse pointer, I-beam, text caret, click highlight or capture-tool glow. Disable pointer inclusion and overlays before capture, move the pointer outside the window and remove text-input focus.
+- Inspect saved screenshots at native resolution, including copies used by portfolio pages. If a pointer obscures interface text or controls, recapture or restore faithfully; never invent application state or hide warnings.
 - Prefer real current screenshots, GIFs or demo images from the repository.
 - Do not show obsolete UI as the primary screenshot.
 - Do not add empty screenshot placeholders.
@@ -334,3 +336,4 @@ Any automated task that actively develops a `Swir/*` repository should:
 11. apply the SVG-only progress correction, remove duplicated legacy meters from maintained documentation and newly produced reports, and prevent their regeneration without altering verified progress.
 
 This v2 document is the canonical source of truth for the SWIR repository presentation system.
+
